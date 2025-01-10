@@ -1,5 +1,8 @@
 site_name: Prompt Engineering Collection
+site_url: https://felipepimentel.github.io/prompts/
 site_description: A comprehensive collection of prompts for various use cases
+site_author: Felipe Pimentel
+
 theme:
   name: material
   features:
@@ -13,6 +16,11 @@ theme:
     - navigation.indexes
     - navigation.footer
     - toc.integrate
+    - navigation.instant
+    - navigation.tracking
+    - search.share
+    - search.highlight
+    - navigation.path
   palette:
     - scheme: default
       primary: indigo
@@ -31,6 +39,14 @@ theme:
     code: Roboto Mono
   icon:
     repo: fontawesome/brands/github
+    tag:
+      default: material/tag
+      ai: material/robot
+      dev: material/code-braces
+      content: material/pencil
+      data: material/database
+      art: material/palette
+      misc: material/tools
   custom_dir: docs/overrides
 
 markdown_extensions:
@@ -50,8 +66,8 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - toc:
       permalink: true
       toc_depth: 3
@@ -72,8 +88,6 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
   - social
-  - glightbox
-  - meta
 
 extra_css:
   - stylesheets/extra.css
@@ -93,21 +107,32 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
+  tags:
+    AI: ai
+    Development: dev
+    Content: content
+    Data: data
+    Art: art
+    Miscellaneous: misc
 
 nav:
-  - Home: index.md
-  - Getting Started: getting-started.md
-  - Prompts:
-    - Overview: prompts/overview.md
-    - Developer: prompts/developer.md
+  - Home: 
+    - Overview: index.md
+    - Quick Start: getting-started.md
+  - Prompts by Category:
+    - All Prompts: prompts/overview.md
+    - Developer Tools: prompts/developer.md
     - Content Creation: prompts/content-creation.md
-    - Product: prompts/product.md
-    - Data: prompts/data.md
-    - Art: prompts/art.md
+    - Product Management: prompts/product.md
+    - Data Analysis: prompts/data.md
+    - Art & Design: prompts/art.md
     - Miscellaneous: prompts/misc.md
   - Contributing: contributing.md
   - About: about.md
 
 repo_name: felipepimentel/prompts
 repo_url: https://github.com/felipepimentel/prompts
-edit_uri: edit/main/docs/ 
+edit_uri: edit/main/docs/
+
+docs_dir: docs
+site_dir: site 
