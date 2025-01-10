@@ -1,0 +1,100 @@
+/* Better readability for main content */
+.md-content {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Improved headings */
+.md-content h1 {
+    color: #2e303e;
+    font-weight: 700;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.md-content h2 {
+    color: #3b3d4d;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+/* Better code blocks */
+.highlight pre {
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: #f8f9fc;
+}
+
+/* Variables styling */
+.md-content ul li code {
+    background-color: #f3f4f6;
+    color: #6366f1;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+}
+
+/* Prompt template boxes */
+.prompt-template {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* Best practices section */
+.best-practices {
+    background-color: #f0f9ff;
+    border-left: 4px solid #3b82f6;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+/* Dark mode adjustments */
+[data-md-color-scheme="slate"] {
+    --md-default-bg-color: #1a1b26;
+    --md-default-fg-color: #c0caf5;
+}
+
+[data-md-color-scheme="slate"] .md-content h1 {
+    color: #c0caf5;
+    border-bottom-color: #414868;
+}
+
+[data-md-color-scheme="slate"] .md-content h2 {
+    color: #a9b1d6;
+}
+
+[data-md-color-scheme="slate"] .highlight pre {
+    background-color: #24283b;
+}
+
+[data-md-color-scheme="slate"] .prompt-template {
+    background-color: #1a1b26;
+    border-color: #414868;
+}
+
+/* Navigation improvements */
+.md-nav__item .md-nav__link--active {
+    color: #6366f1;
+    font-weight: 600;
+}
+
+/* Better tables */
+.md-typeset table:not([class]) {
+    font-size: .9rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+}
+
+.md-typeset table:not([class]) th {
+    background-color: #f8f9fc;
+    color: #4b5563;
+    font-weight: 600;
+}
+
+/* Admonitions styling */
+.md-typeset .admonition {
+    border-radius: 6px;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1);
+} 

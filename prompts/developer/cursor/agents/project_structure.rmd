@@ -1,0 +1,101 @@
+---
+title: "Cursor Project Structure Template"
+author: "Cursor Development Team"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+output:
+  html_document:
+    theme: united
+    toc: true
+    toc_float: true
+---
+
+# Project Structure Documentation
+
+## Standard Directory Layout
+```
+project_root/
+├── docs/
+│   ├── development/
+│   │   ├── diary.rmd
+│   │   ├── postgres_diary.rmd
+│   │   └── development_diary.json
+│   ├── research/
+│   │   ├── papers/
+│   │   ├── references/
+│   │   └── experiments/
+│   ├── specs/
+│   │   ├── architecture/
+│   │   ├── api/
+│   │   └── database/
+│   └── templates/
+├── src/
+│   ├── core/
+│   ├── api/
+│   ├── database/
+│   └── utils/
+├── tests/
+│   ├── unit/
+│   ├── integration/
+│   └── performance/
+├── scripts/
+│   ├── setup/
+│   ├── deployment/
+│   └── maintenance/
+├── config/
+│   ├── development/
+│   ├── staging/
+│   └── production/
+└── research/
+    ├── reference_repos/
+    ├── experiments/
+    └── analysis/
+```
+
+## Directory Purposes
+
+### `/docs`
+- Development documentation
+- Research papers and references
+- Technical specifications
+- Template files
+
+### `/src`
+- Core application code
+- API implementations
+- Database models and migrations
+- Utility functions
+
+### `/tests`
+- Unit tests
+- Integration tests
+- Performance tests
+- Test fixtures
+
+### `/scripts`
+- Setup scripts
+- Deployment automation
+- Maintenance utilities
+
+### `/config`
+- Environment-specific configurations
+- Application settings
+- Service configurations
+
+### `/research`
+- Reference implementations
+- Experimental code
+- Analysis notebooks
+
+## File Naming Conventions
+- Use lowercase with underscores
+- Include version numbers where applicable
+- Use appropriate file extensions
+- Follow language-specific conventions
+
+## Documentation Requirements
+Each project must maintain:
+1. Development diary (`diary.rmd`)
+2. Database documentation (`postgres_diary.rmd`)
+3. Project metadata (`development_diary.json`)
+4. API specifications
+5. Architecture diagrams
