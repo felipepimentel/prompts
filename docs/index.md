@@ -42,7 +42,7 @@ Welcome to the Prompt Engineering Collection - your comprehensive library of AI 
 
 ## 🔍 Browse by Category
 
-=== "Developer Tools :octicons-code-16:"
+=== ":octicons-code-16: Developer Tools"
 
     ??? tip "Code Enhancement"
         
@@ -56,7 +56,7 @@ Welcome to the Prompt Engineering Collection - your comprehensive library of AI 
         - [System Design](prompts/developer.md#system-design)
         - [Database Schema](prompts/developer.md#database-design)
 
-=== "Content Creation :material-pencil:"
+=== ":material-pencil: Content Creation"
 
     ??? tip "Written Content"
         
@@ -70,7 +70,7 @@ Welcome to the Prompt Engineering Collection - your comprehensive library of AI 
         - [Email Marketing](prompts/content-creation.md#email-marketing)
         - [Ad Copy](prompts/content-creation.md#advertising-copy)
 
-=== "Product Management :material-chart-gantt:"
+=== ":material-chart-gantt: Product Management"
 
     ??? tip "Product Planning"
         
@@ -84,7 +84,7 @@ Welcome to the Prompt Engineering Collection - your comprehensive library of AI 
         - [Competitive Research](prompts/product.md#competitive-analysis)
         - [Roadmap Planning](prompts/product.md#roadmap-planning)
 
-=== "Data Analysis :octicons-graph-16:"
+=== ":octicons-graph-16: Data Analysis"
 
     ??? tip "Analysis Tools"
         
@@ -98,7 +98,7 @@ Welcome to the Prompt Engineering Collection - your comprehensive library of AI 
         - [Data Visualization](prompts/data.md#data-visualization)
         - [Dashboard Design](prompts/data.md#dashboard-design)
 
-=== "Art & Design :material-palette:"
+=== ":material-palette: Art & Design"
 
     ??? tip "Visual Art"
         

@@ -21,6 +21,14 @@ theme:
     - search.share
     - search.highlight
     - navigation.path
+    - content.tooltips
+    - navigation.expand
+    - navigation.footer
+    - navigation.indexes
+    - navigation.sections
+    - navigation.tabs.sticky
+    - navigation.top
+    - toc.follow
   palette:
     - scheme: default
       primary: indigo
@@ -77,6 +85,13 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tilde
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
 
 plugins:
   - search:
