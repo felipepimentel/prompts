@@ -1,61 +1,68 @@
-# Linting for Composer Agents: The Simple Guide 🎨
+# Composer Agent Linting Guidelines
 
-Imagine you're teaching a robot to paint a picture. You want to give it clear rules about what colors to use, how to hold the brush, and where to paint. That's exactly what linting directives do for composer agents!
+## Overview
+This document provides structured guidelines for implementing linting directives in composer agents. It focuses on maintainable, clear, and effective code quality enforcement.
 
-## The Basics 🌟
+## Core Concepts
 
-Think of linting directives like a recipe card:
+### Directive Types
 
-```yaml
-TELL_ROBOT:
-  what: "paint a tree"
-  how: "carefully"
-  rules: "stay inside the lines"
-```
-
-## Three Magic Words 🎭
-
-1. **ENFORCE** - "You MUST do this!"
-
+1. **ENFORCE**
+   - Mandatory rules that must be followed
+   - Used for critical code quality requirements
+   - Example:
    ```yaml
-   ENFORCE: {
-       naming: "clean", # Like saying "always label your toys"
-       structure: "neat", # Like "keep your room organized"
-     }
+   ENFORCE:
+     naming:
+       convention: "consistent"
+       pattern: "descriptive"
+     structure:
+       organization: "modular"
+       hierarchy: "clear"
    ```
 
-2. **CHECK** - "Please make sure this is right"
-
+2. **CHECK**
+   - Validation rules for code quality
+   - Used for runtime verification
+   - Example:
    ```yaml
-   CHECK: {
-       spelling: "correct", # Like "double-check your homework"
-       formatting: "readable", # Like "write neatly"
-     }
+   CHECK:
+     validation:
+       input: "sanitized"
+       types: "verified"
+     formatting:
+       style: "standard"
+       readability: "high"
    ```
 
-3. **OPTIMIZE** - "Try to make this better"
+3. **OPTIMIZE**
+   - Performance improvement directives
+   - Used for efficiency enhancements
+   - Example:
    ```yaml
-   OPTIMIZE: {
-       speed: "fast", # Like "clean your room quickly"
-       memory: "efficient", # Like "don't waste space"
-     }
+   OPTIMIZE:
+     performance:
+       execution: "efficient"
+       memory: "minimal"
+     response:
+       time: "optimized"
+       resources: "managed"
    ```
 
-## Real Examples Made Simple 🎈
+## Implementation Guidelines
 
-### When Writing React Components
-
+### React Component Example
 ```typescript
-// Tell the robot: "Keep things tidy!"
-// @lint-directive: ENFORCE neat-code
-const Button = ({ text }) => {
-  // Put hooks at the top, like putting your shoes on before your coat
-  const [isClicked, setClicked] = useState(false);
+// @lint-directive: ENFORCE component-structure
+const Button: React.FC<ButtonProps> = ({ text, onClick }) => {
+  const [state, setState] = useState<ButtonState>(initialState);
 
-  // Name things clearly, like labeling your lunchbox
-  const handleClick = () => setClicked(true);
+  const handleInteraction = useCallback(() => {
+    setState(newState);
+    onClick?.();
+  }, [onClick]);
 
-  return <button onClick={handleClick}>{text}</button>;
+  return <button onClick={handleInteraction}>{text}</button>;
 };
 ```
 

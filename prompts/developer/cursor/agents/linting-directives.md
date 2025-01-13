@@ -1,17 +1,25 @@
-# YOLOREN.AI Composer Agent Linting Directives
-> Version: 1.0.0
-> Last Updated: $(Get-Date -Format "yyyy-MM-dd")
+# Code Quality and Architecture Directives
+> Version: 1.0.1
+> Last Updated: 2024-01-10
 
-## Overview
-This guide defines linting directives for composer agents, ensuring consistent code quality and architectural patterns across the YOLOREN.AI ecosystem.
+## Purpose
+This document defines comprehensive linting and code quality directives for maintaining consistent, high-quality code across projects. These directives are designed to be actionable, measurable, and automatically enforceable.
 
-## Directive Format
+## Core Principles
+1. **Consistency**: Uniform patterns across codebase
+2. **Maintainability**: Easy to understand and modify
+3. **Performance**: Optimized for runtime efficiency
+4. **Security**: Built-in security practices
+5. **Scalability**: Prepared for growth
+
+## Directive Schema
 ```yaml
 DIRECTIVE:
-  context: <development_context>
-  action: <enforce|check|optimize>
-  rules: <rule_set>
-  level: <strict|moderate|loose>
+  context: string     # Where this directive applies
+  priority: number    # 1 (highest) to 5 (lowest)
+  action: string     # enforce | check | optimize
+  rules: RuleSet     # Specific rules to apply
+  exceptions: Array  # Valid exceptions to rules
 ```
 
 ## Web Development Directives
