@@ -1,4 +1,7 @@
 site_name: Prompt Engineering Collection
+site_url: https://felipepimentel.github.io/prompts/
+repo_url: https://github.com/felipepimentel/prompts
+repo_name: felipepimentel/prompts
 theme:
   name: material
   features:
