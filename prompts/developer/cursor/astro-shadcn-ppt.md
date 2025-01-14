@@ -1,166 +1,63 @@
-# Astro Project Setup
-
-## Purpose
-Create an Astro project and build the frontend.
-
-## Description
-Create a content-focused website using Astro.
-
-## Prerequisites
-- Requirement: Bun must be installed.
-
-## Tech Stack
-
-### Bun
-- Description: A fast JavaScript runtime that allows for quick setup of development environments.
-
-### Astro
-- Description: A modern framework for building content-focused websites.
-
-### TypeScript
-- Description: A programming language that enables type-safe JavaScript development.
-
-### Tailwind
-- Description: A utility-first CSS framework that supports efficient design building.
-
-### shadcn/ui
-- Description: A high-quality, reusable React component library that allows for rapid construction of sophisticated UIs.
-
+---
+title: "Astro with shadcn/ui Setup Guide"
+path: "developer/frameworks/astro/astro-shadcn-setup-guide"
+tags: ["astro", "shadcn-ui", "tailwind", "react", "typescript", "frontend", "setup", "guide"]
+description: "A comprehensive guide for setting up an Astro project with shadcn/ui components, including Tailwind CSS and React integration."
 ---
 
-## Steps
+# Astro with shadcn/ui Setup Guide
 
-### Step 1: Create an Astro project
-Set up an Astro project.
+## Troubleshooting
 
-Command:
+### Common Issues
+
+#### 1. Bun Installation Issues
+- Ensure you have the latest version of Bun installed
+- Try clearing Bun's cache: `bun pm cache rm`
+- Check system requirements
+
+#### 2. Tailwind CSS Not Working
+- Verify `globals.css` is imported correctly
+- Check `astro.config.mjs` configuration
+- Clear the `.astro` cache directory
+
+#### 3. shadcn/ui Component Issues
+- Ensure React is properly configured
+- Check component import paths
+- Verify all dependencies are installed
+
+### Error Messages and Solutions
+
+#### ENOENT Error
 ```bash
-bunx create-astro@latest ./ --template minimal --install --git --yes
+Error: ENOENT: no such file or directory
+```
+Solution: Ensure you're in the correct directory and all paths are correct.
+
+#### Type Errors
+```typescript
+Type ... is not assignable to type ...
+```
+Solution: Check your `tsconfig.json` and ensure all types are properly imported.
+
+## Best Practices
+
+### 1. Project Structure
+```
+src/
+  ├── components/
+  │   └── ui/        # shadcn/ui components
+  ├── layouts/       # Astro layouts
+  ├── pages/         # Astro pages
+  └── styles/        # Global styles
 ```
 
----
+### 2. Performance Optimization
+- Use client:load sparingly
+- Implement proper code splitting
+- Optimize images and assets
 
-### Step 2: Add Tailwind CSS
-Add Tailwind CSS to the project.
-
-Command:
-```bash
-npx astro add tailwind --yes --yes --yes
-```
-
----
-
-### Step 3: Add React
-Add React to the project.
-
-Command:
-```bash
-bunx --bun astro add react --yes --yes --yes
-```
-
----
-
-### Step 4: Create `styles/globals.css`
-Create `src/styles/globals.css` and add the following content.
-
-```css
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-```
-
----
-
-### Step 5: Import the `globals.css` file
-Add the following to `src/pages/index.astro` to import the CSS.
-
-```javascript
-import "../styles/globals.css";
-```
-
----
-
-### Step 6: Add settings to `astro.config.mjs`
-Add the following settings to `astro.config.mjs`.
-
-```javascript
-export default defineConfig({
-  integrations: [
-    tailwind({
-      applyBaseStyles: false,
-    }),
-  ],
-});
-```
-
----
-
-### Step 7: Edit the `tsconfig.json` file
-Add the following settings to `tsconfig.json`.
-
-```json
-{
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": [
-        "./src/*"
-      ]
-    }
-  }
-}
-```
-
----
-
-### Step 8: Initialize shadcn
-Initialize shadcn.
-
-Command:
-```bash
-bunx --bun shadcn@latest init --defaults
-```
-
----
-
-### Step 9: Install the Button component
-Install the Button component from shadcn/ui.
-
-Command:
-```bash
-bunx --bun shadcn add button
-```
-
----
-
-### Step 10: Add the Button component
-Edit `src/pages/index.astro` as follows.
-
-```html
----
-import { Button } from "@/components/ui/button";
----
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro</title>
-  </head>
-  <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    <Button variant="destructive">Hello World</Button>
-  </body>
-</html>
-```
-
----
-
-### Step 11: Verify shadcn/ui is reflected
-Start the development server and verify the changes are reflected.
-
-Command:
-```bash
-bun run dev
-```
+### 3. Development Workflow
+- Use Git for version control
+- Follow component-driven development
+- Implement proper testing strategies 

@@ -1,268 +1,350 @@
-# Development Framework Integration Guide
+---
+title: Framework Integration Guide
+path: developer/guidelines/framework-integration-guide
+tags:
+  - integration
+  - frameworks
+  - architecture
+  - development
+  - best-practices
+description: A comprehensive guide for integrating different frameworks and technologies in modern applications, focusing on best practices, common patterns, and maintainable architecture.
+---
 
-## Context
-This guide outlines the integration patterns and relationships between various development frameworks, including Tool Selection, Code Review, Documentation, and Testing frameworks. The goal is to provide a unified approach to software development and maintenance.
+# Framework Integration Guide
 
-## Framework Ecosystem
+## Core Principles
+1. Modularity - Keep integrations loosely coupled
+2. Maintainability - Ensure code is maintainable and testable
+3. Scalability - Design for future growth and changes
+4. Compatibility - Handle version conflicts and dependencies
 
-### 1. Core Frameworks
-```yaml
-framework_hierarchy:
-  development:
-    primary: "Development Framework"
-    purpose: "Code creation and management"
-    integration_points: [
-      "Tool selection",
-      "Code generation",
-      "Quality assurance"
-    ]
-    
-  quality_assurance:
-    primary: "Testing Framework"
-    purpose: "Code quality and reliability"
-    integration_points: [
-      "Unit testing",
-      "Integration testing",
-      "Performance testing"
-    ]
-    
-  documentation:
-    primary: "Documentation Framework"
-    purpose: "Knowledge management"
-    integration_points: [
-      "Code documentation",
-      "API documentation",
-      "User guides"
-    ]
+## Integration Patterns
+
+### 1. API Integration
+```typescript
+// src/lib/api/client.ts
+import axios, { type AxiosInstance } from 'axios'
+
+export class ApiClient {
+  private client: AxiosInstance
+
+  constructor(baseURL: string) {
+    this.client = axios.create({
+      baseURL,
+      timeout: 10000,
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    })
+  }
+
+  async request<T>(config: {
+    method: 'GET' | 'POST' | 'PUT' | 'DELETE'
+    url: string
+    data?: unknown
+  }): Promise<T> {
+    try {
+      const response = await this.client.request(config)
+      return response.data
+    } catch (error) {
+      throw this.handleError(error)
+    }
+  }
+
+  private handleError(error: unknown): Error {
+    if (axios.isAxiosError(error)) {
+      return new Error(error.response?.data?.message || 'API Error')
+    }
+    return new Error('Unknown error occurred')
+  }
+}
 ```
 
-### 2. Integration Patterns
-```yaml
-workflow_patterns:
-  development_pipeline:
-    planning_to_development:
-      input: "Requirements"
-      processing: "Tool selection framework"
-      output: "Development plan"
-      validation: "Feasibility check"
-    
-    development_to_testing:
-      input: "Code changes"
-      processing: "Testing framework"
-      output: "Test results"
-      validation: "Quality metrics"
-    
-    testing_to_documentation:
-      input: "Validated code"
-      processing: "Documentation framework"
-      output: "Updated docs"
-      validation: "Completeness check"
+### 2. Database Integration
+```typescript
+// src/lib/db/client.ts
+import { Pool, type QueryResult } from 'pg'
+import { Redis } from 'ioredis'
 
-  cross_framework_communication:
-    code_formats:
-      - type: "Source code"
-        format: "Language-specific"
-        validation: "Linting"
-      
-      - type: "Test code"
-        format: "Test framework"
-        validation: "Coverage"
-      
-      - type: "Documentation"
-        format: "Markdown/API spec"
-        validation: "Completeness"
+export class DatabaseClient {
+  private pool: Pool
+  private redis: Redis
+
+  constructor(config: {
+    postgres: {
+      host: string
+      port: number
+      database: string
+      user: string
+      password: string
+    }
+    redis: {
+      host: string
+      port: number
+    }
+  }) {
+    this.pool = new Pool(config.postgres)
+    this.redis = new Redis(config.redis)
+  }
+
+  async query<T>(sql: string, params?: unknown[]): Promise<QueryResult<T>> {
+    const client = await this.pool.connect()
+    try {
+      return await client.query(sql, params)
+    } finally {
+      client.release()
+    }
+  }
+
+  async cacheGet<T>(key: string): Promise<T | null> {
+    const data = await this.redis.get(key)
+    return data ? JSON.parse(data) : null
+  }
+
+  async cacheSet(key: string, value: unknown, ttl?: number): Promise<void> {
+    const data = JSON.stringify(value)
+    if (ttl) {
+      await this.redis.set(key, data, 'EX', ttl)
+    } else {
+      await this.redis.set(key, data)
+    }
+  }
+}
 ```
 
-### 3. Quality Gates
-```yaml
-quality_framework:
-  code_quality:
-    metrics: [
-      "Code coverage",
-      "Complexity",
-      "Duplication",
-      "Style compliance"
-    ]
-    thresholds:
-      coverage: "80% minimum"
-      complexity: "15 maximum"
-    
-  test_quality:
-    metrics: [
-      "Test coverage",
-      "Test reliability",
-      "Performance benchmarks"
-    ]
-    validation:
-      methods: [
-        "Automated testing",
-        "Code review",
-        "Performance testing"
-      ]
-    
-  documentation_quality:
-    metrics: [
-      "Completeness",
-      "Accuracy",
-      "Clarity"
-    ]
-    validation:
-      methods: [
-        "Peer review",
-        "Automated checks",
-        "User feedback"
-      ]
+## Service Integration
+
+### 1. Message Queue Integration
+```typescript
+// src/lib/queue/client.ts
+import { Queue, Worker, QueueScheduler } from 'bullmq'
+import { Redis } from 'ioredis'
+
+export class QueueService {
+  private queue: Queue
+  private worker: Worker
+  private scheduler: QueueScheduler
+
+  constructor(
+    queueName: string,
+    redis: Redis,
+    processor: (job: any) => Promise<void>
+  ) {
+    this.queue = new Queue(queueName, { connection: redis })
+    this.worker = new Worker(queueName, processor, { connection: redis })
+    this.scheduler = new QueueScheduler(queueName, { connection: redis })
+    this.setupListeners()
+  }
+
+  private setupListeners(): void {
+    this.worker.on('completed', (job) => {
+      console.log(`Job ${job.id} completed`)
+    })
+
+    this.worker.on('failed', (job, error) => {
+      console.error(`Job ${job?.id} failed:`, error)
+    })
+  }
+
+  async addJob(data: unknown, options?: {
+    delay?: number
+    priority?: number
+  }): Promise<void> {
+    await this.queue.add('process', data, options)
+  }
+}
 ```
 
-## Implementation Guidelines
+### 2. Search Integration
+```typescript
+// src/lib/search/client.ts
+import { Client } from '@elastic/elasticsearch'
 
-### 1. Framework Selection
-1. Assess project requirements
-2. Choose development stack
-3. Select testing frameworks
-4. Plan documentation approach
-5. Configure tooling
+export class SearchService {
+  private client: Client
 
-### 2. Integration Setup
-1. Configure CI/CD pipeline
-2. Set up testing environment
-3. Establish documentation workflow
-4. Configure monitoring
-5. Set up reporting
+  constructor(config: {
+    node: string
+    auth: {
+      username: string
+      password: string
+    }
+  }) {
+    this.client = new Client(config)
+  }
 
-### 3. Workflow Management
-1. Design development flow
-2. Implement code reviews
-3. Configure automated tests
-4. Set up documentation generation
-5. Monitor quality metrics
+  async index(index: string, document: unknown): Promise<void> {
+    await this.client.index({
+      index,
+      document,
+    })
+  }
+
+  async search<T>(index: string, query: {
+    query: unknown
+    from?: number
+    size?: number
+  }): Promise<T[]> {
+    const result = await this.client.search({
+      index,
+      ...query,
+    })
+
+    return result.hits.hits.map((hit) => hit._source as T)
+  }
+}
+```
+
+## Frontend Integration
+
+### 1. State Management
+```typescript
+// src/lib/store/index.ts
+import { create } from 'zustand'
+import { persist } from 'zustand/middleware'
+
+interface AppState {
+  theme: 'light' | 'dark'
+  setTheme: (theme: 'light' | 'dark') => void
+  user: {
+    id: string
+    name: string
+  } | null
+  setUser: (user: AppState['user']) => void
+}
+
+export const useStore = create<AppState>()(
+  persist(
+    (set) => ({
+      theme: 'light',
+      setTheme: (theme) => set({ theme }),
+      user: null,
+      setUser: (user) => set({ user }),
+    }),
+    {
+      name: 'app-storage',
+    }
+  )
+)
+```
+
+### 2. API Integration
+```typescript
+// src/lib/api/hooks.ts
+import { useQuery, useMutation } from '@tanstack/react-query'
+import { ApiClient } from './client'
+
+const api = new ApiClient(process.env.NEXT_PUBLIC_API_URL!)
+
+export function useUser(id: string) {
+  return useQuery({
+    queryKey: ['user', id],
+    queryFn: () => api.request({
+      method: 'GET',
+      url: `/users/${id}`,
+    }),
+  })
+}
+
+export function useUpdateUser() {
+  return useMutation({
+    mutationFn: (data: { id: string; name: string }) =>
+      api.request({
+        method: 'PUT',
+        url: `/users/${data.id}`,
+        data,
+      }),
+  })
+}
+```
+
+## Testing Integration
+
+### 1. Integration Tests
+```typescript
+// src/tests/integration/api.test.ts
+import { describe, test, expect, beforeAll, afterAll } from 'vitest'
+import { ApiClient } from '@/lib/api/client'
+import { setupTestDatabase } from '../utils/db'
+import { startTestServer } from '../utils/server'
+
+describe('API Integration', () => {
+  let api: ApiClient
+  let cleanup: () => Promise<void>
+
+  beforeAll(async () => {
+    const db = await setupTestDatabase()
+    const server = await startTestServer()
+    api = new ApiClient(server.url)
+    cleanup = async () => {
+      await db.cleanup()
+      await server.close()
+    }
+  })
+
+  afterAll(async () => {
+    await cleanup()
+  })
+
+  test('creates and retrieves user', async () => {
+    const user = await api.request({
+      method: 'POST',
+      url: '/users',
+      data: { name: 'Test User' },
+    })
+
+    expect(user).toHaveProperty('id')
+
+    const retrieved = await api.request({
+      method: 'GET',
+      url: `/users/${user.id}`,
+    })
+
+    expect(retrieved).toEqual(user)
+  })
+})
+```
 
 ## Best Practices
 
-### 1. Development Standards
-```yaml
-development_practices:
-  code_standards:
-    principles: [
-      "Clean code",
-      "SOLID principles",
-      "DRY principle",
-      "KISS principle"
-    ]
-    
-  review_process:
-    methods: [
-      "Automated checks",
-      "Peer review",
-      "Architecture review",
-      "Security review"
-    ]
-    
-  documentation:
-    requirements: [
-      "Code comments",
-      "API documentation",
-      "Architecture docs",
-      "User guides"
-    ]
-```
+### 1. Architecture
+- Use dependency injection
+- Implement interface segregation
+- Follow SOLID principles
+- Keep services decoupled
+- Use appropriate design patterns
 
-### 2. Testing Strategy
-```yaml
-testing_strategy:
-  levels:
-    unit:
-      scope: "Individual components"
-      tools: ["Jest", "JUnit", "PyTest"]
-      automation: "Continuous"
-    
-    integration:
-      scope: "Component interaction"
-      tools: ["TestContainers", "Integration suites"]
-      frequency: "Per PR"
-    
-    system:
-      scope: "End-to-end functionality"
-      tools: ["Selenium", "Cypress", "Playwright"]
-      frequency: "Daily"
-```
+### 2. Error Handling
+- Implement proper error boundaries
+- Use typed errors
+- Handle async errors
+- Log errors appropriately
+- Provide meaningful error messages
 
-### 3. Documentation Standards
-```yaml
-documentation_standards:
-  code_documentation:
-    requirements: [
-      "Function documentation",
-      "Class documentation",
-      "Module documentation"
-    ]
-    
-  api_documentation:
-    standards: [
-      "OpenAPI specification",
-      "API examples",
-      "Error documentation"
-    ]
-    
-  user_documentation:
-    components: [
-      "Installation guide",
-      "User manual",
-      "Troubleshooting guide"
-    ]
-```
+### 3. Performance
+- Implement caching strategies
+- Optimize database queries
+- Use connection pooling
+- Monitor memory usage
+- Profile application performance
 
-## Common Integration Scenarios
+### 4. Security
+- Validate input data
+- Implement proper authentication
+- Use secure communication
+- Handle sensitive data properly
+- Regular security audits
 
-### 1. Feature Development
-```yaml
-feature_workflow:
-  stages:
-    planning:
-      frameworks: ["Tool Selection", "Documentation"]
-      outputs: "Development plan"
-    
-    implementation:
-      frameworks: ["Development", "Testing"]
-      outputs: "Tested code"
-    
-    documentation:
-      frameworks: ["Documentation", "Quality"]
-      outputs: "Complete feature"
-```
+### 5. Testing
+- Write integration tests
+- Implement end-to-end tests
+- Use proper test isolation
+- Mock external services
+- Maintain test coverage
 
-### 2. Maintenance Updates
-```yaml
-maintenance_workflow:
-  steps:
-    analysis:
-      frameworks: ["Tool Selection", "Testing"]
-      integration: "Issue identification"
-    
-    implementation:
-      frameworks: ["Development", "Testing"]
-      integration: "Fixed code"
-    
-    verification:
-      frameworks: ["Testing", "Documentation"]
-      integration: "Validated fix"
-```
-
-### 3. System Integration
-```yaml
-integration_workflow:
-  components:
-    development:
-      frameworks: ["Development", "Tool Selection"]
-      purpose: "Component creation"
-    
-    testing:
-      frameworks: ["Testing", "Quality"]
-      purpose: "Integration validation"
-    
-    documentation:
-      frameworks: ["Documentation", "Quality"]
-      purpose: "Integration docs"
-```
-
-Please use this guide to effectively integrate and coordinate the various development frameworks in your implementation. 
+## Resources
+1. [Next.js Documentation](https://nextjs.org/docs)
+2. [Prisma Documentation](https://www.prisma.io/docs)
+3. [React Query Documentation](https://tanstack.com/query/latest)
+4. [Zustand Documentation](https://github.com/pmndrs/zustand)
+5. [Testing Library Documentation](https://testing-library.com/docs/) 

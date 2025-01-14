@@ -1,140 +1,146 @@
+---
+title: Data Cleaning Framework
+path: data/data-analysis/data-cleaning-framework
+tags:
+  - data-analysis
+  - data-cleaning
+  - data-preparation
+  - data-quality
+  - data-validation
+description: A comprehensive framework for cleaning and preparing data to ensure quality, consistency, and reliability for subsequent analysis and processing.
+---
+
 # Data Cleaning Framework
 
 ## Context
-You are a data quality specialist focusing on data cleaning and preparation. Your task is to transform raw data into a clean, consistent, and analysis-ready format while maintaining data integrity and documenting all transformations.
+You are a data preparation specialist focusing on data quality assurance. Your task is to clean and prepare data sets to ensure they meet quality standards and are suitable for analysis.
 
 ## Input Parameters
 - Data Source: [SOURCE]
 - Data Format: [FORMAT]
-- Quality Requirements: [REQUIREMENTS]
-- Output Format: [FORMAT]
-- Documentation Level: [BASIC|DETAILED]
+- Quality Standards: [STANDARDS]
+- Cleaning Scope: [SCOPE]
+- Output Requirements: [REQUIREMENTS]
 
 ## Cleaning Framework
 
 ### 1. Data Assessment
 ```yaml
-data_quality:
-  structure:
-    columns: ["[COL1]", "[COL2]"]
-    types: ["[TYPE1]", "[TYPE2]"]
+assessment_elements:
+  quality:
+    checks: ["[CHECK1]", "[CHECK2]"]
+    metrics: ["[MET1]", "[MET2]"]
     
   issues:
-    missing_values: ["[FIELD1]", "[FIELD2]"]
-    duplicates: ["[RECORD1]", "[RECORD2]"]
-    inconsistencies: ["[ISSUE1]", "[ISSUE2]"]
+    types: ["[TYPE1]", "[TYPE2]"]
+    severity: ["[SEV1]", "[SEV2]"]
+    
+  requirements:
+    standards: ["[STD1]", "[STD2]"]
+    specifications: ["[SPEC1]", "[SPEC2]"]
 ```
 
-### 2. Cleaning Operations
+### 2. Cleaning Strategy
 ```yaml
-operations:
-  missing_values:
-    strategy: "[STRATEGY]"
-    fields: ["[FIELD1]", "[FIELD2]"]
-    methods: ["[METHOD1]", "[METHOD2]"]
+strategy_elements:
+  methods:
+    techniques: ["[TECH1]", "[TECH2]"]
+    tools: ["[TOOL1]", "[TOOL2]"]
     
-  standardization:
-    formats: ["[FORMAT1]", "[FORMAT2]"]
-    rules: ["[RULE1]", "[RULE2]"]
+  processes:
+    steps: ["[STEP1]", "[STEP2]"]
+    validation: ["[VAL1]", "[VAL2]"]
     
-  deduplication:
-    keys: ["[KEY1]", "[KEY2]"]
-    method: "[METHOD]"
+  automation:
+    scripts: ["[SCRIPT1]", "[SCRIPT2]"]
+    workflows: ["[FLOW1]", "[FLOW2]"]
 ```
 
-### 3. Data Transformations
+### 3. Quality Assurance
 ```yaml
-transformations:
-  type_conversion:
-    fields: ["[FIELD1]", "[FIELD2]"]
-    target_types: ["[TYPE1]", "[TYPE2]"]
+qa_elements:
+  validation:
+    tests: ["[TEST1]", "[TEST2]"]
+    criteria: ["[CRIT1]", "[CRIT2]"]
     
-  encoding:
-    categorical: ["[CAT1]", "[CAT2]"]
-    method: "[METHOD]"
+  verification:
+    checks: ["[CHECK1]", "[CHECK2]"]
+    benchmarks: ["[BENCH1]", "[BENCH2]"]
     
-  scaling:
-    numeric: ["[NUM1]", "[NUM2]"]
-    method: "[METHOD]"
+  documentation:
+    changes: ["[CHANGE1]", "[CHANGE2]"]
+    impacts: ["[IMP1]", "[IMP2]"]
 ```
 
-## Cleaning Methods
+## Development Methods
 
-### 1. Missing Data Handling
-- Complete case analysis
-- Mean/median imputation
-- Predictive imputation
-- Multiple imputation
-- Custom rules
+### 1. Data Assessment
+- Quality evaluation
+- Issue identification
+- Requirement analysis
+- Standard compliance
+- Format verification
 
-### 2. Standardization
-- Text case normalization
-- Date format standardization
-- Unit conversion
-- Category harmonization
-- Value mapping
+### 2. Cleaning Process
+- Method selection
+- Tool configuration
+- Process implementation
+- Automation setup
+- Progress monitoring
 
-### 3. Error Correction
-- Outlier detection
-- Pattern matching
-- Rule-based correction
-- Cross-validation
-- Manual review
+### 3. Quality Control
+- Validation testing
+- Result verification
+- Impact assessment
+- Documentation maintenance
+- Process refinement
 
 ## Output Format
 ```yaml
-cleaning_results:
-  summary:
-    records_processed: "[NUMBER]"
-    issues_found: "[NUMBER]"
-    issues_resolved: "[NUMBER]"
+cleaning_blueprint:
+  overview:
+    source: "[SOURCE]"
+    format: "[FORMAT]"
+    scope: "[SCOPE]"
     
-  operations:
-    completed:
-      steps: ["[STEP1]", "[STEP2]"]
-      impact: ["[IMPACT1]", "[IMPACT2]"]
-      
-    skipped:
-      steps: ["[STEP1]", "[STEP2]"]
-      reasons: ["[REASON1]", "[REASON2]"]
-      
-  quality_metrics:
-    completeness: "[SCORE]"
-    consistency: "[SCORE]"
-    accuracy: "[SCORE]"
+  process:
+    methods: ["[METH1]", "[METH2]"]
+    steps: ["[STEP1]", "[STEP2]"]
+    validation: ["[VAL1]", "[VAL2]"]
+    
+  results:
+    changes: ["[CHANGE1]", "[CHANGE2]"]
+    improvements: ["[IMP1]", "[IMP2]"]
+    metrics: ["[MET1]", "[MET2]"]
     
   documentation:
-    changes:
-      major: ["[CHANGE1]", "[CHANGE2]"]
-      minor: ["[CHANGE1]", "[CHANGE2]"]
-      
-    decisions:
-      rules: ["[RULE1]", "[RULE2]"]
-      exceptions: ["[EXCEPTION1]", "[EXCEPTION2]"]
+    procedures: ["[PROC1]", "[PROC2]"]
+    impacts: ["[IMP1]", "[IMP2]"]
+    references: ["[REF1]", "[REF2]"]
 ```
 
-## Cleaning Categories
-1. Missing Values
-2. Duplicates
-3. Inconsistencies
-4. Format Issues
-5. Type Mismatches
-6. Outliers
-7. Invalid Values
-8. Encoding Issues
-9. Structural Problems
-10. Business Rule Violations
-
-## Quality Checks
-1. Completeness
-2. Consistency
-3. Accuracy
+## Cleaning Characteristics
+1. Accuracy
+2. Completeness
+3. Consistency
 4. Validity
-5. Uniqueness
-6. Timeliness
-7. Reasonableness
-8. Integrity
-9. Conformity
-10. Reliability
+5. Timeliness
+6. Reliability
+7. Standardization
+8. Traceability
+9. Reproducibility
+10. Documentation
 
-Please clean the data following these guidelines to ensure high-quality, analysis-ready output.
+## Best Practices
+1. Systematic Approach
+2. Quality Standards
+3. Process Automation
+4. Regular Validation
+5. Change Documentation
+6. Impact Assessment
+7. Error Prevention
+8. Data Preservation
+9. Process Optimization
+10. Knowledge Transfer
+
+Please follow these guidelines to ensure effective data cleaning and preparation while maintaining data integrity. 

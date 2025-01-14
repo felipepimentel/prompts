@@ -1,264 +1,268 @@
-# Backend Setup Instructions
+---
+title: Backend Development Environment Setup Guide
+path: developer/instructions/setup-backend.md
+tags: ["backend", "development", "setup", "infrastructure", "best-practices"]
+description: A comprehensive guide for setting up and configuring a modern backend development environment
+---
 
-Use this guide to setup the backend for this project.
+# Backend Development Environment Setup
 
-It uses Supabase, Drizzle ORM, and Server Actions.
+## 1. Development Environment
+### 1.1 Core Tools
+- Version control (Git)
+- Code editor/IDE
+- Terminal emulator
+- Package managers
+- Docker Desktop
+- Database tools
 
-Write the complete code for every step. Do not get lazy. Write everything that is needed.
-
-Your goal is to completely finish the backend setup.
-
-## Helpful Links
-
-If the user gets stuck, refer them to the following links:
-
-- [Supabase Docs](https://supabase.com)
-- [Drizzle Docs](https://orm.drizzle.team/docs/overview)
-- [Drizzle with Supabase Quickstart](https://orm.drizzle.team/learn/tutorials/drizzle-with-supabase)
-
-## Install Libraries
-
-Make sure the user knows to install the following libraries:
-
+### 1.2 System Requirements
 ```bash
-npm i drizzle-orm dotenv postgres
-npm i -D drizzle-kit
+# Check system resources
+CPU: 4+ cores recommended
+RAM: 16GB+ recommended
+Storage: 256GB+ SSD
+OS: Linux/macOS/Windows WSL2
 ```
 
-## Setup Steps
+## 2. Version Control Setup
+### 2.1 Git Configuration
+```bash
+# Global Git configuration
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+git config --global core.editor "code --wait"
+git config --global init.defaultBranch main
 
-- [ ] Create a `/db` folder in the root of the project
-
-- [ ] Create a `/types` folder in the root of the project
-
-- [ ] Add a `drizzle.config.ts` file to the root of the project with the following code:
-
-```ts
-import { config } from "dotenv";
-import { defineConfig } from "drizzle-kit";
-
-config({ path: ".env.local" });
-
-export default defineConfig({
-schema: "./db/schema/index.ts",
-out: "./db/migrations",
-dialect: "postgresql",
-dbCredentials: {
-url: process.env.DATABASE_URL!
-}
-});
+# SSH key setup
+ssh-keygen -t ed25519 -C "your.email@example.com"
 ```
 
-- [ ] Add a file called `db.ts` to the `/db` folder with the following code:
-
-```ts
-import { config } from "dotenv";
-import { drizzle } from "drizzle-orm/postgres-js";
-import postgres from "postgres";
-import { exampleTable } from "./schema";
-
-config({ path: ".env.local" });
-
-const schema = {
-exampleTable
-};
-
-const client = postgres(process.env.DATABASE_URL!);
-
-export const db = drizzle(client, { schema });
+### 2.2 Repository Structure
+```
+backend/
+├── src/
+├── tests/
+├── docs/
+├── scripts/
+├── .gitignore
+├── .env.example
+├── docker-compose.yml
+└── README.md
 ```
 
-- [ ] Create 2 folders in the `/db` folder:
-
-- `/schema`
-- Add a file called `index.ts` to the `/schema` folder
-- `/queries`
-
-- [ ] Create an example table in the `/schema` folder called `example-schema.ts` with the following code:
-
-```ts
-import { integer, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
-
-export const exampleTable = pgTable("example", {
-id: uuid("id").defaultRandom().primaryKey(),
-name: text("name").notNull(),
-age: integer("age").notNull(),
-email: text("email").notNull(),
-createdAt: timestamp("created_at").defaultNow().notNull(),
-updatedAt: timestamp("updated_at")
-.notNull()
-.defaultNow()
-.$onUpdate(() => new Date())
-});
-
-export type InsertExample = typeof exampleTable.$inferInsert;
-export type SelectExample = typeof exampleTable.$inferSelect;
-```
-
-- [ ] Export the example table in the `/schema/index.ts` file like so:
-
-```ts
-export * from "./example-schema";
-```
-
-- [ ] Create a new file called `example-queries.ts` in the `/queries` folder with the following code:
-
-```ts
-"use server";
-
-import { eq } from "drizzle-orm";
-import { db } from "../db";
-import { InsertExample, SelectExample } from "../schema/example-schema";
-import { exampleTable } from "./../schema/example-schema";
-
-export const createExample = async (data: InsertExample) => {
-try {
-const [newExample] = await db.insert(exampleTable).values(data).returning();
-return newExample;
-} catch (error) {
-console.error("Error creating example:", error);
-throw new Error("Failed to create example");
-}
-};
-
-export const getExampleById = async (id: string) => {
-try {
-const example = await db.query.exampleTable.findFirst({
-where: eq(http://exampleTable.id, id)
-});
-if (!example) {
-throw new Error("Example not found");
-}
-return example;
-} catch (error) {
-console.error("Error getting example by ID:", error);
-throw new Error("Failed to get example");
-}
-};
-
-export const getAllExamples = async (): Promise<SelectExample[]> => {
-return db.query.exampleTable.findMany();
-};
-
-export const updateExample = async (id: string, data: Partial<InsertExample>) => {
-try {
-const [updatedExample] = await db.update(exampleTable).set(data).where(eq(http://exampleTable.id, id)).returning();
-return updatedExample;
-} catch (error) {
-console.error("Error updating example:", error);
-throw new Error("Failed to update example");
-}
-};
-
-export const deleteExample = async (id: string) => {
-try {
-await db.delete(exampleTable).where(eq(http://exampleTable.id, id));
-} catch (error) {
-console.error("Error deleting example:", error);
-throw new Error("Failed to delete example");
-}
-};
-```
-
-- [ ] In `package.json`, add the following scripts:
-
+## 3. Development Tools
+### 3.1 IDE Configuration
 ```json
-"scripts": {
-"db:generate": "npx drizzle-kit generate",
-"db:migrate": "npx drizzle-kit migrate"
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true
 }
 ```
 
-- [ ] Run the following command to generate the tables:
+### 3.2 Extensions
+- Language support
+- Linting tools
+- Debugging tools
+- Git integration
+- Docker integration
+- Database tools
 
+## 4. Docker Environment
+### 4.1 Docker Compose
+```yaml
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - NODE_ENV=development
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_USER=dev
+      - POSTGRES_PASSWORD=dev
+      - POSTGRES_DB=app
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  postgres_data:
+```
+
+### 4.2 Dockerfile
+```dockerfile
+FROM node:18-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+COPY . .
+
+EXPOSE 8000
+
+CMD ["npm", "run", "dev"]
+```
+
+## 5. Database Setup
+### 5.1 Local Development
 ```bash
-npm run db:generate
+# PostgreSQL setup
+createdb app_development
+createuser -P app_user
+
+# Migration setup
+npm install --save-dev sequelize-cli
+npx sequelize-cli init
 ```
 
-- [ ] Run the following command to migrate the tables:
-
-```bash
-npm run db:migrate
-```
-
-- [ ] Create a folder called `/actions` in the root of the project for server actions
-
-- [ ] Create folder called `/types` in the root of the project for shared types
-
-- [ ] Create a file called `action-types.ts` in the `/types/actions` folder for server action types with the following code:
-
-- [ ] Create file called `/types/index.ts` and export all the types from the `/types` folder like so:
-
-```ts
-export * from "./action-types";
-```
-
-- [ ] Create a file called `example-actions.ts` in the `/actions` folder for the example table's actions:
-
-```ts
-"use server";
-
-import { createExample, deleteExample, getAllExamples, getExampleById, updateExample } from "@/db/queries/example-queries";
-import { InsertExample } from "@/db/schema/example-schema";
-import { ActionState } from "@/types";
-import { revalidatePath } from "next/cache";
-
-export async function createExampleAction(data: InsertExample): Promise<ActionState> {
-try {
-const newExample = await createExample(data);
-revalidatePath("/examples");
-return { status: "success", message: "Example created successfully", data: newExample };
-} catch (error) {
-return { status: "error", message: "Failed to create example" };
-}
-}
-
-export async function getExampleByIdAction(id: string): Promise<ActionState> {
-try {
-const example = await getExampleById(id);
-return { status: "success", message: "Example retrieved successfully", data: example };
-} catch (error) {
-return { status: "error", message: "Failed to get example" };
-}
-}
-
-export async function getAllExamplesAction(): Promise<ActionState> {
-try {
-const examples = await getAllExamples();
-return { status: "success", message: "Examples retrieved successfully", data: examples };
-} catch (error) {
-return { status: "error", message: "Failed to get examples" };
-}
-}
-
-export async function updateExampleAction(id: string, data: Partial<InsertExample>): Promise<ActionState> {
-try {
-const updatedExample = await updateExample(id, data);
-revalidatePath("/examples");
-return { status: "success", message: "Example updated successfully", data: updatedExample };
-} catch (error) {
-return { status: "error", message: "Failed to update example" };
-}
-}
-
-export async function deleteExampleAction(id: string): Promise<ActionState> {
-try {
-await deleteExample(id);
-revalidatePath("/examples");
-return { status: "success", message: "Example deleted successfully" };
-} catch (error) {
-return { status: "error", message: "Failed to delete example" };
-}
-}
-```
-
-```ts
-export type ActionState = {
-status: "success" | "error";
-message: string;
-data?: any;
+### 5.2 Connection Configuration
+```javascript
+// config/database.js
+module.exports = {
+  development: {
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB_NAME,
+    host: process.env.DB_HOST,
+    dialect: 'postgres'
+  }
 };
 ```
-- [ ] Implement the server actions in the `/app/page.tsx` file to allow for manual testing.
 
-- [ ] The backend is now setup.
+## 6. Environment Configuration
+### 6.1 Environment Variables
+```bash
+# .env.example
+NODE_ENV=development
+PORT=8000
+
+# Database
+DB_HOST=localhost
+DB_PORT=5432
+DB_NAME=app_development
+DB_USER=app_user
+DB_PASSWORD=secret
+
+# Redis
+REDIS_HOST=localhost
+REDIS_PORT=6379
+
+# JWT
+JWT_SECRET=your-secret-key
+JWT_EXPIRES_IN=24h
+
+# API Keys
+API_KEY=your-api-key
+```
+
+### 6.2 Configuration Management
+```javascript
+// config/index.js
+require('dotenv').config();
+
+module.exports = {
+  env: process.env.NODE_ENV,
+  port: process.env.PORT,
+  db: {
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    name: process.env.DB_NAME,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD
+  },
+  redis: {
+    host: process.env.REDIS_HOST,
+    port: process.env.REDIS_PORT
+  }
+};
+```
+
+## 7. Testing Environment
+### 7.1 Test Configuration
+```javascript
+// jest.config.js
+module.exports = {
+  testEnvironment: 'node',
+  coverageDirectory: 'coverage',
+  collectCoverageFrom: ['src/**/*.js'],
+  setupFiles: ['<rootDir>/tests/setup.js']
+};
+```
+
+### 7.2 Test Database
+```bash
+# Create test database
+createdb app_test
+
+# Run migrations
+NODE_ENV=test npm run migrate
+```
+
+## 8. Continuous Integration
+### 8.1 GitHub Actions
+```yaml
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    services:
+      postgres:
+        image: postgres:14
+        env:
+          POSTGRES_USER: test
+          POSTGRES_PASSWORD: test
+          POSTGRES_DB: app_test
+        ports:
+          - 5432:5432
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+      - run: npm ci
+      - run: npm test
+```
+
+## Best Practices
+1. Use version control from start
+2. Document setup procedures
+3. Containerize development environment
+4. Implement automated testing
+5. Configure linting and formatting
+6. Secure sensitive information
+7. Maintain consistency across environments
+
+Remember: A well-configured development environment is crucial for productive backend development. Keep documentation updated and automate setup processes where possible. 

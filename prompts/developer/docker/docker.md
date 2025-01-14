@@ -1,69 +1,396 @@
-You are an expert developer specializing in containerizing applications and orchestrating multi-container environments using Docker and Docker Compose.
+---
+title: Docker Development Guide
+path: developer/frameworks/docker/docker-development-guide
+tags:
+  - docker
+  - containerization
+  - devops
+  - deployment
+  - infrastructure
+description: A comprehensive guide for developing and deploying applications using Docker, covering containerization best practices, multi-container applications, and production deployment strategies.
+---
 
-You always use the latest stable versions of Docker, Docker Compose, and related tools, and you are familiar with the latest features, best practices, and security guidelines.
+# Docker Development Guide
 
-You provide accurate, factual, and thoughtful answers, excelling at reasoning about containerization strategies, multi-container setups, and Docker best practices.
+## Core Principles
+1. Isolation - Keep applications and dependencies self-contained
+2. Portability - Ensure consistent behavior across environments
+3. Efficiency - Optimize resource usage and build times
+4. Security - Follow security best practices for containers
 
-Technical preferences for Docker development:
+## Docker Setup
 
-- Use multi-stage builds to create smaller, more efficient images
-- Leverage Docker Compose for multi-container applications
-- Implement health checks for containers to ensure service availability
-- Use environment variables for configuration
-- Utilize Docker volumes for persistent data storage
-- Implement proper logging strategies for containerized applications
+### 1. Development Environment
+```bash
+# Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
 
-Best practices:
+# Install Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
 
-- Always use specific tags for base images, avoiding 'latest' tag in production
-- Minimize the number of layers in Dockerfiles for efficiency
-- Use .dockerignore files to exclude unnecessary files from the build context
-- Implement least privilege principle: run containers as non-root users when possible
-- Use official Docker images as base images when available
-- Properly manage secrets and sensitive data in Docker environments
+# Verify installation
+docker --version
+docker-compose --version
+```
 
-Docker Compose guidelines:
+### 2. Project Structure
+```
+project/
+├── docker/              # Docker-related files
+│   ├── development/    # Development configurations
+│   └── production/     # Production configurations
+├── src/                # Application source code
+├── .dockerignore       # Files to exclude
+├── docker-compose.yml  # Service definitions
+└── Dockerfile          # Main Dockerfile
+```
 
-- Use version 3 or later of the Compose file format
-- Define service dependencies using the 'depends_on' option
-- Use named volumes for data persistence across container rebuilds
-- Implement proper networking between services
-- Utilize environment files (.env) for managing environment variables
-- Use profiles for managing different deployment scenarios
+## Dockerfile Development
 
-Security guidelines:
+### 1. Base Dockerfile
+```dockerfile
+# Use multi-stage builds
+FROM node:18-alpine AS builder
 
-- Regularly update base images and dependencies
-- Scan images for vulnerabilities using tools like Docker Scan
-- Implement resource limits for containers (CPU, memory)
-- Use read-only file systems when possible
-- Avoid running containers in privileged mode
-- Implement proper network segmentation in multi-container setups
+# Set working directory
+WORKDIR /app
 
-Dockerfile and Compose file best practices:
+# Copy package files
+COPY package*.json ./
 
-- Keep Dockerfiles and Compose files in version control
-- Use ARG instructions in Dockerfiles for build-time variables
-- Implement proper CMD and ENTRYPOINT instructions
-- Use COPY instead of ADD unless specifically needed
-- Group RUN commands to reduce layers
-- Use appropriate restart policies in Docker Compose
+# Install dependencies
+RUN npm ci
 
-General guidelines:
+# Copy source code
+COPY . .
 
-- Follow the user's requirements carefully and precisely
-- Write correct, up-to-date, bug-free, fully functional, secure, and efficient Dockerfiles and Compose files
-- Focus on creating reproducible and portable container environments
-- Fully implement all requested functionality
-- Avoid leaving TODOs, placeholders, or missing pieces in the configuration
-- Reference file names, Docker commands, and Compose options accurately
-- Be concise in explanations, focusing on Docker-specific details
-- If unsure about a Docker feature or best practice, state so instead of guessing
+# Build application
+RUN npm run build
 
-When containerizing applications:
+# Production stage
+FROM node:18-alpine
 
-- Consider the specific requirements of the application (e.g., stateless vs. stateful)
-- Implement proper error handling and recovery mechanisms for containers
-- Use Docker's built-in logging drivers or implement centralized logging solutions
-- Consider scalability and load balancing for production environments
-- Be aware of differences between development and production Docker setups
+WORKDIR /app
+
+# Copy built assets from builder
+COPY --from=builder /app/dist ./dist
+COPY --from=builder /app/package*.json ./
+
+# Install production dependencies
+RUN npm ci --only=production
+
+# Set environment variables
+ENV NODE_ENV=production
+
+# Expose port
+EXPOSE 3000
+
+# Start application
+CMD ["npm", "start"]
+```
+
+### 2. Development Dockerfile
+```dockerfile
+# docker/development/Dockerfile
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Install development dependencies
+COPY package*.json ./
+RUN npm install
+
+# Copy source code
+COPY . .
+
+# Enable hot reloading
+ENV NODE_ENV=development
+CMD ["npm", "run", "dev"]
+```
+
+## Docker Compose Configuration
+
+### 1. Development Setup
+```yaml
+# docker-compose.yml
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/development/Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+      - DATABASE_URL=postgres://user:pass@db:5432/dbname
+    depends_on:
+      - db
+      - redis
+
+  db:
+    image: postgres:14-alpine
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=dbname
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:alpine
+    volumes:
+      - redis_data:/data
+
+volumes:
+  postgres_data:
+  redis_data:
+```
+
+### 2. Production Setup
+```yaml
+# docker-compose.prod.yml
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - DATABASE_URL=postgres://user:pass@db:5432/dbname
+    depends_on:
+      - db
+      - redis
+    networks:
+      - app_network
+
+  db:
+    image: postgres:14-alpine
+    restart: unless-stopped
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=pass
+      - POSTGRES_DB=dbname
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - app_network
+
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    volumes:
+      - redis_data:/data
+    networks:
+      - app_network
+
+  nginx:
+    image: nginx:alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./certs:/etc/nginx/certs:ro
+    depends_on:
+      - app
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge
+
+volumes:
+  postgres_data:
+  redis_data:
+```
+
+## Development Workflow
+
+### 1. Building Images
+```bash
+# Build development environment
+docker-compose build
+
+# Build production image
+docker-compose -f docker-compose.prod.yml build
+```
+
+### 2. Running Containers
+```bash
+# Start development environment
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop containers
+docker-compose down
+```
+
+## Production Deployment
+
+### 1. Container Registry
+```bash
+# Log in to registry
+docker login registry.example.com
+
+# Tag image
+docker tag myapp:latest registry.example.com/myapp:latest
+
+# Push image
+docker push registry.example.com/myapp:latest
+```
+
+### 2. Deployment Script
+```bash
+#!/bin/bash
+# deploy.sh
+
+# Pull latest images
+docker-compose -f docker-compose.prod.yml pull
+
+# Deploy new containers
+docker-compose -f docker-compose.prod.yml up -d
+
+# Clean up old images
+docker image prune -f
+```
+
+## Optimization Techniques
+
+### 1. Image Optimization
+```dockerfile
+# Use .dockerignore
+node_modules
+npm-debug.log
+Dockerfile
+.dockerignore
+.git
+.gitignore
+README.md
+
+# Layer caching
+COPY package*.json ./
+RUN npm ci
+COPY . .
+
+# Multi-stage builds
+FROM node:18-alpine AS builder
+# ... build stage ...
+
+FROM node:18-alpine
+# ... production stage ...
+```
+
+### 2. Resource Management
+```yaml
+# docker-compose.yml with resource limits
+services:
+  app:
+    deploy:
+      resources:
+        limits:
+          cpus: '0.50'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+```
+
+## Monitoring and Logging
+
+### 1. Container Monitoring
+```yaml
+# docker-compose.yml with monitoring
+services:
+  prometheus:
+    image: prom/prometheus
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+```
+
+### 2. Logging Configuration
+```yaml
+# docker-compose.yml with logging
+services:
+  app:
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+```
+
+## Security Best Practices
+
+### 1. Container Security
+- Use official base images
+- Run containers as non-root
+- Scan images for vulnerabilities
+- Implement least privilege principle
+- Keep base images updated
+
+### 2. Network Security
+- Use custom networks
+- Limit exposed ports
+- Implement TLS
+- Use secrets management
+- Monitor container communications
+
+### 3. Access Control
+- Implement RBAC
+- Use secrets for sensitive data
+- Rotate credentials regularly
+- Audit container access
+- Monitor user activities
+
+## Best Practices
+
+### 1. Development
+- Use multi-stage builds
+- Optimize layer caching
+- Implement health checks
+- Document configurations
+- Use version control
+
+### 2. Deployment
+- Use orchestration tools
+- Implement rolling updates
+- Monitor resource usage
+- Back up persistent data
+- Plan for scalability
+
+### 3. Maintenance
+- Regular security updates
+- Monitor performance
+- Implement logging
+- Document procedures
+- Test disaster recovery
+
+## Resources
+1. [Docker Documentation](https://docs.docker.com/)
+2. [Docker Compose Documentation](https://docs.docker.com/compose/)
+3. [Docker Security](https://docs.docker.com/engine/security/)
+4. [Docker Best Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
+5. [Container Security Guide](https://snyk.io/learn/container-security/) 

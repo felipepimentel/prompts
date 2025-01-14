@@ -1,24 +1,14 @@
 ---
-title: "Agentic Workflow Documentation System"
-author: "Cursor Development Team"
-date: "`r format(Sys.time(), '%B %d, %Y')`"
-output:
-  html_document:
-    theme: united
-    highlight: tango
-    toc: yes
-    toc_depth: 3
-    toc_float:
-      collapsed: no
-      smooth_scroll: yes
-    code_folding: show
-bibliography: references.bib
+title: "Agentic Workflow Documentation Framework"
+path: "developer/cursor/agents/agentic-workflow-framework"
+tags: ["development", "documentation", "workflow", "agent-systems", "orchestration"]
+description: "A comprehensive framework for documenting and managing multi-agent workflows, providing a centralized source of truth for coordinated development through structured information exchange and standardized interfaces."
 ---
 
-# Documentation Database as Source of Truth
+# Agentic Workflow Documentation Framework
 
 ## Overview
-The Documentation Database serves as a central Source of Truth (SoT) for multi-agent workflows, enabling coordinated development through structured information exchange and standardized interfaces.
+The Agentic Workflow Documentation Framework serves as a central Source of Truth (SoT) for multi-agent workflows, enabling coordinated development through structured information exchange and standardized interfaces.
 
 ## Core Components
 

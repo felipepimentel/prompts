@@ -1,77 +1,197 @@
-# Project Development and Management Guide
+---
+title: Spring Boot Development Guide
+path: developer/instructions/java-springboot-dev-guide.md
+tags: ["java", "spring-boot", "backend", "development", "best-practices"]
+description: A comprehensive guide for developing robust Spring Boot applications with best practices and modern development patterns
+---
 
-## 1. Project Initialization
-- Set up Spring Boot project structure
-- Configure Shiro for security framework
-- Integrate Mybatis-Plus as ORM
-- Set up Flowable for workflow management
+# Spring Boot Development Guide
 
-## 2. Database Design
-- Design database schema
-- Implement ShardingSphere for read/write splitting and sharding
-- Create necessary tables for Flowable workflows
+## 1. Project Setup
+### 1.1 Initial Configuration
+- Use Spring Initializr
+- Configure Maven/Gradle
+- Set up project structure
+- Configure application properties
+- Set up environment profiles
 
-## 3. Code Generation
-- Use built-in code generator for:
-  - Controllers
-  - Services
-  - DAOs
-  - Entities
-  - Vue components
-- Customize generated code as needed
+### 1.2 Dependencies
+- Spring Boot Starter Web
+- Spring Data JPA
+- Spring Security
+- Lombok
+- MyBatis-Plus
+- ShardingSphere
+- Testing dependencies
 
-## 4. Implement Core Functionalities
-- Develop services using CrudService interface
-- Implement dictionary management system
-- Set up UReport2.0 for reporting needs
-- Integrate EasyExcel for import/export functions
+## 2. Architecture
+### 2.1 Layer Structure
+```
+src/
+├── main/
+│   ├── java/
+│   │   └── com/example/project/
+│   │       ├── config/
+│   │       ├── controller/
+│   │       ├── service/
+│   │       ├── repository/
+│   │       ├── entity/
+│   │       ├── dto/
+│   │       ├── mapper/
+│   │       └── util/
+│   └── resources/
+│       ├── application.yml
+│       ├── application-dev.yml
+│       └── application-prod.yml
+└── test/
+```
 
-## 5. Security Implementation
-- Configure Shiro security policies
-- Implement authentication and authorization
-- Secure API endpoints
+### 2.2 Design Patterns
+- Repository pattern
+- Service layer pattern
+- DTO pattern
+- Builder pattern
+- Factory pattern
+- Strategy pattern
 
-## 6. Workflow Development
-- Design and implement Flowable workflows
-- Integrate workflows with business processes
+## 3. Database Integration
+### 3.1 JPA Configuration
+- Entity mapping
+- Repository interfaces
+- Transaction management
+- Auditing setup
+- Naming strategies
 
-## 7. Frontend Development
-- Develop Vue.js components
-- Integrate with backend APIs
-- Implement responsive design
+### 3.2 MyBatis-Plus Setup
+- Mapper configuration
+- Custom SQL queries
+- Code generation
+- Pagination setup
+- Dynamic queries
 
-## 8. Testing
-- Write unit tests for services and controllers
-- Perform integration testing
-- Conduct user acceptance testing
+### 3.3 ShardingSphere
+- Sharding configuration
+- Data source setup
+- Routing strategies
+- Read/write splitting
+- Transaction handling
 
-## 9. Performance Optimization
-- Optimize database queries using Mybatis-Plus
-- Implement caching where appropriate
-- Fine-tune ShardingSphere configuration
+## 4. Security Implementation
+### 4.1 Authentication
+- JWT implementation
+- OAuth2 integration
+- User management
+- Role-based access
+- Session handling
 
-## 10. Documentation
-- Write API documentation
-- Create user manuals
-- Document database schema and relationships
+### 4.2 Authorization
+- Method security
+- URL security
+- Role hierarchies
+- Custom permissions
+- Security filters
 
-## 11. Deployment
-- Set up CI/CD pipeline
-- Configure production environment
-- Plan for data migration (if applicable)
+## 5. API Development
+### 5.1 RESTful Standards
+- Resource naming
+- HTTP methods
+- Status codes
+- Request/Response DTOs
+- Versioning strategy
 
-## 12. Maintenance and Updates
-- Monitor system performance
-- Address bug reports
-- Plan and implement new features
+### 5.2 Documentation
+- OpenAPI/Swagger
+- API versioning
+- Error responses
+- Authentication docs
+- Example requests
 
-Remember:
-- Regularly commit code and push to version control
-- Conduct code reviews before merging into main branch
-- Keep libraries and dependencies up to date
-- Regularly back up the database
-- Document any major decisions or changes in the project
+## 6. Error Handling
+### 6.1 Global Exception Handler
+```java
+@ControllerAdvice
+public class GlobalExceptionHandler {
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<ErrorResponse> handleException(Exception ex) {
+        // Implementation
+    }
+}
+```
 
-Always strive to write secure, performant, and maintainable code. Provide explanations for your design choices and any potential optimizations. Adapt the steps as necessary to fit the specific requirements and constraints of the project.
+### 6.2 Custom Exceptions
+- Business exceptions
+- Validation exceptions
+- Security exceptions
+- Resource exceptions
+- Integration exceptions
 
-When using this guide, always consider the specific requirements and constraints of your project. Adapt the steps as necessary to fit your team's workflow and the project's needs.
+## 7. Testing
+### 7.1 Unit Testing
+- Service layer tests
+- Repository tests
+- Utility tests
+- Mocking strategies
+- Test data setup
+
+### 7.2 Integration Testing
+- API endpoint tests
+- Database integration
+- Security testing
+- Performance testing
+- Load testing
+
+## 8. Performance Optimization
+### 8.1 Caching
+- Redis integration
+- Cache configuration
+- Cache strategies
+- Eviction policies
+- Distributed caching
+
+### 8.2 Database Optimization
+- Query optimization
+- Index strategies
+- Connection pooling
+- Batch processing
+- Lazy loading
+
+## 9. Monitoring and Logging
+### 9.1 Actuator Setup
+- Health checks
+- Metrics collection
+- Audit logging
+- Performance monitoring
+- Resource tracking
+
+### 9.2 Logging Configuration
+- Log levels
+- Log rotation
+- Log aggregation
+- Error tracking
+- Performance logging
+
+## 10. Deployment
+### 10.1 Build Process
+- Maven/Gradle builds
+- Docker configuration
+- Environment setup
+- Resource allocation
+- Version management
+
+### 10.2 CI/CD Pipeline
+- Build automation
+- Test automation
+- Quality checks
+- Deployment scripts
+- Rollback procedures
+
+## Best Practices
+1. Follow SOLID principles
+2. Write clean, maintainable code
+3. Document thoroughly
+4. Test comprehensively
+5. Monitor performance
+6. Handle errors gracefully
+7. Secure endpoints properly
+
+Remember: Spring Boot development requires attention to architecture, security, and performance. Always follow best practices and maintain comprehensive documentation. 

@@ -1,59 +1,126 @@
-# Code Review Guidelines
+---
+title: Comprehensive Code Review Guidelines
+path: developer/instructions/code-review-outline.md
+tags: ["code-review", "best-practices", "development", "quality-assurance", "collaboration"]
+description: A detailed guide for conducting effective code reviews, focusing on quality, collaboration, and knowledge sharing
+---
 
-## 1. Prepare for the Review
-- Ensure all tests are passing
-- Review your own code first
-- Provide context in the pull request description
+# Comprehensive Code Review Process
 
-## 2. What to Look For
+## 1. Pre-Review Preparation
+### 1.1 Code Author Responsibilities
+- Run and pass all tests locally
+- Perform self-review of changes
+- Ensure code meets style guidelines
+- Document significant changes
+- Prepare clear context for reviewers
+
+### 1.2 Review Scope
+- Define review objectives
+- Identify critical areas
+- Set appropriate timeframe
+- Select relevant reviewers
+- Prepare review checklist
+
+## 2. Review Focus Areas
 ### 2.1 Code Quality
-- Is the code clear and easy to understand?
-- Does it follow the project's coding standards?
-- Are there any overly complex parts that could be simplified?
+- Code clarity and readability
+- Adherence to coding standards
+- Complexity assessment
+- Design patterns usage
+- Code organization
+- Naming conventions
 
 ### 2.2 Functionality
-- Does the code do what it's supposed to do?
-- Are all edge cases handled?
-- Is there proper error handling?
+- Requirements fulfillment
+- Business logic correctness
+- Edge case handling
+- Error management
+- Input validation
+- State management
 
 ### 2.3 Performance
-- Are there any obvious performance issues?
-- Could any operations be optimized?
+- Algorithm efficiency
+- Resource utilization
+- Query optimization
+- Memory management
+- Caching strategy
+- Scalability considerations
 
 ### 2.4 Security
-- Are there any potential security vulnerabilities?
-- Is sensitive data properly protected?
+- Authentication/Authorization
+- Input sanitization
+- Data protection
+- Security best practices
+- Vulnerability prevention
+- Secure configuration
 
 ### 2.5 Testing
-- Are there adequate unit tests?
-- Do the tests cover critical paths and edge cases?
+- Test coverage adequacy
+- Test quality and relevance
+- Edge case coverage
+- Integration test scenarios
+- Performance test cases
+- Security test cases
 
-## 3. How to Comment
-- Be specific and clear in your feedback
-- Explain your reasoning
-- Suggest improvements, don't just point out problems
-- Use a constructive and respectful tone
+## 3. Review Communication
+### 3.1 Providing Feedback
+- Be specific and actionable
+- Use constructive language
+- Explain reasoning clearly
+- Suggest improvements
+- Share knowledge
+- Maintain professionalism
 
-## 4. Responding to Reviews
-- Thank reviewers for their time and input
-- Respond to every comment
-- Be open to feedback and willing to make changes
-- If you disagree, explain your reasoning politely
+### 3.2 Responding to Reviews
+- Address all comments
+- Explain design decisions
+- Be open to feedback
+- Discuss alternatives
+- Document resolutions
+- Express appreciation
 
-## 5. When to Approve
-- The code functions as intended
-- It follows the project's coding standards
-- There are no major design issues
-- Adequate tests are in place
+## 4. Review Approval Criteria
+### 4.1 Technical Requirements
+- Functionality verified
+- Tests passing
+- Performance acceptable
+- Security validated
+- Documentation complete
+- Code standards met
 
-## 6. After the Review
-- Make the agreed-upon changes
-- Re-request review if significant changes were made
-- Update documentation if necessary
+### 4.2 Process Requirements
+- All comments addressed
+- Changes documented
+- Tests updated
+- CI/CD passing
+- Documentation updated
+- Dependencies verified
 
-## 7. Best Practices
-- Review in multiple passes (e.g., functionality first, then style)
-- Don't review for more than 60-90 minutes at a time
-- If a review is too large, request that it be broken down
+## 5. Post-Review Actions
+### 5.1 Code Author
+- Apply agreed changes
+- Update documentation
+- Request re-review if needed
+- Prepare for deployment
+- Monitor post-merge
+- Share learnings
 
-Remember: The goal of code review is to improve code quality and share knowledge, not to criticize the developer. Always approach reviews with a collaborative mindset.
+### 5.2 Reviewer
+- Verify changes applied
+- Confirm requirements met
+- Document decisions
+- Share best practices
+- Follow up on concerns
+- Approve final changes
+
+## Best Practices
+1. Review manageable chunks
+2. Focus on important issues
+3. Automate where possible
+4. Share knowledge actively
+5. Maintain positive attitude
+6. Learn from each review
+7. Document decisions made
+
+Remember: Code reviews are opportunities for learning and improvement. Focus on collaboration and knowledge sharing while maintaining high quality standards. 

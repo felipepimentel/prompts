@@ -1,1 +1,422 @@
-We're implementing a higher-level control structure for our z80 cellular automata simulation, which we call the "environmental region grid."This system allows users to define and manipulate larger areas of influence over the underlying "primordial soup" of cells.Key Concepts:1. Soup Cells: The individual units of our cellular automata, which follow basic rules and interact with their neighbors.2. Regions: Larger areas that encompass multiple soup cells. Each region can have unique properties that influence the behavior of the soup cells within it.3. Environmental Region Grid: A grid overlaid on top of the soup cell grid, dividing the simulation space into discrete regions. This grid can be 4x4, 8x8, or 16x16, allowing for different levels of granularity.4. Region Parameters: Each region has a set of adjustable parameters that affect the soup cells within it. These could include: - Obstacle (A region that blocks the movement of soup cells) - Directional influence (biasing cell interactions in specific directions) - Randomness factor (introducing more or less chaos in cell behavior) - Temperature (affecting overall activity levels) - Energy levels (influencing the likelihood of certain cell states or interactions) - Other custom parameters as needed5. Dynamic Influence: The region parameters dynamically modify the behavior of soup cells, creating areas of distinct characteristics within the larger simulation.6. User Interaction: Users can interact with the simulation by adjusting region parameters in real-time, allowing for on-the-fly modification of the simulation's behavior.7. Visualization: The region grid and its effects are visually represented, allowing users to see the influence of their changes on the simulation.Purpose:This system adds a new layer of complexity and control to the cellular automata simulation. It allows for the creation of diverse environments within a single simulation, enabling users to explore how different regional properties affect the emergent behavior of the cellular automata.By implementing this region grid system, we're providing a powerful tool for users to experiment with large-scale influences on cellular automata behavior, potentially leading to new insights and interesting emergent phenomena.Plan:1. Define the Region Structure:Create a comprehensive data structure to represent each region. This structure should be flexible enough to accommodate various parameters that can influence the behavior of soup cells within that region. Consider including: - Obstacle - Directional influence (for each cardinal direction) - Randomness factor - Temperature - Energy level - Any other relevant parametersEnsure that each parameter is represented by an appropriate data type, typically using floating-point numbers for continuous values or integers for discrete states. This structure will be the foundation of your region system, so design it with extensibility in mind.2. Create the Region Grid:Implement a two-dimensional array to represent the region grid. This grid should be flexible in size, allowing for configurations such as 4x4, 8x8, or 16x16. Each element of this array will be an instance of the region structure defined in step 1. Initialize this grid with default values for all parameters, ensuring a consistent starting state. Consider implementing methods to easily resize the grid and maintain the aspect ratio with the underlying soup cells.3. Implement Soup Cell to Region Mapping:Develop a system to efficiently map each soup cell to its corresponding region. This mapping is crucial for quick lookups during simulation. Create a separate array where each element represents a soup cell and contains the index or reference to its associated region. Implement functions to update this mapping whenever the region grid size changes. Ensure that this mapping system is optimized for performance, as it will be frequently accessed during the simulation.4. Modify the Main Simulation Loop:Update the core simulation logic to incorporate region parameters. For each soup cell update: a. Determine the cell's corresponding region using the mapping created in step 3. b. Retrieve the region's parameters. c. Apply the effects of each parameter to the soup cell's behavior.This might involve adjusting probabilities, modifying state transition rules, or influencing the cell's interaction with neighbors. Ensure that this integration is done efficiently to maintain simulation performance.5. Implement Parameter-Specific Logic:For each parameter in the region structure, create dedicated functions or methods to apply its effects. For example: - Obstacle: Turns the cell into an obstacle, preventing it from being randomly selected, and preventing neighbor soup cells from interacting with it. - Directional influence: Adjust the probability of a cell interacting with neighbors in specific directions. - Randomness: Introduce variability in state transitions or cell behavior. - Temperature: Affect the overall activity level or energy of cells within the region. - Energy level: Influence the likelihood of certain operations or state changes.Design these functions to be modular and easily expandable, allowing for the addition of new parameters in the future without major code restructuring.6. Enhance the WASM Interface:Extend the WebAssembly interface to handle the new region grid system. This involves: a. Creating functions to set and get the entire region grid state, allowing for efficient data transfer between JavaScript and WASM. b. Implementing additional functions for manipulating individual regions or specific parameters. c. Ensuring these functions are properly exported and accessible from the JavaScript side. d. Optimizing data transfer to minimize performance overhead, especially for larger grid sizes.7. Develop the User Interface:Design and implement a comprehensive user interface for manipulating the region grid. This should include: a. A visual representation of the region grid, possibly overlaid on the main simulation view. b. Interactive elements for each region, allowing users to adjust parameters individually. c. Global controls for setting grid size and applying presets. d. A system for selecting different "brushes" or tools for painting parameter values across multiple regions. e. Real-time feedback showing the effects of parameter changes on the simulation.Ensure that the UI is intuitive and responsive, providing users with immediate visual feedback on their actions.8. Create a Region Visualization System:Develop a robust visualization system for the regions. This should: a. Visually represent the various parameters of each region, possibly using color coding, patterns, or overlays. b. Update in real-time as parameters are changed, providing immediate feedback to the user. c. Implement different visualization modes to focus on specific parameters or overall region states. d. Ensure that the visualization is clear and distinguishable from the underlying soup cell simulation.9. Implement Data Synchronization:Create an efficient system for keeping the region grid data synchronized between the JavaScript UI and the WASM simulation. This might involve: a. Implementing periodic updates at set intervals. b. Creating an event-driven synchronization system that updates when changes occur. c. Optimizing large data transfers to maintain smooth performance, possibly using typed arrays or other efficient data structures. d. Implementing a queuing system for updates to prevent overwhelming the simulation with rapid changes.10. Update the Shader Code:Modify the fragment shader used for rendering the simulation to incorporate region effects. This involves: a. Passing region data to the shader, either as a texture or uniform array. b. Updating the shader logic to consider region parameters when rendering cells. c. Implementing visual effects that reflect the influence of region parameters, such as color shifts, intensity variations, or particle effects. d. Optimizing the shader code to maintain performance, especially for larger simulations or complex region effects.This system will allow for complex, user-defined behaviors across the simulation space, significantly enhancing the depth and interactivity of the cellular automata simulation.
+---
+title: WebAssembly Z80 Cellular Automata Guide
+path: developer/frameworks/wasm/webassembly-z80-cellular-automata-guide
+tags:
+  - webassembly
+  - z80
+  - assembly
+  - cellular-automata
+  - performance
+description: A comprehensive guide for implementing cellular automata using WebAssembly and Z80 assembly, focusing on performance optimization and low-level programming techniques.
+---
+
+# WebAssembly Z80 Cellular Automata Guide
+
+## Core Principles
+1. Performance - Optimize for speed using low-level programming
+2. Memory Efficiency - Minimize memory usage and optimize access patterns
+3. Cross-Platform - Ensure compatibility across different browsers
+4. Integration - Seamlessly integrate with JavaScript/TypeScript
+
+## Project Setup
+
+### 1. Environment Setup
+```bash
+# Install WebAssembly tools
+npm install -g wabt
+npm install -g wasm-pack
+
+# Install Z80 assembler
+npm install -g z80-asm
+
+# Create project directory
+mkdir wasm-z80-automata
+cd wasm-z80-automata
+
+# Initialize project
+npm init -y
+npm install --save-dev webpack webpack-cli typescript ts-loader
+```
+
+### 2. Project Structure
+```
+wasm-z80-automata/
+├── src/
+│   ├── assembly/        # Z80 assembly code
+│   ├── wasm/           # WebAssembly modules
+│   ├── ts/             # TypeScript interface
+│   └── web/            # Web interface
+├── public/             # Static assets
+└── build/              # Compiled output
+```
+
+## Z80 Assembly Implementation
+
+### 1. Grid Implementation
+```assembly
+; src/assembly/grid.asm
+; Grid dimensions
+GRID_WIDTH:  equ 64
+GRID_HEIGHT: equ 64
+GRID_SIZE:   equ GRID_WIDTH * GRID_HEIGHT
+
+section .data
+grid:        ds GRID_SIZE    ; Current generation
+next_grid:   ds GRID_SIZE    ; Next generation
+
+section .text
+global update_cell
+
+; Update single cell based on neighbors
+; Input: HL = cell address
+; Uses: BC = neighbor count
+update_cell:
+    push bc
+    push de
+    
+    ; Initialize neighbor count
+    ld b, 0
+    
+    ; Check all 8 neighbors
+    ; North
+    ld de, -GRID_WIDTH
+    add hl, de
+    ld a, (hl)
+    and 1
+    add a, b
+    ld b, a
+    
+    ; Northeast
+    inc hl
+    ld a, (hl)
+    and 1
+    add a, b
+    ld b, a
+    
+    ; Continue for other directions...
+    
+    ; Apply rules
+    ld a, b
+    cp 2
+    jr z, .survive
+    cp 3
+    jr z, .survive
+    xor a
+    jr .done
+.survive:
+    ld a, 1
+.done:
+    pop de
+    pop bc
+    ret
+```
+
+### 2. Generation Update
+```assembly
+; src/assembly/update.asm
+section .text
+global update_generation
+
+; Update entire grid
+; No input parameters
+update_generation:
+    push bc
+    push de
+    push hl
+    
+    ; Initialize grid pointer
+    ld hl, grid
+    ld de, next_grid
+    ld bc, GRID_SIZE
+    
+.loop:
+    ; Update current cell
+    call update_cell
+    
+    ; Store result in next grid
+    ld (de), a
+    
+    ; Move to next cell
+    inc hl
+    inc de
+    
+    ; Check if done
+    dec bc
+    ld a, b
+    or c
+    jr nz, .loop
+    
+    ; Copy next grid to current
+    ld hl, next_grid
+    ld de, grid
+    ld bc, GRID_SIZE
+    ldir
+    
+    pop hl
+    pop de
+    pop bc
+    ret
+```
+
+## WebAssembly Integration
+
+### 1. Memory Interface
+```typescript
+// src/wasm/memory.ts
+export class WasmMemory {
+  private memory: WebAssembly.Memory
+  private GRID_SIZE = 64 * 64
+
+  constructor() {
+    this.memory = new WebAssembly.Memory({
+      initial: 1, // 64KB pages
+      maximum: 1,
+    })
+  }
+
+  getGridBuffer(): Uint8Array {
+    return new Uint8Array(
+      this.memory.buffer,
+      0,
+      this.GRID_SIZE
+    )
+  }
+
+  getNextGridBuffer(): Uint8Array {
+    return new Uint8Array(
+      this.memory.buffer,
+      this.GRID_SIZE,
+      this.GRID_SIZE
+    )
+  }
+}
+```
+
+### 2. WebAssembly Module
+```typescript
+// src/wasm/module.ts
+import { WasmMemory } from './memory'
+
+export class AutomataModule {
+  private wasmMemory: WasmMemory
+  private wasmInstance: WebAssembly.Instance | null = null
+
+  constructor() {
+    this.wasmMemory = new WasmMemory()
+  }
+
+  async initialize(): Promise<void> {
+    const response = await fetch('automata.wasm')
+    const wasmBytes = await response.arrayBuffer()
+    const wasmModule = await WebAssembly.compile(wasmBytes)
+    
+    this.wasmInstance = await WebAssembly.instantiate(wasmModule, {
+      env: {
+        memory: this.wasmMemory.memory,
+      },
+    })
+  }
+
+  updateGeneration(): void {
+    if (!this.wasmInstance) {
+      throw new Error('Module not initialized')
+    }
+    
+    this.wasmInstance.exports.update_generation()
+  }
+
+  getGrid(): Uint8Array {
+    return this.wasmMemory.getGridBuffer()
+  }
+}
+```
+
+## Rendering Implementation
+
+### 1. Canvas Renderer
+```typescript
+// src/ts/renderer.ts
+export class AutomataRenderer {
+  private ctx: CanvasRenderingContext2D
+  private cellSize: number
+  private gridSize: number
+
+  constructor(
+    canvas: HTMLCanvasElement,
+    gridSize: number = 64,
+    cellSize: number = 8
+  ) {
+    this.ctx = canvas.getContext('2d')!
+    this.gridSize = gridSize
+    this.cellSize = cellSize
+    
+    canvas.width = gridSize * cellSize
+    canvas.height = gridSize * cellSize
+  }
+
+  render(grid: Uint8Array): void {
+    this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height)
+    
+    for (let y = 0; y < this.gridSize; y++) {
+      for (let x = 0; x < this.gridSize; x++) {
+        const idx = y * this.gridSize + x
+        if (grid[idx]) {
+          this.ctx.fillStyle = '#000'
+          this.ctx.fillRect(
+            x * this.cellSize,
+            y * this.cellSize,
+            this.cellSize,
+            this.cellSize
+          )
+        }
+      }
+    }
+  }
+}
+```
+
+### 2. Animation Loop
+```typescript
+// src/ts/animation.ts
+import { AutomataModule } from '../wasm/module'
+import { AutomataRenderer } from './renderer'
+
+export class AutomataAnimation {
+  private module: AutomataModule
+  private renderer: AutomataRenderer
+  private animationFrame: number | null = null
+
+  constructor(module: AutomataModule, renderer: AutomataRenderer) {
+    this.module = module
+    this.renderer = renderer
+  }
+
+  start(): void {
+    if (this.animationFrame !== null) return
+    
+    const animate = () => {
+      this.module.updateGeneration()
+      this.renderer.render(this.module.getGrid())
+      this.animationFrame = requestAnimationFrame(animate)
+    }
+    
+    this.animationFrame = requestAnimationFrame(animate)
+  }
+
+  stop(): void {
+    if (this.animationFrame !== null) {
+      cancelAnimationFrame(this.animationFrame)
+      this.animationFrame = null
+    }
+  }
+}
+```
+
+## Performance Optimization
+
+### 1. Memory Access
+```typescript
+// src/wasm/optimization.ts
+export class OptimizedMemory {
+  private static readonly PAGE_SIZE = 65536 // 64KB
+  private static readonly GRID_SIZE = 4096  // 64x64
+
+  static createMemoryLayout(): WebAssembly.Memory {
+    // Align grid to page boundaries for optimal access
+    return new WebAssembly.Memory({
+      initial: 2, // Two pages: one for current, one for next
+      maximum: 2,
+    })
+  }
+
+  static getOptimalBufferOffset(index: number): number {
+    // Align to 8-byte boundaries for optimal access
+    return Math.floor(index / 8) * 8
+  }
+}
+```
+
+### 2. SIMD Operations
+```typescript
+// src/wasm/simd.ts
+export class SimdOptimizations {
+  static async enableSimd(): Promise<boolean> {
+    try {
+      await WebAssembly.validate(new Uint8Array([
+        0x00, 0x61, 0x73, 0x6d, // magic
+        0x01, 0x00, 0x00, 0x00, // version
+        0x00,                   // section
+        0xfd, 0x04,            // SIMD
+      ]))
+      return true
+    } catch {
+      return false
+    }
+  }
+}
+```
+
+## Testing Strategy
+
+### 1. Unit Tests
+```typescript
+// src/tests/grid.test.ts
+import { AutomataModule } from '../wasm/module'
+
+describe('Grid Operations', () => {
+  let module: AutomataModule
+
+  beforeEach(async () => {
+    module = new AutomataModule()
+    await module.initialize()
+  })
+
+  test('cell update follows Conway rules', () => {
+    const grid = module.getGrid()
+    
+    // Set up test pattern
+    grid[0] = 1 // Center cell
+    grid[1] = 1 // Right neighbor
+    grid[64] = 1 // Bottom neighbor
+    
+    module.updateGeneration()
+    
+    // Check results
+    expect(grid[0]).toBe(1) // Survives with 2 neighbors
+    expect(grid[65]).toBe(0) // Dies with 1 neighbor
+  })
+})
+```
+
+## Best Practices
+
+### 1. Memory Management
+- Align data to optimal boundaries
+- Minimize memory allocation
+- Use shared memory when possible
+- Implement proper cleanup
+
+### 2. Performance
+- Use SIMD operations when available
+- Optimize memory access patterns
+- Minimize data copying
+- Profile and benchmark code
+
+### 3. Integration
+- Provide clear TypeScript interfaces
+- Handle WebAssembly loading gracefully
+- Implement proper error handling
+- Support fallback options
+
+### 4. Development
+- Use proper debugging tools
+- Maintain clear documentation
+- Follow assembly best practices
+- Implement comprehensive tests
+
+## Resources
+1. [WebAssembly Documentation](https://webassembly.org/docs/high-level-goals/)
+2. [Z80 Assembly Programming](http://www.z80.info/z80code.htm)
+3. [Cellular Automata Patterns](https://conwaylife.com/wiki/Main_Page)
+4. [WebAssembly SIMD](https://github.com/WebAssembly/simd)
+5. [Performance Optimization](https://developers.google.com/web/updates/2018/10/wasm-threads) 

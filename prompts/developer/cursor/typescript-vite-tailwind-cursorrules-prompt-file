@@ -1,1 +1,303 @@
-You are an expert in TypeScript, Node.js, Vite, Vue.js, Vue Router, Pinia, VueUse, DaisyUI, and Tailwind, with a deep understanding of best practices and performance optimization techniques in these technologies.    Code Style and Structure  - Write concise, maintainable, and technically accurate TypeScript code with relevant examples.  - Use functional and declarative programming patterns; avoid classes.  - Favor iteration and modularization to adhere to DRY principles and avoid code duplication.  - Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError).  - Organize files systematically: each file should contain only related content, such as exported components, subcomponents, helpers, static content, and types.    Naming Conventions  - Use lowercase with dashes for directories (e.g., components/auth-wizard).  - Favor named exports for functions.    TypeScript Usage  - Use TypeScript for all code; prefer interfaces over types for their extendability and ability to merge.  - Avoid enums; use maps instead for better type safety and flexibility.  - Use functional components with TypeScript interfaces.    Syntax and Formatting  - Use the "function" keyword for pure functions to benefit from hoisting and clarity.  - Always use the Vue Composition API script setup style.    UI and Styling  - Use DaisyUI, and Tailwind for components and styling.  - Implement responsive design with Tailwind CSS; use a mobile-first approach.    Performance Optimization  - Leverage VueUse functions where applicable to enhance reactivity and performance.  - Wrap asynchronous components in Suspense with a fallback UI.  - Use dynamic loading for non-critical components.  - Optimize images: use WebP format, include size data, implement lazy loading.  - Implement an optimized chunking strategy during the Vite build process, such as code splitting, to generate smaller bundle sizes.    Key Conventions  - Optimize Web Vitals (LCP, CLS, FID) using tools like Lighthouse or WebPageTest.  - Use the VueUse library for performance-enhancing functions.  - Implement lazy loading for non-critical components.  - Optimize images: use WebP format, include size data, implement lazy loading.  - Implement an optimized chunking strategy during the Vite build process, such as code splitting, to generate smaller bundle sizes.    Code Review  - Review code for performance, readability, and adherence to best practices.  - Ensure all components and functions are optimized for performance and maintainability.  - Check for unnecessary re-renders and optimize them using VueUse functions.  - Use the VueUse library for performance-enhancing functions.  - Implement lazy loading for non-critical components.  - Optimize images: use WebP format, include size data, implement lazy loading.  - Implement an optimized chunking strategy during the Vite build process, such as code splitting, to generate smaller bundle sizes.    Best Practices  - Use the VueUse library for performance-enhancing functions.  - Implement lazy loading for non-critical components.  - Optimize images: use WebP format, include size data, implement lazy loading.  - Implement an optimized chunking strategy during the Vite build process, such as code splitting, to generate smaller bundle sizes.
+---
+title: TypeScript Vite with Tailwind CSS Guide
+path: developer/frameworks/vite/typescript-vite-tailwind-guide
+tags:
+  - typescript
+  - vite
+  - tailwind
+  - frontend
+  - development
+description: A comprehensive guide for developing modern web applications using TypeScript, Vite, and Tailwind CSS, focusing on best practices, performance optimization, and developer experience.
+---
+
+# TypeScript Vite with Tailwind CSS Guide
+
+## Core Principles
+1. Type Safety - Leverage TypeScript's type system for robust code
+2. Performance - Utilize Vite's fast development server and build optimization
+3. Maintainability - Follow best practices for code organization and styling
+4. Developer Experience - Streamline development workflow with efficient tools
+
+## Project Setup
+
+### 1. Environment Setup
+```bash
+# Create new Vite project with TypeScript
+npm create vite@latest my-app -- --template typescript
+cd my-app
+
+# Install dependencies
+npm install
+
+# Add Tailwind CSS and its dependencies
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+```
+
+### 2. Configuration Files
+
+#### tailwind.config.js
+```javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      // Custom theme extensions
+      colors: {
+        primary: {
+          50: '#f8fafc',
+          // ... other shades
+          900: '#0f172a',
+        },
+      },
+    },
+  },
+  plugins: [],
+}
+```
+
+#### vite.config.ts
+```typescript
+import { defineConfig } from 'vite'
+import path from 'path'
+
+export default defineConfig({
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
+  build: {
+    target: 'esnext',
+    minify: 'esbuild',
+    sourcemap: true,
+  },
+})
+```
+
+## Project Structure
+```
+src/
+├── assets/          # Static assets
+├── components/      # Reusable UI components
+├── layouts/         # Layout components
+├── lib/            # Utility functions and helpers
+├── styles/         # Global styles and Tailwind imports
+└── types/          # TypeScript type definitions
+```
+
+## Component Development
+
+### 1. Component Template
+```typescript
+// src/components/Button/Button.tsx
+import { type ButtonHTMLAttributes, forwardRef } from 'react'
+import { cn } from '@/lib/utils'
+
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+  variant?: 'primary' | 'secondary' | 'outline'
+  size?: 'sm' | 'md' | 'lg'
+}
+
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
+  variant = 'primary',
+  size = 'md',
+  className,
+  children,
+  ...props
+}, ref) => {
+  return (
+    <button
+      ref={ref}
+      className={cn(
+        'inline-flex items-center justify-center rounded-md font-medium transition-colors',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2',
+        {
+          'bg-primary-600 text-white hover:bg-primary-700': variant === 'primary',
+          'bg-gray-100 text-gray-900 hover:bg-gray-200': variant === 'secondary',
+          'border border-gray-300 bg-transparent hover:bg-gray-50': variant === 'outline',
+        },
+        {
+          'h-8 px-3 text-sm': size === 'sm',
+          'h-10 px-4 text-base': size === 'md',
+          'h-12 px-6 text-lg': size === 'lg',
+        },
+        className
+      )}
+      {...props}
+    >
+      {children}
+    </button>
+  )
+})
+
+Button.displayName = 'Button'
+```
+
+### 2. Utility Functions
+```typescript
+// src/lib/utils.ts
+import { type ClassValue, clsx } from 'clsx'
+import { twMerge } from 'tailwind-merge'
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+```
+
+## Styling Best Practices
+
+### 1. Tailwind CSS Organization
+```typescript
+// Use consistent class ordering
+const className = cn(
+  // Layout
+  'flex items-center justify-between',
+  // Spacing
+  'p-4 gap-2',
+  // Typography
+  'text-sm font-medium',
+  // Colors
+  'bg-white text-gray-900',
+  // Borders
+  'rounded-lg border border-gray-200',
+  // States
+  'hover:bg-gray-50 focus:outline-none focus:ring-2',
+  // Responsive
+  'sm:p-6 md:p-8'
+)
+```
+
+### 2. Theme Configuration
+```typescript
+// src/types/theme.ts
+export interface Theme {
+  colors: {
+    primary: Record<50 | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900, string>
+    // ... other color scales
+  }
+  // ... other theme properties
+}
+```
+
+## Performance Optimization
+
+### 1. Code Splitting
+```typescript
+// src/pages/index.tsx
+import { lazy, Suspense } from 'react'
+
+const HeavyComponent = lazy(() => import('@/components/HeavyComponent'))
+
+export default function Home() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <HeavyComponent />
+    </Suspense>
+  )
+}
+```
+
+### 2. Asset Optimization
+```typescript
+// vite.config.ts
+import { defineConfig } from 'vite'
+import { imagetools } from 'vite-imagetools'
+
+export default defineConfig({
+  plugins: [imagetools()],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom'],
+        },
+      },
+    },
+  },
+})
+```
+
+## Development Workflow
+
+### 1. Development Server
+```bash
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
+```
+
+### 2. Type Checking
+```bash
+# Run type checking
+npm run typecheck
+
+# Run linting
+npm run lint
+```
+
+## Testing Strategy
+
+### 1. Component Testing
+```typescript
+// src/components/Button/Button.test.tsx
+import { render, screen } from '@testing-library/react'
+import userEvent from '@testing-library/user-event'
+import { Button } from './Button'
+
+describe('Button', () => {
+  it('renders with default props', () => {
+    render(<Button>Click me</Button>)
+    expect(screen.getByRole('button')).toHaveTextContent('Click me')
+  })
+
+  it('handles click events', async () => {
+    const handleClick = vi.fn()
+    render(<Button onClick={handleClick}>Click me</Button>)
+    await userEvent.click(screen.getByRole('button'))
+    expect(handleClick).toHaveBeenCalled()
+  })
+})
+```
+
+## Best Practices
+
+### 1. Type Safety
+- Use strict TypeScript configuration
+- Define interfaces for all props and state
+- Avoid using `any` type
+- Leverage utility types for common patterns
+
+### 2. Performance
+- Implement code splitting for large components
+- Optimize images and assets
+- Use proper caching strategies
+- Monitor bundle size
+
+### 3. Development
+- Follow consistent naming conventions
+- Use ESLint and Prettier for code quality
+- Write comprehensive tests
+- Document component APIs
+
+### 4. Styling
+- Use Tailwind's utility-first approach
+- Maintain consistent class ordering
+- Extract common patterns into components
+- Leverage CSS variables for theming
+
+## Resources
+1. [Vite Documentation](https://vitejs.dev/guide/)
+2. [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
+3. [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+4. [Testing Library](https://testing-library.com/docs/)
+5. [ESLint](https://eslint.org/docs/user-guide/getting-started) 

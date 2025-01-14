@@ -1,2 +1,6 @@
 .aider*
 .env
+
+.aider.chat.history
+
+inbox/

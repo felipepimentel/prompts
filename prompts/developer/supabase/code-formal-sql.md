@@ -1,139 +1,344 @@
-Credit original author: https://github.com/supabase/supabase/commits?author=kiwicopple
+---
+title: PostgreSQL SQL Style Guide for Supabase
+path: developer/supabase/code-formal-sql.md
+tags:
+  - postgresql
+  - sql
+  - supabase
+  - database
+  - style-guide
+  - best-practices
+description: Comprehensive style guide for writing clean, maintainable, and secure PostgreSQL code in Supabase projects
+---
 
 # PostgreSQL SQL Style Guide
 
-## General
+## Core Principles
 
-- Use lowercase for SQL reserved words to maintain consistency and readability.
-- Employ consistent, descriptive identifiers for tables, columns, and other database objects.
-- Use white space and indentation to enhance the readability of your code.
-- Store dates in ISO 8601 format (`yyyy-mm-ddThh:mm:ss.sssss`).
-- Include comments for complex logic, using '/_ ... _/' for block comments and '--' for line comments.
+### 1. Naming Conventions
 
-## Naming Conventions
+#### General Rules
+- Use `snake_case` for all identifiers
+- Keep names under 63 characters
+- Avoid SQL reserved words
+- Use descriptive, meaningful names
+- Be consistent across the database
 
-- Avoid SQL reserved words and ensure names are unique and under 63 characters.
-- Use snake_case for tables and columns.
-- Prefer plurals for table names
-- Prefer singular names for columns.
-
-## Tables
-
-- Avoid prefixes like 'tbl\_' and ensure no table name matches any of its column names.
-- Always add an `id` column of type `identity generated always` unless otherwise specified.
-- Create all tables in the `public` schema unless otherwise specified.
-- Always add the schema to SQL queries for clarity.
-- Always add a comment to describe what the table does. The comment can be up to 1024 characters.
-
-## Columns
-
-- Use singular names and avoid generic names like 'id'.
-- For references to foreign tables, use the singular of the table name with the `_id` suffix. For example `user_id` to reference the `users` table
-- Always use lowercase except in cases involving acronyms or when readability would be enhanced by an exception.
-
-#### Examples:
-
+#### Specific Rules
 ```sql
-create table books (
+-- Tables: plural nouns
+create table users (
   id bigint generated always as identity primary key,
-  title text not null,
-  author_id bigint references authors (id)
+  email text not null unique,
+  created_at timestamptz not null default now()
 );
-comment on table books is 'A list of all the books in the library.';
+
+-- Columns: singular descriptive names
+create table products (
+  id bigint generated always as identity primary key,
+  name text not null,
+  description text,
+  price_cents integer not null check (price_cents >= 0),
+  category_id bigint references categories(id)
+);
+
+-- Foreign keys: referenced_table_id
+create table orders (
+  id bigint generated always as identity primary key,
+  user_id bigint references users(id),
+  status order_status not null
+);
 ```
 
-## Queries
+### 2. Table Structure
 
-- When the query is shorter keep it on just a few lines. As it gets larger start adding newlines for readability
-- Add spaces for readability.
-
-Smaller queries:
-
+#### Required Columns
 ```sql
-select *
-from employees
-where end_date is null;
-
-update employees
-set end_date = '2023-12-31'
-where employee_id = 1001;
+create table examples (
+  -- Primary key: always bigint identity
+  id bigint generated always as identity primary key,
+  
+  -- Timestamps: always use timestamptz
+  created_at timestamptz not null default now(),
+  updated_at timestamptz,
+  
+  -- Soft delete if needed
+  deleted_at timestamptz,
+  
+  -- Version control if needed
+  version integer not null default 1
+);
 ```
 
-Larger queries:
-
+#### Constraints
 ```sql
-select
-  first_name,
-  last_name
-from
-  employees
-where
-  start_date between '2021-01-01' and '2021-12-31'
-and
-  status = 'employed';
+create table products (
+  id bigint generated always as identity primary key,
+  sku text not null,
+  name text not null,
+  price_cents integer not null,
+  
+  -- Named constraints for better error messages
+  constraint products_sku_unique unique (sku),
+  constraint products_price_positive check (price_cents >= 0)
+);
 ```
 
-### Joins and Subqueries
+### 3. Query Style
 
-- Format joins and subqueries for clarity, aligning them with related SQL clauses.
-- Prefer full table names when referencing tables. This helps for readability.
-
+#### Simple Queries
 ```sql
-select
-  employees.employee_name,
-  departments.department_name
-from
-  employees
-join
-  departments on employees.department_id = departments.department_id
-where
-  employees.start_date > '2022-01-01';
+-- Single line for very simple queries
+select * from users where active = true;
+
+-- Multi-line for better readability
+select 
+  id,
+  email,
+  created_at
+from 
+  users
+where 
+  created_at >= now() - interval '7 days'
+order by 
+  created_at desc;
 ```
 
-## Aliases
-
-- Use meaningful aliases that reflect the data or transformation applied, and always include the 'as' keyword for clarity.
-
+#### Complex Queries
 ```sql
-select count(*) as total_employees
-from employees
-where end_date is null;
-```
-
-## Complex queries and CTEs
-
-- If a query is extremely complex, prefer a CTE.
-- Make sure the CTE is clear and linear Prefer readability over performance.
-- Add comments to each block.
-
-```sql
-with department_employees as (
-  -- Get all employees and their departments
+with monthly_sales as (
+  -- Calculate monthly sales per product
   select
-    employees.department_id,
-    employees.first_name,
-    employees.last_name,
-    departments.department_name
+    date_trunc('month', created_at) as month,
+    product_id,
+    sum(quantity) as total_quantity,
+    sum(price_cents * quantity) as total_cents
   from
-    employees
+    order_items
   join
-    departments on employees.department_id = departments.department_id
-),
-employee_counts as (
-  -- Count how many employees in each department
-  select
-    department_name,
-    count(*) as num_employees
-  from
-    department_employees
+    orders on orders.id = order_items.order_id
+  where
+    orders.status = 'completed'
   group by
-    department_name
+    date_trunc('month', created_at),
+    product_id
+),
+product_stats as (
+  -- Calculate product statistics
+  select
+    product_id,
+    avg(total_quantity) as avg_monthly_quantity,
+    percentile_cont(0.5) within group (order by total_quantity) as median_quantity
+  from
+    monthly_sales
+  group by
+    product_id
 )
 select
-  department_name,
-  num_employees
+  products.name as product_name,
+  ps.avg_monthly_quantity,
+  ps.median_quantity,
+  -- Format currency for display
+  to_char(
+    ms.total_cents::numeric / 100,
+    'FM$999,999,999.00'
+  ) as total_revenue
 from
-  employee_counts
+  product_stats ps
+join
+  products on products.id = ps.product_id
+join
+  monthly_sales ms on ms.product_id = ps.product_id
+where
+  ms.month = date_trunc('month', now())
 order by
-  department_name;
+  ps.avg_monthly_quantity desc;
 ```
+
+### 4. Security Best Practices
+
+#### Row Level Security
+```sql
+-- Enable RLS on all tables
+alter table users enable row level security;
+
+-- Create policies for different operations
+create policy "Users can view their own data"
+  on users
+  for select
+  using (auth.uid() = id);
+
+create policy "Users can update their own data"
+  on users
+  for update
+  using (auth.uid() = id)
+  with check (auth.uid() = id);
+```
+
+#### Function Security
+```sql
+-- Always specify security definer/invoker
+create function get_user_profile(user_id bigint)
+returns json
+language sql
+security definer
+set search_path = public
+as $$
+  select 
+    json_build_object(
+      'id', id,
+      'email', email,
+      'profile', profile
+    )
+  from 
+    users
+  where 
+    id = user_id
+    and deleted_at is null;
+$$;
+```
+
+### 5. Performance Considerations
+
+#### Indexes
+```sql
+-- Create indexes for frequently queried columns
+create index users_email_idx on users (email);
+
+-- Create partial indexes for filtered queries
+create index active_users_idx 
+  on users (created_at)
+  where deleted_at is null;
+
+-- Create composite indexes for multi-column queries
+create index orders_user_status_idx 
+  on orders (user_id, status, created_at desc);
+```
+
+#### Materialized Views
+```sql
+create materialized view monthly_revenue as
+select
+  date_trunc('month', orders.created_at) as month,
+  sum(order_items.price_cents * order_items.quantity) as revenue_cents,
+  count(distinct orders.user_id) as unique_customers
+from
+  orders
+join
+  order_items on order_items.order_id = orders.id
+where
+  orders.status = 'completed'
+group by
+  date_trunc('month', orders.created_at)
+with data;
+
+-- Create unique index for faster refresh
+create unique index monthly_revenue_month_idx on monthly_revenue (month);
+```
+
+### 6. Database Functions
+
+#### Function Template
+```sql
+create or replace function process_order(
+  p_order_id bigint,
+  p_status text
+)
+returns boolean
+language plpgsql
+security definer
+set search_path = public
+as $$
+declare
+  v_order orders;
+  v_user_id bigint;
+begin
+  -- Input validation
+  if p_order_id is null then
+    raise exception 'Order ID cannot be null';
+  end if;
+
+  -- Get order details
+  select * into v_order
+  from orders
+  where id = p_order_id
+  for update;
+
+  if not found then
+    raise exception 'Order not found: %', p_order_id;
+  end if;
+
+  -- Process order
+  update orders
+  set
+    status = p_status,
+    updated_at = now()
+  where id = p_order_id;
+
+  -- Return success
+  return true;
+exception
+  when others then
+    -- Log error and re-raise
+    raise exception 'Error processing order %: %', p_order_id, sqlerrm;
+end;
+$$;
+```
+
+### 7. Comments and Documentation
+
+#### Table Documentation
+```sql
+create table subscriptions (
+  id bigint generated always as identity primary key,
+  user_id bigint not null references users(id),
+  plan_id bigint not null references plans(id),
+  status subscription_status not null,
+  current_period_start timestamptz not null,
+  current_period_end timestamptz not null
+);
+
+comment on table subscriptions is 'User subscription records with plan details and billing periods';
+comment on column subscriptions.status is 'Current status of the subscription (active, canceled, past_due)';
+comment on column subscriptions.current_period_start is 'Start date of the current billing period';
+comment on column subscriptions.current_period_end is 'End date of the current billing period';
+```
+
+#### Function Documentation
+```sql
+/*
+ * Processes a subscription renewal
+ *
+ * Parameters:
+ * - p_subscription_id: ID of the subscription to renew
+ * - p_period_end: New period end date
+ *
+ * Returns:
+ * - boolean: true if successful
+ *
+ * Raises:
+ * - If subscription not found
+ * - If subscription is not active
+ * - If new period end date is invalid
+ */
+create or replace function renew_subscription(
+  p_subscription_id bigint,
+  p_period_end timestamptz
+)
+returns boolean
+language plpgsql
+security definer
+as $$
+-- Function body...
+$$;
+```
+
+Remember:
+- Always enable RLS on new tables
+- Use proper data types (e.g., timestamptz for timestamps)
+- Add appropriate indexes for query patterns
+- Document complex SQL with clear comments
+- Use transactions for multi-step operations
+- Follow consistent formatting for readability
+- Consider performance implications of queries
+- Implement proper error handling in functions 

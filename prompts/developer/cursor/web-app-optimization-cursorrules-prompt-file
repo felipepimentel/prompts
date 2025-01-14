@@ -1,1 +1,386 @@
-You are an expert in Svelte 5, SvelteKit, TypeScript, and modern web development.Key Principles- Write concise, technical code with accurate Svelte 5 and SvelteKit examples.- Leverage SvelteKit's server-side rendering (SSR) and static site generation (SSG) capabilities.- Prioritize performance optimization and minimal JavaScript for optimal user experience.- Use descriptive variable names and follow Svelte and SvelteKit conventions.- Organize files using SvelteKit's file-based routing system.Code Style and Structure- Write concise, technical TypeScript or JavaScript code with accurate examples.- Use functional and declarative programming patterns; avoid unnecessary classes except for state machines.- Prefer iteration and modularization over code duplication.- Structure files: component logic, markup, styles, helpers, types.- Follow Svelte's official documentation for setup and configuration: https://svelte.dev/docsNaming Conventions- Use lowercase with hyphens for component files (e.g., `components/auth-form.svelte`).- Use PascalCase for component names in imports and usage.- Use camelCase for variables, functions, and props.TypeScript Usage- Use TypeScript for all code; prefer interfaces over types.- Avoid enums; use const objects instead.- Use functional components with TypeScript interfaces for props.- Enable strict mode in TypeScript for better type safety.Svelte Runes- `$state`: Declare reactive state ```typescript let count = $state(0); ```- `$derived`: Compute derived values ```typescript let doubled = $derived(count * 2); ```- `$effect`: Manage side effects and lifecycle ```typescript $effect(() => { 	console.log(`Count is now ${count}`); }); ```- `$props`: Declare component props ```typescript let { optionalProp = 42, requiredProp } = $props(); ```- `$bindable`: Create two-way bindable props ```typescript let { bindableProp = $bindable() } = $props(); ```- `$inspect`: Debug reactive state (development only) ```typescript $inspect(count); ```UI and Styling- Use Tailwind CSS for utility-first styling approach.- Leverage Shadcn components for pre-built, customizable UI elements.- Import Shadcn components from `$lib/components/ui`.- Organize Tailwind classes using the `cn()` utility from `$lib/utils`.- Use Svelte's built-in transition and animation features.Shadcn Color Conventions- Use `background` and `foreground` convention for colors.- Define CSS variables without color space function: ```css --primary: 222.2 47.4% 11.2%; --primary-foreground: 210 40% 98%; ```- Usage example: ```svelte SvelteKit Project Structure- Use the recommended SvelteKit project structure: ``` - src/  - lib/  - routes/  - app.html - static/ - svelte.config.js - vite.config.js ```Component Development- Create .svelte files for Svelte components.- Use .svelte.ts files for component logic and state machines.- Implement proper component composition and reusability.- Use Svelte's props for data passing.- Leverage Svelte's reactive declarations for local state management.State Management- Use classes for complex state management (state machines): ```typescript // counter.svelte.ts class Counter { 	count = $state(0); 	incrementor = $state(1); 	increment() { 		this.count += this.incrementor; 	} 	resetCount() { 		this.count = 0; 	} 	resetIncrementor() { 		this.incrementor = 1; 	} } export const counter = new Counter(); ```- Use in components: ```svelte <br /> 	import { counter } from './counter.svelte.ts';<br />  <button on:click={() => counter.increment()}> 	Count: {counter.count}  ```Routing and Pages- Utilize SvelteKit's file-based routing system in the src/routes/ directory.- Implement dynamic routes using [slug] syntax.- Use load functions for server-side data fetching and pre-rendering.- Implement proper error handling with +error.svelte pages.Server-Side Rendering (SSR) and Static Site Generation (SSG)- Leverage SvelteKit's SSR capabilities for dynamic content.- Implement SSG for static pages using prerender option.- Use the adapter-auto for automatic deployment configuration.Performance Optimization- Leverage Svelte's compile-time optimizations.- Use `{#key}` blocks to force re-rendering of components when needed.- Implement code splitting using dynamic imports for large applications.- Profile and monitor performance using browser developer tools.- Use `$effect.tracking()` to optimize effect dependencies.- Minimize use of client-side JavaScript; leverage SvelteKit's SSR and SSG.- Implement proper lazy loading for images and other assets.Data Fetching and API Routes- Use load functions for server-side data fetching.- Implement proper error handling for data fetching operations.- Create API routes in the src/routes/api/ directory.- Implement proper request handling and response formatting in API routes.- Use SvelteKit's hooks for global API middleware.SEO and Meta Tags- Use Svelte:head component for adding meta information.- Implement canonical URLs for proper SEO.- Create reusable SEO components for consistent meta tag management.Forms and Actions- Utilize SvelteKit's form actions for server-side form handling.- Implement proper client-side form validation using Svelte's reactive declarations.- Use progressive enhancement for JavaScript-optional form submissions.Internationalization (i18n) with Paraglide.js- Use Paraglide.js for internationalization: https://inlang.com/m/gerre34r/library-inlang-paraglideJs- Install Paraglide.js: `npm install @inlang/paraglide-js`- Set up language files in the `languages` directory.- Use the `t` function to translate strings: ```svelte <br /> 	import { t } from '@inlang/paraglide-js';<br />  - Support multiple languages and RTL layouts.- Ensure text scaling and font adjustments for accessibility.Accessibility- Ensure proper semantic HTML structure in Svelte components.- Implement ARIA attributes where necessary.- Ensure keyboard navigation support for interactive elements.- Use Svelte's bind:this for managing focus programmatically.Key Conventions1. Embrace Svelte's simplicity and avoid over-engineering solutions.2. Use SvelteKit for full-stack applications with SSR and API routes.3. Prioritize Web Vitals (LCP, FID, CLS) for performance optimization.4. Use environment variables for configuration management.5. Follow Svelte's best practices for component composition and state management.6. Ensure cross-browser compatibility by testing on multiple platforms.7. Keep your Svelte and SvelteKit versions up to date.Documentation- Svelte 5 Runes: https://svelte-5-preview.vercel.app/docs/runes- Svelte Documentation: https://svelte.dev/docs- SvelteKit Documentation: https://kit.svelte.dev/docs- Paraglide.js Documentation: https://inlang.com/m/gerre34r/library-inlang-paraglideJs/usageRefer to Svelte, SvelteKit, and Paraglide.js documentation for detailed information on components, internationalization, and best practices.
+---
+title: Web Application Optimization Guide
+path: developer/guidelines/web-app-optimization-guide
+tags:
+  - performance
+  - optimization
+  - web
+  - frontend
+  - backend
+description: A comprehensive guide for optimizing web applications, covering frontend performance, backend efficiency, caching strategies, and monitoring techniques.
+---
+
+# Web Application Optimization Guide
+
+## Core Principles
+1. Performance - Optimize for speed and efficiency
+2. Scalability - Design for growth and high load
+3. User Experience - Maintain responsiveness and reliability
+4. Resource Efficiency - Minimize resource consumption
+
+## Frontend Optimization
+
+### 1. Asset Optimization
+```javascript
+// webpack.config.js
+module.exports = {
+  optimization: {
+    minimize: true,
+    splitChunks: {
+      chunks: 'all',
+      minSize: 20000,
+      maxSize: 244000,
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          name: 'vendors',
+          chunks: 'all',
+        },
+      },
+    },
+  },
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpg|gif)$/i,
+        use: [
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+              optipng: {
+                enabled: true,
+              },
+              pngquant: {
+                quality: [0.65, 0.90],
+                speed: 4,
+              },
+            },
+          },
+        ],
+      },
+    ],
+  },
+}
+```
+
+### 2. Code Splitting
+```typescript
+// src/pages/Dashboard.tsx
+import { lazy, Suspense } from 'react'
+
+const DashboardChart = lazy(() => import('@/components/DashboardChart'))
+const DataTable = lazy(() => import('@/components/DataTable'))
+
+export function Dashboard() {
+  return (
+    <div>
+      <Suspense fallback={<div>Loading chart...</div>}>
+        <DashboardChart />
+      </Suspense>
+      <Suspense fallback={<div>Loading table...</div>}>
+        <DataTable />
+      </Suspense>
+    </div>
+  )
+}
+```
+
+### 3. Performance Monitoring
+```typescript
+// src/lib/performance.ts
+export function measurePerformance() {
+  if (typeof window === 'undefined') return
+
+  // Core Web Vitals
+  const vitals = {
+    FCP: performance.getEntriesByName('first-contentful-paint')[0]?.startTime,
+    LCP: performance.getEntriesByName('largest-contentful-paint')[0]?.startTime,
+    FID: performance.getEntriesByName('first-input-delay')[0]?.duration,
+    CLS: performance.getEntriesByName('cumulative-layout-shift')[0]?.value,
+  }
+
+  // Custom metrics
+  performance.mark('app-loaded')
+  performance.measure('app-load-time', 'navigation-start', 'app-loaded')
+
+  return vitals
+}
+```
+
+## Backend Optimization
+
+### 1. Database Optimization
+```typescript
+// src/lib/db.ts
+import { Pool } from 'pg'
+
+const pool = new Pool({
+  max: 20,
+  idleTimeoutMillis: 30000,
+  connectionTimeoutMillis: 2000,
+})
+
+// Query optimization
+const optimizedQuery = `
+  SELECT u.id, u.name, COUNT(o.id) as order_count
+  FROM users u
+  LEFT JOIN orders o ON u.id = o.user_id
+  WHERE u.status = 'active'
+  GROUP BY u.id, u.name
+  HAVING COUNT(o.id) > 0
+  INDEX BY user_id
+`
+
+// Connection pooling
+export async function executeQuery(query: string, params: any[]) {
+  const client = await pool.connect()
+  try {
+    const result = await client.query(query, params)
+    return result.rows
+  } finally {
+    client.release()
+  }
+}
+```
+
+### 2. Caching Strategy
+```typescript
+// src/lib/cache.ts
+import { Redis } from 'ioredis'
+
+const redis = new Redis({
+  host: process.env.REDIS_HOST,
+  port: parseInt(process.env.REDIS_PORT || '6379'),
+  maxRetriesPerRequest: 3,
+})
+
+export class CacheManager {
+  private static instance: CacheManager
+  private ttl: number = 3600 // 1 hour
+
+  static getInstance(): CacheManager {
+    if (!CacheManager.instance) {
+      CacheManager.instance = new CacheManager()
+    }
+    return CacheManager.instance
+  }
+
+  async get<T>(key: string): Promise<T | null> {
+    const data = await redis.get(key)
+    return data ? JSON.parse(data) : null
+  }
+
+  async set(key: string, value: any): Promise<void> {
+    await redis.set(key, JSON.stringify(value), 'EX', this.ttl)
+  }
+
+  async invalidate(key: string): Promise<void> {
+    await redis.del(key)
+  }
+}
+```
+
+### 3. API Rate Limiting
+```typescript
+// src/middleware/rateLimiter.ts
+import rateLimit from 'express-rate-limit'
+import RedisStore from 'rate-limit-redis'
+import { redis } from '@/lib/redis'
+
+export const rateLimiter = rateLimit({
+  store: new RedisStore({
+    client: redis,
+    prefix: 'rate-limit:',
+  }),
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 100, // limit each IP to 100 requests per windowMs
+  message: 'Too many requests from this IP, please try again later',
+})
+```
+
+## Network Optimization
+
+### 1. CDN Configuration
+```typescript
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    domains: ['cdn.yourdomain.com'],
+    loader: 'custom',
+    loaderFile: './src/lib/imageLoader.ts',
+  },
+  async headers() {
+    return [
+      {
+        source: '/api/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+    ]
+  },
+}
+
+module.exports = nextConfig
+```
+
+### 2. Service Worker
+```typescript
+// src/service-worker.ts
+const CACHE_NAME = 'app-cache-v1'
+const urlsToCache = [
+  '/',
+  '/static/styles.css',
+  '/static/main.js',
+]
+
+self.addEventListener('install', (event: any) => {
+  event.waitUntil(
+    caches.open(CACHE_NAME)
+      .then(cache => cache.addAll(urlsToCache))
+  )
+})
+
+self.addEventListener('fetch', (event: any) => {
+  event.respondWith(
+    caches.match(event.request)
+      .then(response => response || fetch(event.request))
+  )
+})
+```
+
+## Monitoring and Analytics
+
+### 1. Performance Metrics
+```typescript
+// src/lib/metrics.ts
+import { Metrics } from '@/types/metrics'
+
+export class MetricsCollector {
+  private metrics: Metrics = {
+    responseTime: [],
+    errorRate: 0,
+    activeUsers: 0,
+  }
+
+  recordResponseTime(duration: number) {
+    this.metrics.responseTime.push(duration)
+    if (this.metrics.responseTime.length > 1000) {
+      this.metrics.responseTime.shift()
+    }
+  }
+
+  calculateAverageResponseTime(): number {
+    const sum = this.metrics.responseTime.reduce((a, b) => a + b, 0)
+    return sum / this.metrics.responseTime.length
+  }
+
+  recordError() {
+    this.metrics.errorRate++
+  }
+
+  updateActiveUsers(count: number) {
+    this.metrics.activeUsers = count
+  }
+
+  getMetrics(): Metrics {
+    return {
+      ...this.metrics,
+      averageResponseTime: this.calculateAverageResponseTime(),
+    }
+  }
+}
+```
+
+### 2. Error Tracking
+```typescript
+// src/lib/errorTracking.ts
+interface ErrorEvent {
+  message: string
+  stack?: string
+  timestamp: number
+  userId?: string
+  metadata?: Record<string, any>
+}
+
+export class ErrorTracker {
+  private static instance: ErrorTracker
+  private errors: ErrorEvent[] = []
+
+  static getInstance(): ErrorTracker {
+    if (!ErrorTracker.instance) {
+      ErrorTracker.instance = new ErrorTracker()
+    }
+    return ErrorTracker.instance
+  }
+
+  trackError(error: Error, metadata?: Record<string, any>) {
+    const errorEvent: ErrorEvent = {
+      message: error.message,
+      stack: error.stack,
+      timestamp: Date.now(),
+      metadata,
+    }
+
+    this.errors.push(errorEvent)
+    this.reportError(errorEvent)
+  }
+
+  private async reportError(error: ErrorEvent) {
+    try {
+      await fetch('/api/errors', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(error),
+      })
+    } catch (e) {
+      console.error('Failed to report error:', e)
+    }
+  }
+}
+```
+
+## Best Practices
+
+### 1. Frontend
+- Implement code splitting and lazy loading
+- Optimize images and assets
+- Use efficient bundling strategies
+- Implement proper caching
+- Monitor Core Web Vitals
+
+### 2. Backend
+- Optimize database queries
+- Implement caching strategies
+- Use connection pooling
+- Implement rate limiting
+- Monitor server resources
+
+### 3. Network
+- Use CDN for static assets
+- Implement service workers
+- Enable HTTP/2 or HTTP/3
+- Use proper cache headers
+- Optimize API responses
+
+### 4. Monitoring
+- Track performance metrics
+- Monitor error rates
+- Analyze user behavior
+- Set up alerts
+- Regular performance audits
+
+## Resources
+1. [Web Vitals](https://web.dev/vitals/)
+2. [Database Optimization](https://www.postgresql.org/docs/current/performance-tips.html)
+3. [Redis Documentation](https://redis.io/documentation)
+4. [CDN Best Practices](https://web.dev/content-delivery-networks/)
+5. [Performance Monitoring](https://web.dev/measure/) 

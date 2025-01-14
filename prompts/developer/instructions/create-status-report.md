@@ -1,30 +1,158 @@
-# Status Update: YYYY-MM-DD-HH:MM
+---
+title: Project Status Report Guidelines
+path: developer/instructions/create-status-report.md
+tags: ["project-management", "documentation", "reporting", "collaboration", "communication"]
+description: A comprehensive guide for creating clear, informative project status reports with standardized structure and content
+---
 
-Please update the `/status` folder with a new markdown file based on our discussion today. Include any progress made, new decisions, upcoming tasks, and any other relevant information. Adhere to the format of the `status/status-format.md` file. The name of the file should be the date in the format `YYYY-MM-DD-HH:MM-description.md`. Now create the file.
+# Project Status Report Guidelines
 
+## 1. Report Structure
+### 1.1 Header Information
+```markdown
+# Status Report: YYYY-MM-DD-HH:MM
+Project: [Project Name]
+Period: [Start Date] to [End Date]
+Author: [Name]
+```
+
+### 1.2 Core Sections
+1. Executive Summary
+2. Progress Update
+3. Key Decisions
+4. Upcoming Tasks
+5. New Components
+6. Issues and Risks
+7. Resource Updates
+8. Next Steps
+
+## 2. Section Details
+### 2.1 Executive Summary
+- Brief overview of period
+- Key achievements
+- Critical issues
+- Important decisions
+- Overall status
+
+### 2.2 Progress Update
+- Completed tasks
+- Milestone status
+- Key deliverables
+- Quality metrics
+- Timeline adherence
+
+Example:
+```markdown
 ## Progress Made
+- Implemented user authentication system
+  - JWT token integration complete
+  - Social login enabled
+  - 95% test coverage achieved
+- Completed database migration
+  - Zero downtime achieved
+  - Data integrity verified
+```
 
-- [List key accomplishments or tasks completed]
+### 2.3 Key Decisions
+- Technical choices
+- Process changes
+- Resource allocation
+- Timeline adjustments
+- Strategic updates
 
-## New Decisions
+Example:
+```markdown
+## Key Decisions
+- Adopted TypeScript for new components
+- Implemented automated deployment pipeline
+- Switched to weekly release cycle
+```
 
-- [List any important decisions made during the discussion]
+### 2.4 Upcoming Tasks
+- Prioritized tasks
+- Assigned owners
+- Due dates
+- Dependencies
+- Resource needs
 
+Example:
+```markdown
 ## Upcoming Tasks
+- [ ] Set up CI/CD pipeline (Due: 2024-03-20)
+- [ ] Complete API documentation (Due: 2024-03-22)
+- [ ] Deploy v2.0 beta (Due: 2024-03-25)
+```
 
-- [ ] [Task 1]
-- [ ] [Task 2]
-- [ ] [Task 3]
+### 2.5 New Components
+- Added features
+- Code changes
+- Documentation updates
+- Infrastructure changes
+- Testing status
 
+Example:
+```markdown
 ## New Components
+- `/components/auth/`
+  - `LoginForm.tsx`: User authentication
+  - `SignupForm.tsx`: New user registration
+  - All components tested and documented
+```
 
-- [List any new components created, with their file paths]
-  - Example: `/components/new-component.tsx`
+### 2.6 Issues and Risks
+- Current blockers
+- Potential risks
+- Mitigation plans
+- Required support
+- Timeline impact
 
-## Notes
+### 2.7 Resource Updates
+- Team changes
+- Skill gaps
+- Training needs
+- Tool updates
+- Environment changes
 
-- [Any additional relevant information or observations]
+### 2.8 Next Steps
+- Immediate priorities
+- Resource needs
+- Timeline updates
+- Risk mitigation
+- Success criteria
 
-## Next Steps
+## 3. Best Practices
+1. Be concise but complete
+2. Use consistent formatting
+3. Include metrics when possible
+4. Highlight blockers early
+5. Provide actionable items
+6. Link to relevant resources
+7. Update regularly
 
-- [Outline the immediate next steps or priorities]
+## 4. Writing Guidelines
+- Use clear, professional language
+- Focus on facts and data
+- Maintain objective tone
+- Include relevant context
+- Be specific with dates
+- Quantify when possible
+
+## 5. Report Workflow
+1. Gather information
+2. Draft core sections
+3. Review metrics
+4. Add supporting details
+5. Proofread content
+6. Share with stakeholders
+7. Track action items
+
+## 6. Quality Checklist
+- [ ] All sections completed
+- [ ] Dates and metrics verified
+- [ ] Links validated
+- [ ] Grammar checked
+- [ ] Formatting consistent
+- [ ] Actions clear
+- [ ] Dependencies noted
+
+Remember: Status reports should provide clear visibility into project progress, highlight important issues, and enable informed decision-making. Keep them factual, actionable, and focused on key information stakeholders need. 

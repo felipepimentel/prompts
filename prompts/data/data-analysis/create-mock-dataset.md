@@ -1,137 +1,146 @@
-# Mock Dataset Generation Framework
+---
+title: Mock Data Generation Framework
+path: data/data-analysis/mock-data-framework
+tags:
+  - data-analysis
+  - data-generation
+  - testing
+  - data-modeling
+  - simulation
+description: A comprehensive framework for generating realistic mock datasets that simulate real-world data characteristics while maintaining statistical validity and usefulness for testing and development.
+---
+
+# Mock Data Generation Framework
 
 ## Context
-You are a data generation specialist focusing on creating realistic and representative mock datasets. Your task is to generate synthetic data that maintains statistical properties, relationships, and constraints while protecting privacy and enabling thorough testing and development.
+You are a data generation specialist focusing on creating realistic mock datasets. Your task is to generate synthetic data that accurately represents real-world scenarios while maintaining statistical validity and usefulness for testing and development purposes.
 
 ## Input Parameters
 - Data Type: [TYPE]
-- Size: [RECORDS]
-- Schema: [SCHEMA]
-- Constraints: [CONSTRAINTS]
-- Output Format: [FORMAT]
+- Size Requirements: [SIZE]
+- Structure Specifications: [SPECS]
+- Distribution Parameters: [PARAMS]
+- Validation Rules: [RULES]
 
 ## Generation Framework
 
-### 1. Schema Definition
+### 1. Data Specification
 ```yaml
-data_structure:
-  fields:
-    - name: "[FIELD_NAME]"
-      type: "[DATA_TYPE]"
-      constraints: ["[CONSTRAINT1]", "[CONSTRAINT2]"]
-      
-    - name: "[FIELD_NAME]"
-      type: "[DATA_TYPE]"
-      constraints: ["[CONSTRAINT1]", "[CONSTRAINT2]"]
-      
-  relationships:
-    - type: "[REL_TYPE]"
-      fields: ["[FIELD1]", "[FIELD2]"]
-      rules: ["[RULE1]", "[RULE2]"]
+specification_elements:
+  structure:
+    fields: ["[FIELD1]", "[FIELD2]"]
+    relationships: ["[REL1]", "[REL2]"]
+    
+  characteristics:
+    distributions: ["[DIST1]", "[DIST2]"]
+    constraints: ["[CONST1]", "[CONST2]"]
+    
+  requirements:
+    quality: ["[QUAL1]", "[QUAL2]"]
+    validity: ["[VAL1]", "[VAL2]"]
 ```
 
-### 2. Data Properties
+### 2. Generation Strategy
 ```yaml
-distributions:
-  numeric:
-    - field: "[FIELD_NAME]"
-      distribution: "[DIST_TYPE]"
-      parameters: ["[PARAM1]", "[PARAM2]"]
-      
-  categorical:
-    - field: "[FIELD_NAME]"
-      categories: ["[CAT1]", "[CAT2]"]
-      weights: ["[WEIGHT1]", "[WEIGHT2]"]
-      
-  temporal:
-    - field: "[FIELD_NAME]"
-      range: "[TIME_RANGE]"
-      pattern: "[PATTERN]"
+strategy_elements:
+  methods:
+    techniques: ["[TECH1]", "[TECH2]"]
+    algorithms: ["[ALG1]", "[ALG2]"]
+    
+  parameters:
+    ranges: ["[RANGE1]", "[RANGE2]"]
+    distributions: ["[DIST1]", "[DIST2]"]
+    
+  validation:
+    rules: ["[RULE1]", "[RULE2]"]
+    checks: ["[CHECK1]", "[CHECK2]"]
 ```
 
-### 3. Data Relationships
+### 3. Quality Control
 ```yaml
-correlations:
-  pairs:
-    - fields: ["[FIELD1]", "[FIELD2]"]
-      correlation: "[COEFFICIENT]"
-      type: "[CORRELATION_TYPE]"
-      
-  dependencies:
-    - dependent: "[FIELD]"
-      predictors: ["[PRED1]", "[PRED2]"]
-      relationship: "[FUNCTION]"
+quality_elements:
+  verification:
+    tests: ["[TEST1]", "[TEST2]"]
+    metrics: ["[MET1]", "[MET2]"]
+    
+  validation:
+    criteria: ["[CRIT1]", "[CRIT2]"]
+    benchmarks: ["[BENCH1]", "[BENCH2]"]
+    
+  documentation:
+    specifications: ["[SPEC1]", "[SPEC2]"]
+    characteristics: ["[CHAR1]", "[CHAR2]"]
 ```
 
-## Generation Methods
+## Development Methods
 
-### 1. Basic Generation
-- Random sampling
-- Distribution-based
-- Pattern-based
-- Rule-based
-- Template-based
+### 1. Specification Development
+- Structure definition
+- Relationship mapping
+- Constraint identification
+- Distribution selection
+- Validation rule creation
 
-### 2. Advanced Generation
-- Machine learning models
-- Statistical modeling
-- Time series simulation
-- Network generation
-- Process simulation
+### 2. Generation Process
+- Method selection
+- Parameter configuration
+- Algorithm implementation
+- Process automation
+- Output validation
 
 ### 3. Quality Assurance
-- Schema validation
-- Constraint checking
-- Relationship verification
 - Statistical testing
-- Realism assessment
+- Pattern verification
+- Relationship validation
+- Distribution checking
+- Documentation creation
 
 ## Output Format
 ```yaml
-dataset_specification:
-  metadata:
-    name: "[NAME]"
-    version: "[VERSION]"
-    description: "[DESCRIPTION]"
+generation_blueprint:
+  overview:
+    type: "[TYPE]"
+    size: "[SIZE]"
+    structure: "[STRUCT]"
     
-  structure:
+  specifications:
     fields: ["[FIELD1]", "[FIELD2]"]
-    records: "[NUMBER]"
-    format: "[FORMAT]"
-    
-  properties:
-    distributions: ["[DIST1]", "[DIST2]"]
     relationships: ["[REL1]", "[REL2]"]
     constraints: ["[CONST1]", "[CONST2]"]
     
-  generation:
-    method: "[METHOD]"
-    parameters: ["[PARAM1]", "[PARAM2]"]
-    seed: "[SEED]"
+  characteristics:
+    distributions: ["[DIST1]", "[DIST2]"]
+    patterns: ["[PAT1]", "[PAT2]"]
+    statistics: ["[STAT1]", "[STAT2]"]
+    
+  validation:
+    tests: ["[TEST1]", "[TEST2]"]
+    metrics: ["[MET1]", "[MET2]"]
+    results: ["[RES1]", "[RES2]"]
 ```
 
-## Data Categories
-1. Personal Information
-2. Transaction Data
-3. Behavioral Data
-4. Time Series Data
-5. Geographic Data
-6. Network Data
-7. System Logs
-8. Survey Responses
-9. Sensor Data
-10. Event Data
+## Generation Characteristics
+1. Realism
+2. Consistency
+3. Validity
+4. Scalability
+5. Reproducibility
+6. Configurability
+7. Statistical Accuracy
+8. Relationship Preservation
+9. Distribution Matching
+10. Documentation Completeness
 
 ## Best Practices
-1. Schema Accuracy
-2. Data Privacy
-3. Statistical Validity
-4. Relationship Preservation
-5. Constraint Compliance
-6. Scalability
-7. Reproducibility
-8. Documentation
-9. Validation
-10. Version Control
+1. Clear Specifications
+2. Statistical Validity
+3. Relationship Preservation
+4. Distribution Accuracy
+5. Quality Validation
+6. Process Automation
+7. Documentation Maintenance
+8. Parameter Control
+9. Output Verification
+10. Iterative Refinement
 
-Please generate mock data following these guidelines to create realistic and useful synthetic datasets.
+Please follow these guidelines to ensure effective mock data generation that meets testing and development requirements. 
