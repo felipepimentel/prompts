@@ -11,16 +11,12 @@ new ClipboardJS('.copy-btn').on('success', function(e) {
 // Search and filter functionality
 document.addEventListener('DOMContentLoaded', function() {
   const searchInput = document.querySelector('.prompt-search');
-  const sortSelect = document.querySelector('.prompt-sort');
   const filterBtns = document.querySelectorAll('.filter-btn');
   const promptCards = document.querySelectorAll('.prompt-card');
   let currentFilter = 'all';
 
   // Search functionality
   searchInput.addEventListener('input', filterCards);
-
-  // Sort functionality
-  sortSelect.addEventListener('change', filterCards);
 
   // Filter buttons
   filterBtns.forEach(btn => {
@@ -34,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function filterCards() {
     const searchTerm = searchInput.value.toLowerCase();
-    const sortBy = sortSelect.value;
     let visibleCards = [];
 
     promptCards.forEach(card => {
@@ -57,28 +52,47 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
 
-    // Sort visible cards
-    if (sortBy === 'name') {
-      visibleCards.sort((a, b) => {
-        const titleA = a.querySelector('.prompt-title').textContent;
-        const titleB = b.querySelector('.prompt-title').textContent;
-        return titleA.localeCompare(titleB);
-      });
-    } else if (sortBy === 'category') {
-      visibleCards.sort((a, b) => {
-        const catA = a.dataset.categories.split(',')[0];
-        const catB = b.dataset.categories.split(',')[0];
-        return catA.localeCompare(catB);
-      });
-    }
-
-    // Reorder cards in DOM
-    const gallery = document.querySelector('.prompt-gallery');
-    visibleCards.forEach(card => gallery.appendChild(card));
-
     // Update pagination
     currentPage = 1;
     totalPages = Math.ceil(visibleCards.length / itemsPerPage);
     showPage(1);
   }
+
+  // Initialize pagination
+  const itemsPerPage = 9;
+  let currentPage = 1;
+  let totalPages = Math.ceil(promptCards.length / itemsPerPage);
+
+  function showPage(page) {
+    const start = (page - 1) * itemsPerPage;
+    const end = start + itemsPerPage;
+    
+    Array.from(promptCards).forEach((card, index) => {
+      if (card.style.display !== 'none') {
+        const shouldShow = index >= start && index < end;
+        card.style.display = shouldShow ? 'flex' : 'none';
+      }
+    });
+    
+    document.querySelector('.current-page').textContent = page;
+    document.querySelector('.total-pages').textContent = totalPages;
+    
+    // Update button states
+    document.querySelector('[data-page="prev"]').disabled = page === 1;
+    document.querySelector('[data-page="next"]').disabled = page === totalPages;
+  }
+
+  document.querySelectorAll('.page-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      if (btn.dataset.page === 'prev' && currentPage > 1) {
+        currentPage--;
+      } else if (btn.dataset.page === 'next' && currentPage < totalPages) {
+        currentPage++;
+      }
+      showPage(currentPage);
+    });
+  });
+
+  // Initialize first page
+  showPage(1);
 }); 

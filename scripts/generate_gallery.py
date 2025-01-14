@@ -96,12 +96,6 @@ def generate_gallery():
 <div class="gallery-header">
   <div class="search-container">
     <input type="text" class="prompt-search" placeholder="🔍 Search prompts...">
-    <div class="search-filters">
-      <select class="prompt-sort">
-        <option value="category">Category</option>
-        <option value="name">Name</option>
-      </select>
-    </div>
   </div>
   
   <div class="category-filters">
@@ -119,8 +113,8 @@ def generate_gallery():
     gallery_content.append('''</div>
 
 <div class="pagination">
-  <button class="page-btn" data-page="prev">← Previous</button>
-  <span class="page-info">Page <span class="current-page">1</span> of <span class="total-pages">10</span></span>
+  <button class="page-btn" data-page="prev" disabled>← Previous</button>
+  <span class="page-info">Page <span class="current-page">1</span> of <span class="total-pages">1</span></span>
   <button class="page-btn" data-page="next">Next →</button>
 </div>
 
@@ -135,12 +129,19 @@ function showPage(page) {
   const start = (page - 1) * itemsPerPage;
   const end = start + itemsPerPage;
   
-  promptCards.forEach((card, index) => {
-    card.style.display = (index >= start && index < end) ? 'flex' : 'none';
+  Array.from(promptCards).forEach((card, index) => {
+    if (card.style.display !== 'none') {
+      const shouldShow = index >= start && index < end;
+      card.style.display = shouldShow ? 'flex' : 'none';
+    }
   });
   
   document.querySelector('.current-page').textContent = page;
   document.querySelector('.total-pages').textContent = totalPages;
+  
+  // Update button states
+  document.querySelector('[data-page="prev"]').disabled = page === 1;
+  document.querySelector('[data-page="next"]').disabled = page === totalPages;
 }
 
 document.querySelectorAll('.page-btn').forEach(btn => {
