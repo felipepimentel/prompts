@@ -1,114 +1,49 @@
 site_name: Prompt Engineering Collection
-site_url: https://felipepimentel.github.io/prompts/
-repo_url: https://github.com/felipepimentel/prompts
-repo_name: felipepimentel/prompts
 theme:
   name: material
+  palette:
+    scheme: slate
+    primary: deep purple
+    accent: purple
   features:
-    - navigation.tabs
+    - navigation.instant
+    - navigation.tracking
     - navigation.sections
+    - navigation.expand
     - navigation.top
     - search.suggest
     - search.highlight
-    - content.tabs.link
-    - content.code.copy
-    - navigation.footer
-    - navigation.indexes
-    - toc.integrate
-    - navigation.instant
-    - navigation.tracking
-  palette:
-    # Slate theme by default
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: deep-purple
-      accent: purple
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-    # Light mode as secondary option
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: deep-purple
-      accent: purple
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  icon:
-    repo: fontawesome/brands/github
-    tag:
-      default: material/tag
-      ai: material/robot
-      dev: material/code-braces
-      content: material/pencil
-      data: material/database
-      art: material/palette
-      misc: material/tools
-
-extra_css:
-  - stylesheets/extra.css
-
-extra_javascript:
-  - https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js
-  - javascripts/extra.js
 
 plugins:
-  - search:
-      lang: en
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - search
   - tags
-  - minify:
-      minify_html: true
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
-  - admonition
-  - pymdownx.details
-  - attr_list
-  - md_in_html
-  - tables
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - toc:
-      permalink: true
-      toc_depth: 3
-  - footnotes
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
+  - def_list
+  - attr_list
+  - md_in_html
+
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js
+  - javascripts/extra.js
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
-  - Gallery: index.md
-  - Categories:
-    - Overview: prompts/overview.md
-    - Academic: prompts/academic.md
-    - Art: prompts/art.md
-    - Content Creation: prompts/content-creation.md
-    - Data: prompts/data.md
-    - Developer: prompts/developer.md
-    - Education: prompts/education.md
-    - Healthcare: prompts/healthcare.md
-    - Legal: prompts/legal.md
-    - Meta: prompts/meta.md
-    - Product: prompts/product.md
-    - QA: prompts/qa.md
+  - Home: index.md
   - Getting Started: getting-started.md
   - Contributing: contributing.md
   - About: about.md
+  - Agent Improvements: agent-improvements.md
+  - Prompts:
+    - Overview: prompts/overview.md
+    - Education: prompts/education.md
+    - Misc: prompts/misc.md

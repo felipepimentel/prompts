@@ -7,6 +7,7 @@ from collections import Counter
 
 def read_prompt_file(file_path):
     """Read and parse a prompt file."""
+    print(f"Reading file: {file_path}")  # Debug log
     with open(file_path, 'r', encoding='utf-8') as f:
         content = f.read()
         
@@ -67,6 +68,8 @@ def generate_category_filters(categories):
 def generate_gallery():
     """Generate the complete gallery page."""
     prompts_dir = Path('docs/prompts')
+    print(f"Scanning directory: {prompts_dir}")  # Debug log
+    
     gallery_content = []
     all_categories = set()
     prompt_cards = []
@@ -77,6 +80,7 @@ def generate_gallery():
             continue
             
         front_matter, content = read_prompt_file(prompt_file)
+        print(f"Processing {prompt_file}: {front_matter.get('title', 'No title')}")  # Debug log
         
         if not front_matter:
             continue
@@ -90,16 +94,15 @@ def generate_gallery():
         all_categories.update(tags)
         prompt_cards.append((title, description, template, tags, emoji))
     
-    # Header with dynamic categories
+    print(f"Total prompts found: {len(prompt_cards)}")  # Debug log
+    print(f"Categories found: {all_categories}")  # Debug log
+    
+    # Header with search only
     gallery_content.append(f'''# Prompt Gallery
 
 <div class="gallery-header">
   <div class="search-container">
     <input type="text" class="prompt-search" placeholder="🔍 Search prompts...">
-  </div>
-  
-  <div class="category-filters">
-    {generate_category_filters(all_categories)}
   </div>
 </div>
 
@@ -109,59 +112,21 @@ def generate_gallery():
     for card_data in sorted(prompt_cards, key=lambda x: x[0]):  # Sort by title
         gallery_content.append(generate_prompt_card(*card_data))
     
-    # Footer
+    # Footer with pagination
     gallery_content.append('''</div>
 
 <div class="pagination">
   <button class="page-btn" data-page="prev" disabled>← Previous</button>
   <span class="page-info">Page <span class="current-page">1</span> of <span class="total-pages">1</span></span>
   <button class="page-btn" data-page="next">Next →</button>
-</div>
-
-<script>
-// Initialize pagination
-const itemsPerPage = 9;
-const promptCards = document.querySelectorAll('.prompt-card');
-const totalPages = Math.ceil(promptCards.length / itemsPerPage);
-let currentPage = 1;
-
-function showPage(page) {
-  const start = (page - 1) * itemsPerPage;
-  const end = start + itemsPerPage;
-  
-  Array.from(promptCards).forEach((card, index) => {
-    if (card.style.display !== 'none') {
-      const shouldShow = index >= start && index < end;
-      card.style.display = shouldShow ? 'flex' : 'none';
-    }
-  });
-  
-  document.querySelector('.current-page').textContent = page;
-  document.querySelector('.total-pages').textContent = totalPages;
-  
-  // Update button states
-  document.querySelector('[data-page="prev"]').disabled = page === 1;
-  document.querySelector('[data-page="next"]').disabled = page === totalPages;
-}
-
-document.querySelectorAll('.page-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    if (btn.dataset.page === 'prev' && currentPage > 1) {
-      currentPage--;
-    } else if (btn.dataset.page === 'next' && currentPage < totalPages) {
-      currentPage++;
-    }
-    showPage(currentPage);
-  });
-});
-
-// Initialize first page
-showPage(1);
-</script>''')
+</div>''')
     
     # Write the gallery file
-    with open('docs/index.md', 'w', encoding='utf-8') as f:
+    output_file = 'docs/index.md'
+    print(f"Writing gallery to: {output_file}")  # Debug log
+    with open(output_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(gallery_content))
+    print("Gallery generation complete")  # Debug log
 
 if __name__ == '__main__':
     generate_gallery() 
