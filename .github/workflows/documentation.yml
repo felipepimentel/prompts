@@ -33,6 +33,12 @@ jobs:
           pip install pillow cairosvg
           pip install pyyaml
 
+      - name: List workspace contents
+        run: |
+          pwd
+          ls -la
+          ls -la prompts/
+
       - name: Generate gallery
         run: |
           chmod +x scripts/generate_gallery.py

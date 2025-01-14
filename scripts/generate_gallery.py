@@ -8,23 +8,32 @@ from collections import Counter
 def read_prompt_file(file_path):
     """Read and parse a prompt file."""
     print(f"Reading file: {file_path}")  # Debug log
-    with open(file_path, 'r', encoding='utf-8') as f:
-        content = f.read()
-        
-    # Extract front matter
-    if content.startswith('---'):
-        parts = content.split('---', 2)[1:]
-        if len(parts) >= 2:
-            front_matter = yaml.safe_load(parts[0])
-            content = parts[1].strip()
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            content = f.read().strip()
+            
+        # Extract front matter
+        if content.startswith('---'):
+            try:
+                # Split on first two occurrences of ---
+                parts = content.split('---', 2)
+                if len(parts) >= 3:
+                    front_matter = yaml.safe_load(parts[1])
+                    content = parts[2].strip()
+                else:
+                    print(f"Warning: Invalid front matter format in {file_path}")
+                    front_matter = {}
+            except yaml.YAMLError as e:
+                print(f"Warning: Failed to parse YAML in {file_path}: {e}")
+                front_matter = {}
         else:
             front_matter = {}
-            content = content.strip()
-    else:
-        front_matter = {}
-        content = content.strip()
-    
-    return front_matter, content
+        
+        print(f"Front matter found: {front_matter}")  # Debug log
+        return front_matter, content
+    except Exception as e:
+        print(f"Error reading file {file_path}: {e}")
+        return {}, ""
 
 def generate_prompt_card(title, description, template, tags, emoji='📝'):
     """Generate HTML for a prompt card."""
@@ -58,31 +67,39 @@ def generate_prompt_card(title, description, template, tags, emoji='📝'):
     </div>
   </div>'''
 
-def generate_category_filters(categories):
-    """Generate HTML for category filter buttons."""
-    buttons = ['<button class="filter-btn active" data-category="all">All Prompts</button>']
-    for category in sorted(categories):
-        buttons.append(f'<button class="filter-btn" data-category="{category.lower()}">{category}</button>')
-    return '\n    '.join(buttons)
+def find_prompt_files(base_dir):
+    """Find all prompt files recursively."""
+    prompt_files = []
+    base_path = Path(base_dir)
+    
+    print(f"Scanning directory: {base_path} (absolute: {base_path.absolute()})")
+    
+    for root, dirs, files in os.walk(base_path):
+        for file in files:
+            if file.endswith('.md') and not file in ['overview.md', 'README.md']:
+                file_path = Path(root) / file
+                print(f"Found prompt file: {file_path}")
+                prompt_files.append(file_path)
+    
+    return prompt_files
 
 def generate_gallery():
     """Generate the complete gallery page."""
-    prompts_dir = Path('docs/prompts')
-    print(f"Scanning directory: {prompts_dir}")  # Debug log
-    
+    prompts_dir = Path('prompts')  # Changed from docs/prompts to prompts
     gallery_content = []
     all_categories = set()
     prompt_cards = []
     
     # Process all prompt files first to collect categories
-    for prompt_file in prompts_dir.rglob('*.md'):
-        if prompt_file.name == 'overview.md':
-            continue
-            
+    prompt_files = find_prompt_files(prompts_dir)
+    print(f"Found {len(prompt_files)} prompt files")
+    
+    for prompt_file in prompt_files:
         front_matter, content = read_prompt_file(prompt_file)
-        print(f"Processing {prompt_file}: {front_matter.get('title', 'No title')}")  # Debug log
+        print(f"Processing {prompt_file}: {front_matter.get('title', 'No title')}")
         
         if not front_matter:
+            print(f"Warning: No front matter found in {prompt_file}")
             continue
             
         title = front_matter.get('title', prompt_file.stem.replace('-', ' ').title())
@@ -91,11 +108,16 @@ def generate_gallery():
         emoji = front_matter.get('emoji', '📝')
         template = front_matter.get('template', content)
         
+        # Skip if no title or template
+        if not title or not template:
+            print(f"Warning: Skipping {prompt_file} - missing title or template")
+            continue
+        
         all_categories.update(tags)
         prompt_cards.append((title, description, template, tags, emoji))
     
-    print(f"Total prompts found: {len(prompt_cards)}")  # Debug log
-    print(f"Categories found: {all_categories}")  # Debug log
+    print(f"Total prompts found: {len(prompt_cards)}")
+    print(f"Categories found: {all_categories}")
     
     # Header with search only
     gallery_content.append(f'''# Prompt Gallery
@@ -123,10 +145,10 @@ def generate_gallery():
     
     # Write the gallery file
     output_file = 'docs/index.md'
-    print(f"Writing gallery to: {output_file}")  # Debug log
+    print(f"Writing gallery to: {output_file}")
     with open(output_file, 'w', encoding='utf-8') as f:
         f.write('\n'.join(gallery_content))
-    print("Gallery generation complete")  # Debug log
+    print("Gallery generation complete")
 
 if __name__ == '__main__':
     generate_gallery() 
