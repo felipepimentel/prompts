@@ -5,9 +5,8 @@
     <input type="text" class="prompt-search" placeholder="🔍 Search prompts...">
     <div class="search-filters">
       <select class="prompt-sort">
-        <option value="popular">Most Used</option>
-        <option value="recent">Recently Added</option>
-        <option value="rating">Highest Rated</option>
+        <option value="category">Category</option>
+        <option value="name">Name</option>
       </select>
     </div>
   </div>
@@ -23,29 +22,16 @@
 </div>
 
 <div class="prompt-gallery">
-  <!-- AI Image Generation Prompt -->
   <div class="prompt-card" 
        data-prompt-id="midjourney-1"
-       data-categories="ai,creative"
-       data-uses="2642837"
-       data-rating="4.9"
-       data-date="2024-01-15">
-    
+       data-categories="ai,creative">
     <div class="prompt-header">
-      <div class="prompt-title-section">
-        <h3 class="prompt-title">🎨 Midjourney V5 Style</h3>
-        <div class="prompt-author">by @promptmaster</div>
-      </div>
-      <div class="prompt-stats">
-        <span class="stat-item">👁️ 2.6M</span>
-        <span class="stat-item">⭐ 4.9</span>
-      </div>
+      <h3 class="prompt-title">🎨 Midjourney V5 Style</h3>
     </div>
 
     <div class="prompt-tags">
       <span class="prompt-tag">AI Art</span>
       <span class="prompt-tag">Midjourney</span>
-      <span class="prompt-tag">V5</span>
     </div>
 
     <div class="prompt-content">
@@ -61,154 +47,48 @@
     <div class="prompt-actions">
       <button class="action-btn copy-btn" data-clipboard-target="#midjourney-1-template">
         <span class="btn-icon">📋</span>
-        <span class="btn-text">Copy Prompt</span>
-      </button>
-      <button class="action-btn favorite-btn">
-        <span class="btn-icon">☆</span>
-        <span class="btn-text">Save</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- ChatGPT Code Review Prompt -->
-  <div class="prompt-card"
-       data-prompt-id="code-review-1"
-       data-categories="technical,development"
-       data-uses="1688619"
-       data-rating="4.8"
-       data-date="2024-01-18">
-    
-    <div class="prompt-header">
-      <div class="prompt-title-section">
-        <h3 class="prompt-title">💻 Advanced Code Review</h3>
-        <div class="prompt-author">by @techexpert</div>
-      </div>
-      <div class="prompt-stats">
-        <span class="stat-item">👁️ 1.6M</span>
-        <span class="stat-item">⭐ 4.8</span>
-      </div>
-    </div>
-
-    <div class="prompt-tags">
-      <span class="prompt-tag">Development</span>
-      <span class="prompt-tag">Code Review</span>
-      <span class="prompt-tag">Best Practices</span>
-    </div>
-
-    <div class="prompt-content">
-      <div class="prompt-description">
-        Get comprehensive code reviews with security analysis, performance optimization, and best practices.
-      </div>
-      
-      <div class="prompt-template">
-        <pre id="code-review-1-template">Please review this code with focus on:
-1. Security vulnerabilities
-2. Performance optimization
-3. Code organization
-4. Best practices
-5. Potential bugs
-
-Code:
-```[language]
-[paste your code here]
-```
-
-Provide specific recommendations for improvement in each category.</pre>
-      </div>
-    </div>
-
-    <div class="prompt-actions">
-      <button class="action-btn copy-btn" data-clipboard-target="#code-review-1-template">
-        <span class="btn-icon">📋</span>
-        <span class="btn-text">Copy Prompt</span>
-      </button>
-      <button class="action-btn favorite-btn">
-        <span class="btn-icon">☆</span>
-        <span class="btn-text">Save</span>
-      </button>
-    </div>
-  </div>
-
-  <!-- Business Analysis Prompt -->
-  <div class="prompt-card"
-       data-prompt-id="business-analysis-1"
-       data-categories="business,analysis"
-       data-uses="987654"
-       data-rating="4.7"
-       data-date="2024-01-20">
-    
-    <div class="prompt-header">
-      <div class="prompt-title-section">
-        <h3 class="prompt-title">📊 Market Analysis Framework</h3>
-        <div class="prompt-author">by @bizanalyst</div>
-      </div>
-      <div class="prompt-stats">
-        <span class="stat-item">👁️ 987K</span>
-        <span class="stat-item">⭐ 4.7</span>
-      </div>
-    </div>
-
-    <div class="prompt-tags">
-      <span class="prompt-tag">Business</span>
-      <span class="prompt-tag">Analysis</span>
-      <span class="prompt-tag">Strategy</span>
-    </div>
-
-    <div class="prompt-content">
-      <div class="prompt-description">
-        Comprehensive market analysis framework using PESTLE, Porter's Five Forces, and SWOT analysis.
-      </div>
-      
-      <div class="prompt-template">
-        <pre id="business-analysis-1-template">Conduct a comprehensive market analysis for [Company/Industry] covering:
-
-1. PESTLE Analysis:
-   - Political factors
-   - Economic factors
-   - Social factors
-   - Technological factors
-   - Legal factors
-   - Environmental factors
-
-2. Porter's Five Forces:
-   - Competitive rivalry
-   - Supplier power
-   - Buyer power
-   - Threat of substitution
-   - Threat of new entry
-
-3. SWOT Analysis:
-   - Strengths
-   - Weaknesses
-   - Opportunities
-   - Threats
-
-Provide actionable insights and strategic recommendations based on the analysis.</pre>
-      </div>
-    </div>
-
-    <div class="prompt-actions">
-      <button class="action-btn copy-btn" data-clipboard-target="#business-analysis-1-template">
-        <span class="btn-icon">📋</span>
-        <span class="btn-text">Copy Prompt</span>
-      </button>
-      <button class="action-btn favorite-btn">
-        <span class="btn-icon">☆</span>
-        <span class="btn-text">Save</span>
+        <span class="btn-text">Copy</span>
       </button>
     </div>
   </div>
 </div>
 
+<div class="pagination">
+  <button class="page-btn" data-page="prev">← Previous</button>
+  <span class="page-info">Page <span class="current-page">1</span> of <span class="total-pages">10</span></span>
+  <button class="page-btn" data-page="next">Next →</button>
+</div>
+
 <script>
-// Initialize view count formatting
-document.querySelectorAll('.stat-item').forEach(stat => {
-  if (stat.textContent.includes('M')) {
-    const num = parseFloat(stat.textContent.replace(/[^0-9.]/g, ''));
-    stat.setAttribute('title', `${(num * 1000000).toLocaleString()} views`);
-  } else if (stat.textContent.includes('K')) {
-    const num = parseFloat(stat.textContent.replace(/[^0-9.]/g, ''));
-    stat.setAttribute('title', `${(num * 1000).toLocaleString()} views`);
-  }
+// Initialize pagination
+const itemsPerPage = 9;
+const promptCards = document.querySelectorAll('.prompt-card');
+const totalPages = Math.ceil(promptCards.length / itemsPerPage);
+let currentPage = 1;
+
+function showPage(page) {
+  const start = (page - 1) * itemsPerPage;
+  const end = start + itemsPerPage;
+  
+  promptCards.forEach((card, index) => {
+    card.style.display = (index >= start && index < end) ? 'flex' : 'none';
+  });
+  
+  document.querySelector('.current-page').textContent = page;
+  document.querySelector('.total-pages').textContent = totalPages;
+}
+
+document.querySelectorAll('.page-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    if (btn.dataset.page === 'prev' && currentPage > 1) {
+      currentPage--;
+    } else if (btn.dataset.page === 'next' && currentPage < totalPages) {
+      currentPage++;
+    }
+    showPage(currentPage);
+  });
 });
+
+// Initialize first page
+showPage(1);
 </script> 

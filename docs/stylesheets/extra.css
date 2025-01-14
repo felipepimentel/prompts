@@ -171,7 +171,7 @@
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 1.5rem;
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   padding: 0 1rem;
 }
 
@@ -184,7 +184,6 @@
   flex-direction: column;
   transition: all 0.2s ease;
   position: relative;
-  overflow: hidden;
 }
 
 .prompt-card:hover {
@@ -194,14 +193,7 @@
 }
 
 .prompt-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 1rem;
-}
-
-.prompt-title-section {
-  flex: 1;
 }
 
 .prompt-title {
@@ -248,7 +240,8 @@
 
 .prompt-content {
   flex: 1;
-  margin: 0.75rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .prompt-description {
@@ -268,8 +261,15 @@
   font-family: var(--md-code-font-family);
   font-size: 0.85rem;
   color: var(--md-typeset-color);
-  max-height: 200px;
+  flex: 1;
   overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.prompt-template pre {
+  margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 .prompt-template::-webkit-scrollbar {
@@ -286,13 +286,11 @@
 }
 
 .prompt-actions {
-  display: flex;
-  gap: 0.75rem;
   margin-top: 1rem;
 }
 
 .action-btn {
-  flex: 1;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -321,6 +319,40 @@
 .favorite-btn.active {
   background: var(--md-primary-fg-color);
   color: var(--md-primary-bg-color);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  padding: 0 1rem;
+}
+
+.page-btn {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  background: rgba(0,0,0,0.2);
+  color: var(--md-typeset-color);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.page-btn:hover {
+  background: var(--md-primary-fg-color);
+  border-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}
+
+.page-info {
+  font-size: 0.9rem;
+  color: var(--md-typeset-color);
+  opacity: 0.8;
 }
 
 /* Responsive adjustments */

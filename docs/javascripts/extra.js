@@ -1,82 +1,84 @@
+// Initialize clipboard
+new ClipboardJS('.copy-btn').on('success', function(e) {
+  const btn = e.trigger;
+  const originalText = btn.innerHTML;
+  btn.innerHTML = '<span class="btn-icon">✓</span><span class="btn-text">Copied!</span>';
+  setTimeout(() => {
+    btn.innerHTML = originalText;
+  }, 2000);
+});
+
+// Search and filter functionality
 document.addEventListener('DOMContentLoaded', function() {
-  // Initialize clipboard.js
-  const clipboard = new ClipboardJS('.copy-btn');
-  
-  clipboard.on('success', function(e) {
-    const tooltip = e.trigger.querySelector('.copy-tooltip');
-    tooltip.classList.add('visible');
-    setTimeout(() => {
-      tooltip.classList.remove('visible');
-    }, 2000);
-    e.clearSelection();
-  });
-
-  // Initialize favorites system
-  const favorites = JSON.parse(localStorage.getItem('prompt-favorites') || '{}');
-  
-  document.querySelectorAll('.favorite-btn').forEach(btn => {
-    const promptId = btn.closest('.prompt-card').dataset.promptId;
-    if (favorites[promptId]) {
-      btn.classList.add('active');
-      btn.innerHTML = '★';
-    }
-    
-    btn.addEventListener('click', () => {
-      btn.classList.toggle('active');
-      btn.innerHTML = btn.classList.contains('active') ? '★' : '☆';
-      favorites[promptId] = btn.classList.contains('active');
-      localStorage.setItem('prompt-favorites', JSON.stringify(favorites));
-    });
-  });
-
-  // Initialize filters
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  filterButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterButtons.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      
-      const category = btn.dataset.category;
-      document.querySelectorAll('.prompt-card').forEach(card => {
-        if (category === 'all' || card.dataset.categories.includes(category)) {
-          card.style.display = 'block';
-        } else {
-          card.style.display = 'none';
-        }
-      });
-    });
-  });
-
-  // Initialize search
   const searchInput = document.querySelector('.prompt-search');
-  if (searchInput) {
-    searchInput.addEventListener('input', (e) => {
-      const searchTerm = e.target.value.toLowerCase();
-      document.querySelectorAll('.prompt-card').forEach(card => {
-        const content = card.textContent.toLowerCase();
-        const shouldShow = content.includes(searchTerm);
-        card.style.display = shouldShow ? 'block' : 'none';
-      });
-    });
-  }
-
-  // Initialize sorting
   const sortSelect = document.querySelector('.prompt-sort');
-  if (sortSelect) {
-    sortSelect.addEventListener('change', (e) => {
-      const cards = Array.from(document.querySelectorAll('.prompt-card'));
-      const sortedCards = cards.sort((a, b) => {
-        const valueA = a.dataset[e.target.value];
-        const valueB = b.dataset[e.target.value];
-        
-        if (e.target.value === 'name') {
-          return valueA.localeCompare(valueB);
-        }
-        return Number(valueB) - Number(valueA);
-      });
-      
-      const container = document.querySelector('.prompt-gallery');
-      sortedCards.forEach(card => container.appendChild(card));
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const promptCards = document.querySelectorAll('.prompt-card');
+  let currentFilter = 'all';
+
+  // Search functionality
+  searchInput.addEventListener('input', filterCards);
+
+  // Sort functionality
+  sortSelect.addEventListener('change', filterCards);
+
+  // Filter buttons
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.category;
+      filterCards();
     });
+  });
+
+  function filterCards() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const sortBy = sortSelect.value;
+    let visibleCards = [];
+
+    promptCards.forEach(card => {
+      const title = card.querySelector('.prompt-title').textContent.toLowerCase();
+      const description = card.querySelector('.prompt-description').textContent.toLowerCase();
+      const categories = card.dataset.categories.split(',');
+      const template = card.querySelector('.prompt-template').textContent.toLowerCase();
+      
+      const matchesSearch = title.includes(searchTerm) || 
+                           description.includes(searchTerm) || 
+                           template.includes(searchTerm);
+      
+      const matchesFilter = currentFilter === 'all' || categories.includes(currentFilter);
+
+      if (matchesSearch && matchesFilter) {
+        card.style.display = 'flex';
+        visibleCards.push(card);
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Sort visible cards
+    if (sortBy === 'name') {
+      visibleCards.sort((a, b) => {
+        const titleA = a.querySelector('.prompt-title').textContent;
+        const titleB = b.querySelector('.prompt-title').textContent;
+        return titleA.localeCompare(titleB);
+      });
+    } else if (sortBy === 'category') {
+      visibleCards.sort((a, b) => {
+        const catA = a.dataset.categories.split(',')[0];
+        const catB = b.dataset.categories.split(',')[0];
+        return catA.localeCompare(catB);
+      });
+    }
+
+    // Reorder cards in DOM
+    const gallery = document.querySelector('.prompt-gallery');
+    visibleCards.forEach(card => gallery.appendChild(card));
+
+    // Update pagination
+    currentPage = 1;
+    totalPages = Math.ceil(visibleCards.length / itemsPerPage);
+    showPage(1);
   }
 }); 
