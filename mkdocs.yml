@@ -95,8 +95,7 @@ markdown_extensions:
       alternate_style: true
 
 nav:
-  - Home: index.md
-  - Prompt Gallery: gallery.md
+  - Gallery: index.md
   - Categories:
     - Overview: prompts/overview.md
     - Academic: prompts/academic.md
@@ -112,3 +111,4 @@ nav:
     - QA: prompts/qa.md
   - Getting Started: getting-started.md
   - Contributing: contributing.md
+  - About: about.md

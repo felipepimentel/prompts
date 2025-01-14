@@ -166,24 +166,26 @@
 /* Prompt Cards */
 .prompt-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1rem;
   padding: 1rem 0;
 }
 
 .prompt-card {
   background: var(--md-code-bg-color);
-  border-radius: 12px;
-  padding: 1.5rem;
+  border-radius: 8px;
+  padding: 1.2rem;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
   transition: all 0.2s ease;
   border: 1px solid var(--md-typeset-table-color);
   position: relative;
-  overflow: hidden;
 }
 
 .prompt-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .prompt-header {
@@ -239,7 +241,23 @@
 }
 
 .prompt-content {
-  margin: 1.5rem 0;
+  flex: 1;
+  overflow-y: auto;
+  margin: 1rem 0;
+  padding-right: 0.5rem;
+}
+
+.prompt-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.prompt-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.prompt-content::-webkit-scrollbar-thumb {
+  background: var(--md-primary-fg-color);
+  border-radius: 4px;
 }
 
 .prompt-description {
@@ -251,11 +269,12 @@
 
 .prompt-template {
   background: var(--md-code-bg-color);
-  padding: 1.2rem;
-  border-radius: 8px;
+  padding: 1rem;
+  border-radius: 6px;
   position: relative;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   border: 1px solid var(--md-typeset-table-color);
+  font-size: 0.85rem;
 }
 
 .prompt-template pre {
