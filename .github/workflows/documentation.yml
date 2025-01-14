@@ -31,6 +31,12 @@ jobs:
           pip install mkdocs-minify-plugin
           pip install mkdocs-git-revision-date-localized-plugin
           pip install pillow cairosvg
+          pip install pyyaml
+
+      - name: Generate gallery
+        run: |
+          chmod +x scripts/generate_gallery.py
+          python scripts/generate_gallery.py
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
