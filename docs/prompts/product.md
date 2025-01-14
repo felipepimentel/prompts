@@ -1,144 +1,133 @@
 # Product Prompts
 
-A collection of prompts designed to assist with product development and management tasks.
+This section contains prompts for product development, management, and strategy.
 
-## User Story Generator
+## Directory Structure
 
-### Context
-Use this prompt to create well-structured user stories for product features.
-
-### Variables
-- {user_type}: Type of user (e.g., "admin", "customer", "content creator")
-- {feature}: The feature or functionality being described
-- {benefit}: The value or benefit to the user
-
-### Prompt Template
 ```
-Create detailed user stories for a {user_type} who needs to {feature}.
-
-Include:
-1. User story in standard format (As a..., I want..., So that...)
-2. Acceptance criteria
-3. Technical considerations
-4. Edge cases
-5. Dependencies
-6. Estimated complexity (T-shirt size)
-
-Consider both happy path and error scenarios.
-```
-
-### Example Usage
-```
-Create detailed user stories for a "content creator" who needs to "schedule social media posts across multiple platforms".
-
-Include:
-1. User story in standard format (As a..., I want..., So that...)
-2. Acceptance criteria
-3. Technical considerations
-4. Edge cases
-5. Dependencies
-6. Estimated complexity (T-shirt size)
-
-Consider both happy path and error scenarios.
-```
-
-### Best Practices
-- Be specific about user type
-- Focus on user value
-- Include clear acceptance criteria
-- Consider edge cases
-
-## Feature Prioritization
-
-### Context
-Use this prompt to help prioritize features and create product roadmaps.
-
-### Variables
-- {features_list}: List of features to prioritize
-- {business_goals}: Key business objectives
-- {constraints}: Resource or time constraints
-- {metrics}: Success metrics
-
-### Prompt Template
-```
-Help prioritize the following features considering our business goals and constraints:
-
-Features:
-{features_list}
-
-Business Goals:
-{business_goals}
-
-Constraints:
-{constraints}
-
-Success Metrics:
-{metrics}
-
-Please provide:
-1. Prioritized feature list with reasoning
-2. Impact vs effort analysis
-3. Suggested timeline
-4. Risk assessment
-5. Dependencies between features
+product/
+├── digital-product/
+│   ├── analyze-potential-audience.md
+│   ├── generate-product-idea.md
+│   └── market-trends.md
+├── goals/
+│   ├── goal-planning-and-tracking.md
+│   ├── goal-structuring-framework.md
+│   ├── project-management/
+│   │   ├── effective-meeting-facilitation-guide.md
+│   │   ├── milestone-tracking-system.md
+│   │   ├── project-blueprint-creation-guide.md
+│   │   ├── risk-analysis-framework.md
+│   │   ├── stakeholder-communication-strategy.md
+│   │   ├── task-planning-methodology.md
+│   │   ├── task-prioritization-framework.md
+│   │   └── team-coordination-framework.md
+│   ├── strategic-goal-brainstorming.md
+│   └── team-motivation-strategies.md
+├── product-management/
+│   ├── business-idea-validation-framework.md
+│   ├── business-plan-development-framework.md
+│   ├── content-ideation-framework.md
+│   ├── customer-feedback-analysis-system.md
+│   ├── customer-persona-development-system.md
+│   ├── digital-market-trends-analysis.md
+│   ├── innovation-ideation-system.md
+│   ├── market-growth-research-framework.md
+│   ├── market-research-methodology.md
+│   ├── product-concept-development-framework.md
+│   ├── product-requirements-document-guide.md
+│   ├── product-roadmap-framework.md
+│   ├── tagline-creation-framework.md
+│   └── user-story-development-framework.md
+└── time-management/
+    ├── daily-goal-setting-framework.md
+    ├── daily-task-organization-framework.md
+    └── work-prioritization-framework.md
 ```
 
-### Best Practices
-- List all features clearly
-- Define business goals
-- Specify constraints
-- Include success metrics
+## Categories
 
-## Product Requirements Document
+### Digital Product Development
+Tools for digital product creation:
+- Audience analysis
+- Product ideation
+- Market trend analysis
+- Product validation
+- Feature planning
 
-### Context
-Use this prompt to generate comprehensive PRDs for new features.
+### Goals and Planning
+Resources for goal setting and management:
+- Goal planning and tracking
+- Strategic brainstorming
+- Team motivation
+- Project management
+  - Meeting facilitation
+  - Milestone tracking
+  - Risk analysis
+  - Task planning
+  - Team coordination
 
-### Variables
-- {feature_name}: Name of the feature
-- {target_users}: Primary user segments
-- {problem_statement}: Problem being solved
-- {success_criteria}: Definition of success
+### Product Management
+Comprehensive product management tools:
+- Business validation
+- Market research
+- Customer feedback
+- Product roadmap
+- Requirements documentation
+- User story development
+- Innovation ideation
 
-### Prompt Template
+### Time Management
+Tools for efficient time utilization:
+- Daily goal setting
+- Task organization
+- Work prioritization
+- Time allocation
+- Productivity optimization
+
+## Best Practices
+
+1. Define clear product vision
+2. Research target market thoroughly
+3. Set measurable goals
+4. Plan iteratively
+5. Track progress consistently
+6. Gather user feedback
+7. Prioritize effectively
+8. Document decisions
+9. Manage stakeholder expectations
+10. Balance resources
+
+## Examples
+
+```markdown
+# Product Development
+Create product plan for:
+- Type: [product type]
+- Market: [target market]
+- Features: [key features]
+Include validation steps and timeline.
+
+# Goal Setting
+Define goals for:
+- Timeframe: [period]
+- Scope: [project/team scope]
+- Metrics: [success metrics]
+Include tracking and review process.
+
+# Time Management
+Organize schedule for:
+- Tasks: [task list]
+- Priority: [priority levels]
+- Timeline: [time constraints]
+Include coordination and dependencies.
 ```
-Create a detailed PRD for {feature_name} targeting {target_users}.
 
-Include:
-1. Problem Statement
-   - Current situation
-   - User pain points
-   - Market opportunity
+## Additional Resources
 
-2. Proposed Solution
-   - Feature overview
-   - User flows
-   - Technical requirements
-   - UI/UX considerations
-
-3. Success Metrics
-   - KPIs
-   - Success criteria
-   - Measurement approach
-
-4. Implementation Details
-   - Dependencies
-   - Timeline
-   - Resource requirements
-   - Risks and mitigation
-
-5. Future Considerations
-   - Scalability
-   - Maintenance
-   - Potential improvements
-```
-
-### Best Practices
-- Be specific about the problem
-- Include clear success metrics
-- Consider implementation details
-- Think about future scalability
-
-## More Prompts
-
-Check out our [Contributing Guide](../contributing.md) to add more product prompts to this collection. 
+- Product management frameworks
+- Goal-setting methodologies
+- Time management techniques
+- Project planning tools
+- Team collaboration guides
+- Market research resources 

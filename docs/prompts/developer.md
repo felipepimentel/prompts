@@ -1,228 +1,140 @@
 # Developer Prompts
 
-A collection of prompts designed to assist with software development tasks.
+This section contains prompts for software development and related tasks.
 
-## Code Review Prompt
+## Directory Structure
 
-### Context
-Use this prompt when you need to review code for best practices, potential issues, and improvements.
-
-### Variables
-- {language}: Programming language of the code
-- {code_snippet}: The code to be reviewed
-- {review_focus}: Specific aspects to focus on (e.g., "security", "performance", "readability")
-
-### Prompt Template
 ```
-Act as an experienced {language} developer conducting a thorough code review. Review the following code with special attention to {review_focus}:
-
-{code_snippet}
-
-Please provide:
-1. Potential issues and bugs
-2. Best practices violations
-3. Performance considerations
-4. Suggested improvements
-5. Security concerns (if applicable)
-```
-
-### Example Usage
-```
-Act as an experienced Python developer conducting a thorough code review. Review the following code with special attention to security and performance:
-
-def process_user_data(user_input):
-    query = "SELECT * FROM users WHERE id = " + user_input
-    db.execute(query)
-    return True
-
-Please provide:
-1. Potential issues and bugs
-2. Best practices violations
-3. Performance considerations
-4. Suggested improvements
-5. Security concerns (if applicable)
+developer/
+├── cursor/
+│   └── agents/
+├── database/
+├── diagram/
+├── docker/
+├── frameworks/
+│   ├── astro/
+│   ├── chrome-extension/
+│   ├── cloud-native/
+│   ├── fastapi/
+│   ├── go/
+│   ├── gpu/
+│   ├── htmx/
+│   ├── kubernetes/
+│   ├── nextjs/
+│   ├── python/
+│   ├── react/
+│   ├── typescript/
+│   └── web/
+├── git/
+├── go/
+├── guidelines/
+│   └── github/
+├── instructions/
+├── metaprompting/
+├── payments/
+├── shadcn/
+├── stripe/
+├── supabase/
+└── ui/
 ```
 
-### Best Practices
-- Always specify the programming language
-- Be clear about review focus areas
-- Include context about the code's purpose
-- Request specific types of feedback
+## Categories
 
-## Strategic Linting
+### Development Frameworks
+Comprehensive guides and prompts for various frameworks and technologies:
 
-### Context
-Use this prompt to define comprehensive linting directives for your project.
+#### Web Development
+- **Astro**: Setup guides for Astro with ShadCN, Tailwind, and TypeScript
+- **Next.js**: Frontend development, setup guides, and integration with ShadCN/Tailwind
+- **React**: Component development, styling, and TypeScript integration
+- **HTMX**: Basic and advanced development guides, Go integration
 
-### Variables
-- {project_type}: Type of project (e.g., "frontend", "backend", "full-stack")
-- {language}: Primary programming language
-- {focus_areas}: Key areas of concern (e.g., "security", "performance", "maintainability")
+#### Backend Development
+- **FastAPI**: Best practices, development guides, and scalability
+- **Go**: Backend scalability, REST APIs, and servemux guides
+- **Python**: Development guides, containerization, and scientific computing
 
-### Prompt Template
-```
-Define linting directives for a {project_type} project using {language} with focus on {focus_areas}.
+#### Cloud & Infrastructure
+- **Docker**: Containerization guides
+- **Kubernetes**: Documentation and deployment guides
+- **Cloud Native**: Knative, Istio, and Typesense integration
 
-Provide directives in the following categories:
+#### Database & Storage
+- **PostgreSQL**: Style guides and best practices
+- **Supabase**: SQL formatting, migrations, and integration
 
-1. Code Quality
-ENFORCE:
-  - style=<standard>
-  - types=<strictness>
-  - docs=<requirement>
-  - tests=<coverage>
+### Development Tools
+- **Git**: Commit message guidelines and version control
+- **Cursor**: Agent workflows, documentation, and testing
+- **Docker**: Containerization and deployment
 
-2. Security
-CHECK:
-  - input=<validation>
-  - auth=<level>
-  - data=<protection>
-  - api=<security>
+### UI/UX Development
+- **ShadCN**: Component library integration
+- **Tailwind**: Styling and layout guides
+- **UI Components**: Design system implementation
 
-3. Performance
-OPTIMIZE:
-  - complexity=<limit>
-  - memory=<efficiency>
-  - async=<handling>
-  - cache=<strategy>
+### Payment Integration
+- **Stripe**: Payment processing integration
+- **Payment Systems**: General payment integration guides
 
-4. Environment-Specific Rules
-ENV: development
-  - <dev_rules>
-ENV: production
-  - <prod_rules>
+### Development Guidelines
+- Code quality standards
+- Git workflow practices
+- Documentation guidelines
+- Clean code principles
+- Technical diagramming
 
-Include implementation details for:
-1. Tool configuration
-2. CI/CD integration
-3. Team adoption guidelines
-4. Exception handling
-```
+### Instructions & Tutorials
+- Code review procedures
+- Bug fixing methodologies
+- Project setup guides
+- Component creation
+- Status reporting
 
-### Example Usage
-```
-Define linting directives for a "frontend" project using "TypeScript" with focus on "security, performance, accessibility".
+### Metaprompting
+- Prompt engineering fundamentals
+- Advanced prompt techniques
+- Prompt optimization and evaluation
 
-Provide directives in the following categories:
+## Best Practices
 
-1. Code Quality
-ENFORCE:
-  - style=airbnb
-  - types=strict
-  - docs=required
-  - tests=coverage:80
+1. Follow language-specific coding standards
+2. Maintain consistent documentation
+3. Use version control effectively
+4. Write clean, maintainable code
+5. Implement proper error handling
+6. Follow security best practices
+7. Write comprehensive tests
 
-2. Security
-CHECK:
-  - input=sanitize
-  - auth=validate
-  - data=encrypt
-  - api=secure
+## Examples
 
-3. Performance
-OPTIMIZE:
-  - complexity=O(n)
-  - memory=efficient
-  - async=promise
-  - cache=browser
+```markdown
+# Code Review
+Review this [language] code for:
+- Best practices
+- Performance optimizations
+- Security concerns
+- Code style consistency
 
-4. Environment-Specific Rules
-ENV: development
-  - debug=verbose
-  - checks=all
-ENV: production
-  - optimize=bundle
-  - security=max
+# Project Setup
+Create a new project with:
+- Framework: [framework]
+- Language: [language]
+- Additional tools: [tools]
+Include proper configuration and documentation.
 
-Include implementation details for:
-1. Tool configuration
-2. CI/CD integration
-3. Team adoption guidelines
-4. Exception handling
+# Bug Fix
+Debug this issue:
+- Problem description: [description]
+- Expected behavior: [expected]
+- Current behavior: [current]
+Provide a solution with explanation.
 ```
 
-### Best Practices
-- Define clear standards
-- Include all environments
-- Consider team workflow
-- Document exceptions
+## Additional Resources
 
-## Documentation Generator
-
-### Context
-Use this prompt to generate comprehensive documentation for code.
-
-### Variables
-- {language}: Programming language
-- {code}: Code to document
-- {doc_style}: Documentation style (e.g., JSDoc, Google Style, NumPy)
-
-### Prompt Template
-```
-Generate {doc_style} style documentation for the following {language} code. Include:
-- Function/class purpose
-- Parameters and return values
-- Usage examples
-- Important notes/warnings
-
-Code:
-{code}
-```
-
-### Example Usage
-```
-Generate Google Style documentation for the following Python code. Include:
-- Function/class purpose
-- Parameters and return values
-- Usage examples
-- Important notes/warnings
-
-Code:
-def calculate_discount(price, percentage, max_discount=100):
-    discount = price * (percentage / 100)
-    return min(discount, max_discount)
-```
-
-### Best Practices
-- Specify documentation style guide
-- Include example usage scenarios
-- Request parameter descriptions
-- Ask for edge cases and limitations
-
-## Architecture Planning
-
-### Context
-Use this prompt when planning software architecture or system design.
-
-### Variables
-- {project_type}: Type of project (e.g., web app, mobile app, API)
-- {requirements}: Key requirements and constraints
-- {scale}: Expected scale and performance needs
-
-### Prompt Template
-```
-Design a software architecture for a {project_type} with the following requirements:
-
-Requirements:
-{requirements}
-
-Scale Considerations:
-{scale}
-
-Please provide:
-1. High-level architecture diagram (in text/ASCII)
-2. Key components and their responsibilities
-3. Data flow between components
-4. Technology stack recommendations
-5. Potential challenges and solutions
-```
-
-### Best Practices
-- Be specific about requirements
-- Include scale considerations
-- Request specific deliverables
-- Ask for trade-off analysis
-
-## More Prompts
-
-Check out our [Contributing Guide](../contributing.md) to add more developer prompts to this collection. 
+- Language-specific documentation
+- Framework guides
+- Tool documentation
+- Best practices guides
+- Security guidelines 

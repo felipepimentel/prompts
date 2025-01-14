@@ -1,193 +1,108 @@
 # Art Prompts
 
-A collection of prompts designed to assist with art creation and design tasks.
+This section contains prompts for various artistic endeavors and creative projects.
 
-## Image Generation
+## Directory Structure
 
-### Context
-Use this prompt to generate detailed descriptions for AI image generation tools.
-
-### Variables
-- {subject}: Main subject of the image
-- {style}: Artistic style or aesthetic
-- {mood}: Emotional tone or atmosphere
-- {technical_details}: Specific technical requirements
-
-### Prompt Template
 ```
-Create a detailed {style} image of {subject} conveying a {mood} mood.
-
-Include:
-1. Composition details
-   - Perspective
-   - Framing
-   - Focal point
-   - Background elements
-
-2. Artistic elements
-   - Color palette
-   - Lighting
-   - Textures
-   - Shadows and highlights
-
-3. Technical specifications
-   {technical_details}
-
-4. Style references
-   - Artists/artworks to reference
-   - Specific techniques
-   - Era/period influences
+art/
+├── coloring-book/
+│   ├── brainstorm-themes.md
+│   ├── create-flow-of-images.md
+│   ├── generate-images.md
+│   ├── illustration-design-framework.md
+│   ├── image-sequence-framework.md
+│   ├── seasonal-theme-framework.md
+│   ├── storyline-development-framework.md
+│   ├── suggest-seasonal-themes.md
+│   ├── suggest-storyline.md
+│   └── theme-development-framework.md
+├── filmmaking/
+│   ├── breakdown-scene.md
+│   ├── character-development-framework.md
+│   ├── develop-character.md
+│   ├── film-idea-generation-framework.md
+│   ├── generate-ideias.md
+│   ├── location-scouting-framework.md
+│   ├── plot-structure-framework.md
+│   ├── scene-breakdown-framework.md
+│   ├── scout-locations.md
+│   └── structure-plot.md
+└── music/
+    ├── chorus-creation-framework.md
+    ├── create-melody.md
+    ├── generate-chorus.md
+    ├── generate-lyrics.md
+    ├── lyrics-creation-framework.md
+    └── melody-creation-framework.md
 ```
 
-### Example Usage
-```
-Create a detailed "cyberpunk" image of "a futuristic Tokyo street market" conveying a "mysterious and energetic" mood.
+## Categories
 
-Include:
-1. Composition details
-   - Perspective: Low angle, street level view
-   - Framing: Wide shot with dynamic diagonal lines
-   - Focal point: Central market stall with holographic displays
-   - Background elements: Towering neon-lit buildings, flying vehicles
+### Coloring Book Creation
+Tools and frameworks for developing coloring books:
+- Theme brainstorming and development
+- Image sequence planning
+- Seasonal theme suggestions
+- Storyline development
+- Illustration design
 
-2. Artistic elements
-   - Color palette: Neon purples, blues, and hot pinks
-   - Lighting: Multiple light sources, strong contrast
-   - Textures: Wet streets, metallic surfaces, steam
-   - Shadows and highlights: Strong neon reflections
+### Filmmaking
+Resources for film production and development:
+- Scene breakdown and analysis
+- Character development
+- Location scouting
+- Plot structuring
+- Film idea generation
 
-3. Technical specifications
-   - Resolution: 4K
-   - Aspect ratio: 16:9
-   - Style: Photorealistic with artistic elements
+### Music Creation
+Tools for musical composition and songwriting:
+- Melody creation
+- Chorus development
+- Lyrics writing
+- Song structure planning
+- Musical arrangement
 
-4. Style references
-   - Artists/artworks: Blade Runner 2049, Ghost in the Shell
-   - Specific techniques: Volumetric lighting, ray tracing
-   - Era/period influences: 1980s Japanese cyberpunk
-```
+## Best Practices
 
-### Best Practices
-- Be specific about composition
-- Include technical requirements
-- Reference specific styles/artists
-- Describe lighting and mood
+1. Define clear creative objectives
+2. Consider your target audience
+3. Maintain consistency in style
+4. Plan for scalability and adaptability
+5. Document creative decisions
+6. Test and iterate on concepts
+7. Gather feedback effectively
 
-## Character Design
+## Examples
 
-### Context
-Use this prompt to create detailed character design descriptions.
+```markdown
+# Visual Art Creation
+Generate a concept for:
+- Style: [style]
+- Medium: [medium]
+- Theme: [theme]
+Include composition guidelines and color palette.
 
-### Variables
-- {character_type}: Type of character to design
-- {personality}: Character's personality traits
-- {background}: Character's history/context
-- {visual_style}: Visual style for the design
+# Music Composition
+Create a musical piece with:
+- Genre: [genre]
+- Mood: [mood]
+- Instruments: [instruments]
+Include structure and arrangement notes.
 
-### Prompt Template
-```
-Design a {character_type} character with {personality} personality traits in a {visual_style} style.
-
-Character Details:
-1. Physical Appearance
-   - Body type and features
-   - Clothing and accessories
-   - Distinctive marks
-   - Color scheme
-
-2. Personality Expression
-   - Pose and gestures
-   - Facial expression
-   - Body language
-   - Character-specific elements
-
-3. Background Context
-   {background}
-
-4. Technical Requirements
-   - Multiple angles
-   - Expression sheet
-   - Size comparison
-   - Detail closeups
+# Film Scene Development
+Design a scene with:
+- Setting: [setting]
+- Characters: [characters]
+- Mood: [mood]
+Include camera directions and dialogue suggestions.
 ```
 
-### Best Practices
-- Include personality traits
-- Specify visual style
-- Detail physical features
-- Consider context
+## Additional Resources
 
-## Environment Design
-
-### Context
-Use this prompt to create detailed environment and scene descriptions.
-
-### Variables
-- {location_type}: Type of environment
-- {time_period}: Historical or future period
-- {atmosphere}: Mood and atmosphere
-- {purpose}: Intended use of the environment
-
-### Prompt Template
-```
-Design a {location_type} environment set in {time_period} with a {atmosphere} atmosphere.
-
-Include:
-1. Environmental Elements
-   - Architecture and structures
-   - Natural elements
-   - Weather conditions
-   - Time of day
-
-2. Atmospheric Details
-   - Lighting conditions
-   - Color palette
-   - Texture details
-   - Environmental effects
-
-3. Purpose and Function
-   {purpose}
-
-4. Technical Specifications
-   - Viewing angle
-   - Scale reference
-   - Level of detail
-   - Key focal points
-```
-
-### Example Usage
-```
-Design a "abandoned space station" environment set in "far future" with a "eerie and mysterious" atmosphere.
-
-Include:
-1. Environmental Elements
-   - Architecture: Retro-futuristic corridors, damaged panels
-   - Natural elements: Zero gravity debris, space vista
-   - Weather conditions: Vacuum effects, micro-meteorite damage
-   - Time of day: Space darkness with emergency lighting
-
-2. Atmospheric Details
-   - Lighting: Emergency red lights, starlight through windows
-   - Color palette: Cold blues, warning reds, metallic grays
-   - Texture details: Worn metal, frost patterns, dust
-   - Environmental effects: Floating debris, light shafts
-
-3. Purpose and Function
-   "Scientific research station turned derelict"
-
-4. Technical Specifications
-   - Viewing angle: Multiple perspectives
-   - Scale reference: Human-sized objects
-   - Level of detail: High detail on foreground elements
-   - Key focal points: Control room, observation deck
-```
-
-### Best Practices
-- Define atmosphere clearly
-- Include scale references
-- Specify lighting conditions
-- Consider functionality
-
-## More Prompts
-
-Check out our [Contributing Guide](../contributing.md) to add more art prompts to this collection. 
+- Art theory references
+- Creative process guides
+- Technical tutorials
+- Style guides
+- Industry best practices
+- Collaboration guidelines 

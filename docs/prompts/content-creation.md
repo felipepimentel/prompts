@@ -1,135 +1,161 @@
 # Content Creation Prompts
 
-A collection of prompts designed to assist with content creation and writing tasks.
+This section contains prompts for various types of content creation and management.
 
-## Blog Post Generator
+## Directory Structure
 
-### Context
-Use this prompt to generate well-structured blog post outlines and content.
-
-### Variables
-- {topic}: Main topic of the blog post
-- {target_audience}: Intended readers
-- {tone}: Writing style (e.g., professional, casual, technical)
-- {word_count}: Desired length of the post
-
-### Prompt Template
 ```
-Create a comprehensive blog post about {topic} for {target_audience} using a {tone} tone. The post should be approximately {word_count} words.
-
-Include:
-1. Engaging headline
-2. Introduction that hooks the reader
-3. Main sections with subheadings
-4. Practical examples or case studies
-5. Actionable takeaways
-6. Conclusion with call-to-action
-
-Focus on providing value while maintaining SEO best practices.
-```
-
-### Example Usage
-```
-Create a comprehensive blog post about "Sustainable Urban Gardening" for "busy city professionals" using a "casual yet informative" tone. The post should be approximately 1200 words.
-
-Include:
-1. Engaging headline
-2. Introduction that hooks the reader
-3. Main sections with subheadings
-4. Practical examples or case studies
-5. Actionable takeaways
-6. Conclusion with call-to-action
-
-Focus on providing value while maintaining SEO best practices.
-```
-
-### Best Practices
-- Specify target audience clearly
-- Define tone and style
-- Request specific sections
-- Include SEO considerations
-
-## Social Media Content
-
-### Context
-Use this prompt to generate engaging social media posts.
-
-### Variables
-- {platform}: Social media platform (e.g., Twitter, LinkedIn, Instagram)
-- {topic}: Subject matter of the post
-- {goal}: Desired outcome (e.g., engagement, clicks, awareness)
-- {brand_voice}: Brand's tone and style
-
-### Prompt Template
-```
-Create a {platform} post about {topic} that aims to {goal}. Use {brand_voice} voice and tone.
-
-Include:
-1. Main post content
-2. Relevant hashtags
-3. Call-to-action
-4. Emoji suggestions (if appropriate)
-5. Image/video description (if needed)
-
-Ensure the content follows {platform}'s best practices and character limits.
+content-creation/
+├── course/
+│   ├── assist-research.md
+│   ├── course-research-framework.md
+│   ├── create-an-interactive-quiz.md
+│   ├── discussion-topics-framework.md
+│   ├── draft-script-video.md
+│   ├── interactive-quiz-framework.md
+│   ├── learning-strategy-framework.md
+│   ├── outline-course-syllabus.md
+│   ├── suggest-discussion-topics.md
+│   ├── suggest-supplemental-materials.md
+│   ├── supplemental-materials-framework.md
+│   ├── syllabus-generator-framework.md
+│   └── video-script-framework.md
+├── video/
+│   ├── backstory-development-framework.md
+│   ├── brainstorm-topics.md
+│   ├── build-narrative-flow.md
+│   ├── character-profile-framework.md
+│   ├── craft-dialogs.md
+│   ├── create-backstory.md
+│   ├── create-character-profile.md
+│   ├── dialog-creation-framework.md
+│   ├── draft-scenes.md
+│   ├── generate-title.md
+│   ├── narrative-flow-framework.md
+│   ├── scene-development-framework.md
+│   ├── title-generation-framework.md
+│   └── topic-brainstorming-framework.md
+├── newsletter/
+│   ├── expert-newsletter-article-creation.md
+│   └── strategic-newsletter-planning-system.md
+└── writing/
+    ├── book/
+    │   ├── chapter-development-framework.md
+    │   ├── character-creation-framework.md
+    │   ├── create-character.md
+    │   ├── dialogue-creation-framework.md
+    │   ├── generate-book-outlines.md
+    │   ├── help-with-book-research.md
+    │   ├── outline-generation-framework.md
+    │   ├── research-framework.md
+    │   ├── write-dialog.md
+    │   └── writing-book-chapter.md
+    ├── copywriting-style-framework.md
+    ├── draft-faq-section.md
+    ├── faq-development-framework.md
+    ├── feedback-framework.md
+    ├── generate-key-points.md
+    ├── get-feedback.md
+    ├── improve-document-structure.md
+    ├── key-points-framework.md
+    ├── optimization-framework.md
+    ├── optimize-content.md
+    ├── structure-framework.md
+    └── voice-inspiration-framework.md
 ```
 
-### Example Usage
+## Categories
+
+### Course Creation
+Tools and frameworks for developing educational courses:
+- Course research and planning
+- Interactive quiz creation
+- Discussion topics generation
+- Syllabus development
+- Video script writing
+- Supplemental materials
+- Learning strategy development
+
+### Video Content
+Resources for video content creation:
+- Topic brainstorming
+- Character and backstory development
+- Narrative flow building
+- Dialog crafting
+- Scene development
+- Title generation
+- Character profiling
+
+### Newsletter Content
+Tools and frameworks for newsletter development:
+- Strategic content planning
+- Article writing and optimization
+- Audience engagement
+- Performance analytics
+- Content distribution
+- ROI measurement
+
+### Writing
+Comprehensive writing tools and frameworks:
+
+#### Book Writing
+- Chapter development
+- Character creation
+- Dialog writing
+- Book outlining
+- Research assistance
+- Writing guidance
+
+#### General Writing
+- Content optimization
+- Document structuring
+- FAQ development
+- Feedback collection
+- Key points generation
+- Voice and style development
+- Copywriting guidelines
+
+## Best Practices
+
+1. Define clear content objectives
+2. Research target audience
+3. Maintain consistent voice and tone
+4. Plan content structure
+5. Incorporate feedback loops
+6. Optimize for engagement
+7. Follow style guidelines
+8. Review and iterate
+
+## Examples
+
+```markdown
+# Course Development
+Create a course outline for:
+- Topic: [topic]
+- Level: [level]
+- Duration: [duration]
+Include learning objectives and assessment methods.
+
+# Video Script
+Generate a video script for:
+- Type: [video type]
+- Duration: [length]
+- Audience: [target audience]
+Include hooks and key messages.
+
+# Writing Project
+Develop content for:
+- Format: [format]
+- Purpose: [purpose]
+- Style: [style]
+Include structure and key points.
 ```
-Create a LinkedIn post about "Remote Work Best Practices" that aims to "drive engagement and position our brand as a thought leader". Use "professional yet approachable" voice and tone.
 
-Include:
-1. Main post content
-2. Relevant hashtags
-3. Call-to-action
-4. Emoji suggestions (if appropriate)
-5. Image/video description (if needed)
+## Additional Resources
 
-Ensure the content follows LinkedIn's best practices and character limits.
-```
-
-### Best Practices
-- Adapt to platform-specific formats
-- Include relevant hashtags
-- Keep brand voice consistent
-- Include clear calls-to-action
-
-## Email Newsletter
-
-### Context
-Use this prompt to create engaging email newsletter content.
-
-### Variables
-- {newsletter_type}: Type of newsletter (e.g., weekly update, product announcement)
-- {main_topic}: Primary focus of the newsletter
-- {audience_segment}: Target subscriber group
-- {key_message}: Core message to convey
-
-### Prompt Template
-```
-Create a {newsletter_type} email about {main_topic} for {audience_segment}. The key message is: {key_message}
-
-Include:
-1. Attention-grabbing subject line
-2. Personalized greeting
-3. Main content sections
-4. Supporting points or features
-5. Clear call-to-action
-6. Sign-off
-
-Optimize for:
-- Mobile readability
-- Scannable content
-- Engaging subheadings
-- Personal tone
-```
-
-### Best Practices
-- Write compelling subject lines
-- Keep content scannable
-- Include clear CTAs
-- Maintain consistent branding
-
-## More Prompts
-
-Check out our [Contributing Guide](../contributing.md) to add more content creation prompts to this collection. 
+- Content strategy guides
+- Writing style guides
+- Educational design principles
+- Video production tips
+- Audience engagement techniques
+- SEO best practices 

@@ -1,161 +1,111 @@
 # Data Prompts
 
-A collection of prompts designed to assist with data analysis, visualization, and insights generation.
+This section contains prompts for data analysis, visualization, and management tasks.
 
-## Data Analysis
+## Directory Structure
 
-### Context
-Use this prompt to analyze data and extract meaningful insights.
-
-### Variables
-- {data_description}: Description of the data to be analyzed
-- {analysis_goal}: Specific objective of the analysis
-- {required_metrics}: Key metrics to calculate
-- {output_format}: Desired format of the results
-
-### Prompt Template
 ```
-Analyze the following {data_description} to achieve {analysis_goal}.
-
-Calculate and provide:
-1. {required_metrics}
-2. Key trends and patterns
-3. Notable anomalies
-4. Statistical significance
-5. Actionable insights
-
-Present the results in {output_format} format.
-
-Additional considerations:
-- Data quality issues
-- Limitations of the analysis
-- Confidence levels
-- Recommendations for further analysis
+data/
+└── data-analysis/
+    ├── analyse-for-outcomes.md
+    ├── clean-data.md
+    ├── create-mock-dataset.md
+    ├── data-cleaning-framework.md
+    ├── format-validation-framework.md
+    ├── framework_integration.md
+    ├── integration-framework.md
+    ├── mock-data-framework.md
+    ├── outcome-analysis-framework.md
+    ├── segmentation-framework.md
+    ├── segment-data.md
+    ├── validata-data-format.md
+    ├── visualization-framework.md
+    └── visualize-data.md
 ```
 
-### Example Usage
-```
-Analyze the following "monthly sales data for the past 2 years" to achieve "identification of seasonal patterns and growth trends".
+## Categories
 
-Calculate and provide:
-1. "Monthly growth rates, YoY comparisons, seasonal indices"
-2. Key trends and patterns
-3. Notable anomalies
-4. Statistical significance
-5. Actionable insights
+### Data Analysis
+Tools and frameworks for analyzing data:
+- Outcome analysis
+- Data segmentation
+- Pattern recognition
+- Trend identification
+- Statistical analysis
 
-Present the results in "bullet points with supporting charts description" format.
+### Data Cleaning
+Resources for data preparation:
+- Data cleaning procedures
+- Format validation
+- Quality checks
+- Error correction
+- Standardization methods
 
-Additional considerations:
-- Data quality issues
-- Limitations of the analysis
-- Confidence levels
-- Recommendations for further analysis
-```
+### Data Visualization
+Tools for creating visual representations:
+- Chart selection
+- Graph creation
+- Visual storytelling
+- Interactive dashboards
+- Presentation formats
 
-### Best Practices
-- Specify exact metrics needed
-- Request confidence levels
-- Consider data limitations
-- Ask for actionable insights
+### Mock Data Generation
+Frameworks for creating test data:
+- Dataset creation
+- Sample data generation
+- Test case scenarios
+- Data validation
+- Edge case examples
 
-## Data Visualization
+### Data Integration
+Tools for combining and managing data:
+- Framework integration
+- Data merging
+- Source consolidation
+- Format conversion
+- Quality assurance
 
-### Context
-Use this prompt to get recommendations for effective data visualization.
+## Best Practices
 
-### Variables
-- {data_type}: Type of data to visualize
-- {audience}: Target audience for the visualization
-- {purpose}: Goal of the visualization
-- {constraints}: Any technical or design constraints
+1. Validate data quality
+2. Document data transformations
+3. Ensure data consistency
+4. Follow data privacy guidelines
+5. Maintain data integrity
+6. Use appropriate visualization methods
+7. Document analysis methodology
+8. Verify results accuracy
 
-### Prompt Template
-```
-Recommend visualization approaches for {data_type} targeting {audience} with the purpose of {purpose}.
+## Examples
 
-Consider:
-1. Chart/graph types
-2. Key elements to highlight
-3. Color schemes and accessibility
-4. Interactive features
-5. Annotations and context
+```markdown
+# Data Analysis
+Analyze dataset for:
+- Purpose: [analysis goal]
+- Metrics: [key metrics]
+- Output: [desired format]
+Include statistical methods and visualizations.
 
-Technical constraints:
-{constraints}
+# Data Cleaning
+Clean dataset with:
+- Source: [data source]
+- Issues: [known issues]
+- Standards: [quality standards]
+Include validation steps and error handling.
 
-Provide:
-1. Primary visualization recommendation
-2. Alternative approaches
-3. Implementation considerations
-4. Best practices for chosen format
-```
-
-### Best Practices
-- Define audience clearly
-- Specify visualization purpose
-- Consider accessibility
-- Include technical constraints
-
-## SQL Query Generation
-
-### Context
-Use this prompt to generate SQL queries for data analysis.
-
-### Variables
-- {objective}: Goal of the query
-- {tables}: Available database tables and their schemas
-- {conditions}: Specific conditions or filters
-- {output}: Required output format
-
-### Prompt Template
-```
-Generate a SQL query to {objective} using the following tables:
-
-Tables Structure:
-{tables}
-
-Requirements:
-1. Include these conditions: {conditions}
-2. Output should be: {output}
-3. Consider performance optimization
-4. Include error handling
-
-Please provide:
-1. Complete SQL query
-2. Explanation of each major component
-3. Any assumptions made
-4. Performance considerations
+# Visualization
+Create visualization for:
+- Data: [data type]
+- Audience: [target audience]
+- Purpose: [visualization goal]
+Include design choices and interactive elements.
 ```
 
-### Example Usage
-```
-Generate a SQL query to "find top 10 customers by revenue in the last quarter" using the following tables:
+## Additional Resources
 
-Tables Structure:
-- customers (id, name, region)
-- orders (id, customer_id, order_date, total_amount)
-- order_items (order_id, product_id, quantity, price)
-
-Requirements:
-1. Include these conditions: "only completed orders, exclude cancelled orders"
-2. Output should be: "customer name, total revenue, number of orders"
-3. Consider performance optimization
-4. Include error handling
-
-Please provide:
-1. Complete SQL query
-2. Explanation of each major component
-3. Any assumptions made
-4. Performance considerations
-```
-
-### Best Practices
-- Specify table relationships
-- Include performance requirements
-- Define output format clearly
-- Request error handling
-
-## More Prompts
-
-Check out our [Contributing Guide](../contributing.md) to add more data analysis prompts to this collection. 
+- Statistical analysis guides
+- Data visualization best practices
+- Data cleaning methodologies
+- Quality assurance frameworks
+- Privacy guidelines
+- Integration patterns 
