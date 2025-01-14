@@ -39,23 +39,23 @@ def generate_prompt_card(title, description, template, tags, emoji='📝'):
     """Generate HTML for a prompt card."""
     card_id = re.sub(r'[^a-z0-9]', '-', title.lower())
     
+    # Format template for better display
+    template_lines = template.strip().split('\n')
+    formatted_template = '\n'.join(line.strip() for line in template_lines)
+    
     return f'''
   <div class="prompt-card" data-prompt-id="{card_id}" data-categories="{','.join(tags)}">
     <div class="prompt-header">
       <h3 class="prompt-title">{emoji} {title}</h3>
-    </div>
-
-    <div class="prompt-tags">
-      {' '.join(f'<span class="prompt-tag">{tag}</span>' for tag in tags)}
+      <div class="prompt-tags">
+        {' '.join(f'<span class="prompt-tag">{tag}</span>' for tag in tags)}
+      </div>
     </div>
 
     <div class="prompt-content">
-      <div class="prompt-description">
-        {description}
-      </div>
-      
+      <div class="prompt-description">{description}</div>
       <div class="prompt-template">
-        <pre id="{card_id}-template">{template}</pre>
+        <pre id="{card_id}-template">{formatted_template}</pre>
       </div>
     </div>
 
@@ -85,7 +85,7 @@ def find_prompt_files(base_dir):
 
 def generate_gallery():
     """Generate the complete gallery page."""
-    prompts_dir = Path('prompts')  # Changed from docs/prompts to prompts
+    prompts_dir = Path('prompts')
     gallery_content = []
     all_categories = set()
     prompt_cards = []
@@ -119,8 +119,8 @@ def generate_gallery():
     print(f"Total prompts found: {len(prompt_cards)}")
     print(f"Categories found: {all_categories}")
     
-    # Header with search only
-    gallery_content.append(f'''# Prompt Gallery
+    # Generate the gallery page
+    gallery_content = ['''# Prompt Gallery
 
 <div class="gallery-header">
   <div class="search-container">
@@ -128,13 +128,13 @@ def generate_gallery():
   </div>
 </div>
 
-<div class="prompt-gallery">''')
+<div class="prompt-gallery">''']
     
     # Add all prompt cards
-    for card_data in sorted(prompt_cards, key=lambda x: x[0]):  # Sort by title
+    for card_data in sorted(prompt_cards, key=lambda x: x[0]):
         gallery_content.append(generate_prompt_card(*card_data))
     
-    # Footer with pagination
+    # Add pagination
     gallery_content.append('''</div>
 
 <div class="pagination">
