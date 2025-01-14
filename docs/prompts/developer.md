@@ -53,6 +53,7 @@ Comprehensive guides and prompts for various frameworks and technologies:
 - **FastAPI**: Best practices, development guides, and scalability
 - **Go**: Backend scalability, REST APIs, and servemux guides
 - **Python**: Development guides, containerization, and scientific computing
+- **API Design**: Expert assistant for gathering requirements and designing APIs
 
 #### Cloud & Infrastructure
 - **Docker**: Containerization guides
