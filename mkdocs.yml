@@ -1,8 +1,4 @@
 site_name: Prompt Engineering Collection
-site_url: https://felipepimentel.github.io/prompts/
-site_description: A comprehensive collection of prompts for various use cases
-site_author: Felipe Pimentel
-
 theme:
   name: material
   features:
@@ -11,24 +7,8 @@ theme:
     - navigation.top
     - search.suggest
     - search.highlight
-    - content.code.copy
     - content.tabs.link
-    - navigation.indexes
-    - navigation.footer
-    - toc.integrate
-    - navigation.instant
-    - navigation.tracking
-    - search.share
-    - search.highlight
-    - navigation.path
-    - content.tooltips
-    - navigation.expand
-    - navigation.footer
-    - navigation.indexes
-    - navigation.sections
-    - navigation.tabs.sticky
-    - navigation.top
-    - toc.follow
+    - content.code.copy
   palette:
     - scheme: default
       primary: indigo
@@ -42,112 +22,51 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  icon:
-    repo: fontawesome/brands/github
-    tag:
-      default: material/tag
-      ai: material/robot
-      dev: material/code-braces
-      content: material/pencil
-      data: material/database
-      art: material/palette
-      misc: material/tools
-  custom_dir: docs/overrides
+
+plugins:
+  - search
+  - tags
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
-      line_spans: __span
-      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
   - admonition
   - pymdownx.details
-  - attr_list
-  - md_in_html
-  - tables
-  - def_list
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - toc:
-      permalink: true
-      toc_depth: 3
-  - footnotes
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.tilde
   - pymdownx.tabbed:
       alternate_style: true
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
+  - attr_list
+  - def_list
+  - tables
+  - meta
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 
-plugins:
-  - search:
-      lang: en
-      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
-  - tags
-  - minify:
-      minify_html: true
-  - git-revision-date-localized:
-      enable_creation_date: true
-  - social
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js
+  - javascripts/extra.js
 
 extra_css:
   - stylesheets/extra.css
 
-extra:
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/felipepimentel
-      name: Felipe Pimentel on GitHub
-  analytics:
-    provider: google
-    property: !ENV GOOGLE_ANALYTICS_KEY
-  consent:
-    title: Cookie consent
-    description: >- 
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
-  tags:
-    AI: ai
-    Development: dev
-    Content: content
-    Data: data
-    Art: art
-    Miscellaneous: misc
-
 nav:
-  - Home: 
-    - Overview: index.md
-    - Quick Start: getting-started.md
-  - Prompts by Category:
-    - All Prompts: prompts/overview.md
-    - Developer Tools: prompts/developer.md
+  - Home: index.md
+  - Prompts:
+    - Overview: prompts/overview.md
+    - Academic: prompts/academic.md
+    - Art: prompts/art.md
     - Content Creation: prompts/content-creation.md
-    - Product Management: prompts/product.md
-    - Data Analysis: prompts/data.md
-    - Art & Design: prompts/art.md
-    - Miscellaneous: prompts/misc.md
+    - Data: prompts/data.md
+    - Developer: prompts/developer.md
+    - Education: prompts/education.md
+    - Healthcare: prompts/healthcare.md
+    - Legal: prompts/legal.md
+    - Meta: prompts/meta.md
+    - Product: prompts/product.md
+    - QA: prompts/qa.md
+  - Getting Started: getting-started.md
   - Contributing: contributing.md
-  - About: about.md
-
-repo_name: felipepimentel/prompts
-repo_url: https://github.com/felipepimentel/prompts
-edit_uri: edit/main/docs/
-
-docs_dir: docs
-site_dir: site 
