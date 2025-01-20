@@ -1,26 +1,61 @@
 site_name: Prompt Engineering Collection
+site_description: A curated collection of high-quality prompts for various use cases
+site_author: Your Name
+repo_url: https://github.com/felipepimentel/prompts
+repo_name: felipepimentel/prompts
+
 theme:
   name: material
   palette:
-    scheme: slate
-    primary: deep purple
-    accent: purple
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  font:
+    text: Roboto
+    code: JetBrains Mono
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/book-open-variant
   features:
     - navigation.instant
     - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.expand
     - navigation.top
+    - navigation.footer
     - search.suggest
     - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.select
+    - content.action.edit
+    - toc.follow
+    - toc.integrate
 
 plugins:
-  - search
-  - tags
+  - search:
+      lang: en
+  - tags:
+      tags_file: tags.md
 
 markdown_extensions:
   - pymdownx.highlight:
       anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.superfences
@@ -29,10 +64,48 @@ markdown_extensions:
   - def_list
   - attr_list
   - md_in_html
+  - meta
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - abbr
+  - tables
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/felipepimentel/prompts
+      name: GitHub
+  analytics:
+    provider: google
+    property: !ENV GOOGLE_ANALYTICS_KEY
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+    actions:
+      - accept
+      - reject
+      - manage
 
 extra_javascript:
   - https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.11/clipboard.min.js
   - javascripts/extra.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
 
 extra_css:
   - stylesheets/extra.css
@@ -45,5 +118,16 @@ nav:
   - Agent Improvements: agent-improvements.md
   - Prompts:
     - Overview: prompts/overview.md
+    - Academic:
+      - Overview: prompts/academic.md
+    - Art: prompts/art.md
+    - Content Creation: prompts/content-creation.md
+    - Data: prompts/data.md
+    - Developer: prompts/developer.md
     - Education: prompts/education.md
+    - Healthcare: prompts/healthcare.md
+    - Legal: prompts/legal.md
+    - Meta: prompts/meta.md
+    - Product: prompts/product.md
+    - QA: prompts/qa.md
     - Misc: prompts/misc.md

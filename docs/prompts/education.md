@@ -59,7 +59,7 @@ When using education prompts:
 ## Available Prompts
 
 ### Math Prompts
-- **[Socratic Math Tutor](../prompts/education/math/socratic-math-tutor.md)**: A prompt designed to guide students through mathematical problems using the Socratic method, encouraging critical thinking and deep understanding.
+- **Socratic Math Tutor**: A prompt designed to guide students through mathematical problems using the Socratic method, encouraging critical thinking and deep understanding.
 
 ## Examples
 

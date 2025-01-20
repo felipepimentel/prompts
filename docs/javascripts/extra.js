@@ -1,98 +1,147 @@
-// Initialize clipboard
-new ClipboardJS('.copy-btn').on('success', function(e) {
-  const btn = e.trigger;
-  const originalText = btn.innerHTML;
-  btn.innerHTML = '<span class="btn-icon">✓</span><span class="btn-text">Copied!</span>';
-  setTimeout(() => {
-    btn.innerHTML = originalText;
-  }, 2000);
-});
-
-// Search and filter functionality
+// Initialize clipboard.js
 document.addEventListener('DOMContentLoaded', function() {
+  // Initialize clipboard
+  const clipboard = new ClipboardJS('.copy-button', {
+    text: function(trigger) {
+      return trigger.closest('.prompt-content').querySelector('.prompt-text').textContent;
+    }
+  });
+  
+  clipboard.on('success', function(e) {
+    const button = e.trigger;
+    const originalHTML = button.innerHTML;
+    button.classList.add('copy-success');
+    button.innerHTML = '<span class="material-icons">check</span>';
+    
+    setTimeout(() => {
+      button.classList.remove('copy-success');
+      button.innerHTML = originalHTML;
+    }, 2000);
+    
+    e.clearSelection();
+  });
+  
+  // Search and filter functionality
   const searchInput = document.querySelector('.prompt-search');
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterButtons = document.querySelectorAll('.filter-btn');
   const promptCards = document.querySelectorAll('.prompt-card');
   let currentFilter = 'all';
-
-  // Search functionality
-  searchInput.addEventListener('input', filterCards);
-
-  // Filter buttons
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      currentFilter = btn.dataset.category;
-      filterCards();
-    });
-  });
-
-  function filterCards() {
+  
+  function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+      const later = () => {
+        clearTimeout(timeout);
+        func(...args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+  
+  function filterPrompts() {
     const searchTerm = searchInput.value.toLowerCase();
-    let visibleCards = [];
-
+    
     promptCards.forEach(card => {
       const title = card.querySelector('.prompt-title').textContent.toLowerCase();
       const description = card.querySelector('.prompt-description').textContent.toLowerCase();
-      const categories = card.dataset.categories.split(',');
-      const template = card.querySelector('.prompt-template').textContent.toLowerCase();
+      const tags = Array.from(card.querySelectorAll('.prompt-tag')).map(tag => tag.textContent.toLowerCase());
+      const category = card.dataset.category;
+      const model = card.dataset.model;
       
-      const matchesSearch = title.includes(searchTerm) || 
-                           description.includes(searchTerm) || 
-                           template.includes(searchTerm);
+      const matchesSearch = !searchTerm || 
+                          title.includes(searchTerm) || 
+                          description.includes(searchTerm) || 
+                          tags.some(tag => tag.includes(searchTerm));
+                          
+      const matchesFilter = currentFilter === 'all' || 
+                           (currentFilter.startsWith('category-') && category === currentFilter.replace('category-', '')) ||
+                           (currentFilter.startsWith('model-') && model === currentFilter.replace('model-', ''));
       
-      const matchesFilter = currentFilter === 'all' || categories.includes(currentFilter);
-
-      if (matchesSearch && matchesFilter) {
-        card.style.display = 'flex';
-        visibleCards.push(card);
-      } else {
-        card.style.display = 'none';
-      }
-    });
-
-    // Update pagination
-    currentPage = 1;
-    totalPages = Math.ceil(visibleCards.length / itemsPerPage);
-    showPage(1);
-  }
-
-  // Initialize pagination
-  const itemsPerPage = 9;
-  let currentPage = 1;
-  let totalPages = Math.ceil(promptCards.length / itemsPerPage);
-
-  function showPage(page) {
-    const start = (page - 1) * itemsPerPage;
-    const end = start + itemsPerPage;
-    
-    Array.from(promptCards).forEach((card, index) => {
-      if (card.style.display !== 'none') {
-        const shouldShow = index >= start && index < end;
-        card.style.display = shouldShow ? 'flex' : 'none';
-      }
+      const shouldShow = matchesSearch && matchesFilter;
+      
+      card.style.display = shouldShow ? 'block' : 'none';
+      card.style.opacity = shouldShow ? '1' : '0';
+      card.style.transform = shouldShow ? 'translateY(0)' : 'translateY(20px)';
     });
     
-    document.querySelector('.current-page').textContent = page;
-    document.querySelector('.total-pages').textContent = totalPages;
-    
-    // Update button states
-    document.querySelector('[data-page="prev"]').disabled = page === 1;
-    document.querySelector('[data-page="next"]').disabled = page === totalPages;
+    // Update category sections visibility
+    document.querySelectorAll('.category-section').forEach(section => {
+      const hasVisibleCards = Array.from(section.querySelectorAll('.prompt-card'))
+        .some(card => card.style.display !== 'none');
+      section.style.display = hasVisibleCards ? 'block' : 'none';
+    });
   }
-
-  document.querySelectorAll('.page-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      if (btn.dataset.page === 'prev' && currentPage > 1) {
-        currentPage--;
-      } else if (btn.dataset.page === 'next' && currentPage < totalPages) {
-        currentPage++;
-      }
-      showPage(currentPage);
+  
+  const debouncedFilter = debounce(filterPrompts, 300);
+  
+  if (searchInput) {
+    searchInput.addEventListener('input', debouncedFilter);
+  }
+  
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+      currentFilter = button.dataset.filter;
+      filterPrompts();
     });
   });
+  
+  // Smooth scroll for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      }
+    });
+  });
+  
+  // Lazy loading for prompt cards
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '50px',
+      threshold: 0.1
+    });
+    
+    promptCards.forEach(card => {
+      observer.observe(card);
+    });
+  } else {
+    promptCards.forEach(card => {
+      card.classList.add('visible');
+    });
+  }
 
-  // Initialize first page
-  showPage(1);
-}); 
+  // Handle prompt section tabs
+  document.querySelectorAll('.prompt-section-tab').forEach(tab => {
+    tab.addEventListener('click', function() {
+      const content = this.closest('.prompt-content');
+      const allTabs = content.querySelectorAll('.prompt-section-tab');
+      const allSections = content.querySelectorAll('.section-content');
+      const targetSection = content.querySelector(`.section-${this.dataset.section}`);
+      
+      // Update active states
+      allTabs.forEach(t => t.classList.remove('active'));
+      allSections.forEach(s => s.style.display = 'none');
+      
+      this.classList.add('active');
+      if (targetSection) {
+        targetSection.style.display = 'block';
+      }
+    });
+  });
+});
+
