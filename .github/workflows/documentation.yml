@@ -34,13 +34,16 @@ jobs:
           pip install pyyaml
           pip install python-frontmatter
 
-      - name: List workspace contents
+      - name: Debug workspace
         run: |
-          pwd
-          ls -la
-          ls -la prompts/
+          echo "Current directory structure:"
+          ls -R
+          echo "Content of docs/stylesheets:"
           ls -la docs/stylesheets/
+          echo "Content of docs/javascripts:"
           ls -la docs/javascripts/ || mkdir -p docs/javascripts
+          echo "Content of extra.css:"
+          cat docs/stylesheets/extra.css
 
       - name: Generate gallery
         run: |
@@ -51,14 +54,21 @@ jobs:
         run: |
           mkdir -p site/stylesheets
           mkdir -p site/javascripts
-          cp docs/stylesheets/extra.css site/stylesheets/
-          cp docs/javascripts/extra.js site/javascripts/ || echo "No extra.js found"
+          cp -v docs/stylesheets/extra.css site/stylesheets/
+          cp -v docs/javascripts/extra.js site/javascripts/ || echo "No extra.js found"
+          echo "Content of site/stylesheets after copy:"
+          ls -la site/stylesheets/
+          echo "Content of site/javascripts after copy:"
+          ls -la site/javascripts/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
       - name: Build site
-        run: mkdocs build
+        run: |
+          mkdocs build --verbose
+          echo "Content of site directory after build:"
+          ls -R site/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
