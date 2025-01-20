@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 import os
+import sys
 import frontmatter
 import glob
 from pathlib import Path
@@ -7,12 +10,19 @@ import html
 
 def find_prompt_files():
     """Find all prompt markdown files in the prompts directory."""
+    print("Starting to find prompt files...")
     prompts_dir = Path('prompts')
-    return glob.glob(str(prompts_dir / '**/*.md'), recursive=True)
+    if not prompts_dir.exists():
+        print(f"Error: Directory {prompts_dir} does not exist")
+        sys.exit(1)
+    files = glob.glob(str(prompts_dir / '**/*.md'), recursive=True)
+    print(f"Found {len(files)} prompt files")
+    return files
 
 def process_prompt_file(file_path):
     """Extract metadata and content from a prompt file."""
     try:
+        print(f"Processing file: {file_path}")
         with open(file_path, 'r', encoding='utf-8') as f:
             post = frontmatter.load(f)
         
@@ -38,18 +48,22 @@ def process_prompt_file(file_path):
             'content': content
         }
     except Exception as e:
-        print(f"Error processing file {file_path}: {str(e)}")
+        print(f"Error processing file {file_path}: {str(e)}", file=sys.stderr)
         return None
 
 def generate_gallery_page():
     """Generate the gallery page HTML."""
+    print("Starting gallery generation...")
     prompt_files = find_prompt_files()
     prompts = [process_prompt_file(f) for f in prompt_files]
     prompts = [p for p in prompts if p]  # Remove None values
+    print(f"Successfully processed {len(prompts)} prompts")
     
     # Collect unique categories and models for filters
     categories = sorted(set(p['category'] for p in prompts))
     models = sorted(set(p['model'] for p in prompts))
+    print(f"Found categories: {categories}")
+    print(f"Found models: {models}")
     
     # Generate filter buttons
     filter_buttons = '''
@@ -136,18 +150,24 @@ description: A curated collection of high-quality prompts for various use cases,
 {cards}
 </div>'''.format(filters=filter_buttons, cards='\n'.join(cards_html))
     
-    with open('docs/index.md', 'w', encoding='utf-8') as f:
+    output_file = Path('docs/index.md')
+    print(f"Writing output to {output_file}")
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    with open(output_file, 'w', encoding='utf-8') as f:
         f.write(template)
+    print("Gallery generation completed successfully")
 
 def main():
     """Main function to generate the gallery."""
-    print("Finding prompt files...")
-    prompt_files = find_prompt_files()
-    print(f"Found {len(prompt_files)} prompt files")
-    
-    print("Generating gallery...")
-    generate_gallery_page()
-    print("Gallery generated successfully!")
+    try:
+        print("Starting gallery generation process...")
+        print(f"Current working directory: {os.getcwd()}")
+        print(f"Python version: {sys.version}")
+        generate_gallery_page()
+        print("Gallery generation completed successfully!")
+    except Exception as e:
+        print(f"Error during gallery generation: {str(e)}", file=sys.stderr)
+        sys.exit(1)
 
 if __name__ == '__main__':
     main() 
