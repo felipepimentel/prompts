@@ -1,5 +1,12 @@
 // Initialize clipboard.js
 document.addEventListener('DOMContentLoaded', function() {
+  // Initialize all interactive elements
+  const searchInput = document.querySelector('.prompt-search');
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const promptCards = document.querySelectorAll('.prompt-card');
+  const copyButtons = document.querySelectorAll('.copy-button');
+  let currentFilter = 'all';
+
   // Initialize clipboard
   const clipboard = new ClipboardJS('.copy-button', {
     text: function(trigger) {
@@ -20,12 +27,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     e.clearSelection();
   });
-  
-  // Search and filter functionality
-  const searchInput = document.querySelector('.prompt-search');
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const promptCards = document.querySelectorAll('.prompt-card');
-  let currentFilter = 'all';
   
   function debounce(func, wait) {
     let timeout;
@@ -143,12 +144,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-
-  // Initialize all interactive elements
-  const copyButtons = document.querySelectorAll('.copy-button');
-  const filterButtons = document.querySelectorAll('.filter-btn');
-  const promptCards = document.querySelectorAll('.prompt-card');
-  const searchInput = document.querySelector('.prompt-search');
 
   // Initialize copy buttons
   copyButtons.forEach(button => {
