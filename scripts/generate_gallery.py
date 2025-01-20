@@ -36,14 +36,15 @@ def process_prompt_file(file_path):
         content = html.escape(content, quote=True)
         content = content.replace('\n', '\\n')
         
+        # Ensure all values are strings
         return {
-            'title': post.get('title', 'Untitled'),
-            'description': html.escape(post.get('description', ''), quote=True),
+            'title': str(post.get('title', 'Untitled')),
+            'description': html.escape(str(post.get('description', '')), quote=True),
             'tags': post.get('tags', []),
-            'model': post.get('model', 'GPT-4'),
-            'category': post.get('category', 'Misc'),
-            'type': post.get('type', 'General'),
-            'version': post.get('version', '1.0'),
+            'model': str(post.get('model', 'GPT-4')),
+            'category': str(post.get('category', 'Misc')),
+            'type': str(post.get('type', 'General')),
+            'version': str(post.get('version', '1.0')),
             'url': url_path,
             'content': content
         }

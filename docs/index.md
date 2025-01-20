@@ -15,9 +15,20 @@ description: A curated collection of high-quality prompts for various use cases,
   </div>
 </div>
 
+
+        <div class="filter-section">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="category-content creation">Content Creation</button>
+<button class="filter-btn" data-filter="category-misc">Misc</button>
+            <button class="filter-btn" data-filter="model-gpt-4">GPT-4</button>
+        </div>
+    
+
 <div class="prompt-gallery">
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Educational Test Question Generator</h3>
                 <div class="prompt-tags">
@@ -53,7 +64,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Socratic Math Tutor Framework</h3>
                 <div class="prompt-tags">
@@ -89,7 +102,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Personalized Learning Plan Generator</h3>
                 <div class="prompt-tags">
@@ -125,7 +140,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Socratic Learning Dialogue</h3>
                 <div class="prompt-tags">
@@ -161,7 +178,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Comprehensive Legal Expert System</h3>
                 <div class="prompt-tags">
@@ -197,7 +216,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Legal Expert Prompt Collection</h3>
                 <div class="prompt-tags">
@@ -233,7 +254,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Quantum Reasoning Meta-Operator</h3>
                 <div class="prompt-tags">
@@ -269,7 +292,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Tool and Reference Enhancement System</h3>
                 <div class="prompt-tags">
@@ -305,7 +330,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">ReAct Agent Framework</h3>
                 <div class="prompt-tags">
@@ -341,7 +368,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Conversational Agent Framework</h3>
                 <div class="prompt-tags">
@@ -377,7 +406,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Focused Response Meta-Operator</h3>
                 <div class="prompt-tags">
@@ -413,7 +444,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">JSON-Based Agent Framework</h3>
                 <div class="prompt-tags">
@@ -449,7 +482,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Enhancement Generator</h3>
                 <div class="prompt-tags">
@@ -485,7 +520,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">AI Instruction Prompt Generator</h3>
                 <div class="prompt-tags">
@@ -521,7 +558,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Sequential Workflow Generator</h3>
                 <div class="prompt-tags">
@@ -557,7 +596,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Structure and Enhancement Analyzer</h3>
                 <div class="prompt-tags">
@@ -593,7 +634,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Engineering Framework</h3>
                 <div class="prompt-tags">
@@ -629,7 +672,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Generation Framework</h3>
                 <div class="prompt-tags">
@@ -665,7 +710,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Enhancement Framework</h3>
                 <div class="prompt-tags">
@@ -701,7 +748,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Enhancement Framework</h3>
                 <div class="prompt-tags">
@@ -737,7 +786,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Master Prompt Creation Framework</h3>
                 <div class="prompt-tags">
@@ -773,7 +824,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Expert Prompt Creator</h3>
                 <div class="prompt-tags">
@@ -809,7 +862,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Enhancement Framework</h3>
                 <div class="prompt-tags">
@@ -845,7 +900,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Enhanced AI Prompt Generator</h3>
                 <div class="prompt-tags">
@@ -881,7 +938,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Iterative Prompt Engineering Assistant</h3>
                 <div class="prompt-tags">
@@ -917,7 +976,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Generation Framework</h3>
                 <div class="prompt-tags">
@@ -953,7 +1014,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Expert Prompt Engineering System</h3>
                 <div class="prompt-tags">
@@ -989,7 +1052,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Reference and Tool Integration Analyzer</h3>
                 <div class="prompt-tags">
@@ -1025,7 +1090,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Task Decomposition and Chain-of-Thought Analyzer</h3>
                 <div class="prompt-tags">
@@ -1061,7 +1128,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">API Design Expert Assistant</h3>
                 <div class="prompt-tags">
@@ -1097,7 +1166,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Healthcare AI Impact Analysis Framework</h3>
                 <div class="prompt-tags">
@@ -1133,7 +1204,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Therapeutic Counseling Framework</h3>
                 <div class="prompt-tags">
@@ -1169,7 +1242,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Framework Integration Guide</h3>
                 <div class="prompt-tags">
@@ -1205,7 +1280,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Systematic Bug Fix Process Guide</h3>
                 <div class="prompt-tags">
@@ -1241,7 +1318,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Programming Tutor Guidelines</h3>
                 <div class="prompt-tags">
@@ -1277,7 +1356,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Comprehensive Code Review Guidelines</h3>
                 <div class="prompt-tags">
@@ -1313,7 +1394,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Backend Development Environment Setup Guide</h3>
                 <div class="prompt-tags">
@@ -1349,7 +1432,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Perplexity AI Usage Guidelines</h3>
                 <div class="prompt-tags">
@@ -1385,7 +1470,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">AI Systematic Analysis and Verification Framework</h3>
                 <div class="prompt-tags">
@@ -1421,7 +1508,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Spring Boot Development Guide</h3>
                 <div class="prompt-tags">
@@ -1457,7 +1546,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Initial Project Setup Guide</h3>
                 <div class="prompt-tags">
@@ -1493,7 +1584,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -1529,7 +1622,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Component Development Guidelines</h3>
                 <div class="prompt-tags">
@@ -1565,7 +1660,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Project Status Report Guidelines</h3>
                 <div class="prompt-tags">
@@ -1601,7 +1698,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Git Commit Message Guidelines</h3>
                 <div class="prompt-tags">
@@ -1637,7 +1736,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Docker Development Guide</h3>
                 <div class="prompt-tags">
@@ -1673,7 +1774,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Astro with shadcn/ui Setup Guide</h3>
                 <div class="prompt-tags">
@@ -1709,7 +1812,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Astro with Tailwind CSS Setup Guide</h3>
                 <div class="prompt-tags">
@@ -1745,7 +1850,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Agent Testing Framework</h3>
                 <div class="prompt-tags">
@@ -1781,7 +1888,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Agent Documentation Generation Framework</h3>
                 <div class="prompt-tags">
@@ -1817,7 +1926,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Agent Documentation Generation Framework</h3>
                 <div class="prompt-tags">
@@ -1853,7 +1964,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Agent Testing Framework</h3>
                 <div class="prompt-tags">
@@ -1889,7 +2002,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Agentic Workflow Documentation Framework</h3>
                 <div class="prompt-tags">
@@ -1925,7 +2040,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Documentation Evolution Framework</h3>
                 <div class="prompt-tags">
@@ -1961,7 +2078,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Cursor Composer Documentation Style Guide</h3>
                 <div class="prompt-tags">
@@ -1997,7 +2116,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Autonomous Development Agent Framework</h3>
                 <div class="prompt-tags">
@@ -2033,7 +2154,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Autonomous Development Agent Framework</h3>
                 <div class="prompt-tags">
@@ -2069,7 +2192,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">SQL Query Generator and Executor</h3>
                 <div class="prompt-tags">
@@ -2105,7 +2230,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">PostgreSQL Style Guide</h3>
                 <div class="prompt-tags">
@@ -2141,7 +2268,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Stripe Integration Guide</h3>
                 <div class="prompt-tags">
@@ -2177,7 +2306,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Response Schema Generator</h3>
                 <div class="prompt-tags">
@@ -2213,7 +2344,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">REST API Design Guide with OpenAPI 3.1</h3>
                 <div class="prompt-tags">
@@ -2249,7 +2382,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">OpenAI Custom Action Specification Generator</h3>
                 <div class="prompt-tags">
@@ -2285,7 +2420,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">eCommerce Product Catalog OpenAPI Generator</h3>
                 <div class="prompt-tags">
@@ -2321,7 +2458,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">CURL to OpenAPI Schema Converter</h3>
                 <div class="prompt-tags">
@@ -2357,7 +2496,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">OpenAPI Schema Generator from Sample Events</h3>
                 <div class="prompt-tags">
@@ -2393,7 +2534,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Git Commit Message Guidelines</h3>
                 <div class="prompt-tags">
@@ -2429,7 +2572,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -2465,7 +2610,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Technical Diagram Creation Guide</h3>
                 <div class="prompt-tags">
@@ -2501,7 +2648,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Shadcn UI Development Guide</h3>
                 <div class="prompt-tags">
@@ -2537,7 +2686,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">ShadCN UI Development Guide</h3>
                 <div class="prompt-tags">
@@ -2573,7 +2724,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Stripe Integration Guide</h3>
                 <div class="prompt-tags">
@@ -2609,7 +2762,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Knative, Istio, and Typesense with GPU Guide</h3>
                 <div class="prompt-tags">
@@ -2645,7 +2800,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Next.js with Tailwind CSS Guide</h3>
                 <div class="prompt-tags">
@@ -2681,7 +2838,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Tailwind CSS with Next.js Development Guide</h3>
                 <div class="prompt-tags">
@@ -2717,7 +2876,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Next.js Frontend Development Guide</h3>
                 <div class="prompt-tags">
@@ -2753,7 +2914,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Next.js 14 Development Guide</h3>
                 <div class="prompt-tags">
@@ -2789,7 +2952,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">shadcn/ui Integration Guide</h3>
                 <div class="prompt-tags">
@@ -2825,7 +2990,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">TypeScript Next.js with shadcn/ui Guide</h3>
                 <div class="prompt-tags">
@@ -2861,7 +3028,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Next.js 14 with Tailwind CSS and SEO Setup Guide</h3>
                 <div class="prompt-tags">
@@ -2897,7 +3066,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Next.js Frontend Development Guide</h3>
                 <div class="prompt-tags">
@@ -2933,7 +3104,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">TypeScript LLM Tech Stack Guide</h3>
                 <div class="prompt-tags">
@@ -2969,7 +3142,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Chrome Extension Development Guide with TypeScript</h3>
                 <div class="prompt-tags">
@@ -3005,7 +3180,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Chrome Extension Development with TypeScript Guide</h3>
                 <div class="prompt-tags">
@@ -3041,7 +3218,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">FastAPI Development Guide</h3>
                 <div class="prompt-tags">
@@ -3077,7 +3256,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">FastAPI Best Practices Guide with Python 3.12</h3>
                 <div class="prompt-tags">
@@ -3113,7 +3294,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">FastAPI Scalable API Guide</h3>
                 <div class="prompt-tags">
@@ -3149,7 +3332,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">TypeScript React NextUI Supabase Integration Guide</h3>
                 <div class="prompt-tags">
@@ -3185,7 +3370,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">React with TypeScript and shadcn/ui Development Guide</h3>
                 <div class="prompt-tags">
@@ -3221,7 +3408,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">React Styled Components Guide</h3>
                 <div class="prompt-tags">
@@ -3257,7 +3446,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">NextUI and Supabase Integration Guide</h3>
                 <div class="prompt-tags">
@@ -3293,7 +3484,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">React Components Development Guide</h3>
                 <div class="prompt-tags">
@@ -3329,7 +3522,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">TypeScript React Development Guide</h3>
                 <div class="prompt-tags">
@@ -3365,7 +3560,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Kubernetes Documentation with MkDocs Guide</h3>
                 <div class="prompt-tags">
@@ -3401,7 +3598,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">SaaS Landing Page Development Guide</h3>
                 <div class="prompt-tags">
@@ -3437,7 +3636,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">HTML, Tailwind CSS, and JavaScript Development Guide</h3>
                 <div class="prompt-tags">
@@ -3473,7 +3674,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">PyTorch and Scikit-learn Development Guide</h3>
                 <div class="prompt-tags">
@@ -3509,7 +3712,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Python Developer Guide</h3>
                 <div class="prompt-tags">
@@ -3545,7 +3750,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Python 3.12 with FastAPI Development Guide</h3>
                 <div class="prompt-tags">
@@ -3581,7 +3788,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Python Graphical Applications Guide</h3>
                 <div class="prompt-tags">
@@ -3617,7 +3826,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Data Analysis with Pandas and scikit-learn Guide</h3>
                 <div class="prompt-tags">
@@ -3653,7 +3864,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Python Projects Guide</h3>
                 <div class="prompt-tags">
@@ -3689,7 +3902,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Python Development Guide</h3>
                 <div class="prompt-tags">
@@ -3725,7 +3940,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Python Containerization Guide</h3>
                 <div class="prompt-tags">
@@ -3761,7 +3978,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Python Graphical Applications Development Guide</h3>
                 <div class="prompt-tags">
@@ -3797,7 +4016,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">HTMX Development Guide</h3>
                 <div class="prompt-tags">
@@ -3833,7 +4054,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">HTMX with Go Development Guide</h3>
                 <div class="prompt-tags">
@@ -3869,7 +4092,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">HTMX Basic Development Guide</h3>
                 <div class="prompt-tags">
@@ -3905,7 +4130,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">HTMX with Go Fiber Development Guide</h3>
                 <div class="prompt-tags">
@@ -3941,7 +4168,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">HTMX Basic Development Guide</h3>
                 <div class="prompt-tags">
@@ -3977,7 +4206,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">HTMX and Go Integration Guide</h3>
                 <div class="prompt-tags">
@@ -4013,7 +4244,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Astro with Tailwind CSS Setup Guide</h3>
                 <div class="prompt-tags">
@@ -4049,7 +4282,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Astro with shadcn/ui Setup Guide</h3>
                 <div class="prompt-tags">
@@ -4085,7 +4320,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Astro with TypeScript Development Guide</h3>
                 <div class="prompt-tags">
@@ -4121,7 +4358,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">JavaScript, Astro, and Tailwind CSS Development Guide</h3>
                 <div class="prompt-tags">
@@ -4157,7 +4396,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Astro with Tailwind CSS Setup Guide</h3>
                 <div class="prompt-tags">
@@ -4193,7 +4434,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Astro with TypeScript Development Guide</h3>
                 <div class="prompt-tags">
@@ -4229,7 +4472,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Linux NVIDIA CUDA Python Development Guide</h3>
                 <div class="prompt-tags">
@@ -4265,7 +4510,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Go ServeMux REST API Guide</h3>
                 <div class="prompt-tags">
@@ -4301,7 +4548,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Go Backend Scalability Guide</h3>
                 <div class="prompt-tags">
@@ -4337,7 +4586,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Go Backend Scalability Guide</h3>
                 <div class="prompt-tags">
@@ -4373,7 +4624,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Supabase Database Migration Guide</h3>
                 <div class="prompt-tags">
@@ -4409,7 +4662,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">PostgreSQL SQL Style Guide for Supabase</h3>
                 <div class="prompt-tags">
@@ -4445,7 +4700,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Next.js and Supabase Integration Guide</h3>
                 <div class="prompt-tags">
@@ -4481,7 +4738,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Optimization and Evaluation</h3>
                 <div class="prompt-tags">
@@ -4517,7 +4776,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Advanced Prompt Engineering Techniques</h3>
                 <div class="prompt-tags">
@@ -4553,7 +4814,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Prompt Engineering Fundamentals</h3>
                 <div class="prompt-tags">
@@ -4589,7 +4852,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Code Quality Guidelines</h3>
                 <div class="prompt-tags">
@@ -4625,7 +4890,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Code Comments Guide</h3>
                 <div class="prompt-tags">
@@ -4661,7 +4928,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Cursor Development Guidelines</h3>
                 <div class="prompt-tags">
@@ -4697,7 +4966,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">GitHub Code Quality Guidelines</h3>
                 <div class="prompt-tags">
@@ -4733,7 +5004,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Technical Diagram Guide</h3>
                 <div class="prompt-tags">
@@ -4769,7 +5042,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Developer Thinking and Problem-Solving Guide</h3>
                 <div class="prompt-tags">
@@ -4805,7 +5080,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Git Commit Guide</h3>
                 <div class="prompt-tags">
@@ -4841,7 +5118,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Bug Fix Guide</h3>
                 <div class="prompt-tags">
@@ -4877,7 +5156,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">JavaScript and TypeScript Code Quality Guide</h3>
                 <div class="prompt-tags">
@@ -4913,7 +5194,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Clean Code Guidelines</h3>
                 <div class="prompt-tags">
@@ -4949,7 +5232,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Cursor Rules Configuration Guide</h3>
                 <div class="prompt-tags">
@@ -4985,7 +5270,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Universal Code Quality Guidelines</h3>
                 <div class="prompt-tags">
@@ -5021,7 +5308,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">GitHub Workflow Instructions Guide</h3>
                 <div class="prompt-tags">
@@ -5057,7 +5346,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">GitHub Code Quality Guidelines</h3>
                 <div class="prompt-tags">
@@ -5093,7 +5384,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -5129,7 +5422,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Daily Goal Setting Framework</h3>
                 <div class="prompt-tags">
@@ -5165,7 +5460,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Work Prioritization Framework</h3>
                 <div class="prompt-tags">
@@ -5201,7 +5498,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Daily Task Organization Framework</h3>
                 <div class="prompt-tags">
@@ -5237,7 +5536,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Customer Persona Development System</h3>
                 <div class="prompt-tags">
@@ -5273,7 +5574,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Customer Feedback Analysis System</h3>
                 <div class="prompt-tags">
@@ -5309,7 +5612,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Business Idea Validation Framework</h3>
                 <div class="prompt-tags">
@@ -5345,7 +5650,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Product Requirements Document (PRD) Guide</h3>
                 <div class="prompt-tags">
@@ -5381,7 +5688,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">User Story Development Framework</h3>
                 <div class="prompt-tags">
@@ -5417,7 +5726,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Product Concept Development Framework</h3>
                 <div class="prompt-tags">
@@ -5453,7 +5764,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Innovation Ideation System</h3>
                 <div class="prompt-tags">
@@ -5489,7 +5802,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Business Plan Development Framework</h3>
                 <div class="prompt-tags">
@@ -5525,7 +5840,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Product Roadmap Framework</h3>
                 <div class="prompt-tags">
@@ -5561,7 +5878,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Market Growth Research Framework</h3>
                 <div class="prompt-tags">
@@ -5597,7 +5916,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Content Ideation Framework</h3>
                 <div class="prompt-tags">
@@ -5633,7 +5954,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Digital Market Trends Analysis</h3>
                 <div class="prompt-tags">
@@ -5669,7 +5992,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Tagline Creation Framework</h3>
                 <div class="prompt-tags">
@@ -5705,7 +6030,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Market Research Methodology</h3>
                 <div class="prompt-tags">
@@ -5741,7 +6068,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Digital Product Ideation Framework</h3>
                 <div class="prompt-tags">
@@ -5777,7 +6106,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Digital Product Market Trends Analysis Framework</h3>
                 <div class="prompt-tags">
@@ -5813,7 +6144,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Digital Product Audience Analysis Framework</h3>
                 <div class="prompt-tags">
@@ -5849,7 +6182,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Team Motivation Strategies</h3>
                 <div class="prompt-tags">
@@ -5885,7 +6220,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Goal Planning and Progress Tracking</h3>
                 <div class="prompt-tags">
@@ -5921,7 +6258,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Strategic Goal Brainstorming</h3>
                 <div class="prompt-tags">
@@ -5957,7 +6296,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Goal Structuring Framework</h3>
                 <div class="prompt-tags">
@@ -5993,7 +6334,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Task Planning Methodology</h3>
                 <div class="prompt-tags">
@@ -6029,7 +6372,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Effective Meeting Facilitation Guide</h3>
                 <div class="prompt-tags">
@@ -6065,7 +6410,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Project Blueprint Creation Guide</h3>
                 <div class="prompt-tags">
@@ -6101,7 +6448,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Risk Analysis Framework</h3>
                 <div class="prompt-tags">
@@ -6137,7 +6486,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Stakeholder Communication Strategy</h3>
                 <div class="prompt-tags">
@@ -6173,7 +6524,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Task Prioritization Framework</h3>
                 <div class="prompt-tags">
@@ -6209,7 +6562,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Milestone Tracking System</h3>
                 <div class="prompt-tags">
@@ -6245,7 +6600,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Team Coordination Framework</h3>
                 <div class="prompt-tags">
@@ -6281,7 +6638,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Concise Context-Based Question Answering</h3>
                 <div class="prompt-tags">
@@ -6317,7 +6676,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Context-Aware Expert Query Answering</h3>
                 <div class="prompt-tags">
@@ -6353,7 +6714,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Langchain Expert Mandarin QA</h3>
                 <div class="prompt-tags">
@@ -6389,7 +6752,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Data Cleaning Framework</h3>
                 <div class="prompt-tags">
@@ -6425,7 +6790,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Data Segmentation Framework</h3>
                 <div class="prompt-tags">
@@ -6461,7 +6828,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Mock Data Generation Framework</h3>
                 <div class="prompt-tags">
@@ -6497,7 +6866,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Framework Integration Framework</h3>
                 <div class="prompt-tags">
@@ -6533,7 +6904,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Mock Data Generation Framework</h3>
                 <div class="prompt-tags">
@@ -6569,7 +6942,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Data Visualization Framework</h3>
                 <div class="prompt-tags">
@@ -6605,7 +6980,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Data Format Validation Framework</h3>
                 <div class="prompt-tags">
@@ -6641,7 +7018,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Data Cleaning Framework</h3>
                 <div class="prompt-tags">
@@ -6677,7 +7056,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Data Visualization Framework</h3>
                 <div class="prompt-tags">
@@ -6713,7 +7094,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Outcome Analysis Framework</h3>
                 <div class="prompt-tags">
@@ -6749,7 +7132,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Outcome Analysis Framework</h3>
                 <div class="prompt-tags">
@@ -6785,7 +7170,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Data Segmentation Framework</h3>
                 <div class="prompt-tags">
@@ -6821,7 +7208,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Data Format Validation Framework</h3>
                 <div class="prompt-tags">
@@ -6857,7 +7246,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Framework Integration Framework</h3>
                 <div class="prompt-tags">
@@ -6893,7 +7284,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Human-First SEO Content Writing Guide</h3>
                 <div class="prompt-tags">
@@ -6929,7 +7322,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">YouTube Transcript to SEO Article Converter</h3>
                 <div class="prompt-tags">
@@ -6965,7 +7360,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Natural SEO Content Writing Guide</h3>
                 <div class="prompt-tags">
@@ -7001,7 +7398,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Advanced Content Quality Rating and Optimization System</h3>
                 <div class="prompt-tags">
@@ -7037,7 +7436,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Rating-Based Content Optimization Framework</h3>
                 <div class="prompt-tags">
@@ -7073,7 +7474,47 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="content creation" 
+                        data-model="gpt-4"
+                        data-type="text enhancement">
+            <div class="prompt-header">
+                <h3 class="prompt-title">AI Text Humanizer</h3>
+                <div class="prompt-tags">
+                    <span class="prompt-tag">content-creation</span><span class="prompt-tag">writing</span><span class="prompt-tag">humanization</span><span class="prompt-tag">tone-adjustment</span><span class="prompt-tag">text-enhancement</span>
+                </div>
+                <p class="prompt-description">Transform AI-generated content into natural, engaging human-like writing by adding personal touches and conversational elements</p>
+            </div>
+
+            <div class="prompt-details">
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Model:</span>
+                    <span class="prompt-detail-value">GPT-4</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Category:</span>
+                    <span class="prompt-detail-value">Content Creation</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Type:</span>
+                    <span class="prompt-detail-value">Text Enhancement</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Version:</span>
+                    <span class="prompt-detail-value">1.0</span>
+                </div>
+            </div>
+
+            <div class="prompt-content">
+                <div class="prompt-text">You will act as an expert content humanizer. Your task is to transform AI-generated text into natural, engaging human writing that feels authentic and personal.\n\nFollow these steps to humanize the text:\n\n1. TONE AND STYLE:\n   - Adjust the tone to be conversational and friendly\n   - Vary sentence structures (mix short and long sentences)\n   - Add natural transitions between ideas\n   - Include rhetorical questions when appropriate\n   - Use contractions and informal language judiciously\n\n2. PERSONAL ELEMENTS:\n   - Insert relevant personal anecdotes or experiences\n   - Add subjective opinions and viewpoints\n   - Include &quot;I think,&quot; &quot;in my experience,&quot; or similar phrases\n   - Share personal insights or lessons learned\n\n3. ENGAGEMENT FACTORS:\n   - Incorporate humor where appropriate\n   - Use relevant idioms and colloquialisms\n   - Add current references or timely examples\n   - Include relatable metaphors or analogies\n   - Create emotional connections through storytelling\n\n4. AUTHENTICITY MARKERS:\n   - Add occasional hesitations or qualifiers\n   - Include mild contradictions or second thoughts\n   - Express genuine enthusiasm or concern\n   - Acknowledge alternative viewpoints\n   - Share personal doubts or learning moments\n\nInput: [Paste AI-generated text here]\n\nExpected Output Format:\n1. A humanized version of the text that incorporates all the above elements\n2. Natural flow that doesn&#x27;t feel forced or artificial\n3. Content that reads like it was written by a real person sharing their thoughts with a friend\n\nSuccess Metrics:\n- Text feels personally written rather than AI-generated\n- Maintains the original information while adding human touches\n- Engages readers through relatable elements\n- Preserves professionalism while being conversational\n- Achieves a natural balance of formal and informal language</div>
+                <button class="copy-button" title="Copy prompt">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Context to Blog Post Converter</h3>
                 <div class="prompt-tags">
@@ -7109,7 +7550,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Immersive Character Roleplay Framework</h3>
                 <div class="prompt-tags">
@@ -7145,7 +7588,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7181,7 +7626,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7217,7 +7664,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7253,7 +7702,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7289,7 +7740,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7325,7 +7778,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Strategic Newsletter Content Planning System</h3>
                 <div class="prompt-tags">
@@ -7361,7 +7816,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7397,7 +7854,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7433,7 +7892,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Comprehensive Newsletter Content Creation System</h3>
                 <div class="prompt-tags">
@@ -7469,7 +7930,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Comprehensive Newsletter Content Creation System</h3>
                 <div class="prompt-tags">
@@ -7505,7 +7968,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Newsletter Article Writing Expert</h3>
                 <div class="prompt-tags">
@@ -7541,7 +8006,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7577,7 +8044,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7613,7 +8082,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Untitled</h3>
                 <div class="prompt-tags">
@@ -7649,7 +8120,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Newsletter Content Strategy Generator</h3>
                 <div class="prompt-tags">
@@ -7685,7 +8158,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Newsletter Content Creation Prompts</h3>
                 <div class="prompt-tags">
@@ -7721,7 +8196,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Newsletter Article Writing</h3>
                 <div class="prompt-tags">
@@ -7757,7 +8234,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">FAQ Development Framework</h3>
                 <div class="prompt-tags">
@@ -7793,7 +8272,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Writing Style Guide: Banned Words and Phrases</h3>
                 <div class="prompt-tags">
@@ -7829,7 +8310,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Content Feedback Framework</h3>
                 <div class="prompt-tags">
@@ -7865,7 +8348,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Content Feedback Framework</h3>
                 <div class="prompt-tags">
@@ -7901,7 +8386,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Key Points Generation Framework</h3>
                 <div class="prompt-tags">
@@ -7937,7 +8424,47 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="content creation" 
+                        data-model="gpt-4"
+                        data-type="style analysis">
+            <div class="prompt-header">
+                <h3 class="prompt-title">Writing Style Analyzer and Replicator</h3>
+                <div class="prompt-tags">
+                    <span class="prompt-tag">content-creation</span><span class="prompt-tag">writing-style</span><span class="prompt-tag">analysis</span><span class="prompt-tag">content-generation</span><span class="prompt-tag">style-replication</span>
+                </div>
+                <p class="prompt-description">Analyze and replicate specific writing styles while maintaining content quality and avoiding common AI patterns</p>
+            </div>
+
+            <div class="prompt-details">
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Model:</span>
+                    <span class="prompt-detail-value">GPT-4</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Category:</span>
+                    <span class="prompt-detail-value">Content Creation</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Type:</span>
+                    <span class="prompt-detail-value">Style Analysis</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Version:</span>
+                    <span class="prompt-detail-value">1.0</span>
+                </div>
+            </div>
+
+            <div class="prompt-content">
+                <div class="prompt-text">You are an expert writing style analyst and content creator. Your task is to analyze a given piece of writing and create new content that faithfully replicates the author&#x27;s unique style while avoiding common AI writing patterns.\n\nANALYSIS PHASE:\n1. Analyze the provided text for:\n   - Sentence structure patterns\n   - Vocabulary preferences\n   - Tone and voice characteristics\n   - Paragraph organization\n   - Transitional elements\n   - Rhetorical devices used\n\nSTYLE GUIDELINES:\n1. VOCABULARY CONTROL:\n   - Avoid overused AI-style words such as:\n     * &quot;unique&quot;, &quot;ensure&quot;, &quot;utmost&quot;\n     * &quot;meticulous&quot;, &quot;meticulously&quot;\n     * &quot;navigating&quot;, &quot;in the realm of&quot;\n   - Limit each of these words to maximum two uses per page\n   - Flag and replace any corporate/formal clichés\n\n2. CONTENT DENSITY:\n   - Eliminate filler words and phrases\n   - Ensure each sentence adds concrete value\n   - Maintain high information density\n   - Focus on specific, actionable insights\n\n3. STRUCTURE REPLICATION:\n   - Match the original&#x27;s paragraph length patterns\n   - Replicate sentence length variation\n   - Mirror the balance of descriptive vs. action-oriented language\n   - Maintain similar use of literary devices\n\nINPUT REQUIREMENTS:\n1. Original text for style analysis: [Insert text]\n2. Desired title for new content: [Insert title]\n3. Target word count: [Specify count]\n4. Primary topic/theme: [Specify topic]\n\nOUTPUT FORMAT:\n1. Brief style analysis summary (key patterns identified)\n2. New content piece following the analyzed style\n3. Style adherence checklist showing how the new content matches the original\n\nSUCCESS METRICS:\n- Content reads naturally while matching original style\n- No overuse of specified words/phrases\n- High information density maintained\n- Seamless integration of style elements\n- Avoids common AI writing patterns\n\nNote: The goal is not just to mimic but to understand and authentically reproduce the author&#x27;s unique voice while maintaining content quality and originality.</div>
+                <button class="copy-button" title="Copy prompt">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Content Optimization Framework</h3>
                 <div class="prompt-tags">
@@ -7973,7 +8500,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">FAQ Development Framework</h3>
                 <div class="prompt-tags">
@@ -8009,7 +8538,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Document Structure Framework</h3>
                 <div class="prompt-tags">
@@ -8045,7 +8576,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Copywriting Style Framework</h3>
                 <div class="prompt-tags">
@@ -8081,7 +8614,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Document Structure Framework</h3>
                 <div class="prompt-tags">
@@ -8117,7 +8652,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Content Optimization Framework</h3>
                 <div class="prompt-tags">
@@ -8153,7 +8690,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Key Points Generation Framework</h3>
                 <div class="prompt-tags">
@@ -8189,7 +8728,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Content Voice Inspiration Framework</h3>
                 <div class="prompt-tags">
@@ -8225,7 +8766,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Professional Writing Style Guide - Words and Phrases to Avoid</h3>
                 <div class="prompt-tags">
@@ -8261,7 +8804,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Writing Style Guide - Words to Avoid</h3>
                 <div class="prompt-tags">
@@ -8297,7 +8842,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Dialogue Creation Framework</h3>
                 <div class="prompt-tags">
@@ -8333,7 +8880,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Chapter Development Framework</h3>
                 <div class="prompt-tags">
@@ -8369,7 +8918,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Research Framework</h3>
                 <div class="prompt-tags">
@@ -8405,7 +8956,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Character Creation Framework</h3>
                 <div class="prompt-tags">
@@ -8441,7 +8994,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Character Creation Framework</h3>
                 <div class="prompt-tags">
@@ -8477,7 +9032,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Outline Generation Framework</h3>
                 <div class="prompt-tags">
@@ -8513,7 +9070,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Outline Generation Framework</h3>
                 <div class="prompt-tags">
@@ -8549,7 +9108,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Research Framework</h3>
                 <div class="prompt-tags">
@@ -8585,7 +9146,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Dialogue Creation Framework</h3>
                 <div class="prompt-tags">
@@ -8621,7 +9184,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Book Chapter Development Framework</h3>
                 <div class="prompt-tags">
@@ -8657,7 +9222,47 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="content creation" 
+                        data-model="gpt-4"
+                        data-type="email generation">
+            <div class="prompt-header">
+                <h3 class="prompt-title">Persuasive Sales Email Generator</h3>
+                <div class="prompt-tags">
+                    <span class="prompt-tag">content-creation</span><span class="prompt-tag">sales</span><span class="prompt-tag">email-marketing</span><span class="prompt-tag">copywriting</span><span class="prompt-tag">persuasion</span>
+                </div>
+                <p class="prompt-description">Create compelling sales emails that effectively communicate value propositions and drive action</p>
+            </div>
+
+            <div class="prompt-details">
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Model:</span>
+                    <span class="prompt-detail-value">GPT-4</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Category:</span>
+                    <span class="prompt-detail-value">Content Creation</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Type:</span>
+                    <span class="prompt-detail-value">Email Generation</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Version:</span>
+                    <span class="prompt-detail-value">1.0</span>
+                </div>
+            </div>
+
+            <div class="prompt-content">
+                <div class="prompt-text">You are an expert sales copywriter specializing in persuasive email communication. Create compelling sales emails that effectively communicate value propositions while maintaining professionalism and driving action.\n\nEMAIL STRUCTURE:\n\n1. SUBJECT LINE:\n   - Clear value proposition\n   - Create curiosity\n   - Avoid spam triggers\n   - Personalization elements\n   Examples:\n   - &quot;[Name], discover how to cut your financial management time in half&quot;\n   - &quot;A personalized solution for [Company]&#x27;s financial challenges&quot;\n\n2. OPENING:\n   - Professional yet friendly tone\n   - Immediate value statement\n   - Personalization\n   - Problem acknowledgment\n   Example:\n   ```\n   Hi [Name],\n   \n   I noticed [Company] has been growing rapidly, and with growth often comes increased complexity in financial management.\n   ```\n\n3. VALUE PROPOSITION:\n   - Lead with benefits, not features\n   - Specific, measurable results\n   - Social proof elements\n   - Credibility markers\n   Example:\n   ```\n   Our financial management software has helped companies like yours:\n   • Reduce accounting time by 60%\n   • Cut operational costs by 35%\n   • Automate 90% of routine financial tasks\n   ```\n\n4. DIFFERENTIATION:\n   - Unique selling points\n   - Competitive advantages\n   - Industry-specific benefits\n   Example:\n   ```\n   Unlike traditional solutions, our platform:\n   • Integrates with your existing tools\n   • Provides real-time financial insights\n   • Offers industry-specific automation\n   ```\n\n5. CALL TO ACTION:\n   - Clear, specific action\n   - Low-commitment offer\n   - Sense of urgency\n   Example:\n   ```\n   Would you be interested in a 15-minute demonstration this week? You can choose a time that works best for you here: [Calendar Link]\n   ```\n\n6. SIGNATURE:\n   - Professional closing\n   - Full contact information\n   - Relevant credentials\n\nTONE AND STYLE:\n- Professional but conversational\n- Solution-focused\n- Empathetic to pain points\n- Confident without being aggressive\n\nPERSUASION ELEMENTS:\n1. Problem Recognition\n2. Solution Presentation\n3. Benefit Validation\n4. Risk Reduction\n5. Social Proof\n6. Urgency/Scarcity\n7. Easy Next Steps\n\nSUCCESS METRICS:\n- Clear value proposition\n- Compelling subject line\n- Professional tone\n- Specific benefits\n- Strong call to action\n- No spam triggers\n- Personalization opportunities\n\nCUSTOMIZATION VARIABLES:\n- [Name]: Recipient&#x27;s name\n- [Company]: Company name\n- [Industry]: Specific industry\n- [Pain Point]: Primary challenge\n- [Benefit]: Key benefit\n- [Proof Point]: Specific result or statistic\n\nNote: Focus on creating value-driven, professional communications that respect the recipient&#x27;s time while clearly communicating benefits and driving action.</div>
+                <button class="copy-button" title="Copy prompt">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Educational Video Script Generator Framework</h3>
                 <div class="prompt-tags">
@@ -8693,7 +9298,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Interactive Quiz Generator Framework</h3>
                 <div class="prompt-tags">
@@ -8729,7 +9336,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Supplemental Materials Framework</h3>
                 <div class="prompt-tags">
@@ -8765,7 +9374,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Educational Video Script Generator Framework</h3>
                 <div class="prompt-tags">
@@ -8801,7 +9412,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Discussion Topics Generator Framework</h3>
                 <div class="prompt-tags">
@@ -8837,7 +9450,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Course Syllabus Generator Framework</h3>
                 <div class="prompt-tags">
@@ -8873,7 +9488,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Personalized Learning Strategy Framework</h3>
                 <div class="prompt-tags">
@@ -8909,7 +9526,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Interactive Quiz Generator Framework</h3>
                 <div class="prompt-tags">
@@ -8945,7 +9564,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Discussion Topics Generator Framework</h3>
                 <div class="prompt-tags">
@@ -8981,7 +9602,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Course Syllabus Generator Framework</h3>
                 <div class="prompt-tags">
@@ -9017,7 +9640,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Course Research Framework</h3>
                 <div class="prompt-tags">
@@ -9053,7 +9678,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Course Research Framework</h3>
                 <div class="prompt-tags">
@@ -9089,7 +9716,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Supplemental Materials Framework</h3>
                 <div class="prompt-tags">
@@ -9125,7 +9754,47 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="content creation" 
+                        data-model="gpt-4"
+                        data-type="article generation">
+            <div class="prompt-header">
+                <h3 class="prompt-title">Motivational Reading Article Generator</h3>
+                <div class="prompt-tags">
+                    <span class="prompt-tag">content-creation</span><span class="prompt-tag">motivation</span><span class="prompt-tag">reading</span><span class="prompt-tag">personal-development</span><span class="prompt-tag">career-growth</span>
+                </div>
+                <p class="prompt-description">Create engaging and inspiring articles about the importance of reading for personal and professional development</p>
+            </div>
+
+            <div class="prompt-details">
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Model:</span>
+                    <span class="prompt-detail-value">GPT-4</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Category:</span>
+                    <span class="prompt-detail-value">Content Creation</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Type:</span>
+                    <span class="prompt-detail-value">Article Generation</span>
+                </div>
+                <div class="prompt-detail-item">
+                    <span class="prompt-detail-label">Version:</span>
+                    <span class="prompt-detail-value">1.0</span>
+                </div>
+            </div>
+
+            <div class="prompt-content">
+                <div class="prompt-text">You are an expert motivational writer specializing in personal development content. Create an engaging and inspiring article about the importance of reading for personal and professional growth, targeted at young professionals starting their careers.\n\nCONTENT STRUCTURE:\n\n1. INTRODUCTION:\n   - Hook readers with a compelling opening\n   - Present the relevance of reading in today&#x27;s digital age\n   - Set an encouraging and friendly tone\n\n2. CORE BENEFITS OF READING:\n   - Knowledge Expansion:\n     * Access to diverse perspectives\n     * Continuous learning opportunities\n     * Industry-specific insights\n   \n   - Communication Skills:\n     * Vocabulary enhancement\n     * Writing improvement\n     * Better articulation of ideas\n   \n   - Cognitive Benefits:\n     * Creativity boost\n     * Critical thinking development\n     * Problem-solving abilities\n\n3. PRACTICAL IMPLEMENTATION:\n   - Daily Reading Habits:\n     * Morning reading routines\n     * Lunch break reading\n     * Evening wind-down sessions\n   \n   - Reading Selection Tips:\n     * Mix of professional and leisure reading\n     * Industry-relevant materials\n     * Personal interest areas\n\n4. SUCCESS STORIES:\n   - Include brief examples of successful professionals\n   - Highlight how reading influenced their careers\n   - Share relevant statistics or research findings\n\n5. ACTIONABLE TIPS:\n   - Starting small (15-30 minutes daily)\n   - Using technology (e-books, audiobooks)\n   - Creating reading goals\n   - Joining book clubs or discussion groups\n\nTONE AND STYLE:\n- Friendly and conversational\n- Motivational without being preachy\n- Use of rhetorical questions\n- Include personal anecdotes\n- Incorporate relevant metaphors\n\nOUTPUT FORMAT:\n1. Engaging title\n2. 800-1000 word article\n3. Clear section headings\n4. Bullet points for actionable tips\n5. Conclusion with call-to-action\n\nSUCCESS METRICS:\n- Maintains reader engagement throughout\n- Provides practical, actionable advice\n- Balances inspiration with practicality\n- Creates emotional connection with readers\n- Encourages immediate action\n\nNote: Focus on creating a sense of possibility and excitement about reading while providing realistic implementation strategies for busy young professionals.</div>
+                <button class="copy-button" title="Copy prompt">
+                    <span class="material-icons">content_copy</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Advanced Dual-Expert Content Creation System</h3>
                 <div class="prompt-tags">
@@ -9161,7 +9830,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Dual-Expert Content Creation System</h3>
                 <div class="prompt-tags">
@@ -9197,7 +9868,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Topic Brainstorming Framework</h3>
                 <div class="prompt-tags">
@@ -9233,7 +9906,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Backstory Development Framework</h3>
                 <div class="prompt-tags">
@@ -9269,7 +9944,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Dialog Creation Framework</h3>
                 <div class="prompt-tags">
@@ -9305,7 +9982,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Title Generation Framework</h3>
                 <div class="prompt-tags">
@@ -9341,7 +10020,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Topic Brainstorming Framework</h3>
                 <div class="prompt-tags">
@@ -9377,7 +10058,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Character Profile Development Framework</h3>
                 <div class="prompt-tags">
@@ -9413,7 +10096,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Narrative Flow Framework</h3>
                 <div class="prompt-tags">
@@ -9449,7 +10134,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Scene Development Framework</h3>
                 <div class="prompt-tags">
@@ -9485,7 +10172,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Backstory Development Framework</h3>
                 <div class="prompt-tags">
@@ -9521,7 +10210,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Title Generation Framework</h3>
                 <div class="prompt-tags">
@@ -9557,7 +10248,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Scene Development Framework</h3>
                 <div class="prompt-tags">
@@ -9593,7 +10286,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Character Profile Development Framework</h3>
                 <div class="prompt-tags">
@@ -9629,7 +10324,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Dialog Creation Framework</h3>
                 <div class="prompt-tags">
@@ -9665,7 +10362,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Video Narrative Flow Framework</h3>
                 <div class="prompt-tags">
@@ -9701,7 +10400,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Tool and Reference Recommendation System</h3>
                 <div class="prompt-tags">
@@ -9737,7 +10438,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Location Scouting Framework</h3>
                 <div class="prompt-tags">
@@ -9773,7 +10476,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Film Idea Generation Framework</h3>
                 <div class="prompt-tags">
@@ -9809,7 +10514,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Scene Breakdown Framework</h3>
                 <div class="prompt-tags">
@@ -9845,7 +10552,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Character Development Framework</h3>
                 <div class="prompt-tags">
@@ -9881,7 +10590,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Film Idea Generation Framework</h3>
                 <div class="prompt-tags">
@@ -9917,7 +10628,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Character Development Framework</h3>
                 <div class="prompt-tags">
@@ -9953,7 +10666,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Scene Breakdown Framework</h3>
                 <div class="prompt-tags">
@@ -9989,7 +10704,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Plot Structure Framework</h3>
                 <div class="prompt-tags">
@@ -10025,7 +10742,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Location Scouting Framework</h3>
                 <div class="prompt-tags">
@@ -10061,7 +10780,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Plot Structure Framework</h3>
                 <div class="prompt-tags">
@@ -10097,7 +10818,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Coloring Book Theme Development Framework</h3>
                 <div class="prompt-tags">
@@ -10133,7 +10856,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Image Sequence Development Framework</h3>
                 <div class="prompt-tags">
@@ -10169,7 +10894,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Coloring Book Theme Development Framework</h3>
                 <div class="prompt-tags">
@@ -10205,7 +10932,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Coloring Book Storyline Development Framework</h3>
                 <div class="prompt-tags">
@@ -10241,7 +10970,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Seasonal Theme Development Framework</h3>
                 <div class="prompt-tags">
@@ -10277,7 +11008,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Image Sequence Development Framework</h3>
                 <div class="prompt-tags">
@@ -10313,7 +11046,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Coloring Book Illustration Design Framework</h3>
                 <div class="prompt-tags">
@@ -10349,7 +11084,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Coloring Book Illustration Design Framework</h3>
                 <div class="prompt-tags">
@@ -10385,7 +11122,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Coloring Book Storyline Development Framework</h3>
                 <div class="prompt-tags">
@@ -10421,7 +11160,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Seasonal Theme Development Framework</h3>
                 <div class="prompt-tags">
@@ -10457,7 +11198,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Melody Creation Framework</h3>
                 <div class="prompt-tags">
@@ -10493,7 +11236,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Chorus Creation Framework</h3>
                 <div class="prompt-tags">
@@ -10529,7 +11274,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Lyrics Creation Framework</h3>
                 <div class="prompt-tags">
@@ -10565,7 +11312,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Chorus Creation Framework</h3>
                 <div class="prompt-tags">
@@ -10601,7 +11350,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Lyrics Creation Framework</h3>
                 <div class="prompt-tags">
@@ -10637,7 +11388,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Melody Creation Framework</h3>
                 <div class="prompt-tags">
@@ -10673,7 +11426,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">CO-STAR Prompt Engineering Framework</h3>
                 <div class="prompt-tags">
@@ -10709,7 +11464,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Framework Integration Guide</h3>
                 <div class="prompt-tags">
@@ -10745,7 +11502,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Tool Selection and Orchestration Framework</h3>
                 <div class="prompt-tags">
@@ -10781,7 +11540,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Conversation Analysis and Reasoning Framework</h3>
                 <div class="prompt-tags">
@@ -10817,7 +11578,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Advanced Research Literature Analysis System</h3>
                 <div class="prompt-tags">
@@ -10853,7 +11616,9 @@ description: A curated collection of high-quality prompts for various use cases,
             </div>
         </div>
 
-        <div class="prompt-card">
+        <div class="prompt-card" data-category="misc" 
+                        data-model="gpt-4"
+                        data-type="general">
             <div class="prompt-header">
                 <h3 class="prompt-title">Research Literature Analysis Assistant</h3>
                 <div class="prompt-tags">
