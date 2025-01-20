@@ -3,7 +3,7 @@
 
 import os
 import sys
-import frontmatter
+import python_frontmatter as frontmatter
 import glob
 from pathlib import Path
 import html
