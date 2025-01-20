@@ -44,6 +44,7 @@ theme:
     - content.action.edit
     - toc.follow
     - toc.integrate
+  custom_dir: docs/overrides
 
 plugins:
   - search:
