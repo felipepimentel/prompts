@@ -32,6 +32,8 @@ jobs:
           pip install mkdocs-git-revision-date-localized-plugin
           pip install pillow cairosvg
           pip install pyyaml
+          pip install python-frontmatter
+
 
       - name: List workspace contents
         run: |
