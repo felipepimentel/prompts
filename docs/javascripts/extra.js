@@ -143,5 +143,71 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
+
+  // Initialize all interactive elements
+  const copyButtons = document.querySelectorAll('.copy-button');
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const promptCards = document.querySelectorAll('.prompt-card');
+  const searchInput = document.querySelector('.prompt-search');
+
+  // Initialize copy buttons
+  copyButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const promptCard = this.closest('.prompt-card');
+      const promptText = promptCard.querySelector('.prompt-text').textContent;
+      
+      navigator.clipboard.writeText(promptText).then(() => {
+        const icon = this.querySelector('.material-icons');
+        const originalText = icon.textContent;
+        icon.textContent = 'check';
+        setTimeout(() => {
+          icon.textContent = originalText;
+        }, 2000);
+      });
+    });
+  });
+
+  // Initialize filter buttons
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      const filter = this.dataset.filter;
+      
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      
+      promptCards.forEach(card => {
+        if (filter === 'all') {
+          card.style.display = 'block';
+        } else if (filter.startsWith('category-')) {
+          const category = filter.replace('category-', '');
+          card.style.display = card.dataset.category === category ? 'block' : 'none';
+        } else if (filter.startsWith('model-')) {
+          const model = filter.replace('model-', '');
+          card.style.display = card.dataset.model === model ? 'block' : 'none';
+        }
+      });
+    });
+  });
+
+  // Initialize search functionality
+  if (searchInput) {
+    searchInput.addEventListener('input', function() {
+      const searchTerm = this.value.toLowerCase();
+      
+      promptCards.forEach(card => {
+        const title = card.querySelector('.prompt-title').textContent.toLowerCase();
+        const description = card.querySelector('.prompt-description').textContent.toLowerCase();
+        const tags = Array.from(card.querySelectorAll('.prompt-tag')).map(tag => tag.textContent.toLowerCase());
+        const content = card.querySelector('.prompt-text').textContent.toLowerCase();
+        
+        const matches = title.includes(searchTerm) || 
+                      description.includes(searchTerm) || 
+                      tags.some(tag => tag.includes(searchTerm)) ||
+                      content.includes(searchTerm);
+                      
+        card.style.display = matches ? 'block' : 'none';
+      });
+    });
+  }
 });
 

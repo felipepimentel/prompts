@@ -34,17 +34,25 @@ jobs:
           pip install pyyaml
           pip install python-frontmatter
 
-
       - name: List workspace contents
         run: |
           pwd
           ls -la
           ls -la prompts/
+          ls -la docs/stylesheets/
+          ls -la docs/javascripts/ || mkdir -p docs/javascripts
 
       - name: Generate gallery
         run: |
           chmod +x scripts/generate_gallery.py
           python scripts/generate_gallery.py
+
+      - name: Ensure assets directories
+        run: |
+          mkdir -p site/stylesheets
+          mkdir -p site/javascripts
+          cp docs/stylesheets/extra.css site/stylesheets/
+          cp docs/javascripts/extra.js site/javascripts/ || echo "No extra.js found"
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
