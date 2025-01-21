@@ -206,3 +206,20 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+const categories = [
+    {
+        category: "Writing",
+        subcategories: [
+            {
+                name: "Educational",
+                description: "Prompts focused on creating clear, engaging educational content",
+                examples: [
+                    "Martin Fowler-inspired writing style",
+                    "Technical documentation",
+                    "Tutorial creation"
+                ]
+            }
+        ]
+    }
+];
+
