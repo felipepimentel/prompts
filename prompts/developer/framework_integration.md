@@ -1,13 +1,16 @@
 ---
-title: Framework Integration Guide
+description: A comprehensive guide for integrating different frameworks and technologies
+  in modern applications, focusing on best practices, common patterns, and maintainable
+  architecture.
 path: developer/guidelines/framework-integration-guide
+prompt_type: Instruction-based prompting
 tags:
-  - integration
-  - frameworks
-  - architecture
-  - development
-  - best-practices
-description: A comprehensive guide for integrating different frameworks and technologies in modern applications, focusing on best practices, common patterns, and maintainable architecture.
+- integration
+- frameworks
+- architecture
+- development
+- best-practices
+title: Framework Integration Guide
 ---
 
 # Framework Integration Guide

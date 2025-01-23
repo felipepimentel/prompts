@@ -1,14 +1,16 @@
 ---
-title: Conversation Analysis and Reasoning Framework
+description: A comprehensive framework for analyzing conversations, understanding
+  context, and formulating effective responses through systematic reasoning.
 path: misc/reasoning-chat
+prompt_type: Instruction-based prompting
 tags:
-  - conversation-analysis
-  - reasoning
-  - nlp
-  - dialogue-systems
-  - cognitive-frameworks
-  - communication
-description: A comprehensive framework for analyzing conversations, understanding context, and formulating effective responses through systematic reasoning.
+- conversation-analysis
+- reasoning
+- nlp
+- dialogue-systems
+- cognitive-frameworks
+- communication
+title: Conversation Analysis and Reasoning Framework
 ---
 
 # Conversation Analysis and Reasoning Framework

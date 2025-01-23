@@ -1,8 +1,18 @@
 ---
-title: CO-STAR Prompt Engineering Framework
+description: A comprehensive guide to the CO-STAR framework for prompt engineering,
+  covering implementation from basic concepts to enterprise-scale deployment
 path: /misc/costar-explanation
-tags: ["prompt-engineering", "framework", "co-star", "methodology", "best-practices", "documentation", "enterprise", "scaling"]
-description: A comprehensive guide to the CO-STAR framework for prompt engineering, covering implementation from basic concepts to enterprise-scale deployment
+prompt_type: Instruction-based prompting
+tags:
+- prompt-engineering
+- framework
+- co-star
+- methodology
+- best-practices
+- documentation
+- enterprise
+- scaling
+title: CO-STAR Prompt Engineering Framework
 ---
 
 # CO-STAR Prompt Engineering Framework

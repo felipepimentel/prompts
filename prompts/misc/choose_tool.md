@@ -1,8 +1,16 @@
 ---
-title: Tool Selection and Orchestration Framework
+description: A comprehensive framework for analyzing requirements, selecting appropriate
+  tools, and orchestrating their execution for optimal goal achievement
 path: /misc/choose_tool
-tags: ["tool-selection", "orchestration", "decision-making", "workflow", "automation", "efficiency"]
-description: A comprehensive framework for analyzing requirements, selecting appropriate tools, and orchestrating their execution for optimal goal achievement
+prompt_type: Instruction-based prompting
+tags:
+- tool-selection
+- orchestration
+- decision-making
+- workflow
+- automation
+- efficiency
+title: Tool Selection and Orchestration Framework
 ---
 
 # Tool Selection and Orchestration Framework

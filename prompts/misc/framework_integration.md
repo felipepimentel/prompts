@@ -1,14 +1,16 @@
 ---
-title: Framework Integration Guide
+description: A comprehensive guide for integrating multiple frameworks and systems
+  while ensuring seamless operation, maintainability, and optimal performance.
 path: misc/framework-integration
+prompt_type: Instruction-based prompting
 tags:
-  - framework-integration
-  - system-architecture
-  - best-practices
-  - workflow-optimization
-  - development
-  - documentation
-description: A comprehensive guide for integrating multiple frameworks and systems while ensuring seamless operation, maintainability, and optimal performance.
+- framework-integration
+- system-architecture
+- best-practices
+- workflow-optimization
+- development
+- documentation
+title: Framework Integration Guide
 ---
 
 # Framework Integration Guide
