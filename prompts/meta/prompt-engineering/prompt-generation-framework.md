@@ -1,13 +1,15 @@
 ---
-title: Prompt Generation Framework
+description: Advanced prompt for systematically generating effective prompts that
+  maximize AI interaction quality and outcome achievement
 path: prompt/prompt-generation-framework
+prompt_type: Role-based prompting
 tags:
-  - prompt-engineering
-  - ai-interaction
-  - content-creation
-  - communication
-  - effectiveness
-description: Advanced prompt for systematically generating effective prompts that maximize AI interaction quality and outcome achievement
+- prompt-engineering
+- ai-interaction
+- content-creation
+- communication
+- effectiveness
+title: Prompt Generation Framework
 ---
 
 # Role: Prompt Generation Specialist

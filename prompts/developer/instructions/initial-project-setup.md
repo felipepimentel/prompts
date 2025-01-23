@@ -1,8 +1,15 @@
 ---
-title: Initial Project Setup Guide
+description: A comprehensive guide for setting up new software projects with best
+  practices and proper architecture
 path: developer/instructions/initial-project-setup.md
-tags: ["project-setup", "development", "best-practices", "architecture", "planning"]
-description: A comprehensive guide for setting up new software projects with best practices and proper architecture
+prompt_type: Instruction-based prompting
+tags:
+- project-setup
+- development
+- best-practices
+- architecture
+- planning
+title: Initial Project Setup Guide
 ---
 
 # Initial Project Setup Guide

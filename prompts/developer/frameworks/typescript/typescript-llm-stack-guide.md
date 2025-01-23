@@ -1,13 +1,15 @@
 ---
-title: TypeScript LLM Tech Stack Guide
+description: A comprehensive guide for building robust LLM applications using TypeScript
+  and modern AI development practices
 path: developer/frameworks/typescript/typescript-llm-stack-guide
+prompt_type: Instruction-based prompting
 tags:
-  - typescript
-  - llm
-  - ai
-  - development
-  - backend
-description: A comprehensive guide for building robust LLM applications using TypeScript and modern AI development practices
+- typescript
+- llm
+- ai
+- development
+- backend
+title: TypeScript LLM Tech Stack Guide
 ---
 
 # TypeScript LLM Tech Stack Guide

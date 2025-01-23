@@ -1,15 +1,17 @@
 ---
-title: JavaScript and TypeScript Code Quality Guide
+description: A comprehensive guide for maintaining high code quality standards in
+  JavaScript and TypeScript projects, covering best practices, patterns, and tools
 path: developer/guidelines/javascript-typescript-code-quality-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - javascript
-  - typescript
-  - code-quality
-  - best-practices
-  - linting
-  - testing
-  - performance
-description: A comprehensive guide for maintaining high code quality standards in JavaScript and TypeScript projects, covering best practices, patterns, and tools
+- javascript
+- typescript
+- code-quality
+- best-practices
+- linting
+- testing
+- performance
+title: JavaScript and TypeScript Code Quality Guide
 ---
 
 # JavaScript and TypeScript Code Quality Guide

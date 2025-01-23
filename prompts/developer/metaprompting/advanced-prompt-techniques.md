@@ -1,13 +1,15 @@
 ---
-title: Advanced Prompt Engineering Techniques
+description: Advanced techniques and strategies for crafting sophisticated prompts
+  for Large Language Models
 path: developer/metaprompting/advanced-prompt-techniques
+prompt_type: Meta prompting
 tags:
-  - prompt-engineering
-  - ai
-  - advanced
-  - llm
-  - metaprompting
-description: Advanced techniques and strategies for crafting sophisticated prompts for Large Language Models
+- prompt-engineering
+- ai
+- advanced
+- llm
+- metaprompting
+title: Advanced Prompt Engineering Techniques
 ---
 
 # Advanced Prompt Engineering Techniques

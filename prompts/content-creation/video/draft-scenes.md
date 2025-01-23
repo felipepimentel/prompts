@@ -1,13 +1,15 @@
 ---
-title: Scene Development Framework
+description: A comprehensive framework for crafting compelling video scenes that effectively
+  combine visual elements, character interactions, and narrative progression.
 path: content-creation/video/scene-development-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - video-production
-  - scene-writing
-  - visual-storytelling
-  - narrative-structure
-description: A comprehensive framework for crafting compelling video scenes that effectively combine visual elements, character interactions, and narrative progression.
+- content-creation
+- video-production
+- scene-writing
+- visual-storytelling
+- narrative-structure
+title: Scene Development Framework
 ---
 
 # Scene Development Framework

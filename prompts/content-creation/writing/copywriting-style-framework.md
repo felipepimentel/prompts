@@ -1,13 +1,15 @@
 ---
-title: Copywriting Style Framework
+description: A comprehensive framework for crafting engaging, conversational content
+  that effectively communicates messages while maintaining reader engagement and authenticity.
 path: content-creation/writing/copywriting-style-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - writing
-  - copywriting
-  - content-optimization
-  - audience-engagement
-description: A comprehensive framework for crafting engaging, conversational content that effectively communicates messages while maintaining reader engagement and authenticity.
+- content-creation
+- writing
+- copywriting
+- content-optimization
+- audience-engagement
+title: Copywriting Style Framework
 ---
 
 # Copywriting Style Framework

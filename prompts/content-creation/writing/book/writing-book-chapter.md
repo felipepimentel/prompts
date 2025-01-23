@@ -1,13 +1,15 @@
 ---
-title: Book Chapter Development Framework
+description: A comprehensive framework for crafting engaging book chapters that effectively
+  advance the story while maintaining reader engagement and narrative cohesion.
 path: content-creation/writing/book/chapter-development-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - book-writing
-  - chapter-development
-  - narrative-structure
-  - story-progression
-description: A comprehensive framework for crafting engaging book chapters that effectively advance the story while maintaining reader engagement and narrative cohesion.
+- content-creation
+- book-writing
+- chapter-development
+- narrative-structure
+- story-progression
+title: Book Chapter Development Framework
 ---
 
 # Book Chapter Development Framework

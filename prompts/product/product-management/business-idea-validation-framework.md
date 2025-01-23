@@ -1,13 +1,15 @@
 ---
-title: Business Idea Validation Framework
+description: Advanced prompt for systematically validating business ideas through
+  comprehensive analysis and testing to minimize risks and maximize success potential
 path: product/product-management/business-idea-validation-framework
+prompt_type: Role-based prompting
 tags:
-  - business-validation
-  - market-testing
-  - feasibility
-  - entrepreneurship
-  - strategy
-description: Advanced prompt for systematically validating business ideas through comprehensive analysis and testing to minimize risks and maximize success potential
+- business-validation
+- market-testing
+- feasibility
+- entrepreneurship
+- strategy
+title: Business Idea Validation Framework
 ---
 
 # Role: Business Validation Specialist

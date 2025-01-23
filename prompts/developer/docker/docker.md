@@ -1,13 +1,16 @@
 ---
-title: Docker Development Guide
+description: A comprehensive guide for developing and deploying applications using
+  Docker, covering containerization best practices, multi-container applications,
+  and production deployment strategies.
 path: developer/frameworks/docker/docker-development-guide
+prompt_type: Instruction-based prompting
 tags:
-  - docker
-  - containerization
-  - devops
-  - deployment
-  - infrastructure
-description: A comprehensive guide for developing and deploying applications using Docker, covering containerization best practices, multi-container applications, and production deployment strategies.
+- docker
+- containerization
+- devops
+- deployment
+- infrastructure
+title: Docker Development Guide
 ---
 
 # Docker Development Guide

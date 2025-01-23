@@ -1,9 +1,16 @@
 ---
-title: Writing Style Analyzer and Replicator
-description: Analyze and replicate specific writing styles while maintaining content quality and avoiding common AI patterns
-tags: [content-creation, writing-style, analysis, content-generation, style-replication]
-model: GPT-4
 category: Content Creation
+description: Analyze and replicate specific writing styles while maintaining content
+  quality and avoiding common AI patterns
+model: GPT-4
+prompt_type: Role-based prompting
+tags:
+- content-creation
+- writing-style
+- analysis
+- content-generation
+- style-replication
+title: Writing Style Analyzer and Replicator
 type: Style Analysis
 version: 1.0
 ---

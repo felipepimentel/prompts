@@ -1,13 +1,15 @@
 ---
-title: Work Prioritization Framework
+description: Advanced prompt for systematically prioritizing work and tasks to maximize
+  impact and efficiency while maintaining strategic alignment
 path: product/time-management/work-prioritization-framework
+prompt_type: Role-based prompting
 tags:
-  - prioritization
-  - productivity
-  - time-management
-  - decision-making
-  - efficiency
-description: Advanced prompt for systematically prioritizing work and tasks to maximize impact and efficiency while maintaining strategic alignment
+- prioritization
+- productivity
+- time-management
+- decision-making
+- efficiency
+title: Work Prioritization Framework
 ---
 
 # Role: Work Prioritization Specialist

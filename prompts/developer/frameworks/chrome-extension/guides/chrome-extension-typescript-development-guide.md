@@ -1,8 +1,17 @@
 ---
-title: "Chrome Extension Development with TypeScript Guide"
-path: "developer/frameworks/chrome-extension/guides/chrome-extension-typescript-development-guide"
-tags: ["chrome-extension", "typescript", "javascript", "web-development", "browser-extension", "development", "guide"]
-description: "A comprehensive guide for developing Chrome extensions using TypeScript, focusing on best practices, performance optimization, and modern development patterns"
+description: A comprehensive guide for developing Chrome extensions using TypeScript,
+  focusing on best practices, performance optimization, and modern development patterns
+path: developer/frameworks/chrome-extension/guides/chrome-extension-typescript-development-guide
+prompt_type: Instruction-based prompting
+tags:
+- chrome-extension
+- typescript
+- javascript
+- web-development
+- browser-extension
+- development
+- guide
+title: Chrome Extension Development with TypeScript Guide
 ---
 
 # Chrome Extension Development with TypeScript Guide

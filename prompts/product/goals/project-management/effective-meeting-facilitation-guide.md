@@ -1,13 +1,15 @@
 ---
-title: Effective Meeting Facilitation Guide
+description: Advanced prompt for planning and facilitating effective, productive meetings
+  that achieve clear outcomes
 path: product/goals/project-management/effective-meeting-facilitation-guide
+prompt_type: Role-based prompting
 tags:
-  - meetings
-  - facilitation
-  - collaboration
-  - productivity
-  - communication
-description: Advanced prompt for planning and facilitating effective, productive meetings that achieve clear outcomes
+- meetings
+- facilitation
+- collaboration
+- productivity
+- communication
+title: Effective Meeting Facilitation Guide
 ---
 
 # Role: Meeting Facilitation Expert

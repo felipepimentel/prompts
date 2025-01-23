@@ -1,13 +1,15 @@
 ---
-title: Risk Analysis Framework
+description: Advanced prompt for conducting thorough risk analysis and developing
+  effective mitigation strategies
 path: product/goals/project-management/risk-analysis-framework
+prompt_type: Role-based prompting
 tags:
-  - risk-management
-  - analysis
-  - project-management
-  - planning
-  - mitigation
-description: Advanced prompt for conducting thorough risk analysis and developing effective mitigation strategies
+- risk-management
+- analysis
+- project-management
+- planning
+- mitigation
+title: Risk Analysis Framework
 ---
 
 # Role: Risk Analysis Expert

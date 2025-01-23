@@ -1,8 +1,19 @@
 ---
-title: "Next.js Frontend Development Guide"
-path: "developer/frameworks/nextjs/guides/frontend-nextjs-development-guide"
-tags: ["nextjs", "frontend", "react", "typescript", "development", "guide", "web-development", "best-practices", "patterns"]
-description: "A comprehensive guide for developing frontend applications with Next.js, focusing on modern development patterns, component architecture, and best practices"
+description: A comprehensive guide for developing frontend applications with Next.js,
+  focusing on modern development patterns, component architecture, and best practices
+path: developer/frameworks/nextjs/guides/frontend-nextjs-development-guide
+prompt_type: Instruction-based prompting
+tags:
+- nextjs
+- frontend
+- react
+- typescript
+- development
+- guide
+- web-development
+- best-practices
+- patterns
+title: Next.js Frontend Development Guide
 ---
 
 # Next.js Frontend Development Guide

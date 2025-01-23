@@ -1,8 +1,18 @@
 ---
-title: "Astro with TypeScript Development Guide"
-path: "developer/frameworks/astro/guides/astro-typescript-development-guide"
-tags: ["astro", "typescript", "frontend", "development", "setup", "guide", "web-development", "best-practices"]
-description: "A comprehensive guide for developing Astro applications with TypeScript, focusing on type safety, best practices, and optimal development workflows"
+description: A comprehensive guide for developing Astro applications with TypeScript,
+  focusing on type safety, best practices, and optimal development workflows
+path: developer/frameworks/astro/guides/astro-typescript-development-guide
+prompt_type: Instruction-based prompting
+tags:
+- astro
+- typescript
+- frontend
+- development
+- setup
+- guide
+- web-development
+- best-practices
+title: Astro with TypeScript Development Guide
 ---
 
 # Astro with TypeScript Development Guide

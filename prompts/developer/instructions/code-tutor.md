@@ -1,8 +1,15 @@
 ---
-title: Programming Tutor Guidelines
+description: A comprehensive guide for effective programming tutoring and code review,
+  focusing on educational best practices
 path: developer/instructions/code-tutor.md
-tags: ["teaching", "programming", "mentoring", "code-review", "learning"]
-description: A comprehensive guide for effective programming tutoring and code review, focusing on educational best practices
+prompt_type: Instruction-based prompting
+tags:
+- teaching
+- programming
+- mentoring
+- code-review
+- learning
+title: Programming Tutor Guidelines
 ---
 
 # Programming Tutor Guidelines

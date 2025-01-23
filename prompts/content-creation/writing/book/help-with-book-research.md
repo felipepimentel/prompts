@@ -1,13 +1,15 @@
 ---
-title: Book Research Framework
+description: A comprehensive framework for conducting thorough book research that
+  ensures accuracy, depth, and authenticity in storytelling.
 path: content-creation/writing/book/research-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - book-writing
-  - research-methodology
-  - information-gathering
-  - knowledge-synthesis
-description: A comprehensive framework for conducting thorough book research that ensures accuracy, depth, and authenticity in storytelling.
+- content-creation
+- book-writing
+- research-methodology
+- information-gathering
+- knowledge-synthesis
+title: Book Research Framework
 ---
 
 # Book Research Framework

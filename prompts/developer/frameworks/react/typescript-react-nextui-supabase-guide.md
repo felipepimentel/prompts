@@ -1,13 +1,15 @@
 ---
-title: TypeScript React NextUI Supabase Integration Guide
+description: Comprehensive guide for building modern web applications using TypeScript,
+  React, NextUI, and Supabase, focusing on best practices and full-stack integration
 path: developer/frameworks/react/typescript-react-nextui-supabase-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - typescript
-  - react
-  - nextui
-  - supabase
-  - frontend
-description: Comprehensive guide for building modern web applications using TypeScript, React, NextUI, and Supabase, focusing on best practices and full-stack integration
+- typescript
+- react
+- nextui
+- supabase
+- frontend
+title: TypeScript React NextUI Supabase Integration Guide
 ---
 
 # TypeScript React NextUI Supabase Integration Guide

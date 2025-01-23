@@ -1,13 +1,15 @@
 ---
-title: Stakeholder Communication Strategy
+description: Advanced prompt for developing and executing effective stakeholder communication
+  strategies in project management
 path: product/goals/project-management/stakeholder-communication-strategy
+prompt_type: Role-based prompting
 tags:
-  - stakeholder-management
-  - communication
-  - project-management
-  - strategy
-  - engagement
-description: Advanced prompt for developing and executing effective stakeholder communication strategies in project management
+- stakeholder-management
+- communication
+- project-management
+- strategy
+- engagement
+title: Stakeholder Communication Strategy
 ---
 
 # Role: Stakeholder Communication Strategist

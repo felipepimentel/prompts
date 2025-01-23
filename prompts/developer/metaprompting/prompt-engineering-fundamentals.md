@@ -1,13 +1,15 @@
 ---
-title: Prompt Engineering Fundamentals
+description: Comprehensive guide for creating effective prompts for Large Language
+  Models
 path: developer/metaprompting/prompt-engineering-fundamentals
+prompt_type: Meta prompting
 tags:
-  - prompt-engineering
-  - ai
-  - best-practices
-  - llm
-  - metaprompting
-description: Comprehensive guide for creating effective prompts for Large Language Models
+- prompt-engineering
+- ai
+- best-practices
+- llm
+- metaprompting
+title: Prompt Engineering Fundamentals
 ---
 
 # Prompt Engineering Fundamentals

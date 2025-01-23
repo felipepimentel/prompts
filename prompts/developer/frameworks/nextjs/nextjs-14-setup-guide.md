@@ -1,8 +1,17 @@
 ---
-title: "Next.js 14 Development Guide"
-path: "developer/frameworks/nextjs/nextjs-14-setup-guide"
-tags: ["nextjs", "typescript", "tailwind", "seo", "development", "best-practices", "app-router"]
-description: "A comprehensive guide for developing Next.js 14 applications with TypeScript, Tailwind CSS, and SEO optimization, following modern best practices."
+description: A comprehensive guide for developing Next.js 14 applications with TypeScript,
+  Tailwind CSS, and SEO optimization, following modern best practices.
+path: developer/frameworks/nextjs/nextjs-14-setup-guide
+prompt_type: Instruction-based prompting
+tags:
+- nextjs
+- typescript
+- tailwind
+- seo
+- development
+- best-practices
+- app-router
+title: Next.js 14 Development Guide
 ---
 
 # Next.js 14 Development Guide

@@ -1,13 +1,15 @@
 ---
-title: Task Prioritization Framework
+description: Advanced prompt for developing and implementing effective task prioritization
+  systems in project management
 path: product/goals/project-management/task-prioritization-framework
+prompt_type: Role-based prompting
 tags:
-  - task-management
-  - prioritization
-  - productivity
-  - project-management
-  - efficiency
-description: Advanced prompt for developing and implementing effective task prioritization systems in project management
+- task-management
+- prioritization
+- productivity
+- project-management
+- efficiency
+title: Task Prioritization Framework
 ---
 
 # Role: Task Prioritization Specialist

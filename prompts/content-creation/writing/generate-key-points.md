@@ -1,13 +1,16 @@
 ---
-title: Key Points Generation Framework
+description: A comprehensive framework for identifying, developing, and organizing
+  key points that effectively communicate core messages while maintaining clarity
+  and impact.
 path: content-creation/writing/key-points-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - writing
-  - information-organization
-  - content-structure
-  - message-clarity
-description: A comprehensive framework for identifying, developing, and organizing key points that effectively communicate core messages while maintaining clarity and impact.
+- content-creation
+- writing
+- information-organization
+- content-structure
+- message-clarity
+title: Key Points Generation Framework
 ---
 
 # Key Points Generation Framework

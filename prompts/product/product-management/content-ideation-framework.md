@@ -1,13 +1,15 @@
 ---
-title: Content Ideation Framework
+description: Advanced prompt for developing and implementing effective content ideation
+  frameworks that generate innovative and engaging content ideas
 path: product/product-management/content-ideation-framework
+prompt_type: Role-based prompting
 tags:
-  - content-strategy
-  - ideation
-  - creativity
-  - brainstorming
-  - planning
-description: Advanced prompt for developing and implementing effective content ideation frameworks that generate innovative and engaging content ideas
+- content-strategy
+- ideation
+- creativity
+- brainstorming
+- planning
+title: Content Ideation Framework
 ---
 
 # Role: Content Strategy Specialist

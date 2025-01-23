@@ -1,14 +1,17 @@
 ---
-title: Digital Product Ideation Framework
+description: A comprehensive framework for generating innovative and feasible digital
+  product ideas that solve real user problems while leveraging current technology
+  trends.
 path: product/digital-product/generate-product-idea
+prompt_type: Role-based prompting
 tags:
-  - product-development
-  - ideation
-  - innovation
-  - digital-product
-  - market-analysis
-  - feasibility
-description: A comprehensive framework for generating innovative and feasible digital product ideas that solve real user problems while leveraging current technology trends.
+- product-development
+- ideation
+- innovation
+- digital-product
+- market-analysis
+- feasibility
+title: Digital Product Ideation Framework
 ---
 
 # Digital Product Ideation Framework

@@ -1,13 +1,15 @@
 ---
-title: Customer Persona Development System
+description: Advanced prompt for developing detailed and actionable customer personas
+  that drive product and marketing decisions
 path: product/product-management/customer-persona-development-system
+prompt_type: Role-based prompting
 tags:
-  - customer-research
-  - personas
-  - user-experience
-  - market-research
-  - strategy
-description: Advanced prompt for developing detailed and actionable customer personas that drive product and marketing decisions
+- customer-research
+- personas
+- user-experience
+- market-research
+- strategy
+title: Customer Persona Development System
 ---
 
 # Role: Customer Research Specialist

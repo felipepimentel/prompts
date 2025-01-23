@@ -1,8 +1,16 @@
 ---
-title: "HTML, Tailwind CSS, and JavaScript Development Guide"
-path: "developer/frameworks/web/html-tailwind-javascript-guide"
-tags: ["html", "tailwind", "javascript", "frontend", "web-development", "best-practices"]
-description: "A comprehensive guide for modern web development using HTML, Tailwind CSS, and vanilla JavaScript, focusing on best practices, readability, and performance."
+description: A comprehensive guide for modern web development using HTML, Tailwind
+  CSS, and vanilla JavaScript, focusing on best practices, readability, and performance.
+path: developer/frameworks/web/html-tailwind-javascript-guide
+prompt_type: Instruction-based prompting
+tags:
+- html
+- tailwind
+- javascript
+- frontend
+- web-development
+- best-practices
+title: HTML, Tailwind CSS, and JavaScript Development Guide
 ---
 
 # HTML, Tailwind CSS, and JavaScript Development Guide

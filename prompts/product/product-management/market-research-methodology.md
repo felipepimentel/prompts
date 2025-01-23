@@ -1,13 +1,15 @@
 ---
-title: Market Research Methodology
+description: Advanced prompt for conducting comprehensive market research that delivers
+  actionable insights for strategic decision-making
 path: product/product-management/market-research-methodology
+prompt_type: Role-based prompting
 tags:
-  - market-research
-  - analysis
-  - strategy
-  - insights
-  - decision-making
-description: Advanced prompt for conducting comprehensive market research that delivers actionable insights for strategic decision-making
+- market-research
+- analysis
+- strategy
+- insights
+- decision-making
+title: Market Research Methodology
 ---
 
 # Role: Market Research Specialist

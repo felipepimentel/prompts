@@ -1,8 +1,15 @@
 ---
-title: Git Commit Message Guidelines
+description: A comprehensive guide for writing clear, informative, and standardized
+  git commit messages
 path: developer/instructions/git-commit-guidelines.md
-tags: ["git", "version-control", "best-practices", "documentation", "collaboration"]
-description: A comprehensive guide for writing clear, informative, and standardized git commit messages
+prompt_type: Instruction-based prompting
+tags:
+- git
+- version-control
+- best-practices
+- documentation
+- collaboration
+title: Git Commit Message Guidelines
 ---
 
 # Git Commit Message Guidelines

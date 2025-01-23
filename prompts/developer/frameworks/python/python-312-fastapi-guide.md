@@ -1,15 +1,17 @@
 ---
-title: Python 3.12 with FastAPI Development Guide
+description: A comprehensive guide for building high-performance web APIs using Python
+  3.12 and FastAPI, focusing on modern features and best practices
 path: developer/frameworks/python/python-312-fastapi-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - python
-  - fastapi
-  - web-development
-  - api
-  - backend
-  - async
-  - performance
-description: A comprehensive guide for building high-performance web APIs using Python 3.12 and FastAPI, focusing on modern features and best practices
+- python
+- fastapi
+- web-development
+- api
+- backend
+- async
+- performance
+title: Python 3.12 with FastAPI Development Guide
 ---
 
 # Python 3.12 with FastAPI Development Guide

@@ -1,13 +1,15 @@
 ---
-title: Team Coordination Framework
+description: Advanced prompt for establishing and maintaining effective team coordination
+  and task management systems
 path: product/goals/project-management/team-coordination-framework
+prompt_type: Role-based prompting
 tags:
-  - team-management
-  - coordination
-  - collaboration
-  - project-management
-  - productivity
-description: Advanced prompt for establishing and maintaining effective team coordination and task management systems
+- team-management
+- coordination
+- collaboration
+- project-management
+- productivity
+title: Team Coordination Framework
 ---
 
 # Role: Team Coordination Specialist

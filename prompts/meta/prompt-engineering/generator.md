@@ -1,8 +1,15 @@
 ---
-title: "Prompt Generation Framework"
-path: "prompt/prompt-generation-framework"
-tags: ["prompt-engineering", "content-creation", "ai-interaction", "template-design", "best-practices"]
-description: "A comprehensive framework for creating effective, well-structured prompts that generate consistent and high-quality responses from AI models."
+description: A comprehensive framework for creating effective, well-structured prompts
+  that generate consistent and high-quality responses from AI models.
+path: prompt/prompt-generation-framework
+prompt_type: Instruction-based prompting
+tags:
+- prompt-engineering
+- content-creation
+- ai-interaction
+- template-design
+- best-practices
+title: Prompt Generation Framework
 ---
 
 # Prompt Generation Framework

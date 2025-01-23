@@ -1,13 +1,15 @@
 ---
-title: React Components Development Guide
+description: A comprehensive guide for developing reusable and maintainable React
+  components using modern patterns and best practices
 path: developer/frameworks/react/react-components-guide
+prompt_type: Instruction-based prompting
 tags:
-  - react
-  - typescript
-  - components
-  - frontend
-  - development
-description: A comprehensive guide for developing reusable and maintainable React components using modern patterns and best practices
+- react
+- typescript
+- components
+- frontend
+- development
+title: React Components Development Guide
 ---
 
 # React Components Development Guide

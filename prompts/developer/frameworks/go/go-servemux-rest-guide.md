@@ -1,8 +1,16 @@
 ---
-title: "Go ServeMux REST API Guide"
-path: "developer/frameworks/go/go-servemux-rest-guide"
-tags: ["go", "rest-api", "servemux", "http", "backend", "best-practices"]
-description: "A comprehensive guide for building REST APIs using Go's standard library and ServeMux, focusing on best practices, security, and performance optimization."
+description: A comprehensive guide for building REST APIs using Go's standard library
+  and ServeMux, focusing on best practices, security, and performance optimization.
+path: developer/frameworks/go/go-servemux-rest-guide
+prompt_type: Instruction-based prompting
+tags:
+- go
+- rest-api
+- servemux
+- http
+- backend
+- best-practices
+title: Go ServeMux REST API Guide
 ---
 
 # Go ServeMux REST API Guide

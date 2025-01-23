@@ -1,16 +1,18 @@
 ---
-title: Knative, Istio, and Typesense with GPU Guide
+description: A comprehensive guide for deploying and managing cloud-native applications
+  using Knative, Istio service mesh, and Typesense search engine with GPU support
 path: developer/frameworks/cloud-native/knative-istio-typesense-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - kubernetes
-  - knative
-  - istio
-  - typesense
-  - gpu
-  - cloud-native
-  - search
-  - service-mesh
-description: A comprehensive guide for deploying and managing cloud-native applications using Knative, Istio service mesh, and Typesense search engine with GPU support
+- kubernetes
+- knative
+- istio
+- typesense
+- gpu
+- cloud-native
+- search
+- service-mesh
+title: Knative, Istio, and Typesense with GPU Guide
 ---
 
 # Knative, Istio, and Typesense with GPU Guide

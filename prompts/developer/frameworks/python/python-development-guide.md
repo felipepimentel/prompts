@@ -1,14 +1,16 @@
 ---
-title: Python Development Guide
+description: A comprehensive guide for modern Python development, covering best practices,
+  tools, testing, and performance optimization
 path: developer/frameworks/python/python-development-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - python
-  - development
-  - best-practices
-  - testing
-  - performance
-  - tooling
-description: A comprehensive guide for modern Python development, covering best practices, tools, testing, and performance optimization
+- python
+- development
+- best-practices
+- testing
+- performance
+- tooling
+title: Python Development Guide
 ---
 
 # Python Development Guide

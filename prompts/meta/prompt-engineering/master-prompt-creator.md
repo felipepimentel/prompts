@@ -3,7 +3,7 @@ title: "Master Prompt Creation Framework"
 path: "meta/master_prompt_creator"
 tags: ["meta-prompt", "customization", "gpt", "personal-assistant", "prompt-engineering"]
 description: A comprehensive guide for creating customized master prompts that define GPT behavior and capabilities
-prompt_type: Meta-Framework
+prompt_type: "Meta prompting"
 ---
 
 <purpose>

@@ -1,8 +1,15 @@
 ---
-title: Perplexity AI Usage Guidelines
+description: A comprehensive guide for effectively using Perplexity AI for research,
+  coding, and problem-solving
 path: developer/instructions/perplexity.md
-tags: ["ai", "perplexity", "search", "research", "knowledge-base"]
-description: A comprehensive guide for effectively using Perplexity AI for research, coding, and problem-solving
+prompt_type: Instruction-based prompting
+tags:
+- ai
+- perplexity
+- search
+- research
+- knowledge-base
+title: Perplexity AI Usage Guidelines
 ---
 
 # Perplexity AI Usage Guidelines

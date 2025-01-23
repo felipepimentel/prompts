@@ -1,8 +1,15 @@
 ---
-title: Backend Development Environment Setup Guide
+description: A comprehensive guide for setting up and configuring a modern backend
+  development environment
 path: developer/instructions/setup-backend.md
-tags: ["backend", "development", "setup", "infrastructure", "best-practices"]
-description: A comprehensive guide for setting up and configuring a modern backend development environment
+prompt_type: Instruction-based prompting
+tags:
+- backend
+- development
+- setup
+- infrastructure
+- best-practices
+title: Backend Development Environment Setup Guide
 ---
 
 # Backend Development Environment Setup

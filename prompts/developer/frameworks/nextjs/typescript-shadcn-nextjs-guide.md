@@ -1,13 +1,15 @@
 ---
-title: TypeScript Next.js with shadcn/ui Guide
+description: A comprehensive guide for building modern web applications using Next.js,
+  TypeScript, and shadcn/ui components
 path: developer/frameworks/nextjs/typescript-shadcn-nextjs-guide
+prompt_type: Instruction-based prompting
 tags:
-  - typescript
-  - nextjs
-  - shadcn-ui
-  - frontend
-  - development
-description: A comprehensive guide for building modern web applications using Next.js, TypeScript, and shadcn/ui components
+- typescript
+- nextjs
+- shadcn-ui
+- frontend
+- development
+title: TypeScript Next.js with shadcn/ui Guide
 ---
 
 # TypeScript Next.js with shadcn/ui Guide

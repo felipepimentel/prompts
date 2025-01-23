@@ -1,8 +1,20 @@
 ---
-title: "Next.js 14 with Tailwind CSS and SEO Setup Guide"
-path: "developer/frameworks/nextjs/guides/nextjs-14-tailwind-seo-setup-guide"
-tags: ["nextjs", "tailwind", "typescript", "frontend", "setup", "guide", "seo", "web-development", "react", "performance"]
-description: "A comprehensive guide for setting up and optimizing a Next.js 14 project with Tailwind CSS, TypeScript, and SEO best practices"
+description: A comprehensive guide for setting up and optimizing a Next.js 14 project
+  with Tailwind CSS, TypeScript, and SEO best practices
+path: developer/frameworks/nextjs/guides/nextjs-14-tailwind-seo-setup-guide
+prompt_type: Instruction-based prompting
+tags:
+- nextjs
+- tailwind
+- typescript
+- frontend
+- setup
+- guide
+- seo
+- web-development
+- react
+- performance
+title: Next.js 14 with Tailwind CSS and SEO Setup Guide
 ---
 
 # Next.js 14 with Tailwind CSS and SEO Setup Guide

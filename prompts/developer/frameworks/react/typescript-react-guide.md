@@ -1,13 +1,15 @@
 ---
-title: TypeScript React Development Guide
+description: A comprehensive guide for building modern React applications with TypeScript,
+  focusing on type safety, performance, and maintainability
 path: developer/frameworks/react/typescript-react-guide
+prompt_type: Instruction-based prompting
 tags:
-  - typescript
-  - react
-  - frontend
-  - development
-  - best-practices
-description: A comprehensive guide for building modern React applications with TypeScript, focusing on type safety, performance, and maintainability
+- typescript
+- react
+- frontend
+- development
+- best-practices
+title: TypeScript React Development Guide
 ---
 
 # TypeScript React Development Guide

@@ -1,13 +1,15 @@
 ---
-title: Character Profile Development Framework
+description: A comprehensive framework for creating detailed, multi-dimensional character
+  profiles that drive compelling narratives and authentic interactions.
 path: content-creation/video/character-profile-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - video-production
-  - character-development
-  - personality-design
-  - narrative-creation
-description: A comprehensive framework for creating detailed, multi-dimensional character profiles that drive compelling narratives and authentic interactions.
+- content-creation
+- video-production
+- character-development
+- personality-design
+- narrative-creation
+title: Character Profile Development Framework
 ---
 
 # Character Profile Development Framework

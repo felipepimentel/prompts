@@ -1,13 +1,16 @@
 ---
-title: Video Dialog Creation Framework
+description: A comprehensive framework for crafting authentic, engaging video dialogues
+  that enhance storytelling while maintaining character authenticity and narrative
+  flow.
 path: content-creation/video/dialog-creation-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - video-production
-  - scriptwriting
-  - character-development
-  - dialogue-crafting
-description: A comprehensive framework for crafting authentic, engaging video dialogues that enhance storytelling while maintaining character authenticity and narrative flow.
+- content-creation
+- video-production
+- scriptwriting
+- character-development
+- dialogue-crafting
+title: Video Dialog Creation Framework
 ---
 
 # Video Dialog Creation Framework

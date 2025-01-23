@@ -1,13 +1,16 @@
 ---
-title: Supplemental Materials Framework
+description: A comprehensive framework for identifying, evaluating, and recommending
+  supplemental materials that enhance learning outcomes and provide additional support
+  for course content.
 path: content-creation/course/supplemental-materials-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - course-development
-  - educational-resources
-  - learning-materials
-  - content-enrichment
-description: A comprehensive framework for identifying, evaluating, and recommending supplemental materials that enhance learning outcomes and provide additional support for course content.
+- content-creation
+- course-development
+- educational-resources
+- learning-materials
+- content-enrichment
+title: Supplemental Materials Framework
 ---
 
 # Supplemental Materials Framework

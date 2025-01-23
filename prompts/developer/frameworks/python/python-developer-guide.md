@@ -1,13 +1,15 @@
 ---
-title: Python Developer Guide
+description: Comprehensive guide for Python developers, covering development environment
+  setup, tools, workflows, and productivity tips
 path: developer/frameworks/python/python-developer-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - python
-  - development
-  - tools
-  - productivity
-  - workflow
-description: Comprehensive guide for Python developers, covering development environment setup, tools, workflows, and productivity tips
+- python
+- development
+- tools
+- productivity
+- workflow
+title: Python Developer Guide
 ---
 
 # Python Developer Guide

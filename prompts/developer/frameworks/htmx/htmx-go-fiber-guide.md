@@ -1,15 +1,18 @@
 ---
-title: HTMX with Go Fiber Development Guide
+description: A comprehensive guide for building high-performance web applications
+  using HTMX with Go Fiber framework, focusing on server-side rendering and hypermedia-driven
+  architecture
 path: developer/frameworks/htmx/htmx-go-fiber-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - htmx
-  - go
-  - fiber
-  - web-development
-  - backend
-  - server-side
-  - hypermedia
-description: A comprehensive guide for building high-performance web applications using HTMX with Go Fiber framework, focusing on server-side rendering and hypermedia-driven architecture
+- htmx
+- go
+- fiber
+- web-development
+- backend
+- server-side
+- hypermedia
+title: HTMX with Go Fiber Development Guide
 ---
 
 # HTMX with Go Fiber Development Guide

@@ -1,13 +1,14 @@
 ---
-title: Cursor Composer Documentation Style Guide
-path: developer/cursor/agents/cursor-composer-documentation-style-guide
-tags:
-  - documentation
-  - style-guide
-  - cursor
-  - agent
-  - best-practices
 description: Comprehensive style guide and standards for Cursor Composer Agent documentation
+path: developer/cursor/agents/cursor-composer-documentation-style-guide
+prompt_type: Instruction-based prompting
+tags:
+- documentation
+- style-guide
+- cursor
+- agent
+- best-practices
+title: Cursor Composer Documentation Style Guide
 ---
 
 # Cursor Composer Documentation Style Guide

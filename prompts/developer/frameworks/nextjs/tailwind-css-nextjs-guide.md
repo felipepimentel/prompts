@@ -1,13 +1,15 @@
 ---
-title: Tailwind CSS with Next.js Development Guide
+description: Comprehensive guide for integrating and using Tailwind CSS with Next.js,
+  focusing on best practices, performance optimization, and modern design patterns
 path: developer/frameworks/nextjs/tailwind-css-nextjs-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - nextjs
-  - tailwind
-  - css
-  - frontend
-  - react
-description: Comprehensive guide for integrating and using Tailwind CSS with Next.js, focusing on best practices, performance optimization, and modern design patterns
+- nextjs
+- tailwind
+- css
+- frontend
+- react
+title: Tailwind CSS with Next.js Development Guide
 ---
 
 # Tailwind CSS with Next.js Development Guide

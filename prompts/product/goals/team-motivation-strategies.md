@@ -1,13 +1,15 @@
 ---
-title: Team Motivation Strategies
+description: Advanced prompt for developing and implementing effective team motivation
+  strategies that drive engagement and performance
 path: product/goals/team-motivation-strategies
+prompt_type: Role-based prompting
 tags:
-  - motivation
-  - team-management
-  - leadership
-  - engagement
-  - performance
-description: Advanced prompt for developing and implementing effective team motivation strategies that drive engagement and performance
+- motivation
+- team-management
+- leadership
+- engagement
+- performance
+title: Team Motivation Strategies
 ---
 
 # Role: Team Motivation Specialist

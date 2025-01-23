@@ -1,8 +1,17 @@
 ---
-title: "React with TypeScript and shadcn/ui Development Guide"
-path: "developer/frameworks/react/react-typescript-shadcn-guide"
-tags: ["react", "typescript", "shadcn-ui", "next.js", "tailwind", "frontend", "development"]
-description: "A comprehensive guide for developing React applications using TypeScript, shadcn/ui, and modern best practices."
+description: A comprehensive guide for developing React applications using TypeScript,
+  shadcn/ui, and modern best practices.
+path: developer/frameworks/react/react-typescript-shadcn-guide
+prompt_type: Instruction-based prompting
+tags:
+- react
+- typescript
+- shadcn-ui
+- next.js
+- tailwind
+- frontend
+- development
+title: React with TypeScript and shadcn/ui Development Guide
 ---
 
 # React with TypeScript and shadcn/ui Development Guide

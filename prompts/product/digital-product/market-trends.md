@@ -1,14 +1,17 @@
 ---
-title: Digital Product Market Trends Analysis Framework
+description: A comprehensive framework for analyzing market trends and evaluating
+  product feasibility in the digital product space, providing actionable insights
+  for strategic decision-making.
 path: product/digital-product/market-trends
+prompt_type: Role-based prompting
 tags:
-  - market-research
-  - trend-analysis
-  - digital-products
-  - market-intelligence
-  - competitive-analysis
-  - industry-insights
-description: A comprehensive framework for analyzing market trends and evaluating product feasibility in the digital product space, providing actionable insights for strategic decision-making.
+- market-research
+- trend-analysis
+- digital-products
+- market-intelligence
+- competitive-analysis
+- industry-insights
+title: Digital Product Market Trends Analysis Framework
 ---
 
 # Digital Product Market Trends Analysis Framework

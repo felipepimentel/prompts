@@ -1,13 +1,16 @@
 ---
-title: Data Segmentation Framework
+description: A comprehensive framework for segmenting data into meaningful groups
+  while maintaining statistical significance and practical utility for analysis and
+  decision-making.
 path: data/data-analysis/segmentation-framework
+prompt_type: Role-based prompting
 tags:
-  - data-analysis
-  - data-segmentation
-  - clustering
-  - pattern-recognition
-  - data-organization
-description: A comprehensive framework for segmenting data into meaningful groups while maintaining statistical significance and practical utility for analysis and decision-making.
+- data-analysis
+- data-segmentation
+- clustering
+- pattern-recognition
+- data-organization
+title: Data Segmentation Framework
 ---
 
 # Data Segmentation Framework

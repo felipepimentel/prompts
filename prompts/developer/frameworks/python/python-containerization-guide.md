@@ -1,13 +1,15 @@
 ---
-title: Python Containerization Guide
+description: Comprehensive guide for containerizing Python applications using Docker
+  and modern best practices for deployment and orchestration
 path: developer/frameworks/python/python-containerization-guide
+prompt_type: Instruction-based prompting
 tags:
-  - python
-  - docker
-  - containerization
-  - devops
-  - deployment
-description: Comprehensive guide for containerizing Python applications using Docker and modern best practices for deployment and orchestration
+- python
+- docker
+- containerization
+- devops
+- deployment
+title: Python Containerization Guide
 ---
 
 # Python Containerization Guide

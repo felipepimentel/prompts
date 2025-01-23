@@ -1,15 +1,17 @@
 ---
-title: SaaS Landing Page Development Guide
+description: A comprehensive guide for developing high-converting SaaS landing pages
+  with modern web technologies, focusing on user experience and conversion optimization
 path: developer/frameworks/web/saas-landing-page-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - web-development
-  - saas
-  - landing-page
-  - frontend
-  - ui-design
-  - conversion
-  - seo
-description: A comprehensive guide for developing high-converting SaaS landing pages with modern web technologies, focusing on user experience and conversion optimization
+- web-development
+- saas
+- landing-page
+- frontend
+- ui-design
+- conversion
+- seo
+title: SaaS Landing Page Development Guide
 ---
 
 # SaaS Landing Page Development Guide

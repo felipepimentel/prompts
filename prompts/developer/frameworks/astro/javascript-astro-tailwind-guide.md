@@ -1,8 +1,17 @@
 ---
-title: "JavaScript, Astro, and Tailwind CSS Development Guide"
-path: "developer/frameworks/astro/javascript-astro-tailwind-guide"
-tags: ["javascript", "astro", "tailwind", "web-development", "performance", "seo"]
-description: "A comprehensive guide for building modern web applications using Astro with JavaScript and Tailwind CSS, focusing on performance optimization and best practices."
+description: A comprehensive guide for building modern web applications using Astro
+  with JavaScript and Tailwind CSS, focusing on performance optimization and best
+  practices.
+path: developer/frameworks/astro/javascript-astro-tailwind-guide
+prompt_type: Instruction-based prompting
+tags:
+- javascript
+- astro
+- tailwind
+- web-development
+- performance
+- seo
+title: JavaScript, Astro, and Tailwind CSS Development Guide
 ---
 
 # JavaScript, Astro, and Tailwind CSS Development Guide

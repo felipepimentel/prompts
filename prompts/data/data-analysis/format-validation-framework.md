@@ -1,13 +1,15 @@
 ---
-title: Data Format Validation Framework
+description: A comprehensive framework for validating data formats and ensuring data
+  integrity through systematic verification and quality assurance processes.
 path: data/data-analysis/format-validation-framework
+prompt_type: Role-based prompting
 tags:
-  - data-analysis
-  - data-validation
-  - format-verification
-  - quality-assurance
-  - data-integrity
-description: A comprehensive framework for validating data formats and ensuring data integrity through systematic verification and quality assurance processes.
+- data-analysis
+- data-validation
+- format-verification
+- quality-assurance
+- data-integrity
+title: Data Format Validation Framework
 ---
 
 # Data Format Validation Framework

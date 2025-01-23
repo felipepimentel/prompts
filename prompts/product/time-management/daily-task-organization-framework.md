@@ -1,13 +1,15 @@
 ---
-title: Daily Task Organization Framework
+description: Advanced prompt for systematically organizing and managing daily tasks
+  to maximize productivity and achieve goals effectively
 path: product/time-management/daily-task-organization-framework
+prompt_type: Role-based prompting
 tags:
-  - time-management
-  - productivity
-  - task-management
-  - organization
-  - efficiency
-description: Advanced prompt for systematically organizing and managing daily tasks to maximize productivity and achieve goals effectively
+- time-management
+- productivity
+- task-management
+- organization
+- efficiency
+title: Daily Task Organization Framework
 ---
 
 # Role: Productivity Specialist

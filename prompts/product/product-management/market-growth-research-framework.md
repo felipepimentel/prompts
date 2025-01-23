@@ -1,13 +1,15 @@
 ---
-title: Market Growth Research Framework
+description: Advanced prompt for identifying, analyzing, and evaluating market growth
+  opportunities to inform strategic business decisions
 path: product/product-management/market-growth-research-framework
+prompt_type: Role-based prompting
 tags:
-  - market-analysis
-  - growth-strategy
-  - opportunity-assessment
-  - market-expansion
-  - strategic-planning
-description: Advanced prompt for identifying, analyzing, and evaluating market growth opportunities to inform strategic business decisions
+- market-analysis
+- growth-strategy
+- opportunity-assessment
+- market-expansion
+- strategic-planning
+title: Market Growth Research Framework
 ---
 
 # Role: Market Growth Analyst

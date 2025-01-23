@@ -1,13 +1,15 @@
 ---
-title: Outcome Analysis Framework
+description: A comprehensive framework for analyzing and evaluating outcomes from
+  data to derive meaningful insights and support data-driven decision making.
 path: data/data-analysis/outcome-analysis-framework
+prompt_type: Role-based prompting
 tags:
-  - data-analysis
-  - outcome-evaluation
-  - impact-assessment
-  - performance-metrics
-  - decision-support
-description: A comprehensive framework for analyzing and evaluating outcomes from data to derive meaningful insights and support data-driven decision making.
+- data-analysis
+- outcome-evaluation
+- impact-assessment
+- performance-metrics
+- decision-support
+title: Outcome Analysis Framework
 ---
 
 # Outcome Analysis Framework

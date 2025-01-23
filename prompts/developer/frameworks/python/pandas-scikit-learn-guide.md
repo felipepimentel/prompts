@@ -1,8 +1,17 @@
 ---
-title: Data Analysis with Pandas and scikit-learn Guide
+description: A comprehensive guide for data analysis and machine learning using Pandas
+  and scikit-learn, focusing on best practices, performance optimization, and visualization
+  techniques.
 path: developer/frameworks/python/pandas-scikit-learn-guide
-tags: ["python", "pandas", "scikit-learn", "data-analysis", "visualization", "machine-learning"]
-description: A comprehensive guide for data analysis and machine learning using Pandas and scikit-learn, focusing on best practices, performance optimization, and visualization techniques.
+prompt_type: Instruction-based prompting
+tags:
+- python
+- pandas
+- scikit-learn
+- data-analysis
+- visualization
+- machine-learning
+title: Data Analysis with Pandas and scikit-learn Guide
 ---
 
 # Data Analysis with Pandas and scikit-learn Guide

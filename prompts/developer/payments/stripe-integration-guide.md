@@ -1,14 +1,15 @@
 ---
-title: Stripe Integration Guide
-path: developer/payments/stripe-integration-guide
-tags:
-  - stripe
-  - payments
-  - security
-  - api
-  - integration
-  - e-commerce
 description: Comprehensive guide for implementing secure payment processing with Stripe
+path: developer/payments/stripe-integration-guide
+prompt_type: Instruction-based prompting
+tags:
+- stripe
+- payments
+- security
+- api
+- integration
+- e-commerce
+title: Stripe Integration Guide
 ---
 
 # Stripe Integration Guide

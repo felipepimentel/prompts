@@ -1,13 +1,15 @@
 ---
-title: Product Roadmap Framework
+description: Advanced prompt for creating and maintaining strategic product roadmaps
+  that align product development with business goals and market needs
 path: product/product-management/product-roadmap-framework
+prompt_type: Role-based prompting
 tags:
-  - product-strategy
-  - roadmapping
-  - planning
-  - development
-  - prioritization
-description: Advanced prompt for creating and maintaining strategic product roadmaps that align product development with business goals and market needs
+- product-strategy
+- roadmapping
+- planning
+- development
+- prioritization
+title: Product Roadmap Framework
 ---
 
 # Role: Product Strategy Specialist

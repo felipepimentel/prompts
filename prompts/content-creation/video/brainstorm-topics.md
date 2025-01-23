@@ -1,13 +1,15 @@
 ---
-title: Video Topic Brainstorming Framework
+description: A comprehensive framework for generating and evaluating engaging video
+  topics that align with audience interests, market trends, and content goals.
 path: content-creation/video/topic-brainstorming-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - video-production
-  - creative-development
-  - topic-generation
-  - content-strategy
-description: A comprehensive framework for generating and evaluating engaging video topics that align with audience interests, market trends, and content goals.
+- content-creation
+- video-production
+- creative-development
+- topic-generation
+- content-strategy
+title: Video Topic Brainstorming Framework
 ---
 
 # Video Topic Brainstorming Framework

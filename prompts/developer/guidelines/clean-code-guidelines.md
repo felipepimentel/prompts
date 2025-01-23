@@ -1,8 +1,15 @@
 ---
-title: "Clean Code Guidelines"
-path: "developer/guidelines/clean-code-guidelines"
-tags: ["clean-code", "best-practices", "development", "code-quality", "maintainability"]
-description: "A comprehensive guide to writing clean, maintainable, and readable code, following industry best practices and principles established by Robert C. Martin."
+description: A comprehensive guide to writing clean, maintainable, and readable code,
+  following industry best practices and principles established by Robert C. Martin.
+path: developer/guidelines/clean-code-guidelines
+prompt_type: Instruction-based prompting
+tags:
+- clean-code
+- best-practices
+- development
+- code-quality
+- maintainability
+title: Clean Code Guidelines
 ---
 
 # Clean Code Guidelines

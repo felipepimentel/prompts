@@ -1,8 +1,16 @@
 ---
-title: "Agent Documentation Generation Framework"
-path: "developer/cursor/agents/documentation-generation-framework"
-tags: ["documentation", "agent-development", "technical-writing", "automation", "best-practices"]
-description: "A comprehensive framework for generating clear, structured, and maintainable documentation for autonomous development agents, ensuring consistency and completeness across agent specifications."
+description: A comprehensive framework for generating clear, structured, and maintainable
+  documentation for autonomous development agents, ensuring consistency and completeness
+  across agent specifications.
+path: developer/cursor/agents/documentation-generation-framework
+prompt_type: Instruction-based prompting
+tags:
+- documentation
+- agent-development
+- technical-writing
+- automation
+- best-practices
+title: Agent Documentation Generation Framework
 ---
 
 # Agent Documentation Generation Framework

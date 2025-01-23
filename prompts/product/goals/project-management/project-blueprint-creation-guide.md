@@ -1,13 +1,15 @@
 ---
-title: Project Blueprint Creation Guide
+description: Advanced prompt for creating comprehensive project blueprints that serve
+  as strategic roadmaps for project execution
 path: product/goals/project-management/project-blueprint-creation-guide
+prompt_type: Role-based prompting
 tags:
-  - project-planning
-  - blueprint
-  - strategy
-  - documentation
-  - planning
-description: Advanced prompt for creating comprehensive project blueprints that serve as strategic roadmaps for project execution
+- project-planning
+- blueprint
+- strategy
+- documentation
+- planning
+title: Project Blueprint Creation Guide
 ---
 
 # Role: Project Blueprint Architect

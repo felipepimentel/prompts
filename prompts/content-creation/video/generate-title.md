@@ -1,13 +1,15 @@
 ---
-title: Video Title Generation Framework
+description: A comprehensive framework for creating compelling video titles that capture
+  attention, convey value, and drive engagement while maintaining SEO effectiveness.
 path: content-creation/video/title-generation-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - video-production
-  - title-creation
-  - audience-engagement
-  - content-optimization
-description: A comprehensive framework for creating compelling video titles that capture attention, convey value, and drive engagement while maintaining SEO effectiveness.
+- content-creation
+- video-production
+- title-creation
+- audience-engagement
+- content-optimization
+title: Video Title Generation Framework
 ---
 
 # Video Title Generation Framework

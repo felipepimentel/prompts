@@ -1,8 +1,17 @@
 ---
-title: "Astro with Tailwind CSS Setup Guide"
-path: "developer/frameworks/astro/astro-tailwind-setup-guide"
-tags: ["astro", "tailwind", "typescript", "frontend", "setup", "guide", "css"]
-description: "A comprehensive guide for setting up an Astro project with Tailwind CSS integration, focusing on efficient design construction."
+description: A comprehensive guide for setting up an Astro project with Tailwind CSS
+  integration, focusing on efficient design construction.
+path: developer/frameworks/astro/astro-tailwind-setup-guide
+prompt_type: Instruction-based prompting
+tags:
+- astro
+- tailwind
+- typescript
+- frontend
+- setup
+- guide
+- css
+title: Astro with Tailwind CSS Setup Guide
 ---
 
 # Astro with Tailwind CSS Setup Guide

@@ -1,13 +1,16 @@
 ---
-title: Document Structure Framework
+description: A comprehensive framework for analyzing and improving document structure
+  to enhance readability, flow, and information accessibility while maintaining content
+  coherence.
 path: content-creation/writing/structure-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - writing
-  - document-structure
-  - content-organization
-  - information-architecture
-description: A comprehensive framework for analyzing and improving document structure to enhance readability, flow, and information accessibility while maintaining content coherence.
+- content-creation
+- writing
+- document-structure
+- content-organization
+- information-architecture
+title: Document Structure Framework
 ---
 
 # Document Structure Framework

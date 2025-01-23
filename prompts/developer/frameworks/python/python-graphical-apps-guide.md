@@ -1,8 +1,17 @@
 ---
-title: "Python Graphical Applications Guide"
-path: "developer/frameworks/python/python-graphical-apps-guide"
-tags: ["python", "gui", "panel", "param", "langchain", "graphical-apps", "llm"]
-description: "A comprehensive guide for building graphical applications in Python using the Pyllments framework, focusing on component-based architecture and LLM integration."
+description: A comprehensive guide for building graphical applications in Python using
+  the Pyllments framework, focusing on component-based architecture and LLM integration.
+path: developer/frameworks/python/python-graphical-apps-guide
+prompt_type: Instruction-based prompting
+tags:
+- python
+- gui
+- panel
+- param
+- langchain
+- graphical-apps
+- llm
+title: Python Graphical Applications Guide
 ---
 
 # Python Graphical Applications Guide

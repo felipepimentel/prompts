@@ -1,13 +1,15 @@
 ---
-title: Prompt Enhancement Framework
+description: Advanced prompt for systematically enhancing and optimizing prompts to
+  improve AI interaction effectiveness and output quality
 path: prompt/prompt-enhancer-framework
+prompt_type: Role-based prompting
 tags:
-  - prompt-engineering
-  - ai-interaction
-  - optimization
-  - communication
-  - effectiveness
-description: Advanced prompt for systematically enhancing and optimizing prompts to improve AI interaction effectiveness and output quality
+- prompt-engineering
+- ai-interaction
+- optimization
+- communication
+- effectiveness
+title: Prompt Enhancement Framework
 ---
 
 # Role: Prompt Engineering Specialist

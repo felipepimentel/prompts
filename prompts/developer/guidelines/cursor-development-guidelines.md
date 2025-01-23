@@ -1,8 +1,16 @@
 ---
-title: "Cursor Development Guidelines"
-path: "developer/guidelines/cursor-development-guidelines"
-tags: ["cursor", "development", "guidelines", "best-practices", "documentation", "organization"]
-description: "A comprehensive guide for organizing and maintaining Cursor AI development projects, including best practices and file organization guidelines."
+description: A comprehensive guide for organizing and maintaining Cursor AI development
+  projects, including best practices and file organization guidelines.
+path: developer/guidelines/cursor-development-guidelines
+prompt_type: Instruction-based prompting
+tags:
+- cursor
+- development
+- guidelines
+- best-practices
+- documentation
+- organization
+title: Cursor Development Guidelines
 ---
 
 # Cursor Development Guidelines

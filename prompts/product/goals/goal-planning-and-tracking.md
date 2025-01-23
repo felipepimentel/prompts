@@ -1,13 +1,15 @@
 ---
-title: Goal Planning and Progress Tracking
+description: Advanced prompt for systematic goal planning and progress tracking with
+  measurable outcomes
 path: product/goals/goal-planning-and-tracking
+prompt_type: Role-based prompting
 tags:
-  - planning
-  - tracking
-  - goals
-  - metrics
-  - progress
-description: Advanced prompt for systematic goal planning and progress tracking with measurable outcomes
+- planning
+- tracking
+- goals
+- metrics
+- progress
+title: Goal Planning and Progress Tracking
 ---
 
 # Role: Goal Planning and Tracking Specialist

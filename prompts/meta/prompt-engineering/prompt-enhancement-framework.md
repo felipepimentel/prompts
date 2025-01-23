@@ -1,8 +1,16 @@
 ---
-title: "Prompt Enhancement Framework"
-path: "prompt/prompt-enhancement-framework"
-tags: ["prompt-engineering", "content-optimization", "user-engagement", "question-design", "critical-thinking"]
-description: "A comprehensive framework for transforming basic prompts into engaging, detailed, and thought-provoking questions that encourage deeper thinking and more insightful responses."
+description: A comprehensive framework for transforming basic prompts into engaging,
+  detailed, and thought-provoking questions that encourage deeper thinking and more
+  insightful responses.
+path: prompt/prompt-enhancement-framework
+prompt_type: Instruction-based prompting
+tags:
+- prompt-engineering
+- content-optimization
+- user-engagement
+- question-design
+- critical-thinking
+title: Prompt Enhancement Framework
 ---
 
 # Prompt Enhancement Framework

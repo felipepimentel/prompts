@@ -1,8 +1,16 @@
 ---
-title: "GitHub Code Quality Guidelines"
-path: "developer/guidelines/github-code-quality-guidelines"
-tags: ["github", "code-quality", "best-practices", "development", "guidelines"]
-description: "A comprehensive set of guidelines for maintaining high code quality in GitHub repositories, focusing on verification, clarity, and preservation of existing functionality."
+description: A comprehensive set of guidelines for maintaining high code quality in
+  GitHub repositories, focusing on verification, clarity, and preservation of existing
+  functionality.
+path: developer/guidelines/github-code-quality-guidelines
+prompt_type: Instruction-based prompting
+tags:
+- github
+- code-quality
+- best-practices
+- development
+- guidelines
+title: GitHub Code Quality Guidelines
 ---
 
 # GitHub Code Quality Guidelines

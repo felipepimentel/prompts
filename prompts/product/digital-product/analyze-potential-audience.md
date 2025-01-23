@@ -1,14 +1,17 @@
 ---
-title: Digital Product Audience Analysis Framework
+description: A comprehensive framework for analyzing potential target audiences for
+  digital products, providing actionable insights for product development and marketing
+  strategies.
 path: product/digital-product/audience-analysis
+prompt_type: Instruction-based prompting
 tags:
-  - audience-analysis
-  - market-research
-  - digital-products
-  - user-segmentation
-  - market-opportunity
-  - customer-insights
-description: A comprehensive framework for analyzing potential target audiences for digital products, providing actionable insights for product development and marketing strategies.
+- audience-analysis
+- market-research
+- digital-products
+- user-segmentation
+- market-opportunity
+- customer-insights
+title: Digital Product Audience Analysis Framework
 ---
 
 # Digital Product Audience Analysis Framework

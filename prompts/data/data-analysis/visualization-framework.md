@@ -1,13 +1,15 @@
 ---
-title: Data Visualization Framework
+description: A comprehensive framework for creating effective data visualizations
+  that communicate insights clearly while maintaining accuracy and aesthetic appeal.
 path: data/data-analysis/visualization-framework
+prompt_type: Role-based prompting
 tags:
-  - data-analysis
-  - data-visualization
-  - visual-analytics
-  - information-design
-  - data-communication
-description: A comprehensive framework for creating effective data visualizations that communicate insights clearly while maintaining accuracy and aesthetic appeal.
+- data-analysis
+- data-visualization
+- visual-analytics
+- information-design
+- data-communication
+title: Data Visualization Framework
 ---
 
 # Data Visualization Framework

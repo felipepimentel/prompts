@@ -1,9 +1,16 @@
 ---
-title: Persuasive Sales Email Generator
-description: Create compelling sales emails that effectively communicate value propositions and drive action
-tags: [content-creation, sales, email-marketing, copywriting, persuasion]
-model: GPT-4
 category: Content Creation
+description: Create compelling sales emails that effectively communicate value propositions
+  and drive action
+model: GPT-4
+prompt_type: Role-based prompting
+tags:
+- content-creation
+- sales
+- email-marketing
+- copywriting
+- persuasion
+title: Persuasive Sales Email Generator
 type: Email Generation
 version: 1.0
 ---

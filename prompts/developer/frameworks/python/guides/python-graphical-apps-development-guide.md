@@ -1,8 +1,19 @@
 ---
-title: "Python Graphical Applications Development Guide"
-path: "developer/frameworks/python/guides/python-graphical-apps-development-guide"
-tags: ["python", "gui", "tkinter", "pyqt", "kivy", "pygame", "desktop-apps", "development", "best-practices"]
-description: "A comprehensive guide for developing graphical applications using Python, covering multiple frameworks, best practices, and modern development patterns"
+description: A comprehensive guide for developing graphical applications using Python,
+  covering multiple frameworks, best practices, and modern development patterns
+path: developer/frameworks/python/guides/python-graphical-apps-development-guide
+prompt_type: Instruction-based prompting
+tags:
+- python
+- gui
+- tkinter
+- pyqt
+- kivy
+- pygame
+- desktop-apps
+- development
+- best-practices
+title: Python Graphical Applications Development Guide
 ---
 
 # Python Graphical Applications Development Guide

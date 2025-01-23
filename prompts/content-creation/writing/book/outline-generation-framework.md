@@ -1,13 +1,15 @@
 ---
-title: Book Outline Generation Framework
+description: A comprehensive framework for creating well-structured book outlines
+  that effectively organize plot, character development, and thematic elements.
 path: content-creation/writing/book/outline-generation-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - book-writing
-  - outline-development
-  - story-structure
-  - narrative-planning
-description: A comprehensive framework for creating well-structured book outlines that effectively organize plot, character development, and thematic elements.
+- content-creation
+- book-writing
+- outline-development
+- story-structure
+- narrative-planning
+title: Book Outline Generation Framework
 ---
 
 # Book Outline Generation Framework

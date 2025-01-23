@@ -1,13 +1,15 @@
 ---
-title: Developer Thinking and Problem-Solving Guide
+description: A comprehensive guide for developing effective thinking patterns and
+  problem-solving strategies in software development
 path: developer/guidelines/thinking-guide
+prompt_type: Instruction-based prompting
 tags:
-  - thinking
-  - problem-solving
-  - development
-  - strategy
-  - methodology
-description: A comprehensive guide for developing effective thinking patterns and problem-solving strategies in software development
+- thinking
+- problem-solving
+- development
+- strategy
+- methodology
+title: Developer Thinking and Problem-Solving Guide
 ---
 
 # Developer Thinking and Problem-Solving Guide

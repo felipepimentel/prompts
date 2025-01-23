@@ -1,13 +1,15 @@
 ---
-title: Video Backstory Development Framework
+description: A comprehensive framework for creating rich, compelling backstories that
+  provide depth to characters and settings while enhancing the overall narrative experience.
 path: content-creation/video/backstory-development-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - video-production
-  - character-development
-  - world-building
-  - narrative-depth
-description: A comprehensive framework for creating rich, compelling backstories that provide depth to characters and settings while enhancing the overall narrative experience.
+- content-creation
+- video-production
+- character-development
+- world-building
+- narrative-depth
+title: Video Backstory Development Framework
 ---
 
 # Video Backstory Development Framework

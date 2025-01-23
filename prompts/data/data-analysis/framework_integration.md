@@ -1,13 +1,15 @@
 ---
-title: Framework Integration Framework
+description: A comprehensive framework for integrating multiple data analysis frameworks
+  and systems while ensuring seamless operation, maintainability, and optimal performance.
 path: data/data-analysis/integration-framework
+prompt_type: Role-based prompting
 tags:
-  - data-analysis
-  - framework-integration
-  - system-architecture
-  - workflow-optimization
-  - process-automation
-description: A comprehensive framework for integrating multiple data analysis frameworks and systems while ensuring seamless operation, maintainability, and optimal performance.
+- data-analysis
+- framework-integration
+- system-architecture
+- workflow-optimization
+- process-automation
+title: Framework Integration Framework
 ---
 
 # Framework Integration Framework

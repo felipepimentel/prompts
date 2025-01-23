@@ -1,8 +1,15 @@
 ---
-title: "Code Quality Guidelines"
-path: "developer/guidelines/code-quality-guidelines"
-tags: ["code-quality", "best-practices", "development", "guidelines", "standards"]
-description: "Comprehensive guidelines for maintaining high code quality, including development practices, code style, and security considerations."
+description: Comprehensive guidelines for maintaining high code quality, including
+  development practices, code style, and security considerations.
+path: developer/guidelines/code-quality-guidelines
+prompt_type: Instruction-based prompting
+tags:
+- code-quality
+- best-practices
+- development
+- guidelines
+- standards
+title: Code Quality Guidelines
 ---
 
 # Code Quality Guidelines

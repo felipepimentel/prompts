@@ -1,8 +1,15 @@
 ---
-title: Systematic Bug Fix Process Guide
+description: A comprehensive guide for systematically identifying, fixing, and documenting
+  software bugs
 path: developer/instructions/bug-fix-outline.md
-tags: ["debugging", "troubleshooting", "development", "best-practices", "code-quality"]
-description: A comprehensive guide for systematically identifying, fixing, and documenting software bugs
+prompt_type: Instruction-based prompting
+tags:
+- debugging
+- troubleshooting
+- development
+- best-practices
+- code-quality
+title: Systematic Bug Fix Process Guide
 ---
 
 # Systematic Bug Fix Process

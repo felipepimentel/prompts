@@ -1,13 +1,15 @@
 ---
-title: Customer Feedback Analysis System
+description: Advanced prompt for developing and implementing effective systems for
+  analyzing and acting on customer feedback
 path: product/product-management/customer-feedback-analysis-system
+prompt_type: Role-based prompting
 tags:
-  - customer-feedback
-  - analysis
-  - product-management
-  - insights
-  - improvement
-description: Advanced prompt for developing and implementing effective systems for analyzing and acting on customer feedback
+- customer-feedback
+- analysis
+- product-management
+- insights
+- improvement
+title: Customer Feedback Analysis System
 ---
 
 # Role: Customer Feedback Analysis Specialist

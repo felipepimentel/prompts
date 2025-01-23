@@ -1,13 +1,15 @@
 ---
-title: Content Voice Inspiration Framework
+description: A comprehensive framework for developing unique content voices by drawing
+  inspiration from diverse writing styles while maintaining authenticity and effectiveness.
 path: content-creation/writing/voice-inspiration-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - writing
-  - voice-development
-  - content-style
-  - creative-inspiration
-description: A comprehensive framework for developing unique content voices by drawing inspiration from diverse writing styles while maintaining authenticity and effectiveness.
+- content-creation
+- writing
+- voice-development
+- content-style
+- creative-inspiration
+title: Content Voice Inspiration Framework
 ---
 
 # Content Voice Inspiration Framework

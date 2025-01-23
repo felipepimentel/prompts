@@ -1,8 +1,18 @@
 ---
-title: "Astro with shadcn/ui Setup Guide"
-path: "developer/frameworks/astro/astro-shadcn-setup-guide"
-tags: ["astro", "shadcn-ui", "tailwind", "react", "typescript", "frontend", "setup", "guide"]
-description: "A comprehensive guide for setting up an Astro project with shadcn/ui components, including Tailwind CSS and React integration."
+description: A comprehensive guide for setting up an Astro project with shadcn/ui
+  components, including Tailwind CSS and React integration.
+path: developer/frameworks/astro/astro-shadcn-setup-guide
+prompt_type: Instruction-based prompting
+tags:
+- astro
+- shadcn-ui
+- tailwind
+- react
+- typescript
+- frontend
+- setup
+- guide
+title: Astro with shadcn/ui Setup Guide
 ---
 
 # Astro with shadcn/ui Setup Guide

@@ -1,8 +1,15 @@
 ---
-title: AI Systematic Analysis and Verification Framework
+description: A comprehensive framework for systematic analysis, verification, and
+  quality control in AI-driven problem solving
 path: developer/instructions/ai-systematic-analysis.md
-tags: ["ai", "analysis", "verification", "quality-control", "methodology"]
-description: A comprehensive framework for systematic analysis, verification, and quality control in AI-driven problem solving
+prompt_type: Instruction-based prompting
+tags:
+- ai
+- analysis
+- verification
+- quality-control
+- methodology
+title: AI Systematic Analysis and Verification Framework
 ---
 
 # AI Systematic Analysis Framework

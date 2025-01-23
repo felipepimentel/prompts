@@ -1,13 +1,15 @@
 ---
-title: shadcn/ui Integration Guide
+description: A comprehensive guide for integrating and customizing shadcn/ui components
+  in Next.js applications with Tailwind CSS
 path: developer/frameworks/nextjs/shadcn-ui-guide
+prompt_type: Instruction-based prompting
 tags:
-  - nextjs
-  - tailwind
-  - shadcn-ui
-  - components
-  - frontend
-description: A comprehensive guide for integrating and customizing shadcn/ui components in Next.js applications with Tailwind CSS
+- nextjs
+- tailwind
+- shadcn-ui
+- components
+- frontend
+title: shadcn/ui Integration Guide
 ---
 
 # shadcn/ui Integration Guide

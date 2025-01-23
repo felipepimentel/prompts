@@ -1,14 +1,16 @@
 ---
-title: Supabase Database Migration Guide
+description: Comprehensive guide for creating and managing database migrations in
+  Supabase projects using best practices
 path: developer/supabase/database-create-migration.md
+prompt_type: Instruction-based prompting
 tags:
-  - supabase
-  - postgresql
-  - migrations
-  - database
-  - security
-  - rls
-description: Comprehensive guide for creating and managing database migrations in Supabase projects using best practices
+- supabase
+- postgresql
+- migrations
+- database
+- security
+- rls
+title: Supabase Database Migration Guide
 ---
 
 # Supabase Database Migration Guide

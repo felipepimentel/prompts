@@ -1,13 +1,15 @@
 ---
-title: Discussion Topics Generator Framework
+description: A comprehensive framework for generating engaging discussion topics that
+  promote critical thinking, knowledge application, and meaningful student interaction.
 path: content-creation/course/discussion-topics-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - course-development
-  - discussion-facilitation
-  - student-engagement
-  - collaborative-learning
-description: A comprehensive framework for generating engaging discussion topics that promote critical thinking, knowledge application, and meaningful student interaction.
+- content-creation
+- course-development
+- discussion-facilitation
+- student-engagement
+- collaborative-learning
+title: Discussion Topics Generator Framework
 ---
 
 # Discussion Topics Generator Framework

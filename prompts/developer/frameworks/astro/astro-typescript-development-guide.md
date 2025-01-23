@@ -1,8 +1,16 @@
 ---
-title: "Astro with TypeScript Development Guide"
-path: "developer/frameworks/astro/astro-typescript-development-guide"
-tags: ["astro", "typescript", "tailwind", "development", "best-practices", "guidelines"]
-description: "A comprehensive development guide for building Astro applications with TypeScript, including coding standards, commit conventions, and best practices."
+description: A comprehensive development guide for building Astro applications with
+  TypeScript, including coding standards, commit conventions, and best practices.
+path: developer/frameworks/astro/astro-typescript-development-guide
+prompt_type: Instruction-based prompting
+tags:
+- astro
+- typescript
+- tailwind
+- development
+- best-practices
+- guidelines
+title: Astro with TypeScript Development Guide
 ---
 
 # Astro with TypeScript Development Guide

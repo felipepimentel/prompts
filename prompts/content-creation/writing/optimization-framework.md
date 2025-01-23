@@ -1,13 +1,15 @@
 ---
-title: Content Optimization Framework
+description: A comprehensive framework for analyzing and optimizing content to enhance
+  engagement, effectiveness, and performance while maintaining authenticity and value.
 path: content-creation/writing/optimization-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - writing
-  - content-optimization
-  - performance-enhancement
-  - quality-improvement
-description: A comprehensive framework for analyzing and optimizing content to enhance engagement, effectiveness, and performance while maintaining authenticity and value.
+- content-creation
+- writing
+- content-optimization
+- performance-enhancement
+- quality-improvement
+title: Content Optimization Framework
 ---
 
 # Content Optimization Framework

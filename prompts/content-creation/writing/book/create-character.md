@@ -1,13 +1,15 @@
 ---
-title: Book Character Creation Framework
+description: A comprehensive framework for creating rich, multi-dimensional book characters
+  that drive compelling narratives and resonate with readers.
 path: content-creation/writing/book/character-creation-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - book-writing
-  - character-development
-  - creative-writing
-  - storytelling
-description: A comprehensive framework for creating rich, multi-dimensional book characters that drive compelling narratives and resonate with readers.
+- content-creation
+- book-writing
+- character-development
+- creative-writing
+- storytelling
+title: Book Character Creation Framework
 ---
 
 # Book Character Creation Framework

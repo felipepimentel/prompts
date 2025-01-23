@@ -1,8 +1,15 @@
 ---
-title: Component Development Guidelines
+description: A comprehensive guide for creating well-structured, maintainable, and
+  reusable components across different frameworks
 path: developer/instructions/new-component.md
-tags: ["components", "development", "best-practices", "architecture", "design-patterns"]
-description: A comprehensive guide for creating well-structured, maintainable, and reusable components across different frameworks
+prompt_type: Instruction-based prompting
+tags:
+- components
+- development
+- best-practices
+- architecture
+- design-patterns
+title: Component Development Guidelines
 ---
 
 # Component Development Guidelines

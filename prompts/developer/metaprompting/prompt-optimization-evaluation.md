@@ -1,13 +1,15 @@
 ---
-title: Prompt Optimization and Evaluation
+description: Systematic approaches for optimizing and evaluating prompt effectiveness
+  in Large Language Models
 path: developer/metaprompting/prompt-optimization-evaluation
+prompt_type: Meta prompting
 tags:
-  - prompt-engineering
-  - ai
-  - optimization
-  - evaluation
-  - metaprompting
-description: Systematic approaches for optimizing and evaluating prompt effectiveness in Large Language Models
+- prompt-engineering
+- ai
+- optimization
+- evaluation
+- metaprompting
+title: Prompt Optimization and Evaluation
 ---
 
 # Prompt Optimization and Evaluation

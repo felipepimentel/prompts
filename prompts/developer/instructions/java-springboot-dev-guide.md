@@ -1,8 +1,15 @@
 ---
-title: Spring Boot Development Guide
+description: A comprehensive guide for developing robust Spring Boot applications
+  with best practices and modern development patterns
 path: developer/instructions/java-springboot-dev-guide.md
-tags: ["java", "spring-boot", "backend", "development", "best-practices"]
-description: A comprehensive guide for developing robust Spring Boot applications with best practices and modern development patterns
+prompt_type: Instruction-based prompting
+tags:
+- java
+- spring-boot
+- backend
+- development
+- best-practices
+title: Spring Boot Development Guide
 ---
 
 # Spring Boot Development Guide

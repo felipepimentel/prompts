@@ -1,13 +1,16 @@
 ---
-title: FastAPI Scalable API Guide
+description: A comprehensive guide for building highly scalable and maintainable APIs
+  with FastAPI, focusing on architecture patterns, performance optimization, and best
+  practices for large-scale applications
 path: developer/frameworks/fastapi/fastapi-scalable-api-guide
+prompt_type: Instruction-based prompting
 tags:
-  - python
-  - fastapi
-  - scalability
-  - performance
-  - architecture
-description: A comprehensive guide for building highly scalable and maintainable APIs with FastAPI, focusing on architecture patterns, performance optimization, and best practices for large-scale applications
+- python
+- fastapi
+- scalability
+- performance
+- architecture
+title: FastAPI Scalable API Guide
 ---
 
 # FastAPI Scalable API Guide

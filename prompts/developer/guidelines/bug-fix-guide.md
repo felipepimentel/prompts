@@ -1,13 +1,15 @@
 ---
-title: Bug Fix Guide
+description: Comprehensive guide for effectively identifying, fixing, and preventing
+  bugs, focusing on best practices, testing strategies, and quality assurance
 path: developer/guidelines/bug-fix-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - debugging
-  - troubleshooting
-  - best-practices
-  - testing
-  - maintenance
-description: Comprehensive guide for effectively identifying, fixing, and preventing bugs, focusing on best practices, testing strategies, and quality assurance
+- debugging
+- troubleshooting
+- best-practices
+- testing
+- maintenance
+title: Bug Fix Guide
 ---
 
 # Bug Fix Guide

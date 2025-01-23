@@ -1,9 +1,16 @@
 ---
-title: Motivational Reading Article Generator
-description: Create engaging and inspiring articles about the importance of reading for personal and professional development
-tags: [content-creation, motivation, reading, personal-development, career-growth]
-model: GPT-4
 category: Content Creation
+description: Create engaging and inspiring articles about the importance of reading
+  for personal and professional development
+model: GPT-4
+prompt_type: Role-based prompting
+tags:
+- content-creation
+- motivation
+- reading
+- personal-development
+- career-growth
+title: Motivational Reading Article Generator
 type: Article Generation
 version: 1.0
 ---

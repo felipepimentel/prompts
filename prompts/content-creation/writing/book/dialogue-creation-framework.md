@@ -1,13 +1,15 @@
 ---
-title: Book Dialogue Creation Framework
+description: A comprehensive framework for crafting authentic, engaging book dialogues
+  that enhance character development and advance the narrative.
 path: content-creation/writing/book/dialogue-creation-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - book-writing
-  - dialogue-writing
-  - character-voice
-  - narrative-development
-description: A comprehensive framework for crafting authentic, engaging book dialogues that enhance character development and advance the narrative.
+- content-creation
+- book-writing
+- dialogue-writing
+- character-voice
+- narrative-development
+title: Book Dialogue Creation Framework
 ---
 
 # Book Dialogue Creation Framework

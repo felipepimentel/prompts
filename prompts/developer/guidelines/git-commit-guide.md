@@ -1,13 +1,15 @@
 ---
-title: Git Commit Guide
+description: Comprehensive guide for creating clear and effective Git commits, focusing
+  on best practices, conventions, and workflow optimization
 path: developer/guidelines/git-commit-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - git
-  - version-control
-  - best-practices
-  - workflow
-  - collaboration
-description: Comprehensive guide for creating clear and effective Git commits, focusing on best practices, conventions, and workflow optimization
+- git
+- version-control
+- best-practices
+- workflow
+- collaboration
+title: Git Commit Guide
 ---
 
 # Git Commit Guide

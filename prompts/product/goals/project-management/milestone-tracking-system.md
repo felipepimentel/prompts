@@ -1,13 +1,15 @@
 ---
-title: Milestone Tracking System
+description: Advanced prompt for implementing effective milestone tracking and progress
+  monitoring systems in project management
 path: product/goals/project-management/milestone-tracking-system
+prompt_type: Role-based prompting
 tags:
-  - milestone-tracking
-  - project-management
-  - progress-monitoring
-  - deliverables
-  - performance
-description: Advanced prompt for implementing effective milestone tracking and progress monitoring systems in project management
+- milestone-tracking
+- project-management
+- progress-monitoring
+- deliverables
+- performance
+title: Milestone Tracking System
 ---
 
 # Role: Milestone Tracking Specialist

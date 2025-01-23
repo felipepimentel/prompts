@@ -1,15 +1,17 @@
 ---
-title: ShadCN UI Development Guide
+description: Comprehensive guide for building modern web applications using ShadCN
+  UI components and best practices
 path: developer/shadcn/shadcn.md
+prompt_type: Instruction-based prompting
 tags:
-  - shadcn
-  - nextjs
-  - react
-  - ui
-  - tailwind
-  - typescript
-  - frontend
-description: Comprehensive guide for building modern web applications using ShadCN UI components and best practices
+- shadcn
+- nextjs
+- react
+- ui
+- tailwind
+- typescript
+- frontend
+title: ShadCN UI Development Guide
 ---
 
 # ShadCN UI Development Guide

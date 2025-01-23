@@ -1,8 +1,16 @@
 ---
-title: "HTMX Development Guide"
-path: "developer/frameworks/htmx/htmx-development-guide"
-tags: ["htmx", "web-development", "javascript", "html", "frontend", "best-practices"]
-description: "A comprehensive guide for building modern web applications using HTMX, focusing on best practices, progressive enhancement, and server-side integration."
+description: A comprehensive guide for building modern web applications using HTMX,
+  focusing on best practices, progressive enhancement, and server-side integration.
+path: developer/frameworks/htmx/htmx-development-guide
+prompt_type: Instruction-based prompting
+tags:
+- htmx
+- web-development
+- javascript
+- html
+- frontend
+- best-practices
+title: HTMX Development Guide
 ---
 
 # HTMX Development Guide

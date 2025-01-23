@@ -1,13 +1,15 @@
 ---
-title: FastAPI Development Guide
+description: A comprehensive guide for developing modern web APIs with FastAPI, covering
+  best practices, patterns, and advanced features
 path: developer/frameworks/fastapi/fastapi-development-guide
+prompt_type: Instruction-based prompting
 tags:
-  - python
-  - fastapi
-  - api
-  - web-development
-  - backend
-description: A comprehensive guide for developing modern web APIs with FastAPI, covering best practices, patterns, and advanced features
+- python
+- fastapi
+- api
+- web-development
+- backend
+title: FastAPI Development Guide
 ---
 
 # FastAPI Development Guide

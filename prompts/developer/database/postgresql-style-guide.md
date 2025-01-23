@@ -1,13 +1,15 @@
 ---
-title: PostgreSQL Style Guide
+description: Comprehensive style guide for writing clean, maintainable, and efficient
+  PostgreSQL queries
 path: developer/database/postgresql-style-guide
+prompt_type: Instruction-based prompting
 tags:
-  - postgresql
-  - sql
-  - database
-  - style-guide
-  - best-practices
-description: Comprehensive style guide for writing clean, maintainable, and efficient PostgreSQL queries
+- postgresql
+- sql
+- database
+- style-guide
+- best-practices
+title: PostgreSQL Style Guide
 ---
 
 # PostgreSQL Style Guide

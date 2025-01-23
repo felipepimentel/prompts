@@ -1,13 +1,15 @@
 ---
-title: Daily Goal Setting Framework
+description: Advanced prompt for systematically setting and achieving daily goals
+  that align with long-term objectives and maximize personal productivity
 path: product/time-management/daily-goal-setting-framework
+prompt_type: Role-based prompting
 tags:
-  - goal-setting
-  - productivity
-  - time-management
-  - achievement
-  - planning
-description: Advanced prompt for systematically setting and achieving daily goals that align with long-term objectives and maximize personal productivity
+- goal-setting
+- productivity
+- time-management
+- achievement
+- planning
+title: Daily Goal Setting Framework
 ---
 
 # Role: Goal Setting Specialist

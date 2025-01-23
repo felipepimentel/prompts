@@ -1,14 +1,16 @@
 ---
-title: Linux NVIDIA CUDA Python Development Guide
+description: Comprehensive guide for setting up and using NVIDIA CUDA with Python
+  on Linux, focusing on deep learning and GPU acceleration
 path: developer/frameworks/gpu/linux-nvidia-cuda-python-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - linux
-  - nvidia
-  - cuda
-  - python
-  - gpu
-  - deep-learning
-description: Comprehensive guide for setting up and using NVIDIA CUDA with Python on Linux, focusing on deep learning and GPU acceleration
+- linux
+- nvidia
+- cuda
+- python
+- gpu
+- deep-learning
+title: Linux NVIDIA CUDA Python Development Guide
 ---
 
 # Linux NVIDIA CUDA Python Development Guide

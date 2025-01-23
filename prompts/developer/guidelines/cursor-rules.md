@@ -1,8 +1,17 @@
 ---
-title: "Cursor Rules Configuration Guide"
-path: "developer/guidelines/cursor-rules"
-tags: ["cursor", "development", "configuration", "rules", "best-practices", "guidelines", "ai-assistant"]
-description: "A comprehensive guide for configuring and maintaining Cursor AI rules, focusing on project organization, code quality, and development workflows"
+description: A comprehensive guide for configuring and maintaining Cursor AI rules,
+  focusing on project organization, code quality, and development workflows
+path: developer/guidelines/cursor-rules
+prompt_type: Instruction-based prompting
+tags:
+- cursor
+- development
+- configuration
+- rules
+- best-practices
+- guidelines
+- ai-assistant
+title: Cursor Rules Configuration Guide
 ---
 
 # Cursor Rules Configuration Guide

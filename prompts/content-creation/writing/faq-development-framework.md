@@ -1,13 +1,16 @@
 ---
-title: FAQ Development Framework
+description: A comprehensive framework for creating clear, well-structured FAQ sections
+  that effectively address user questions and concerns while maintaining clarity and
+  accessibility.
 path: content-creation/writing/faq-development-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - writing
-  - documentation
-  - user-support
-  - information-architecture
-description: A comprehensive framework for creating clear, well-structured FAQ sections that effectively address user questions and concerns while maintaining clarity and accessibility.
+- content-creation
+- writing
+- documentation
+- user-support
+- information-architecture
+title: FAQ Development Framework
 ---
 
 # FAQ Development Framework

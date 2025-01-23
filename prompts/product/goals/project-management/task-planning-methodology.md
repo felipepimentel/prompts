@@ -1,13 +1,15 @@
 ---
-title: Task Planning Methodology
+description: Advanced prompt for developing and implementing effective task planning
+  methodologies in project management
 path: product/goals/project-management/task-planning-methodology
+prompt_type: Role-based prompting
 tags:
-  - task-planning
-  - methodology
-  - project-management
-  - organization
-  - efficiency
-description: Advanced prompt for developing and implementing effective task planning methodologies in project management
+- task-planning
+- methodology
+- project-management
+- organization
+- efficiency
+title: Task Planning Methodology
 ---
 
 # Role: Task Planning Specialist

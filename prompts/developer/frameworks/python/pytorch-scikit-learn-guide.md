@@ -1,13 +1,16 @@
 ---
-title: PyTorch and Scikit-learn Development Guide
+description: A comprehensive guide for developing machine learning applications using
+  PyTorch and scikit-learn, covering model development, training pipelines, and deployment
+  strategies
 path: developer/frameworks/python/pytorch-scikit-learn-guide
+prompt_type: Instruction-based prompting
 tags:
-  - python
-  - pytorch
-  - scikit-learn
-  - machine-learning
-  - deep-learning
-description: A comprehensive guide for developing machine learning applications using PyTorch and scikit-learn, covering model development, training pipelines, and deployment strategies
+- python
+- pytorch
+- scikit-learn
+- machine-learning
+- deep-learning
+title: PyTorch and Scikit-learn Development Guide
 ---
 
 # PyTorch and Scikit-learn Development Guide

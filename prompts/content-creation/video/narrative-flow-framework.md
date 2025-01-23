@@ -1,13 +1,16 @@
 ---
-title: Video Narrative Flow Framework
+description: A comprehensive framework for developing engaging video narrative flows
+  that effectively convey messages while maintaining audience interest and emotional
+  connection.
 path: content-creation/video/narrative-flow-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - video-production
-  - storytelling
-  - narrative-structure
-  - content-flow
-description: A comprehensive framework for developing engaging video narrative flows that effectively convey messages while maintaining audience interest and emotional connection.
+- content-creation
+- video-production
+- storytelling
+- narrative-structure
+- content-flow
+title: Video Narrative Flow Framework
 ---
 
 # Video Narrative Flow Framework

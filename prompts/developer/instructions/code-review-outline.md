@@ -1,8 +1,15 @@
 ---
-title: Comprehensive Code Review Guidelines
+description: A detailed guide for conducting effective code reviews, focusing on quality,
+  collaboration, and knowledge sharing
 path: developer/instructions/code-review-outline.md
-tags: ["code-review", "best-practices", "development", "quality-assurance", "collaboration"]
-description: A detailed guide for conducting effective code reviews, focusing on quality, collaboration, and knowledge sharing
+prompt_type: Instruction-based prompting
+tags:
+- code-review
+- best-practices
+- development
+- quality-assurance
+- collaboration
+title: Comprehensive Code Review Guidelines
 ---
 
 # Comprehensive Code Review Process

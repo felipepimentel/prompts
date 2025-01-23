@@ -1,8 +1,18 @@
 ---
-title: "GitHub Code Quality Guidelines"
-path: "developer/guidelines/github/github-code-quality-guide"
-tags: ["github", "code-quality", "best-practices", "ci-cd", "automation", "git", "development", "workflow"]
-description: "A comprehensive guide for maintaining high code quality in GitHub repositories, including workflows, automation, and best practices"
+description: A comprehensive guide for maintaining high code quality in GitHub repositories,
+  including workflows, automation, and best practices
+path: developer/guidelines/github/github-code-quality-guide
+prompt_type: Instruction-based prompting
+tags:
+- github
+- code-quality
+- best-practices
+- ci-cd
+- automation
+- git
+- development
+- workflow
+title: GitHub Code Quality Guidelines
 ---
 
 # GitHub Code Quality Guidelines

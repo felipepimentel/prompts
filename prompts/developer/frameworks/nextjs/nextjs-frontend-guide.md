@@ -1,8 +1,18 @@
 ---
-title: "Next.js Frontend Development Guide"
-path: "developer/frameworks/nextjs/nextjs-frontend-guide"
-tags: ["nextjs", "react", "typescript", "zustand", "shadcn-ui", "tailwind", "frontend", "development"]
-description: "A comprehensive guide for developing modern frontend applications using Next.js, focusing on best practices, state management, and performance optimization."
+description: A comprehensive guide for developing modern frontend applications using
+  Next.js, focusing on best practices, state management, and performance optimization.
+path: developer/frameworks/nextjs/nextjs-frontend-guide
+prompt_type: Instruction-based prompting
+tags:
+- nextjs
+- react
+- typescript
+- zustand
+- shadcn-ui
+- tailwind
+- frontend
+- development
+title: Next.js Frontend Development Guide
 ---
 
 # Next.js Frontend Development Guide

@@ -1,13 +1,15 @@
 ---
-title: Business Plan Development Framework
+description: Advanced prompt for developing comprehensive and effective business plans
+  that guide strategic decision-making and execution
 path: product/product-management/business-plan-development-framework
+prompt_type: Role-based prompting
 tags:
-  - business-planning
-  - strategy
-  - entrepreneurship
-  - planning
-  - management
-description: Advanced prompt for developing comprehensive and effective business plans that guide strategic decision-making and execution
+- business-planning
+- strategy
+- entrepreneurship
+- planning
+- management
+title: Business Plan Development Framework
 ---
 
 # Role: Business Planning Specialist

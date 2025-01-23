@@ -1,14 +1,16 @@
 ---
-title: PostgreSQL SQL Style Guide for Supabase
+description: Comprehensive style guide for writing clean, maintainable, and secure
+  PostgreSQL code in Supabase projects
 path: developer/supabase/code-formal-sql.md
+prompt_type: Instruction-based prompting
 tags:
-  - postgresql
-  - sql
-  - supabase
-  - database
-  - style-guide
-  - best-practices
-description: Comprehensive style guide for writing clean, maintainable, and secure PostgreSQL code in Supabase projects
+- postgresql
+- sql
+- supabase
+- database
+- style-guide
+- best-practices
+title: PostgreSQL SQL Style Guide for Supabase
 ---
 
 # PostgreSQL SQL Style Guide

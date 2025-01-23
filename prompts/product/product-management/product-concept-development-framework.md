@@ -1,13 +1,15 @@
 ---
-title: Product Concept Development Framework
+description: Advanced prompt for developing and validating innovative product concepts
+  that meet market needs and create business value
 path: product/product-management/product-concept-development-framework
+prompt_type: Role-based prompting
 tags:
-  - product-development
-  - innovation
-  - ideation
-  - strategy
-  - concept-testing
-description: Advanced prompt for developing and validating innovative product concepts that meet market needs and create business value
+- product-development
+- innovation
+- ideation
+- strategy
+- concept-testing
+title: Product Concept Development Framework
 ---
 
 # Role: Product Innovation Specialist

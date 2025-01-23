@@ -1,8 +1,16 @@
 ---
-title: "Agentic Workflow Documentation Framework"
-path: "developer/cursor/agents/agentic-workflow-framework"
-tags: ["development", "documentation", "workflow", "agent-systems", "orchestration"]
-description: "A comprehensive framework for documenting and managing multi-agent workflows, providing a centralized source of truth for coordinated development through structured information exchange and standardized interfaces."
+description: A comprehensive framework for documenting and managing multi-agent workflows,
+  providing a centralized source of truth for coordinated development through structured
+  information exchange and standardized interfaces.
+path: developer/cursor/agents/agentic-workflow-framework
+prompt_type: Instruction-based prompting
+tags:
+- development
+- documentation
+- workflow
+- agent-systems
+- orchestration
+title: Agentic Workflow Documentation Framework
 ---
 
 # Agentic Workflow Documentation Framework

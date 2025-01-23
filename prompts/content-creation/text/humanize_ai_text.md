@@ -1,9 +1,16 @@
 ---
-title: AI Text Humanizer
-description: Transform AI-generated content into natural, engaging human-like writing by adding personal touches and conversational elements
-tags: [content-creation, writing, humanization, tone-adjustment, text-enhancement]
-model: GPT-4
 category: Content Creation
+description: Transform AI-generated content into natural, engaging human-like writing
+  by adding personal touches and conversational elements
+model: GPT-4
+prompt_type: Instruction-based prompting
+tags:
+- content-creation
+- writing
+- humanization
+- tone-adjustment
+- text-enhancement
+title: AI Text Humanizer
 type: Text Enhancement
 version: 1.0
 ---

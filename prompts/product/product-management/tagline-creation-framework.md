@@ -1,13 +1,15 @@
 ---
-title: Tagline Creation Framework
+description: Advanced prompt for developing memorable and effective taglines that
+  capture brand essence and resonate with target audiences
 path: product/product-management/tagline-creation-framework
+prompt_type: Role-based prompting
 tags:
-  - branding
-  - messaging
-  - marketing
-  - communication
-  - copywriting
-description: Advanced prompt for developing memorable and effective taglines that capture brand essence and resonate with target audiences
+- branding
+- messaging
+- marketing
+- communication
+- copywriting
+title: Tagline Creation Framework
 ---
 
 # Role: Brand Messaging Specialist

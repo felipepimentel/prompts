@@ -1,8 +1,18 @@
 ---
-title: "Universal Code Quality Guidelines"
-path: "developer/guidelines/code-guidelines"
-tags: ["code-quality", "best-practices", "development", "guidelines", "standards", "conventions", "documentation"]
-description: "A comprehensive guide for maintaining high code quality across different programming languages and frameworks, focusing on best practices, conventions, and standards"
+description: A comprehensive guide for maintaining high code quality across different
+  programming languages and frameworks, focusing on best practices, conventions, and
+  standards
+path: developer/guidelines/code-guidelines
+prompt_type: Instruction-based prompting
+tags:
+- code-quality
+- best-practices
+- development
+- guidelines
+- standards
+- conventions
+- documentation
+title: Universal Code Quality Guidelines
 ---
 
 # Universal Code Quality Guidelines

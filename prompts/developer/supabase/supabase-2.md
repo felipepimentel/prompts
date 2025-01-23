@@ -1,15 +1,17 @@
 ---
-title: Next.js and Supabase Integration Guide
+description: Comprehensive guide for building modern web applications using Next.js
+  14 App Router with Supabase, focusing on best practices and performance
 path: developer/supabase/supabase-2.md
+prompt_type: Instruction-based prompting
 tags:
-  - nextjs
-  - supabase
-  - typescript
-  - react
-  - server-components
-  - tailwind
-  - development
-description: Comprehensive guide for building modern web applications using Next.js 14 App Router with Supabase, focusing on best practices and performance
+- nextjs
+- supabase
+- typescript
+- react
+- server-components
+- tailwind
+- development
+title: Next.js and Supabase Integration Guide
 ---
 
 # Next.js and Supabase Integration Guide

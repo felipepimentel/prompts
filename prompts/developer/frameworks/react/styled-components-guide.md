@@ -1,13 +1,15 @@
 ---
-title: React Styled Components Guide
+description: A comprehensive guide for using styled-components in React applications,
+  covering advanced patterns, theming, and best practices
 path: developer/frameworks/react/styled-components-guide
+prompt_type: Instruction-based prompting
 tags:
-  - react
-  - styled-components
-  - css-in-js
-  - styling
-  - frontend
-description: A comprehensive guide for using styled-components in React applications, covering advanced patterns, theming, and best practices
+- react
+- styled-components
+- css-in-js
+- styling
+- frontend
+title: React Styled Components Guide
 ---
 
 # React Styled Components Guide

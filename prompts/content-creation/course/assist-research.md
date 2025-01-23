@@ -1,13 +1,15 @@
 ---
-title: Course Research Framework
+description: A comprehensive framework for conducting thorough research to gather
+  and synthesize current information for course content development.
 path: content-creation/course/course-research-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - course-development
-  - research
-  - education
-  - knowledge-synthesis
-description: A comprehensive framework for conducting thorough research to gather and synthesize current information for course content development.
+- content-creation
+- course-development
+- research
+- education
+- knowledge-synthesis
+title: Course Research Framework
 ---
 
 # Course Research Framework

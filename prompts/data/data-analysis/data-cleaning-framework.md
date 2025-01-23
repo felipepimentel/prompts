@@ -1,13 +1,15 @@
 ---
-title: Data Cleaning Framework
+description: A comprehensive framework for cleaning and preparing data to ensure quality,
+  consistency, and reliability for subsequent analysis and processing.
 path: data/data-analysis/data-cleaning-framework
+prompt_type: Role-based prompting
 tags:
-  - data-analysis
-  - data-cleaning
-  - data-preparation
-  - data-quality
-  - data-validation
-description: A comprehensive framework for cleaning and preparing data to ensure quality, consistency, and reliability for subsequent analysis and processing.
+- data-analysis
+- data-cleaning
+- data-preparation
+- data-quality
+- data-validation
+title: Data Cleaning Framework
 ---
 
 # Data Cleaning Framework

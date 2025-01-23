@@ -1,13 +1,15 @@
 ---
-title: Digital Market Trends Analysis
+description: Advanced prompt for comprehensive digital market trends analysis and
+  insights generation
 path: product/product-management/digital-market-trends-analysis
-tags: 
-  - market-analysis
-  - digital-products
-  - trends
-  - research
-  - strategy
-description: Advanced prompt for comprehensive digital market trends analysis and insights generation
+prompt_type: Role-based prompting
+tags:
+- market-analysis
+- digital-products
+- trends
+- research
+- strategy
+title: Digital Market Trends Analysis
 ---
 
 # Role: Digital Market Trends Analyst

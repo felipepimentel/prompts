@@ -1,13 +1,16 @@
 ---
-title: Content Feedback Framework
+description: A comprehensive framework for gathering, analyzing, and implementing
+  feedback to improve content quality and effectiveness while maintaining alignment
+  with objectives.
 path: content-creation/writing/feedback-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - writing
-  - feedback-management
-  - content-improvement
-  - quality-assurance
-description: A comprehensive framework for gathering, analyzing, and implementing feedback to improve content quality and effectiveness while maintaining alignment with objectives.
+- content-creation
+- writing
+- feedback-management
+- content-improvement
+- quality-assurance
+title: Content Feedback Framework
 ---
 
 # Content Feedback Framework

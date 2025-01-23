@@ -1,13 +1,15 @@
 ---
-title: Goal Structuring Framework
+description: Advanced prompt for developing and implementing effective goal structuring
+  frameworks that ensure clear organization and achievement of objectives
 path: product/goals/goal-structuring-framework
+prompt_type: Role-based prompting
 tags:
-  - goal-setting
-  - planning
-  - strategy
-  - objectives
-  - organization
-description: Advanced prompt for developing and implementing effective goal structuring frameworks that ensure clear organization and achievement of objectives
+- goal-setting
+- planning
+- strategy
+- objectives
+- organization
+title: Goal Structuring Framework
 ---
 
 # Role: Goal Structuring Specialist

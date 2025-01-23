@@ -1,13 +1,15 @@
 ---
-title: Technical Diagram Creation Guide
+description: A comprehensive guide for creating clear and effective technical diagrams,
+  covering various types of diagrams, tools, and best practices for technical documentation.
 path: developer/guidelines/technical-diagram-guide
+prompt_type: Instruction-based prompting
 tags:
-  - documentation
-  - diagrams
-  - architecture
-  - visualization
-  - communication
-description: A comprehensive guide for creating clear and effective technical diagrams, covering various types of diagrams, tools, and best practices for technical documentation.
+- documentation
+- diagrams
+- architecture
+- visualization
+- communication
+title: Technical Diagram Creation Guide
 ---
 
 # Technical Diagram Creation Guide

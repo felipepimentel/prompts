@@ -1,8 +1,15 @@
 ---
-title: "Agent Testing Framework"
-path: "developer/cursor/agents/agent-testing-framework"
-tags: ["testing", "agent-development", "quality-assurance", "automation", "best-practices"]
-description: "A comprehensive framework for generating and implementing tests for autonomous development agents, ensuring reliability, performance, and maintainability."
+description: A comprehensive framework for generating and implementing tests for autonomous
+  development agents, ensuring reliability, performance, and maintainability.
+path: developer/cursor/agents/agent-testing-framework
+prompt_type: Instruction-based prompting
+tags:
+- testing
+- agent-development
+- quality-assurance
+- automation
+- best-practices
+title: Agent Testing Framework
 ---
 
 # Agent Testing Framework

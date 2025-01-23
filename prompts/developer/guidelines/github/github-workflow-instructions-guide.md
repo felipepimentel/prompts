@@ -1,8 +1,18 @@
 ---
-title: "GitHub Workflow Instructions Guide"
-path: "developer/guidelines/github/github-workflow-instructions-guide"
-tags: ["github", "workflow", "git", "development", "collaboration", "best-practices", "instructions", "version-control"]
-description: "A comprehensive guide for GitHub workflows, including branching strategies, commit conventions, and collaboration best practices"
+description: A comprehensive guide for GitHub workflows, including branching strategies,
+  commit conventions, and collaboration best practices
+path: developer/guidelines/github/github-workflow-instructions-guide
+prompt_type: Instruction-based prompting
+tags:
+- github
+- workflow
+- git
+- development
+- collaboration
+- best-practices
+- instructions
+- version-control
+title: GitHub Workflow Instructions Guide
 ---
 
 # GitHub Workflow Instructions Guide

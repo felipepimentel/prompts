@@ -1,13 +1,15 @@
 ---
-title: Strategic Goal Brainstorming
+description: Advanced prompt for facilitating structured brainstorming sessions to
+  define strategic goals and objectives
 path: product/goals/strategic-goal-brainstorming
+prompt_type: Role-based prompting
 tags:
-  - goals
-  - strategy
-  - brainstorming
-  - planning
-  - objectives
-description: Advanced prompt for facilitating structured brainstorming sessions to define strategic goals and objectives
+- goals
+- strategy
+- brainstorming
+- planning
+- objectives
+title: Strategic Goal Brainstorming
 ---
 
 # Role: Strategic Planning Facilitator

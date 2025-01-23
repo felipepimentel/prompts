@@ -1,13 +1,16 @@
 ---
-title: Mock Data Generation Framework
+description: A comprehensive framework for generating realistic mock datasets that
+  simulate real-world data characteristics while maintaining statistical validity
+  and usefulness for testing and development.
 path: data/data-analysis/mock-data-framework
+prompt_type: Role-based prompting
 tags:
-  - data-analysis
-  - data-generation
-  - testing
-  - data-modeling
-  - simulation
-description: A comprehensive framework for generating realistic mock datasets that simulate real-world data characteristics while maintaining statistical validity and usefulness for testing and development.
+- data-analysis
+- data-generation
+- testing
+- data-modeling
+- simulation
+title: Mock Data Generation Framework
 ---
 
 # Mock Data Generation Framework

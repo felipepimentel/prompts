@@ -1,14 +1,16 @@
 ---
-title: Kubernetes Documentation with MkDocs Guide
+description: A comprehensive guide for creating and maintaining high-quality Kubernetes
+  documentation using MkDocs, focusing on best practices and user experience
 path: developer/frameworks/kubernetes/kubernetes-documentation-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - kubernetes
-  - documentation
-  - mkdocs
-  - technical-writing
-  - devops
-  - cloud-native
-description: A comprehensive guide for creating and maintaining high-quality Kubernetes documentation using MkDocs, focusing on best practices and user experience
+- kubernetes
+- documentation
+- mkdocs
+- technical-writing
+- devops
+- cloud-native
+title: Kubernetes Documentation with MkDocs Guide
 ---
 
 # Kubernetes Documentation with MkDocs Guide

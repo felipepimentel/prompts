@@ -1,8 +1,19 @@
 ---
-title: "Astro with Tailwind CSS Setup Guide"
-path: "developer/frameworks/astro/guides/astro-tailwind-setup-guide"
-tags: ["astro", "tailwind", "typescript", "frontend", "setup", "guide", "css", "bun", "web-development"]
-description: "A comprehensive guide for setting up and optimizing an Astro project with Tailwind CSS integration using Bun as the package manager"
+description: A comprehensive guide for setting up and optimizing an Astro project
+  with Tailwind CSS integration using Bun as the package manager
+path: developer/frameworks/astro/guides/astro-tailwind-setup-guide
+prompt_type: Instruction-based prompting
+tags:
+- astro
+- tailwind
+- typescript
+- frontend
+- setup
+- guide
+- css
+- bun
+- web-development
+title: Astro with Tailwind CSS Setup Guide
 ---
 
 # Astro with Tailwind CSS Setup Guide

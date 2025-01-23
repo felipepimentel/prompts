@@ -1,13 +1,15 @@
 ---
-title: Code Comments Guide
+description: Comprehensive guide for writing effective code comments, focusing on
+  best practices, documentation standards, and maintainability
 path: developer/guidelines/code-comments-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - documentation
-  - best-practices
-  - code-quality
-  - readability
-  - maintenance
-description: Comprehensive guide for writing effective code comments, focusing on best practices, documentation standards, and maintainability
+- documentation
+- best-practices
+- code-quality
+- readability
+- maintenance
+title: Code Comments Guide
 ---
 
 # Code Comments Guide

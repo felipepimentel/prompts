@@ -1,13 +1,15 @@
 ---
-title: Personalized Learning Strategy Framework
+description: A comprehensive framework for developing personalized learning strategies
+  that cater to individual student needs, learning styles, and educational goals.
 path: content-creation/course/learning-strategy-framework
+prompt_type: Role-based prompting
 tags:
-  - content-creation
-  - course-development
-  - personalized-learning
-  - educational-strategy
-  - student-success
-description: A comprehensive framework for developing personalized learning strategies that cater to individual student needs, learning styles, and educational goals.
+- content-creation
+- course-development
+- personalized-learning
+- educational-strategy
+- student-success
+title: Personalized Learning Strategy Framework
 ---
 
 # Personalized Learning Strategy Framework

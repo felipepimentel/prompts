@@ -1,14 +1,16 @@
 ---
-title: HTMX Basic Development Guide
+description: A comprehensive guide for developing web applications using HTMX basics
+  with best practices and patterns
 path: developer/frameworks/htmx/htmx-basic-guide.md
-tags: 
-  - htmx
-  - web-development
-  - javascript
-  - frontend
-  - server-side
-  - hypermedia
-description: A comprehensive guide for developing web applications using HTMX basics with best practices and patterns
+prompt_type: Instruction-based prompting
+tags:
+- htmx
+- web-development
+- javascript
+- frontend
+- server-side
+- hypermedia
+title: HTMX Basic Development Guide
 ---
 
 # HTMX Basic Development Guide

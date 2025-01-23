@@ -1,13 +1,15 @@
 ---
-title: Innovation Ideation System
+description: Advanced prompt for developing and implementing effective innovation
+  ideation systems that generate breakthrough solutions and ideas
 path: product/product-management/innovation-ideation-system
+prompt_type: Role-based prompting
 tags:
-  - innovation
-  - ideation
-  - creativity
-  - problem-solving
-  - strategy
-description: Advanced prompt for developing and implementing effective innovation ideation systems that generate breakthrough solutions and ideas
+- innovation
+- ideation
+- creativity
+- problem-solving
+- strategy
+title: Innovation Ideation System
 ---
 
 # Role: Innovation Strategy Specialist

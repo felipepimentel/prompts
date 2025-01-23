@@ -1,14 +1,16 @@
 ---
-title: HTMX with Go Development Guide
+description: A comprehensive guide for building web applications using HTMX with Go,
+  focusing on server-side rendering and hypermedia-driven architecture
 path: developer/frameworks/htmx/htmx-go-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - htmx
-  - go
-  - web-development
-  - backend
-  - server-side
-  - hypermedia
-description: A comprehensive guide for building web applications using HTMX with Go, focusing on server-side rendering and hypermedia-driven architecture
+- htmx
+- go
+- web-development
+- backend
+- server-side
+- hypermedia
+title: HTMX with Go Development Guide
 ---
 
 # HTMX with Go Development Guide

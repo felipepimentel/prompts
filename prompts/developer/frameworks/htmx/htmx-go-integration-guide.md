@@ -1,13 +1,15 @@
 ---
-title: HTMX and Go Integration Guide
+description: Comprehensive guide for integrating HTMX with Go backends, focusing on
+  best practices and common patterns
 path: developer/frameworks/htmx/htmx-go-integration-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - htmx
-  - go
-  - web-development
-  - backend
-  - integration
-description: Comprehensive guide for integrating HTMX with Go backends, focusing on best practices and common patterns
+- htmx
+- go
+- web-development
+- backend
+- integration
+title: HTMX and Go Integration Guide
 ---
 
 # HTMX and Go Integration Guide

@@ -1,8 +1,15 @@
 ---
-title: Project Status Report Guidelines
+description: A comprehensive guide for creating clear, informative project status
+  reports with standardized structure and content
 path: developer/instructions/create-status-report.md
-tags: ["project-management", "documentation", "reporting", "collaboration", "communication"]
-description: A comprehensive guide for creating clear, informative project status reports with standardized structure and content
+prompt_type: Instruction-based prompting
+tags:
+- project-management
+- documentation
+- reporting
+- collaboration
+- communication
+title: Project Status Report Guidelines
 ---
 
 # Project Status Report Guidelines

@@ -1,8 +1,16 @@
 ---
-title: "Documentation Evolution Framework"
-path: "developer/cursor/agents/documentation-evolution-framework"
-tags: ["documentation", "style-guide", "technical-writing", "content-evolution", "best-practices"]
-description: "A comprehensive framework for evolving technical documentation through multiple passes, ensuring clarity, completeness, and engagement while maintaining technical accuracy and accessibility."
+description: A comprehensive framework for evolving technical documentation through
+  multiple passes, ensuring clarity, completeness, and engagement while maintaining
+  technical accuracy and accessibility.
+path: developer/cursor/agents/documentation-evolution-framework
+prompt_type: Instruction-based prompting
+tags:
+- documentation
+- style-guide
+- technical-writing
+- content-evolution
+- best-practices
+title: Documentation Evolution Framework
 ---
 
 # Documentation Evolution Framework

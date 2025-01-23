@@ -1,13 +1,15 @@
 ---
-title: FastAPI Best Practices Guide with Python 3.12
+description: Comprehensive guide for implementing FastAPI best practices with Python
+  3.12, focusing on modern patterns, performance, and maintainability
 path: developer/frameworks/fastapi/fastapi-best-practices-guide
+prompt_type: Instruction-based prompting
 tags:
-  - python
-  - fastapi
-  - best-practices
-  - api
-  - web-development
-description: Comprehensive guide for implementing FastAPI best practices with Python 3.12, focusing on modern patterns, performance, and maintainability
+- python
+- fastapi
+- best-practices
+- api
+- web-development
+title: FastAPI Best Practices Guide with Python 3.12
 ---
 
 # FastAPI Best Practices Guide

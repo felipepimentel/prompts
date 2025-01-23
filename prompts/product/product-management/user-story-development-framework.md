@@ -1,13 +1,15 @@
 ---
-title: User Story Development Framework
+description: Advanced prompt for creating well-structured user stories that effectively
+  capture user needs and guide development efforts
 path: product/product-management/user-story-development-framework
+prompt_type: Role-based prompting
 tags:
-  - agile
-  - user-stories
-  - requirements
-  - product-development
-  - user-experience
-description: Advanced prompt for creating well-structured user stories that effectively capture user needs and guide development efforts
+- agile
+- user-stories
+- requirements
+- product-development
+- user-experience
+title: User Story Development Framework
 ---
 
 # Role: User Story Specialist

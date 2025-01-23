@@ -1,14 +1,16 @@
 ---
-title: Product Requirements Document (PRD) Guide
+description: A comprehensive guide for creating effective Product Requirements Documents
+  (PRDs) that align stakeholders and guide successful product development
 path: product/product-management/product-requirements-document-guide.md
+prompt_type: Instruction-based prompting
 tags:
-  - product-management
-  - requirements
-  - documentation
-  - planning
-  - agile
-  - project-management
-description: A comprehensive guide for creating effective Product Requirements Documents (PRDs) that align stakeholders and guide successful product development
+- product-management
+- requirements
+- documentation
+- planning
+- agile
+- project-management
+title: Product Requirements Document (PRD) Guide
 ---
 
 # Product Requirements Document (PRD) Guide

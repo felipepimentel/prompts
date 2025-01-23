@@ -1,8 +1,16 @@
 ---
-title: "Go Backend Scalability Guide"
-path: "developer/frameworks/go/go-backend-scalability-guide"
-tags: ["go", "backend", "scalability", "performance", "microservices", "best-practices"]
-description: "A comprehensive guide for building scalable backend systems using Go, focusing on performance optimization, microservices architecture, and best practices."
+description: A comprehensive guide for building scalable backend systems using Go,
+  focusing on performance optimization, microservices architecture, and best practices.
+path: developer/frameworks/go/go-backend-scalability-guide
+prompt_type: Instruction-based prompting
+tags:
+- go
+- backend
+- scalability
+- performance
+- microservices
+- best-practices
+title: Go Backend Scalability Guide
 ---
 
 # Go Backend Scalability Guide

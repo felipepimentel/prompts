@@ -1,15 +1,17 @@
 ---
-title: Stripe Integration Guide
+description: Comprehensive guide for integrating Stripe payment solutions securely
+  and efficiently into web applications
 path: developer/stripe/stripe.md
+prompt_type: Instruction-based prompting
 tags:
-  - stripe
-  - payments
-  - security
-  - api
-  - nodejs
-  - typescript
-  - webhooks
-description: Comprehensive guide for integrating Stripe payment solutions securely and efficiently into web applications
+- stripe
+- payments
+- security
+- api
+- nodejs
+- typescript
+- webhooks
+title: Stripe Integration Guide
 ---
 
 # Stripe Integration Guide
