@@ -46,14 +46,15 @@ jobs:
         with:
           enablement: true
 
-      - name: Ensure .nojekyll exists
-        run: |
-          touch docs/.nojekyll
-          touch site/.nojekyll
-
       - name: Build site
         run: |
           mkdocs build --verbose
+
+      - name: Ensure .nojekyll exists
+        run: |
+          touch docs/.nojekyll
+          mkdir -p site
+          touch site/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
