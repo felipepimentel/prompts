@@ -1,6 +1,29 @@
-.aider*
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+.venv/
+venv/
+docs/.venv/
+docs/venv/
+
+# Arquivos de documentação
+docs/site/   # MkDocs build directory
+
+# Arquivos de ambiente
 .env
+.env.local
+.env.*.local
 
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Outros
+.aider*
 .aider.chat.history
-
 inbox/

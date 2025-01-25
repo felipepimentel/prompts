@@ -1,0 +1,34 @@
+{
+  "categories": [
+    "Geral",
+    "Criativo",
+    "Técnico",
+    "Acadêmico",
+    "Negócios",
+    "Marketing"
+  ],
+  "models": [
+    "GPT-3.5",
+    "GPT-4",
+    "Claude",
+    "Llama",
+    "Gemini"
+  ],
+  "prompts": [
+    {
+      "title": "Análise de Código",
+      "description": "Prompt para análise detalhada de código fonte com foco em boas práticas, segurança e performance.",
+      "tags": [
+        "programação",
+        "código",
+        "análise"
+      ],
+      "model": "GPT-4",
+      "category": "Técnico",
+      "type": "Analysis",
+      "version": "0.7",
+      "date": "31/12/2023",
+      "content": "Por favor, analise este código fonte considerando os seguintes aspectos:\n\n1. Boas práticas de programação\n- Princípios SOLID\n- Clean Code"
+    }
+  ]
+}
