@@ -43,6 +43,13 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
+        with:
+          enablement: true
+
+      - name: Ensure .nojekyll exists
+        run: |
+          touch docs/.nojekyll
+          touch site/.nojekyll
 
       - name: Build site
         run: |
