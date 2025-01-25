@@ -1,0 +1,36 @@
+site_name: Catálogo de Prompts
+docs_dir: docs
+site_dir: site
+
+theme:
+  name: material
+  language: pt-BR
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/book-open-page-variant
+  palette:
+    scheme: slate
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
+  - https://fonts.googleapis.com/icon?family=Material+Icons
+
+extra_javascript:
+  - javascripts/extra.js 
