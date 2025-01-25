@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for integrating Stripe payment solutions securely
   and efficiently into web applications
+model: GPT-4
 path: developer/stripe/stripe.md
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - typescript
 - webhooks
 title: Stripe Integration Guide
+version: '1.0'
 ---
 
 # Stripe Integration Guide
@@ -370,4 +373,4 @@ Remember:
 - Implement proper logging
 - Follow PCI compliance
 - Use Strong Customer Authentication
-- Handle asynchronous events properly 
+- Handle asynchronous events properly

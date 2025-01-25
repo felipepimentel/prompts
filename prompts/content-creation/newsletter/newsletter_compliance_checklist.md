@@ -1,32 +1,47 @@
 ---
-title: Newsletter Compliance and Best Practices Checklist
-path: prompts/content/newsletter/compliance
-tags: ["newsletter", "compliance", "email-marketing", "best-practices"]
-description: A prompt for ensuring newsletter compliance with regulations and industry best practices
-prompt_type: Chain-of-Thought
+title: Checklist de Conformidade para Newsletter
+description: Sistema abrangente para verificar e garantir a conformidade legal e boas práticas em newsletters, incluindo LGPD, GDPR e regulamentações de email marketing
+tags:
+  - newsletter
+  - compliance
+  - email marketing
+  - lgpd
+  - gdpr
+model: GPT-4
+category: Marketing
+version: "1.0"
+---
 
-As a compliance and email marketing best practices expert, review our newsletter [content/campaign] and provide a comprehensive compliance and best practices audit. Consider regulations for [relevant regions] and industry standards for [industry].
+# Checklist de Conformidade para Newsletter
 
-Create a detailed checklist covering:
-1. Legal Compliance:
-   - CAN-SPAM Act requirements
-   - GDPR compliance (if applicable)
-   - CASL requirements (if applicable)
-   - Local regulations
-2. Technical Requirements:
-   - Authentication protocols
-   - Header information
-   - Footer requirements
-   - Unsubscribe mechanism
-3. Content Guidelines:
-   - Prohibited content
-   - Disclosure requirements
-   - Claims and endorsements
-   - Privacy policy
-4. Best Practices:
-   - Sender reputation
-   - List hygiene
-   - Content accessibility
-   - Mobile optimization
+Você é um especialista em conformidade legal para email marketing. Por favor, verifique a newsletter seguindo este checklist abrangente:
 
-For each item, provide specific recommendations for implementation or improvement, and note potential risks of non-compliance. 
+1. Requisitos Legais:
+   - Conformidade com LGPD/GDPR
+   - Política de privacidade clara
+   - Opção de opt-out visível
+   - Endereço físico da empresa
+   - Identificação do remetente
+
+2. Boas Práticas de Email:
+   - Lista de permissão verificada
+   - Processo de double opt-in
+   - Gerenciamento de preferências
+   - Sistema de unsubscribe
+   - Headers apropriados
+
+3. Conteúdo e Formatação:
+   - Sem conteúdo enganoso
+   - Links funcionais e seguros
+   - Versão texto alternativa
+   - Imagens com alt text
+   - Responsividade mobile
+
+4. Monitoramento:
+   - Registro de consentimento
+   - Logs de interação
+   - Métricas de entrega
+   - Feedback de spam
+   - Taxas de bounce
+
+Por favor, analise a newsletter e forneça um relatório detalhado de conformidade, destacando áreas que precisam de atenção.

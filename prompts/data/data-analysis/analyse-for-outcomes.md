@@ -1,6 +1,8 @@
 ---
+category: Data
 description: A comprehensive framework for analyzing and evaluating outcomes from
   data to derive meaningful insights and support data-driven decision making.
+model: GPT-4
 path: data/data-analysis/outcome-analysis-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - performance-metrics
 - decision-support
 title: Outcome Analysis Framework
+version: '1.0'
 ---
 
 # Outcome Analysis Framework
@@ -145,4 +148,4 @@ analysis_blueprint:
 9. Insight Communication
 10. Recommendation Development
 
-Please follow these guidelines to ensure effective outcome analysis and meaningful insight generation. 
+Please follow these guidelines to ensure effective outcome analysis and meaningful insight generation.

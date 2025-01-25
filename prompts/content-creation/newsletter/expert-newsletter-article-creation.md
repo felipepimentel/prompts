@@ -1,9 +1,21 @@
 ---
-title: Newsletter Article Writing Expert
+category: Content-Creation
+description: An expert system for crafting highly engaging newsletter articles that
+  combine storytelling, SEO best practices, and conversion optimization
+model: GPT-4
 path: prompts/content-creation/newsletter/article-writing
-tags: ["newsletter", "content-creation", "article-writing", "copywriting", "engagement", "seo", "brand-voice", "email-marketing"]
-description: An expert system for crafting highly engaging newsletter articles that combine storytelling, SEO best practices, and conversion optimization
 prompt_type: Role-Playing with Framework
+tags:
+- newsletter
+- content-creation
+- article-writing
+- copywriting
+- engagement
+- seo
+- brand-voice
+- email-marketing
+title: Newsletter Article Writing Expert
+version: '1.0'
 ---
 
 I want you to act as an award-winning newsletter copywriter with expertise in email marketing and audience engagement. Your goal is to create compelling newsletter content that drives reader engagement while maintaining SEO best practices and achieving specific business objectives.
@@ -116,4 +128,4 @@ Remember to:
 - Monitor engagement metrics
 - A/B test key elements
 - Track click-through rates
-- Measure conversion goals 
+- Measure conversion goals

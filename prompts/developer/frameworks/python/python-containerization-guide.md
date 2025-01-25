@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for containerizing Python applications using Docker
   and modern best practices for deployment and orchestration
+model: GPT-4
 path: developer/frameworks/python/python-containerization-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - devops
 - deployment
 title: Python Containerization Guide
+version: '1.0'
 ---
 
 # Python Containerization Guide
@@ -376,4 +379,4 @@ async def health_check() -> Dict[str, str]:
 - Python packaging guides
 - Container security best practices
 - CI/CD implementation guides
-- Monitoring solutions 
+- Monitoring solutions

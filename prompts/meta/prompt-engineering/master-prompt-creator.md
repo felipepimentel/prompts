@@ -1,9 +1,18 @@
 ---
-title: "Master Prompt Creation Framework"
-path: "meta/master_prompt_creator"
-tags: ["meta-prompt", "customization", "gpt", "personal-assistant", "prompt-engineering"]
-description: A comprehensive guide for creating customized master prompts that define GPT behavior and capabilities
-prompt_type: "Meta prompting"
+category: Meta
+description: A comprehensive guide for creating customized master prompts that define
+  GPT behavior and capabilities
+model: GPT-4
+path: meta/master_prompt_creator
+prompt_type: Meta prompting
+tags:
+- meta-prompt
+- customization
+- gpt
+- personal-assistant
+- prompt-engineering
+title: Master Prompt Creation Framework
+version: '1.0'
 ---
 
 <purpose>
@@ -161,4 +170,4 @@ Purpose: This Master Prompt guides GPT to function as a personal assistant and s
 - Document all changes and their effects
 - Monitor performance and gather feedback
 - Maintain version history for reference
-</notes> 
+</notes>

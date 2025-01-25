@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive style guide for writing clean, maintainable, and secure
   PostgreSQL code in Supabase projects
+model: GPT-4
 path: developer/supabase/code-formal-sql.md
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - style-guide
 - best-practices
 title: PostgreSQL SQL Style Guide for Supabase
+version: '1.0'
 ---
 
 # PostgreSQL SQL Style Guide
@@ -343,4 +346,4 @@ Remember:
 - Use transactions for multi-step operations
 - Follow consistent formatting for readability
 - Consider performance implications of queries
-- Implement proper error handling in functions 
+- Implement proper error handling in functions

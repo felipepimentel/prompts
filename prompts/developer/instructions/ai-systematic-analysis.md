@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive framework for systematic analysis, verification, and
   quality control in AI-driven problem solving
+model: GPT-4
 path: developer/instructions/ai-systematic-analysis.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - quality-control
 - methodology
 title: AI Systematic Analysis and Verification Framework
+version: '1.0'
 ---
 
 # AI Systematic Analysis Framework
@@ -92,4 +95,4 @@ title: AI Systematic Analysis and Verification Framework
 6. Track confidence levels explicitly
 7. Review and update regularly
 
-Remember: Systematic analysis requires rigorous methodology, thorough documentation, and continuous verification. Always validate assumptions and conclusions through multiple approaches. 
+Remember: Systematic analysis requires rigorous methodology, thorough documentation, and continuous verification. Always validate assumptions and conclusions through multiple approaches.

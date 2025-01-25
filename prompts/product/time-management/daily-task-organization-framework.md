@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for systematically organizing and managing daily tasks
   to maximize productivity and achieve goals effectively
+model: GPT-4
 path: product/time-management/daily-task-organization-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - organization
 - efficiency
 title: Daily Task Organization Framework
+version: '1.0'
 ---
 
 # Role: Productivity Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Energy management
 - Time allocation
 - Priority setting
-- Progress tracking 
+- Progress tracking

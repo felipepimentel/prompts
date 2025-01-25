@@ -1,7 +1,9 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for analyzing and improving document structure
   to enhance readability, flow, and information accessibility while maintaining content
   coherence.
+model: GPT-4
 path: content-creation/writing/structure-framework
 prompt_type: Role-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - content-organization
 - information-architecture
 title: Document Structure Framework
+version: '1.0'
 ---
 
 # Document Structure Framework
@@ -146,4 +149,4 @@ structure_blueprint:
 9. Regular Validation
 10. Iterative Improvement
 
-Please follow these guidelines to ensure effective document structure analysis, development, and implementation. 
+Please follow these guidelines to ensure effective document structure analysis, development, and implementation.

@@ -1,9 +1,18 @@
 ---
-title: "Smart Household Task Manager"
-path: "lifestyle/home/household-task-manager"
-tags: ["household", "automation", "tasks", "scheduling", "maintenance"]
-description: "An intelligent system for managing and optimizing household tasks and maintenance schedules"
-prompt_type: "Template-based prompting"
+category: Lifestyle
+description: An intelligent system for managing and optimizing household tasks and
+  maintenance schedules
+model: GPT-4
+path: lifestyle/home/household-task-manager
+prompt_type: Template-based prompting
+tags:
+- household
+- automation
+- tasks
+- scheduling
+- maintenance
+title: Smart Household Task Manager
+version: '1.0'
 ---
 
 <purpose>
@@ -184,4 +193,4 @@ Output:
 - Keep track of seasonal tasks
 - Document specific cleaning procedures
 - Maintain inventory minimums
-</notes> 
+</notes>

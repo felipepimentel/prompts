@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing and implementing effective team motivation
   strategies that drive engagement and performance
+model: GPT-4
 path: product/goals/team-motivation-strategies
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - engagement
 - performance
 title: Team Motivation Strategies
+version: '1.0'
 ---
 
 # Role: Team Motivation Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Team satisfaction
 - Growth progress
 - Recognition quality
-- Engagement levels 
+- Engagement levels

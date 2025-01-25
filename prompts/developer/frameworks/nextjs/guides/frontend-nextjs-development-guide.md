@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing frontend applications with Next.js,
   focusing on modern development patterns, component architecture, and best practices
+model: GPT-4
 path: developer/frameworks/nextjs/guides/frontend-nextjs-development-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -14,6 +16,7 @@ tags:
 - best-practices
 - patterns
 title: Next.js Frontend Development Guide
+version: '1.0'
 ---
 
 # Next.js Frontend Development Guide
@@ -464,4 +467,4 @@ src/
 - [Next.js Documentation](https://nextjs.org/docs)
 - [React Documentation](https://react.dev)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook)
-- [Testing Library](https://testing-library.com/docs) 
+- [Testing Library](https://testing-library.com/docs)

@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for setting up and optimizing a Next.js 14 project
   with Tailwind CSS, TypeScript, and SEO best practices
+model: GPT-4
 path: developer/frameworks/nextjs/guides/nextjs-14-tailwind-seo-setup-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -15,6 +17,7 @@ tags:
 - react
 - performance
 title: Next.js 14 with Tailwind CSS and SEO Setup Guide
+version: '1.0'
 ---
 
 # Next.js 14 with Tailwind CSS and SEO Setup Guide
@@ -411,4 +414,4 @@ module.exports = nextConfig
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Google SEO Guide](https://developers.google.com/search/docs)
-- [Web Vitals](https://web.dev/vitals/) 
+- [Web Vitals](https://web.dev/vitals/)

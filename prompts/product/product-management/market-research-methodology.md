@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for conducting comprehensive market research that delivers
   actionable insights for strategic decision-making
+model: GPT-4
 path: product/product-management/market-research-methodology
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - insights
 - decision-making
 title: Market Research Methodology
+version: '1.0'
 ---
 
 # Role: Market Research Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Data accuracy
 - Insight value
 - Report utility
-- Process efficiency 
+- Process efficiency

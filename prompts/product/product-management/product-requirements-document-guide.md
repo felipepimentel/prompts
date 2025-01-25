@@ -1,6 +1,8 @@
 ---
+category: Product
 description: A comprehensive guide for creating effective Product Requirements Documents
   (PRDs) that align stakeholders and guide successful product development
+model: GPT-4
 path: product/product-management/product-requirements-document-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - agile
 - project-management
 title: Product Requirements Document (PRD) Guide
+version: '1.0'
 ---
 
 # Product Requirements Document (PRD) Guide
@@ -258,4 +261,4 @@ The PRD should:
 - Consider technical constraints
 - Plan for scalability
 - Track changes effectively
-- Update regularly 
+- Update regularly

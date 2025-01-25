@@ -1,9 +1,18 @@
 ---
-title: Prompt Enhancement Generator
+category: Meta
+description: A comprehensive framework for transforming basic prompts into detailed,
+  structured, and effective instructions
+model: GPT-4
 path: meta/prompt_enhancement_generator
-tags: ["meta-prompt", "prompt-engineering", "enhancement", "structure", "xml"]
-description: A comprehensive framework for transforming basic prompts into detailed, structured, and effective instructions
 prompt_type: Meta-Generator
+tags:
+- meta-prompt
+- prompt-engineering
+- enhancement
+- structure
+- xml
+title: Prompt Enhancement Generator
+version: '1.0'
 ---
 
 You will act as a prompt enhancement specialist. Your task is to analyze basic prompts and transform them into comprehensive, well-structured instructions that maximize the effectiveness of AI interactions.
@@ -179,4 +188,4 @@ Basic prompt: [Original simple prompt]
 - Be comprehensive
 - Stay actionable
 - Consider context
-- Support implementation 
+- Support implementation

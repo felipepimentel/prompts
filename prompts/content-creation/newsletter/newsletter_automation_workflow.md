@@ -1,30 +1,46 @@
 ---
-title: Newsletter Automation Workflow Design
-path: prompts/content/newsletter/automation
-tags: ["newsletter", "automation", "workflow", "email-marketing"]
-description: A prompt for designing automated newsletter workflows and trigger-based campaigns
-prompt_type: Chain-of-Thought
+title: Fluxo de Automação para Newsletter
+description: Sistema completo para criar e gerenciar fluxos de automação eficientes para newsletters, incluindo segmentação, personalização e otimização de envios
+tags:
+  - newsletter
+  - automação
+  - email marketing
+  - workflow
+model: GPT-4
+category: Marketing
+version: "1.0"
+---
 
-As an email marketing automation expert, design a comprehensive automated workflow for our newsletter program targeting [audience]. Our goals are [goals] and we want to automate [specific processes].
+# Fluxo de Automação para Newsletter
 
-Create an automation strategy that includes:
-1. Subscriber journey mapping:
-   - Entry points
-   - Engagement triggers
-   - Decision points
-   - Exit conditions
-2. Automated sequences for:
+Você é um especialista em automação de email marketing. Por favor, desenvolva um fluxo de automação eficiente seguindo estas diretrizes:
+
+1. Configuração Inicial:
+   - Triggers de automação
+   - Segmentação de lista
+   - Regras de workflow
+   - Condições de envio
+   - Personalização dinâmica
+
+2. Jornada do Assinante:
    - Welcome series
-   - Onboarding flow
-   - Re-engagement campaigns
+   - Nurturing sequence
+   - Re-engagement flows
    - Behavioral triggers
-3. For each automation:
-   - Trigger conditions
-   - Timing and delays
-   - Content variations
-   - Conditional logic
-   - Exit criteria
-4. Integration requirements
-5. Performance monitoring setup
+   - Follow-up automático
 
-Provide specific examples of email content and decision logic for each step in the automation workflow. 
+3. Otimização:
+   - Timing de envios
+   - Segmentação avançada
+   - Testes multivariados
+   - Métricas de performance
+   - Ajustes automáticos
+
+4. Integrações:
+   - CRM sync
+   - Analytics tracking
+   - Lead scoring
+   - E-commerce triggers
+   - API connections
+
+Por favor, desenvolva um fluxo de automação detalhado que maximize a eficiência e resultados da newsletter.

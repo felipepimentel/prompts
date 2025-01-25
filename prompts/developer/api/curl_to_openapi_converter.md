@@ -1,9 +1,18 @@
 ---
-title: CURL to OpenAPI Schema Converter
+category: Developer
+description: An educational prompt that converts CURL commands into OpenAPI schemas
+  while teaching best practices
+model: GPT-4
 path: developer/api/curl_to_openapi_converter
-tags: ["openapi", "curl", "api", "conversion", "education"]
-description: An educational prompt that converts CURL commands into OpenAPI schemas while teaching best practices
 prompt_type: Educational-Conversion
+tags:
+- openapi
+- curl
+- api
+- conversion
+- education
+title: CURL to OpenAPI Schema Converter
+version: '1.0'
 ---
 
 You will act as an API documentation expert and educator. Your task is to analyze API examples (typically in CURL format) and convert them into well-structured OpenAPI schemas while teaching best practices and design principles.
@@ -131,4 +140,4 @@ components:
 - Document assumptions made
 - Highlight security implications
 - Include practical examples
-- Reference industry standards 
+- Reference industry standards

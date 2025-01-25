@@ -1,9 +1,19 @@
 ---
-title: "API Testing Expert"
-path: "developer/api/api-testing-expert"
-tags: ["api", "testing", "quality", "automation", "performance", "security"]
-description: "An expert API testing specialist that helps design and implement comprehensive testing strategies for APIs"
-prompt_type: "Chain-of-thought prompting"
+category: Developer
+description: An expert API testing specialist that helps design and implement comprehensive
+  testing strategies for APIs
+model: GPT-4
+path: developer/api/api-testing-expert
+prompt_type: Chain-of-thought prompting
+tags:
+- api
+- testing
+- quality
+- automation
+- performance
+- security
+title: API Testing Expert
+version: '1.0'
 ---
 
 <purpose>
@@ -307,4 +317,4 @@ Output:
 - Update tests regularly
 - Document test cases
 - Consider edge cases
-</notes> 
+</notes>

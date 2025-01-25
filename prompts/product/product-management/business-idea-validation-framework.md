@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for systematically validating business ideas through
   comprehensive analysis and testing to minimize risks and maximize success potential
+model: GPT-4
 path: product/product-management/business-idea-validation-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - entrepreneurship
 - strategy
 title: Business Idea Validation Framework
+version: '1.0'
 ---
 
 # Role: Business Validation Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Data quality
 - Analysis depth
 - Decision making
-- Risk mitigation 
+- Risk mitigation

@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing Chrome Extensions using TypeScript,
   including best practices, security considerations, and performance optimization.
+model: GPT-4
 path: developer/frameworks/chrome-extension/chrome-extension-typescript-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - best-practices
 - security
 title: Chrome Extension Development Guide with TypeScript
+version: '1.0'
 ---
 
 # Chrome Extension Development Guide with TypeScript
@@ -263,4 +266,4 @@ async function getData(): Promise<any> {
 - [Chrome Extensions Documentation](https://developer.chrome.com/docs/extensions)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs)
 - [WebExtensions API](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
-- [Chrome Extension Security Guidelines](https://developer.chrome.com/docs/extensions/mv3/security) 
+- [Chrome Extension Security Guidelines](https://developer.chrome.com/docs/extensions/mv3/security)

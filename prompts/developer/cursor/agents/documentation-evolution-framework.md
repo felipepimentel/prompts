@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive framework for evolving technical documentation through
   multiple passes, ensuring clarity, completeness, and engagement while maintaining
   technical accuracy and accessibility.
+model: GPT-4
 path: developer/cursor/agents/documentation-evolution-framework
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - content-evolution
 - best-practices
 title: Documentation Evolution Framework
+version: '1.0'
 ---
 
 # Documentation Evolution Framework
@@ -252,4 +255,4 @@ classDiagram
 - User engagement
 - Content effectiveness
 - Technical accuracy
-- Enhancement opportunities 
+- Enhancement opportunities

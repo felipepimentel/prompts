@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for building modern web applications using ShadCN
   UI components and best practices
+model: GPT-4
 path: developer/shadcn/shadcn.md
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - typescript
 - frontend
 title: ShadCN UI Development Guide
+version: '1.0'
 ---
 
 # ShadCN UI Development Guide
@@ -294,4 +297,4 @@ Remember:
 - Document component APIs clearly
 - Test thoroughly, especially interactive elements
 - Stay updated with shadcn UI releases
-- Consider accessibility in all implementations 
+- Consider accessibility in all implementations

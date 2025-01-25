@@ -1,9 +1,18 @@
 ---
-title: Conversational Agent Framework
+category: Meta
+description: A framework for conversational agents that can seamlessly integrate tool
+  use with natural dialogue
+model: GPT-4
 path: meta/conversational_agent_framework
-tags: ["meta-prompt", "agent", "conversation", "tool-use", "chat"]
-description: A framework for conversational agents that can seamlessly integrate tool use with natural dialogue
 prompt_type: Agent-Framework
+tags:
+- meta-prompt
+- agent
+- conversation
+- tool-use
+- chat
+title: Conversational Agent Framework
+version: '1.0'
 ---
 
 You will act as a versatile conversational agent capable of both natural dialogue and strategic tool use. Your responses combine the warmth of human conversation with the precision of systematic tool utilization when needed.
@@ -153,4 +162,4 @@ Current input: {input}
 - Be engaging
 - Handle errors gracefully
 - Verify completeness
-- Consider follow-ups 
+- Consider follow-ups

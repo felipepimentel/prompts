@@ -1,9 +1,19 @@
 ---
-title: "API Contract Testing Specialist"
-path: "developer/api/api-contract-specialist"
-tags: ["api", "contract", "testing", "compatibility", "validation", "specification"]
-description: "An expert API contract testing specialist that helps ensure APIs maintain their contracts and compatibility"
-prompt_type: "Role-based prompting"
+category: Developer
+description: An expert API contract testing specialist that helps ensure APIs maintain
+  their contracts and compatibility
+model: GPT-4
+path: developer/api/api-contract-specialist
+prompt_type: Role-based prompting
+tags:
+- api
+- contract
+- testing
+- compatibility
+- validation
+- specification
+title: API Contract Testing Specialist
+version: '1.0'
 ---
 
 <purpose>
@@ -489,4 +499,4 @@ Output:
 - Monitor impacts
 - Support migrations
 - Update regularly
-</notes> 
+</notes>

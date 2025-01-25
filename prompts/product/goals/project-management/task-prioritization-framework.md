@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing and implementing effective task prioritization
   systems in project management
+model: GPT-4
 path: product/goals/project-management/task-prioritization-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - project-management
 - efficiency
 title: Task Prioritization Framework
+version: '1.0'
 ---
 
 # Role: Task Prioritization Specialist
@@ -114,4 +117,4 @@ Implement feedback loops for:
 - Resource allocation
 - Priority alignment
 - Team feedback
-- System refinement 
+- System refinement

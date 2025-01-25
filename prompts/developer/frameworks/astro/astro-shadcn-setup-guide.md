@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for setting up an Astro project with shadcn/ui
   components, including Tailwind CSS and React integration.
+model: GPT-4
 path: developer/frameworks/astro/astro-shadcn-setup-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - setup
 - guide
 title: Astro with shadcn/ui Setup Guide
+version: '1.0'
 ---
 
 # Astro with shadcn/ui Setup Guide
@@ -70,4 +73,4 @@ src/
 ### 3. Development Workflow
 - Use Git for version control
 - Follow component-driven development
-- Implement proper testing strategies 
+- Implement proper testing strategies

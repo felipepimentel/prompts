@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing robust Spring Boot applications
   with best practices and modern development patterns
+model: GPT-4
 path: developer/instructions/java-springboot-dev-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - development
 - best-practices
 title: Spring Boot Development Guide
+version: '1.0'
 ---
 
 # Spring Boot Development Guide
@@ -201,4 +204,4 @@ public class GlobalExceptionHandler {
 6. Handle errors gracefully
 7. Secure endpoints properly
 
-Remember: Spring Boot development requires attention to architecture, security, and performance. Always follow best practices and maintain comprehensive documentation. 
+Remember: Spring Boot development requires attention to architecture, security, and performance. Always follow best practices and maintain comprehensive documentation.

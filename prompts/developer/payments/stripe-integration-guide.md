@@ -1,5 +1,7 @@
 ---
+category: Developer
 description: Comprehensive guide for implementing secure payment processing with Stripe
+model: GPT-4
 path: developer/payments/stripe-integration-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - integration
 - e-commerce
 title: Stripe Integration Guide
+version: '1.0'
 ---
 
 # Stripe Integration Guide
@@ -328,4 +331,4 @@ stripe listen --forward-to localhost:3000/api/webhooks/stripe
 stripe trigger payment_intent.succeeded
 ```
 
-Remember: Always prioritize security and user experience when implementing Stripe payments. Keep your dependencies updated and regularly test your integration with different scenarios and edge cases. 
+Remember: Always prioritize security and user experience when implementing Stripe payments. Keep your dependencies updated and regularly test your integration with different scenarios and edge cases.

@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing modern web APIs with FastAPI, covering
   best practices, patterns, and advanced features
+model: GPT-4
 path: developer/frameworks/fastapi/fastapi-development-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - web-development
 - backend
 title: FastAPI Development Guide
+version: '1.0'
 ---
 
 # FastAPI Development Guide
@@ -408,4 +411,4 @@ async def test_create_user(
 - SQLAlchemy guides
 - Pydantic documentation
 - Testing guides
-- Security best practices 
+- Security best practices

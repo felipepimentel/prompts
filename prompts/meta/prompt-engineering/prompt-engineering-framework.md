@@ -1,9 +1,18 @@
 ---
-title: "Prompt Engineering Framework"
-path: "meta/prompt_engineering_framework"
-tags: ["meta-prompt", "prompt-engineering", "xml", "template", "structure"]
-description: A comprehensive framework for creating structured, effective prompts using XML-based templates
+category: Meta
+description: A comprehensive framework for creating structured, effective prompts
+  using XML-based templates
+model: GPT-4
+path: meta/prompt_engineering_framework
 prompt_type: Meta-Generator
+tags:
+- meta-prompt
+- prompt-engineering
+- xml
+- template
+- structure
+title: Prompt Engineering Framework
+version: '1.0'
 ---
 
 <purpose>
@@ -126,4 +135,4 @@ Variables: user-prompt
 - Maintain consistent formatting throughout
 - Test with example inputs when possible
 - Document all assumptions and requirements
-</notes> 
+</notes>

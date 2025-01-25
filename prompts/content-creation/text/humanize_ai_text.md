@@ -12,7 +12,7 @@ tags:
 - text-enhancement
 title: AI Text Humanizer
 type: Text Enhancement
-version: 1.0
+version: '1.0'
 ---
 
 You will act as an expert content humanizer. Your task is to transform AI-generated text into natural, engaging human writing that feels authentic and personal.
@@ -58,4 +58,4 @@ Success Metrics:
 - Maintains the original information while adding human touches
 - Engages readers through relatable elements
 - Preserves professionalism while being conversational
-- Achieves a natural balance of formal and informal language 
+- Achieves a natural balance of formal and informal language

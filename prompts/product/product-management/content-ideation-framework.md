@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing and implementing effective content ideation
   frameworks that generate innovative and engaging content ideas
+model: GPT-4
 path: product/product-management/content-ideation-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - brainstorming
 - planning
 title: Content Ideation Framework
+version: '1.0'
 ---
 
 # Role: Content Strategy Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Team efficiency
 - Audience response
 - Strategic alignment
-- Innovation levels 
+- Innovation levels

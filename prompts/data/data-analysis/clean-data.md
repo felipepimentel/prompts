@@ -1,6 +1,8 @@
 ---
+category: Data
 description: A comprehensive framework for cleaning and preparing data to ensure quality,
   consistency, and reliability for subsequent analysis and processing.
+model: GPT-4
 path: data/data-analysis/data-cleaning-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - data-quality
 - data-validation
 title: Data Cleaning Framework
+version: '1.0'
 ---
 
 # Data Cleaning Framework
@@ -145,4 +148,4 @@ cleaning_blueprint:
 9. Process Optimization
 10. Knowledge Transfer
 
-Please follow these guidelines to ensure effective data cleaning and preparation while maintaining data integrity. 
+Please follow these guidelines to ensure effective data cleaning and preparation while maintaining data integrity.

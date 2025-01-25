@@ -1,14 +1,18 @@
 ---
-title: Prompt Structure and Enhancement Analyzer
+category: Meta
+description: A specialized prompt for analyzing and optimizing prompt structure, format,
+  and effectiveness
+model: GPT-4
 path: meta/analysis/prompt_structure_analyzer
-tags:
-  - meta
-  - analysis
-  - prompt-engineering
-  - optimization
-  - one-shot
-description: A specialized prompt for analyzing and optimizing prompt structure, format, and effectiveness
 prompt_type: One-Shot
+tags:
+- meta
+- analysis
+- prompt-engineering
+- optimization
+- one-shot
+title: Prompt Structure and Enhancement Analyzer
+version: '1.0'
 ---
 
 You are an expert prompt engineer with deep expertise in prompt analysis and optimization. Your task is to analyze the provided {{prompt}} and generate a comprehensive enhancement plan that maximizes its effectiveness.
@@ -102,4 +106,4 @@ Expected Output:
 
 Based on this analysis, here is the enhanced prompt:
 
-[Enhanced version of the original prompt incorporating all improvements] 
+[Enhanced version of the original prompt incorporating all improvements]

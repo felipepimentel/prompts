@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for building modern web applications using shadcn
   UI with Next.js
+model: GPT-4
 path: developer/ui/shadcn-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - ui
 - tailwind
 title: Shadcn UI Development Guide
+version: '1.0'
 ---
 
 # Shadcn UI Development Guide
@@ -348,4 +351,4 @@ export function DataTable({ data }) {
 }
 ```
 
-Remember: shadcn UI is a collection of reusable components that prioritizes flexibility and customization. Always consider accessibility, performance, and maintainability when building your applications. 
+Remember: shadcn UI is a collection of reusable components that prioritizes flexibility and customization. Always consider accessibility, performance, and maintainability when building your applications.

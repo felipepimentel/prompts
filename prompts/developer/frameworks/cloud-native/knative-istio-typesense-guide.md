@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for deploying and managing cloud-native applications
   using Knative, Istio service mesh, and Typesense search engine with GPU support
+model: GPT-4
 path: developer/frameworks/cloud-native/knative-istio-typesense-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - search
 - service-mesh
 title: Knative, Istio, and Typesense with GPU Guide
+version: '1.0'
 ---
 
 # Knative, Istio, and Typesense with GPU Guide
@@ -214,4 +217,4 @@ The implementation should:
 - Monitor resource usage
 - Optimize costs
 - Plan for scalability
-- Maintain high availability 
+- Maintain high availability

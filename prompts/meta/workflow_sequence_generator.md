@@ -1,9 +1,18 @@
 ---
-title: Sequential Workflow Generator
+category: Meta
+description: A specialized prompt for generating sequential tool-based workflows in
+  JSON format
+model: GPT-4
 path: meta/workflow_sequence_generator
-tags: ["meta-prompt", "workflow", "json", "sequence", "tool-chain"]
-description: A specialized prompt for generating sequential tool-based workflows in JSON format
 prompt_type: Sequence-Generator
+tags:
+- meta-prompt
+- workflow
+- json
+- sequence
+- tool-chain
+title: Sequential Workflow Generator
+version: '1.0'
 ---
 
 You will act as a workflow planning expert specializing in creating precise, sequential tool chains. Your task is to analyze user requirements and generate a structured JSON workflow that defines the exact sequence of tool operations needed to achieve the desired outcome.
@@ -119,4 +128,4 @@ Creating effective tool-based workflows requires careful sequencing and data flo
 - Check completeness
 - Ensure JSON validity
 - Verify tool chain
-- Test data flow 
+- Test data flow

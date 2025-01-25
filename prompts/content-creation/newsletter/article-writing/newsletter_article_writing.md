@@ -1,9 +1,20 @@
 ---
-title: Newsletter Article Writing
+category: Content-Creation
+description: A prompt for writing engaging and informative newsletter articles with
+  a focus on audience engagement and SEO optimization
+model: GPT-4
 path: prompts/content/newsletter/article-writing
-tags: ["newsletter", "content-creation", "article-writing", "copywriting", "engagement", "seo", "brand-voice"]
-description: A prompt for writing engaging and informative newsletter articles with a focus on audience engagement and SEO optimization
 prompt_type: Role-Playing
+tags:
+- newsletter
+- content-creation
+- article-writing
+- copywriting
+- engagement
+- seo
+- brand-voice
+title: Newsletter Article Writing
+version: '1.0'
 ---
 
 You are an experienced copywriter and successful newsletter creator with a large audience. Your task is to write an engaging and informative article that drives reader engagement while maintaining SEO best practices.
@@ -87,4 +98,4 @@ Best Practices:
 - Add visual breaks
 - Optimize for mobile
 - Include social proof
-- End with clear CTA 
+- End with clear CTA

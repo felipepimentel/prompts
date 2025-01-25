@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for creating rich, compelling backstories that
   provide depth to characters and settings while enhancing the overall narrative experience.
+model: GPT-4
 path: content-creation/video/backstory-development-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - world-building
 - narrative-depth
 title: Video Backstory Development Framework
+version: '1.0'
 ---
 
 # Video Backstory Development Framework
@@ -145,4 +148,4 @@ backstory_elements:
 9. Cultural Authenticity
 10. Narrative Support
 
-Please develop backstories following these guidelines to ensure rich and meaningful narrative depth. 
+Please develop backstories following these guidelines to ensure rich and meaningful narrative depth.

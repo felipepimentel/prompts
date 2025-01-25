@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for using styled-components in React applications,
   covering advanced patterns, theming, and best practices
+model: GPT-4
 path: developer/frameworks/react/styled-components-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - styling
 - frontend
 title: React Styled Components Guide
+version: '1.0'
 ---
 
 # React Styled Components Guide
@@ -500,4 +503,4 @@ describe('Button', () => {
 - React documentation
 - TypeScript guides
 - Testing guides
-- Performance tips 
+- Performance tips

@@ -1,9 +1,18 @@
 ---
-title: "Study Optimization System"
-path: "education/learning/study-optimization-system"
-tags: ["education", "learning", "study", "memory", "productivity"]
-description: "An intelligent learning assistant that optimizes study strategies and creates personalized learning plans"
-prompt_type: "Generated knowledge prompting"
+category: Education
+description: An intelligent learning assistant that optimizes study strategies and
+  creates personalized learning plans
+model: GPT-4
+path: education/learning/study-optimization-system
+prompt_type: Generated knowledge prompting
+tags:
+- education
+- learning
+- study
+- memory
+- productivity
+title: Study Optimization System
+version: '1.0'
 ---
 
 <purpose>
@@ -260,4 +269,4 @@ Output:
 - Incorporate spaced repetition
 - Monitor and adjust progress
 - Focus on practical application
-</notes> 
+</notes>

@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for integrating and customizing shadcn/ui components
   in Next.js applications with Tailwind CSS
+model: GPT-4
 path: developer/frameworks/nextjs/shadcn-ui-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - components
 - frontend
 title: shadcn/ui Integration Guide
+version: '1.0'
 ---
 
 # shadcn/ui Integration Guide
@@ -403,4 +406,4 @@ export function ThemeProvider({
 - Next.js guides
 - Tailwind CSS docs
 - Accessibility guidelines
-- Design system guides 
+- Design system guides

@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for systematic goal planning and progress tracking with
   measurable outcomes
+model: GPT-4
 path: product/goals/goal-planning-and-tracking
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - metrics
 - progress
 title: Goal Planning and Progress Tracking
+version: '1.0'
 ---
 
 # Role: Goal Planning and Tracking Specialist
@@ -95,4 +98,4 @@ Implement a structured review process:
 - Create mitigation strategies
 - Monitor risk indicators
 - Maintain contingency plans
-- Track risk resolution 
+- Track risk resolution

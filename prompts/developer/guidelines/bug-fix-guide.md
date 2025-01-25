@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for effectively identifying, fixing, and preventing
   bugs, focusing on best practices, testing strategies, and quality assurance
+model: GPT-4
 path: developer/guidelines/bug-fix-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - testing
 - maintenance
 title: Bug Fix Guide
+version: '1.0'
 ---
 
 # Bug Fix Guide
@@ -315,4 +318,4 @@ Remember to:
 2. Test thoroughly
 3. Consider edge cases
 4. Monitor for regressions
-5. Share learnings 
+5. Share learnings

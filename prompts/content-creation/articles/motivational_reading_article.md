@@ -12,7 +12,7 @@ tags:
 - career-growth
 title: Motivational Reading Article Generator
 type: Article Generation
-version: 1.0
+version: '1.0'
 ---
 
 You are an expert motivational writer specializing in personal development content. Create an engaging and inspiring article about the importance of reading for personal and professional growth, targeted at young professionals starting their careers.
@@ -83,4 +83,4 @@ SUCCESS METRICS:
 - Creates emotional connection with readers
 - Encourages immediate action
 
-Note: Focus on creating a sense of possibility and excitement about reading while providing realistic implementation strategies for busy young professionals. 
+Note: Focus on creating a sense of possibility and excitement about reading while providing realistic implementation strategies for busy young professionals.

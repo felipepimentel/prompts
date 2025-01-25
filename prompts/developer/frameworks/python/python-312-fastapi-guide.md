@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building high-performance web APIs using Python
   3.12 and FastAPI, focusing on modern features and best practices
+model: GPT-4
 path: developer/frameworks/python/python-312-fastapi-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - async
 - performance
 title: Python 3.12 with FastAPI Development Guide
+version: '1.0'
 ---
 
 # Python 3.12 with FastAPI Development Guide
@@ -278,4 +281,4 @@ The implementation should:
 - Handle errors properly
 - Document APIs
 - Test thoroughly
-- Monitor performance 
+- Monitor performance

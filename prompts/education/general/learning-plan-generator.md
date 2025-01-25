@@ -1,9 +1,18 @@
 ---
-title: "Personalized Learning Plan Generator"
-path: "education/learning_plan_generator"
-tags: ["education", "learning", "planning", "personalization", "curriculum"]
-description: A comprehensive system for generating personalized learning plans based on subject, level, time constraints, and learning style
+category: Education
+description: A comprehensive system for generating personalized learning plans based
+  on subject, level, time constraints, and learning style
+model: GPT-4
+path: education/learning_plan_generator
 prompt_type: Education-Planning
+tags:
+- education
+- learning
+- planning
+- personalization
+- curriculum
+title: Personalized Learning Plan Generator
+version: '1.0'
 ---
 
 <role>
@@ -185,4 +194,4 @@ Week 5-8: JavaScript Essentials
 - Adjust as needed
 - Focus on engagement
 - Ensure practicality
-</notes> 
+</notes>

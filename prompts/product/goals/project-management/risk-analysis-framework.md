@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for conducting thorough risk analysis and developing
   effective mitigation strategies
+model: GPT-4
 path: product/goals/project-management/risk-analysis-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - planning
 - mitigation
 title: Risk Analysis Framework
+version: '1.0'
 ---
 
 # Role: Risk Analysis Expert
@@ -114,4 +117,4 @@ Establish processes for:
 - Framework updates
 - Strategy refinement
 - Team training
-- Knowledge sharing 
+- Knowledge sharing

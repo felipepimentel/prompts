@@ -1,14 +1,18 @@
 ---
-title: Task Decomposition and Chain-of-Thought Analyzer
+category: Meta
+description: A specialized prompt for breaking down complex tasks and applying chain-of-thought
+  reasoning
+model: GPT-4
 path: meta/decomposition/task_decomposition_analyzer
-tags:
-  - meta
-  - decomposition
-  - chain-of-thought
-  - analysis
-  - task-planning
-description: A specialized prompt for breaking down complex tasks and applying chain-of-thought reasoning
 prompt_type: Chain-of-Thought
+tags:
+- meta
+- decomposition
+- chain-of-thought
+- analysis
+- task-planning
+title: Task Decomposition and Chain-of-Thought Analyzer
+version: '1.0'
 ---
 
 You are a highly skilled task analysis specialist with expertise in decomposition and systematic reasoning. Your mission is to analyze the provided {{prompt}} and transform it into a well-structured execution plan with clear reasoning steps.
@@ -71,4 +75,4 @@ For each subtask:
 - Validation Method: [How to verify success]
 - Dependencies Resolved: [Yes/No/Partial]
 
-If any aspect requires clarification or additional information, clearly state what's needed to proceed. 
+If any aspect requires clarification or additional information, clearly state what's needed to proceed.

@@ -1,7 +1,9 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for identifying, evaluating, and recommending
   supplemental materials that enhance learning outcomes and provide additional support
   for course content.
+model: GPT-4
 path: content-creation/course/supplemental-materials-framework
 prompt_type: Role-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - learning-materials
 - content-enrichment
 title: Supplemental Materials Framework
+version: '1.0'
 ---
 
 # Supplemental Materials Framework
@@ -146,4 +149,4 @@ material_recommendations:
 9. Progress Tracking
 10. Feedback Integration
 
-Please recommend supplemental materials following these guidelines to ensure effective learning support. 
+Please recommend supplemental materials following these guidelines to ensure effective learning support.

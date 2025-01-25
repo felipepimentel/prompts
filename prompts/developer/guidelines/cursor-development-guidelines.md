@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for organizing and maintaining Cursor AI development
   projects, including best practices and file organization guidelines.
+model: GPT-4
 path: developer/guidelines/cursor-development-guidelines
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - documentation
 - organization
 title: Cursor Development Guidelines
+version: '1.0'
 ---
 
 # Cursor Development Guidelines
@@ -221,4 +224,4 @@ export function Button({ variant, children }: ButtonProps) {
 ## Resources
 - [Cursor AI Documentation](https://cursor.sh/docs)
 - [Project Organization Best Practices](https://github.com/elsewhencode/project-guidelines)
-- [Documentation Standards](https://www.writethedocs.org/guide/) 
+- [Documentation Standards](https://www.writethedocs.org/guide/)

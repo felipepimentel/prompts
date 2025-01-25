@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for implementing FastAPI best practices with Python
   3.12, focusing on modern patterns, performance, and maintainability
+model: GPT-4
 path: developer/frameworks/fastapi/fastapi-best-practices-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - api
 - web-development
 title: FastAPI Best Practices Guide with Python 3.12
+version: '1.0'
 ---
 
 # FastAPI Best Practices Guide
@@ -481,4 +484,4 @@ logger.addFilter(RequestIDFilter())
 - Python 3.12 features
 - SQLAlchemy guides
 - Testing strategies
-- Security best practices 
+- Security best practices

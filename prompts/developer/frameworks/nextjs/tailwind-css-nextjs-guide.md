@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for integrating and using Tailwind CSS with Next.js,
   focusing on best practices, performance optimization, and modern design patterns
+model: GPT-4
 path: developer/frameworks/nextjs/tailwind-css-nextjs-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - frontend
 - react
 title: Tailwind CSS with Next.js Development Guide
+version: '1.0'
 ---
 
 # Tailwind CSS with Next.js Development Guide
@@ -501,4 +504,4 @@ Remember to:
 2. Follow responsive design principles
 3. Optimize performance
 4. Maintain accessibility
-5. Document complex patterns 
+5. Document complex patterns

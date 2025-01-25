@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for generating and evaluating engaging video
   topics that align with audience interests, market trends, and content goals.
+model: GPT-4
 path: content-creation/video/topic-brainstorming-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - topic-generation
 - content-strategy
 title: Video Topic Brainstorming Framework
+version: '1.0'
 ---
 
 # Video Topic Brainstorming Framework
@@ -145,4 +148,4 @@ topic_proposal:
 9. Data-Driven Decisions
 10. Strategic Alignment
 
-Please generate video topics following these guidelines to ensure compelling and successful content development. 
+Please generate video topics following these guidelines to ensure compelling and successful content development.

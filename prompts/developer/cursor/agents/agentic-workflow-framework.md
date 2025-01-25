@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive framework for documenting and managing multi-agent workflows,
   providing a centralized source of truth for coordinated development through structured
   information exchange and standardized interfaces.
+model: GPT-4
 path: developer/cursor/agents/agentic-workflow-framework
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - agent-systems
 - orchestration
 title: Agentic Workflow Documentation Framework
+version: '1.0'
 ---
 
 # Agentic Workflow Documentation Framework
@@ -278,4 +281,4 @@ class DatabaseUpdater:
 - Performance metrics
 - Quality metrics
 - Usage patterns
-- Optimization opportunities 
+- Optimization opportunities

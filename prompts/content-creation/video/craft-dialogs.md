@@ -1,7 +1,9 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for crafting authentic, engaging video dialogues
   that enhance storytelling while maintaining character authenticity and narrative
   flow.
+model: GPT-4
 path: content-creation/video/dialog-creation-framework
 prompt_type: Role-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - character-development
 - dialogue-crafting
 title: Video Dialog Creation Framework
+version: '1.0'
 ---
 
 # Video Dialog Creation Framework
@@ -146,4 +149,4 @@ dialogue_script:
 9. Rhythm Variation
 10. Resolution Impact
 
-Please craft video dialogues following these guidelines to ensure engaging and authentic character interactions. 
+Please craft video dialogues following these guidelines to ensure engaging and authentic character interactions.

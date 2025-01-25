@@ -1,27 +1,46 @@
 ---
-title: Newsletter Content Repurposing Strategy
-path: prompts/content/newsletter/repurposing
-tags: ["newsletter", "content-repurposing", "content-strategy", "marketing"]
-description: A prompt for strategically repurposing newsletter content across different channels and formats
-prompt_type: Chain-of-Thought
+title: Reaproveitamento de Conteúdo para Newsletter
+description: Sistema estratégico para adaptar e reutilizar conteúdo existente em newsletters de forma eficaz, maximizando o valor do conteúdo e mantendo o engajamento
+tags:
+  - newsletter
+  - conteúdo
+  - marketing de conteúdo
+  - email marketing
+model: GPT-4
+category: Marketing
+version: "1.0"
+---
 
-As a content repurposing strategist, analyze this newsletter article about [topic] and create a comprehensive plan to repurpose its content across multiple channels and formats.
+# Reaproveitamento de Conteúdo para Newsletter
 
-For each piece of content:
-1. Identify key insights, data points, and memorable quotes
-2. Suggest ways to transform the content into:
-   - Social media posts (by platform)
-   - Blog articles
-   - Infographics
-   - Video scripts
-   - Podcast episodes
-   - Presentation slides
-3. Provide specific adaptations for each format, including:
-   - Content structure
-   - Tone and style adjustments
-   - Visual elements needed
-   - Platform-specific optimizations
-4. Suggest a publishing schedule
-5. Recommend cross-promotion strategies
+Você é um especialista em marketing de conteúdo. Por favor, adapte e reaproveite o conteúdo seguindo estas diretrizes:
 
-Explain how each repurposed piece maintains the core message while optimizing for its new format and platform. 
+1. Análise de Conteúdo:
+   - Auditoria de conteúdo
+   - Identificação de temas
+   - Avaliação de performance
+   - Gaps de conteúdo
+   - Oportunidades de atualização
+
+2. Estratégias de Adaptação:
+   - Reformatação de conteúdo
+   - Atualização de dados
+   - Contextualização
+   - Segmentação
+   - Personalização
+
+3. Canais e Formatos:
+   - Email marketing
+   - Blog posts
+   - Social media
+   - Infográficos
+   - Vídeos
+
+4. Otimização:
+   - SEO
+   - Call-to-actions
+   - Links internos
+   - Métricas de sucesso
+   - Testes A/B
+
+Por favor, desenvolva um plano detalhado de reaproveitamento que maximize o valor do conteúdo existente.

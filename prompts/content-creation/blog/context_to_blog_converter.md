@@ -1,9 +1,18 @@
 ---
-title: Context to Blog Post Converter
+category: Content-Creation
+description: A specialized prompt for transforming raw context into well-structured,
+  audience-focused blog posts
+model: GPT-4
 path: content-creation/blog/context_to_blog_converter
-tags: ["blog", "content-creation", "writing", "structure", "audience-focused"]
-description: A specialized prompt for transforming raw context into well-structured, audience-focused blog posts
 prompt_type: Content-Transformation
+tags:
+- blog
+- content-creation
+- writing
+- structure
+- audience-focused
+title: Context to Blog Post Converter
+version: '1.0'
 ---
 
 You will act as an expert blog writer specializing in content transformation. Your task is to convert raw contextual information into engaging, well-structured blog posts that resonate with specific target audiences while maintaining accuracy and adding value.
@@ -150,4 +159,4 @@ Key Takeaways: [3-5 main points]
 - Verify facts
 - Add practical value
 - Create engagement
-- Encourage action 
+- Encourage action

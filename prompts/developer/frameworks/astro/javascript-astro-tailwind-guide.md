@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive guide for building modern web applications using Astro
   with JavaScript and Tailwind CSS, focusing on performance optimization and best
   practices.
+model: GPT-4
 path: developer/frameworks/astro/javascript-astro-tailwind-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - performance
 - seo
 title: JavaScript, Astro, and Tailwind CSS Development Guide
+version: '1.0'
 ---
 
 # JavaScript, Astro, and Tailwind CSS Development Guide
@@ -313,4 +316,4 @@ describe('Card', () => {
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [JavaScript MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Core Web Vitals](https://web.dev/vitals/)
-- [Astro Performance Guide](https://docs.astro.build/en/guides/performance/) 
+- [Astro Performance Guide](https://docs.astro.build/en/guides/performance/)

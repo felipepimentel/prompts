@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for crafting authentic, engaging book dialogues
   that enhance character development and advance the narrative.
+model: GPT-4
 path: content-creation/writing/book/dialogue-creation-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - character-voice
 - narrative-development
 title: Book Dialogue Creation Framework
+version: '1.0'
 ---
 
 # Book Dialogue Creation Framework
@@ -145,4 +148,4 @@ dialogue_scene:
 9. Pacing Control
 10. Reader Engagement
 
-Please craft book dialogues following these guidelines to ensure compelling and authentic character interactions. 
+Please craft book dialogues following these guidelines to ensure compelling and authentic character interactions.

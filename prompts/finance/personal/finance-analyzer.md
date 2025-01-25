@@ -1,9 +1,18 @@
 ---
-title: "Personal Finance Analyzer & Advisor"
-path: "finance/personal/finance-analyzer"
-tags: ["finance", "budgeting", "analysis", "planning", "optimization"]
-description: "An intelligent financial advisor that analyzes spending patterns and provides personalized recommendations for financial optimization"
-prompt_type: "Generated knowledge prompting"
+category: Finance
+description: An intelligent financial advisor that analyzes spending patterns and
+  provides personalized recommendations for financial optimization
+model: GPT-4
+path: finance/personal/finance-analyzer
+prompt_type: Generated knowledge prompting
+tags:
+- finance
+- budgeting
+- analysis
+- planning
+- optimization
+title: Personal Finance Analyzer & Advisor
+version: '1.0'
 ---
 
 <purpose>
@@ -184,4 +193,4 @@ Output:
 - Account for personal preferences and lifestyle
 - Provide specific, actionable recommendations
 - Include progress tracking mechanisms
-</notes> 
+</notes>

@@ -1,9 +1,19 @@
 ---
-title: "API Developer Experience Expert"
-path: "developer/api/api-dx-expert"
-tags: ["api", "dx", "usability", "onboarding", "adoption", "experience"]
-description: "An expert API Developer Experience specialist that helps create intuitive, easy-to-use, and developer-friendly APIs"
-prompt_type: "Role-based prompting"
+category: Developer
+description: An expert API Developer Experience specialist that helps create intuitive,
+  easy-to-use, and developer-friendly APIs
+model: GPT-4
+path: developer/api/api-dx-expert
+prompt_type: Role-based prompting
+tags:
+- api
+- dx
+- usability
+- onboarding
+- adoption
+- experience
+title: API Developer Experience Expert
+version: '1.0'
 ---
 
 <purpose>
@@ -299,4 +309,4 @@ Output:
 - Gather regular feedback
 - Keep resources updated
 - Monitor DX metrics
-</notes> 
+</notes>

@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for setting up new software projects with best
   practices and proper architecture
+model: GPT-4
 path: developer/instructions/initial-project-setup.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - architecture
 - planning
 title: Initial Project Setup Guide
+version: '1.0'
 ---
 
 # Initial Project Setup Guide
@@ -253,4 +256,4 @@ export const logger = winston.createLogger({
 6. Monitor performance
 7. Maintain consistency
 
-Remember: A well-structured initial setup saves time and reduces technical debt in the long run. Take time to set up the project properly before starting development. 
+Remember: A well-structured initial setup saves time and reduces technical debt in the long run. Take time to set up the project properly before starting development.

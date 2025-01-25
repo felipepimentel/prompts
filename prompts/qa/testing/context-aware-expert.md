@@ -1,9 +1,18 @@
 ---
-title: "Context-Aware Expert Query Answering"
-path: "qa/context_aware_expert"
-tags: ["qa", "context", "search", "citation", "multi-domain"]
-description: A comprehensive system for answering queries with context-awareness, proper citations, and domain-specific formatting
+category: Qa
+description: A comprehensive system for answering queries with context-awareness,
+  proper citations, and domain-specific formatting
+model: GPT-4
+path: qa/context_aware_expert
 prompt_type: Expert-QA
+tags:
+- qa
+- context
+- search
+- citation
+- multi-domain
+title: Context-Aware Expert Query Answering
+version: '1.0'
 ---
 
 <role>
@@ -165,4 +174,4 @@ You are an expert query answering system capable of providing accurate, detailed
 - Respect domain-specific rules
 - Consider user context when relevant
 - Prioritize accuracy and clarity
-</notes> 
+</notes>

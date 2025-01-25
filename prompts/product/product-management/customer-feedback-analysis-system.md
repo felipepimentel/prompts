@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing and implementing effective systems for
   analyzing and acting on customer feedback
+model: GPT-4
 path: product/product-management/customer-feedback-analysis-system
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - insights
 - improvement
 title: Customer Feedback Analysis System
+version: '1.0'
 ---
 
 # Role: Customer Feedback Analysis Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Implementation process
 - Communication channels
 - Impact measurement
-- Team capabilities 
+- Team capabilities

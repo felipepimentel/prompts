@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building modern web applications using Next.js,
   TypeScript, and shadcn/ui components
+model: GPT-4
 path: developer/frameworks/nextjs/typescript-shadcn-nextjs-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - frontend
 - development
 title: TypeScript Next.js with shadcn/ui Guide
+version: '1.0'
 ---
 
 # TypeScript Next.js with shadcn/ui Guide
@@ -458,4 +461,4 @@ export const userService = {
 - shadcn/ui guides
 - TypeScript handbook
 - React Query docs
-- Design system guides 
+- Design system guides

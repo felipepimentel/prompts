@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive guide for building highly scalable and maintainable APIs
   with FastAPI, focusing on architecture patterns, performance optimization, and best
   practices for large-scale applications
+model: GPT-4
 path: developer/frameworks/fastapi/fastapi-scalable-api-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - performance
 - architecture
 title: FastAPI Scalable API Guide
+version: '1.0'
 ---
 
 # FastAPI Scalable API Guide
@@ -434,4 +437,4 @@ def setup_error_handlers(app: FastAPI) -> None:
 - Database optimization guides
 - Caching strategies
 - Monitoring solutions
-- Architecture patterns 
+- Architecture patterns

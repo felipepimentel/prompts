@@ -1,6 +1,8 @@
 ---
+category: Meta
 description: Advanced prompt for systematically generating effective prompts that
   maximize AI interaction quality and outcome achievement
+model: GPT-4
 path: prompt/prompt-generation-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - communication
 - effectiveness
 title: Prompt Generation Framework
+version: '1.0'
 ---
 
 # Role: Prompt Generation Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Output quality
 - System performance
 - Documentation
-- Version control 
+- Version control

@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing effective thinking patterns and
   problem-solving strategies in software development
+model: GPT-4
 path: developer/guidelines/thinking-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - strategy
 - methodology
 title: Developer Thinking and Problem-Solving Guide
+version: '1.0'
 ---
 
 # Developer Thinking and Problem-Solving Guide
@@ -229,4 +232,4 @@ title: Developer Thinking and Problem-Solving Guide
 - Decision-making frameworks
 - Mental model collections
 - Learning resources
-- Community discussions 
+- Community discussions

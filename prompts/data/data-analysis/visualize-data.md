@@ -1,6 +1,8 @@
 ---
+category: Data
 description: A comprehensive framework for creating effective data visualizations
   that communicate insights clearly while maintaining accuracy and aesthetic appeal.
+model: GPT-4
 path: data/data-analysis/visualization-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - information-design
 - data-communication
 title: Data Visualization Framework
+version: '1.0'
 ---
 
 # Data Visualization Framework
@@ -145,4 +148,4 @@ visualization_blueprint:
 9. Documentation Maintenance
 10. Regular Updates
 
-Please follow these guidelines to ensure effective data visualization that communicates insights clearly and engagingly. 
+Please follow these guidelines to ensure effective data visualization that communicates insights clearly and engagingly.

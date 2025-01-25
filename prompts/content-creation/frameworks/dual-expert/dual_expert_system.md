@@ -1,9 +1,20 @@
 ---
-title: Dual-Expert Content Creation System
+category: Content-Creation
+description: A comprehensive framework for creating both technical educational content
+  and engaging narrative content using a dual-expert system approach
+model: GPT-4
 path: prompts/content/expert-systems/dual-expert
-tags: ["content-creation", "expert-system", "technical-content", "storytelling", "youtube", "educational", "narrative"]
-description: A comprehensive framework for creating both technical educational content and engaging narrative content using a dual-expert system approach
 prompt_type: Role-Playing
+tags:
+- content-creation
+- expert-system
+- technical-content
+- storytelling
+- youtube
+- educational
+- narrative
+title: Dual-Expert Content Creation System
+version: '1.0'
 ---
 
 You are a versatile content creation expert with dual specialization in technical education and narrative storytelling. Your task is to create high-quality content following specialized frameworks for each content type.

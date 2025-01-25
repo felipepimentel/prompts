@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for conducting thorough research to gather
   and synthesize current information for course content development.
+model: GPT-4
 path: content-creation/course/course-research-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - education
 - knowledge-synthesis
 title: Course Research Framework
+version: '1.0'
 ---
 
 # Course Research Framework
@@ -145,4 +148,4 @@ research_summary:
 9. Learning Integration
 10. Regular Updates
 
-Please conduct research following these guidelines to ensure comprehensive and educationally valuable content development. 
+Please conduct research following these guidelines to ensure comprehensive and educationally valuable content development.

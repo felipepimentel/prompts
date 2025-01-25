@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for creating and maintaining high-quality Kubernetes
   documentation using MkDocs, focusing on best practices and user experience
+model: GPT-4
 path: developer/frameworks/kubernetes/kubernetes-documentation-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - devops
 - cloud-native
 title: Kubernetes Documentation with MkDocs Guide
+version: '1.0'
 ---
 
 # Kubernetes Documentation with MkDocs Guide
@@ -242,4 +245,4 @@ The documentation should:
 - Include practical examples
 - Maintain version control
 - Update regularly
-- Consider user feedback 
+- Consider user feedback

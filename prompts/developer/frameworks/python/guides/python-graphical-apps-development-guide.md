@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing graphical applications using Python,
   covering multiple frameworks, best practices, and modern development patterns
+model: GPT-4
 path: developer/frameworks/python/guides/python-graphical-apps-development-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -14,6 +16,7 @@ tags:
 - development
 - best-practices
 title: Python Graphical Applications Development Guide
+version: '1.0'
 ---
 
 # Python Graphical Applications Development Guide
@@ -464,4 +467,4 @@ exe = EXE(
 - [Tkinter Documentation](https://docs.python.org/3/library/tkinter.html)
 - [PyQt6 Documentation](https://www.riverbankcomputing.com/static/Docs/PyQt6/)
 - [Kivy Documentation](https://kivy.org/doc/stable/)
-- [Python GUI Programming Cookbook](https://www.packtpub.com/product/python-gui-programming-cookbook-third-edition/9781838827540) 
+- [Python GUI Programming Cookbook](https://www.packtpub.com/product/python-gui-programming-cookbook-third-edition/9781838827540)

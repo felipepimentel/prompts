@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive style guide for writing clean, maintainable, and efficient
   PostgreSQL queries
+model: GPT-4
 path: developer/database/postgresql-style-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - style-guide
 - best-practices
 title: PostgreSQL Style Guide
+version: '1.0'
 ---
 
 # PostgreSQL Style Guide
@@ -274,4 +277,4 @@ grant usage on sequence orders_id_seq to authenticated;
    - Monitor performance
    - Update statistics
 
-Remember: Consistency in style and naming makes databases easier to maintain and understand. Always prioritize clarity and maintainability over brevity. 
+Remember: Consistency in style and naming makes databases easier to maintain and understand. Always prioritize clarity and maintainability over brevity.

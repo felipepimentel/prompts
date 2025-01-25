@@ -1,8 +1,18 @@
 ---
-title: "API Lifecycle Integration Guide"
-path: "developer/api/api-lifecycle-integration-guide"
-tags: ["api", "integration", "lifecycle", "coordination", "workflow", "best-practices"]
-description: "A comprehensive guide for integrating different aspects of the API lifecycle using specialized prompts"
+category: Developer
+description: A comprehensive guide for integrating different aspects of the API lifecycle
+  using specialized prompts
+model: GPT-4
+path: developer/api/api-lifecycle-integration-guide
+tags:
+- api
+- integration
+- lifecycle
+- coordination
+- workflow
+- best-practices
+title: API Lifecycle Integration Guide
+version: '1.0'
 ---
 
 # API Lifecycle Integration Guide
@@ -492,4 +502,4 @@ Integration Points:
     }
   }
 }
-``` 
+```

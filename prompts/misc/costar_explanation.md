@@ -1,6 +1,8 @@
 ---
+category: Misc
 description: A comprehensive guide to the CO-STAR framework for prompt engineering,
   covering implementation from basic concepts to enterprise-scale deployment
+model: GPT-4
 path: /misc/costar-explanation
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - enterprise
 - scaling
 title: CO-STAR Prompt Engineering Framework
+version: '1.0'
 ---
 
 # CO-STAR Prompt Engineering Framework
@@ -271,4 +274,4 @@ interface GovernanceFramework {
 2. [Prompt Engineering Best Practices](https://example.com/prompt-engineering)
 3. [Enterprise Implementation Guide](https://example.com/enterprise-guide)
 4. [Performance Optimization Handbook](https://example.com/optimization)
-5. [Security and Compliance Standards](https://example.com/security) 
+5. [Security and Compliance Standards](https://example.com/security)

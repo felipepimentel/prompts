@@ -1,9 +1,19 @@
 ---
-title: "API Error Handling Specialist"
-path: "developer/api/api-error-specialist"
-tags: ["api", "errors", "exceptions", "reliability", "resilience", "troubleshooting"]
-description: "An expert API error handling specialist that helps design and implement robust error handling strategies"
-prompt_type: "Chain-of-thought prompting"
+category: Developer
+description: An expert API error handling specialist that helps design and implement
+  robust error handling strategies
+model: GPT-4
+path: developer/api/api-error-specialist
+prompt_type: Chain-of-thought prompting
+tags:
+- api
+- errors
+- exceptions
+- reliability
+- resilience
+- troubleshooting
+title: API Error Handling Specialist
+version: '1.0'
 ---
 
 <purpose>
@@ -436,4 +446,4 @@ Output:
 - Support debugging
 - Test scenarios
 - Update regularly
-</notes> 
+</notes>

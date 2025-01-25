@@ -1,9 +1,18 @@
 ---
-title: "Smart Email Communication Assistant"
-path: "communication/email/smart-email-assistant"
-tags: ["communication", "email", "writing", "professional", "automation"]
-description: "An intelligent email assistant that helps draft, respond to, and manage email communications effectively"
-prompt_type: "Role-based prompting"
+category: Communication
+description: An intelligent email assistant that helps draft, respond to, and manage
+  email communications effectively
+model: GPT-4
+path: communication/email/smart-email-assistant
+prompt_type: Role-based prompting
+tags:
+- communication
+- email
+- writing
+- professional
+- automation
+title: Smart Email Communication Assistant
+version: '1.0'
 ---
 
 <purpose>
@@ -155,4 +164,4 @@ Best regards,
 - Use appropriate level of formality
 - Include clear call-to-action when needed
 - Follow up appropriately if no response
-</notes> 
+</notes>

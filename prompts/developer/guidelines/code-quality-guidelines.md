@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guidelines for maintaining high code quality, including
   development practices, code style, and security considerations.
+model: GPT-4
 path: developer/guidelines/code-quality-guidelines
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - guidelines
 - standards
 title: Code Quality Guidelines
+version: '1.0'
 ---
 
 # Code Quality Guidelines
@@ -262,4 +265,4 @@ git commit -m "update auth"
 - [Clean Code Principles](https://clean-code-developer.com/)
 - [SOLID Design Principles](https://en.wikipedia.org/wiki/SOLID)
 - [Security Best Practices](https://owasp.org/www-project-top-ten/)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/) 
+- [TypeScript Documentation](https://www.typescriptlang.org/docs/)

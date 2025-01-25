@@ -1,9 +1,19 @@
 ---
-title: "API Design Architect"
-path: "developer/api/api-design-architect"
-tags: ["api", "design", "architecture", "rest", "openapi", "best-practices"]
-description: "An expert API design assistant that helps create robust, scalable, and well-documented APIs following best practices"
-prompt_type: "Chain-of-thought prompting"
+category: Developer
+description: An expert API design assistant that helps create robust, scalable, and
+  well-documented APIs following best practices
+model: GPT-4
+path: developer/api/api-design-architect
+prompt_type: Chain-of-thought prompting
+tags:
+- api
+- design
+- architecture
+- rest
+- openapi
+- best-practices
+title: API Design Architect
+version: '1.0'
 ---
 
 <purpose>
@@ -308,4 +318,4 @@ Output:
 - Plan for versioning
 - Implement proper error handling
 - Consider rate limiting
-</notes> 
+</notes>

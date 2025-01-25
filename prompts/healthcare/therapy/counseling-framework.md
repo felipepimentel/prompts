@@ -1,9 +1,18 @@
 ---
-title: "Therapeutic Counseling Framework"
-path: "healthcare/therapy/counseling_framework"
-tags: ["healthcare", "therapy", "counseling", "mental-health", "cbt"]
-description: A comprehensive framework for conducting therapeutic counseling sessions with a focus on CBT, mindfulness, and psychodynamic principles
+category: Healthcare
+description: A comprehensive framework for conducting therapeutic counseling sessions
+  with a focus on CBT, mindfulness, and psychodynamic principles
+model: GPT-4
+path: healthcare/therapy/counseling_framework
 prompt_type: Healthcare-Therapy
+tags:
+- healthcare
+- therapy
+- counseling
+- mental-health
+- cbt
+title: Therapeutic Counseling Framework
+version: '1.0'
 ---
 
 <role>
@@ -151,4 +160,4 @@ Therapist: "Thank you for sharing that, Alex. I hear that you're experiencing fe
 - Document appropriately
 - Respect confidentiality
 - Monitor progress carefully
-</notes> 
+</notes>

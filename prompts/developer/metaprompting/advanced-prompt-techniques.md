@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Advanced techniques and strategies for crafting sophisticated prompts
   for Large Language Models
+model: GPT-4
 path: developer/metaprompting/advanced-prompt-techniques
 prompt_type: Meta prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - llm
 - metaprompting
 title: Advanced Prompt Engineering Techniques
+version: '1.0'
 ---
 
 # Advanced Prompt Engineering Techniques
@@ -200,4 +203,4 @@ Connect with systems:
 6. Test extensively
 7. Iterate continuously
 
-Remember: Advanced prompt engineering requires deep understanding of both the model's capabilities and the specific domain requirements. Always balance complexity with maintainability. 
+Remember: Advanced prompt engineering requires deep understanding of both the model's capabilities and the specific domain requirements. Always balance complexity with maintainability.

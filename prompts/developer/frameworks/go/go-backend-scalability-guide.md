@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building scalable backend systems using Go,
   focusing on performance optimization, microservices architecture, and best practices.
+model: GPT-4
 path: developer/frameworks/go/go-backend-scalability-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - microservices
 - best-practices
 title: Go Backend Scalability Guide
+version: '1.0'
 ---
 
 # Go Backend Scalability Guide
@@ -372,4 +375,4 @@ func RecordError(errorType string) {
 - [gRPC Documentation](https://grpc.io/docs/)
 - [Protocol Buffers](https://developers.google.com/protocol-buffers)
 - [Redis Documentation](https://redis.io/documentation)
-- [Prometheus Documentation](https://prometheus.io/docs/) 
+- [Prometheus Documentation](https://prometheus.io/docs/)

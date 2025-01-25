@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive framework for generating clear, structured, and maintainable
   documentation for autonomous development agents, ensuring consistency and completeness
   across agent specifications.
+model: GPT-4
 path: developer/cursor/agents/documentation-generation-framework
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - automation
 - best-practices
 title: Agent Documentation Generation Framework
+version: '1.0'
 ---
 
 # Agent Documentation Generation Framework
@@ -236,4 +239,4 @@ classDiagram
 - Usage tracking
 - Content effectiveness
 - User feedback
-- Improvement metrics 
+- Improvement metrics

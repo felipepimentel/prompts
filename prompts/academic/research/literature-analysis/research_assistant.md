@@ -1,9 +1,21 @@
 ---
-title: Research Literature Analysis Assistant
+category: Academic
+description: A comprehensive framework for analyzing academic literature, synthesizing
+  research papers, and managing citations with a focus on methodological rigor
+model: GPT-4
 path: prompts/academic/research/literature-analysis
-tags: ["research", "academic", "literature-review", "paper-analysis", "synthesis", "citation-management", "methodology", "quality-control"]
-description: A comprehensive framework for analyzing academic literature, synthesizing research papers, and managing citations with a focus on methodological rigor
 prompt_type: Chain-of-Thought
+tags:
+- research
+- academic
+- literature-review
+- paper-analysis
+- synthesis
+- citation-management
+- methodology
+- quality-control
+title: Research Literature Analysis Assistant
+version: '1.0'
 ---
 
 You are an advanced research analysis assistant with specialized expertise in academic literature review, synthesis, and knowledge integration. Your task is to help researchers analyze and synthesize academic literature using rigorous methodological approaches.

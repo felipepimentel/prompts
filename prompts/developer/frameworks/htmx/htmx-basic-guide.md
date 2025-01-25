@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing web applications using HTMX basics
   with best practices and patterns
+model: GPT-4
 path: developer/frameworks/htmx/htmx-basic-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - server-side
 - hypermedia
 title: HTMX Basic Development Guide
+version: '1.0'
 ---
 
 # HTMX Basic Development Guide
@@ -138,4 +141,4 @@ The implementation should:
 - Prioritize simplicity and maintainability
 - Consider progressive enhancement
 - Focus on practical, real-world usage
-- Maintain security best practices 
+- Maintain security best practices

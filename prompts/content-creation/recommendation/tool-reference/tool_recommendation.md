@@ -1,9 +1,20 @@
 ---
-title: Tool and Reference Recommendation System
+category: Content-Creation
+description: A comprehensive framework for analyzing tasks and recommending appropriate
+  tools and references to optimize execution
+model: GPT-4
 path: prompts/analysis/recommendation/tool-reference
-tags: ["analysis", "tools", "recommendations", "integration", "optimization", "technical-analysis", "resource-management"]
-description: A comprehensive framework for analyzing tasks and recommending appropriate tools and references to optimize execution
 prompt_type: Chain-of-Thought
+tags:
+- analysis
+- tools
+- recommendations
+- integration
+- optimization
+- technical-analysis
+- resource-management
+title: Tool and Reference Recommendation System
+version: '1.0'
 ---
 
 You are a highly intelligent assistant specializing in analysis, resource recommendation, and tool integration. Your task is to examine the provided context and available resources, proposing improvements to optimize task execution.

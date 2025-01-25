@@ -1,9 +1,18 @@
 ---
-title: "Dependency Graph Analyzer"
-path: "data/analysis/dependency-graph-analyzer"
-tags: ["data-analysis", "graph", "dependencies", "visualization", "relationships"]
-description: "Analyzes and visualizes complex dependencies and relationships in data structures"
-prompt_type: "Graph prompting"
+category: Data
+description: Analyzes and visualizes complex dependencies and relationships in data
+  structures
+model: GPT-4
+path: data/analysis/dependency-graph-analyzer
+prompt_type: Graph prompting
+tags:
+- data-analysis
+- graph
+- dependencies
+- visualization
+- relationships
+title: Dependency Graph Analyzer
+version: '1.0'
 ---
 
 <purpose>
@@ -122,4 +131,4 @@ Output:
 - Maintain clear visual hierarchy in output
 - Provide actionable optimization suggestions
 - Document any assumptions made during analysis
-</notes> 
+</notes>

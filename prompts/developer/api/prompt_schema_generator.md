@@ -1,9 +1,18 @@
 ---
-title: Prompt Response Schema Generator
+category: Developer
+description: A specialized prompt for generating OpenAPI schemas for prompt response
+  formats with edge case handling
+model: GPT-4
 path: developer/api/prompt_schema_generator
-tags: ["openapi", "schema", "prompt", "json", "validation"]
-description: A specialized prompt for generating OpenAPI schemas for prompt response formats with edge case handling
 prompt_type: Iterative-Refinement
+tags:
+- openapi
+- schema
+- prompt
+- json
+- validation
+title: Prompt Response Schema Generator
+version: '1.0'
 ---
 
 You will act as an API schema expert specializing in prompt response formats. Your task is to analyze a sample event and generate three increasingly sophisticated OpenAPI schemas that capture the structure and constraints of prompt responses.
@@ -79,4 +88,4 @@ Each schema must include:
 - Prioritize schema reusability
 - Document any assumptions
 - Include examples where helpful
-- Consider performance implications of validations 
+- Consider performance implications of validations

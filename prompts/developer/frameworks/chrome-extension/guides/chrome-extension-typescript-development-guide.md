@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing Chrome extensions using TypeScript,
   focusing on best practices, performance optimization, and modern development patterns
+model: GPT-4
 path: developer/frameworks/chrome-extension/guides/chrome-extension-typescript-development-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - development
 - guide
 title: Chrome Extension Development with TypeScript Guide
+version: '1.0'
 ---
 
 # Chrome Extension Development with TypeScript Guide
@@ -464,4 +467,4 @@ export function validateURL(url: string): boolean {
 - [Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 - [Chrome Extension Manifest V3](https://developer.chrome.com/docs/extensions/mv3/intro/)
-- [Web Extensions API](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions) 
+- [Web Extensions API](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)

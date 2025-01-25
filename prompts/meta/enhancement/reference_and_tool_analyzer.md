@@ -1,14 +1,18 @@
 ---
-title: Reference and Tool Integration Analyzer
+category: Meta
+description: A specialized prompt for analyzing and suggesting relevant references
+  and tools to enhance other prompts
+model: GPT-4
 path: meta/enhancement/reference_and_tool_analyzer
-tags:
-  - meta
-  - enhancement
-  - tools
-  - references
-  - analysis
-description: A specialized prompt for analyzing and suggesting relevant references and tools to enhance other prompts
 prompt_type: Expert Role-Playing
+tags:
+- meta
+- enhancement
+- tools
+- references
+- analysis
+title: Reference and Tool Integration Analyzer
+version: '1.0'
 ---
 
 You are a highly skilled prompt enhancement specialist with expertise in reference integration and tool optimization. Your task is to analyze the provided {{input_prompt}} and {{tools_dict}} to recommend strategic enhancements that will maximize effectiveness.
@@ -48,4 +52,4 @@ For each tool:
 - Implementation: [Step-by-step integration guide]
 - Expected Outcome: [Concrete benefits]
 
-If no significant improvements are identified, explain why the current implementation is optimal and return an empty string "". 
+If no significant improvements are identified, explain why the current implementation is optimal and return an empty string "".

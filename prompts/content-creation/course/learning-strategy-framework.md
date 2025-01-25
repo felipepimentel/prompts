@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for developing personalized learning strategies
   that cater to individual student needs, learning styles, and educational goals.
+model: GPT-4
 path: content-creation/course/learning-strategy-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - educational-strategy
 - student-success
 title: Personalized Learning Strategy Framework
+version: '1.0'
 ---
 
 # Personalized Learning Strategy Framework
@@ -145,4 +148,4 @@ learning_strategy:
 9. Time Management
 10. Continuous Improvement
 
-Please develop personalized learning strategies following these guidelines to ensure optimal student success. 
+Please develop personalized learning strategies following these guidelines to ensure optimal student success.

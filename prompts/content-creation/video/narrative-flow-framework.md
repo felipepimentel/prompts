@@ -1,7 +1,9 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for developing engaging video narrative flows
   that effectively convey messages while maintaining audience interest and emotional
   connection.
+model: GPT-4
 path: content-creation/video/narrative-flow-framework
 prompt_type: Role-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - narrative-structure
 - content-flow
 title: Video Narrative Flow Framework
+version: '1.0'
 ---
 
 # Video Narrative Flow Framework
@@ -146,4 +149,4 @@ narrative_plan:
 9. Message Clarity
 10. Compelling CTA
 
-Please develop video narrative flows following these guidelines to ensure engaging and effective storytelling. 
+Please develop video narrative flows following these guidelines to ensure engaging and effective storytelling.

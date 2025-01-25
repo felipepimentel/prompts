@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive guide for integrating different frameworks and technologies
   in modern applications, focusing on best practices, common patterns, and maintainable
   architecture.
+model: GPT-4
 path: developer/guidelines/framework-integration-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - development
 - best-practices
 title: Framework Integration Guide
+version: '1.0'
 ---
 
 # Framework Integration Guide
@@ -350,4 +353,4 @@ describe('API Integration', () => {
 2. [Prisma Documentation](https://www.prisma.io/docs)
 3. [React Query Documentation](https://tanstack.com/query/latest)
 4. [Zustand Documentation](https://github.com/pmndrs/zustand)
-5. [Testing Library Documentation](https://testing-library.com/docs/) 
+5. [Testing Library Documentation](https://testing-library.com/docs/)

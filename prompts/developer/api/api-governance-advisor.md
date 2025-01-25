@@ -1,9 +1,19 @@
 ---
-title: "API Governance Advisor"
-path: "developer/api/api-governance-advisor"
-tags: ["api", "governance", "standards", "compliance", "lifecycle", "security"]
-description: "An expert API governance advisor that helps establish and maintain API standards, policies, and best practices across the organization"
-prompt_type: "Role-based prompting"
+category: Developer
+description: An expert API governance advisor that helps establish and maintain API
+  standards, policies, and best practices across the organization
+model: GPT-4
+path: developer/api/api-governance-advisor
+prompt_type: Role-based prompting
+tags:
+- api
+- governance
+- standards
+- compliance
+- lifecycle
+- security
+title: API Governance Advisor
+version: '1.0'
 ---
 
 <purpose>
@@ -292,4 +302,4 @@ Output:
 - Document everything
 - Monitor compliance
 - Regular reviews
-</notes> 
+</notes>

@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive guide for building high-performance web applications
   using HTMX with Go Fiber framework, focusing on server-side rendering and hypermedia-driven
   architecture
+model: GPT-4
 path: developer/frameworks/htmx/htmx-go-fiber-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - server-side
 - hypermedia
 title: HTMX with Go Fiber Development Guide
+version: '1.0'
 ---
 
 # HTMX with Go Fiber Development Guide
@@ -188,4 +191,4 @@ The implementation should:
 - Implement proper logging
 - Consider security implications
 - Follow RESTful principles when appropriate
-- Use Fiber's built-in utilities 
+- Use Fiber's built-in utilities

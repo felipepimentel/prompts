@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for configuring and maintaining Cursor AI rules,
   focusing on project organization, code quality, and development workflows
+model: GPT-4
 path: developer/guidelines/cursor-rules
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - guidelines
 - ai-assistant
 title: Cursor Rules Configuration Guide
+version: '1.0'
 ---
 
 # Cursor Rules Configuration Guide
@@ -376,4 +379,4 @@ This guide provides detailed instructions for configuring and maintaining Cursor
 - [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)
 - [React Best Practices](https://reactjs.org/docs/hooks-rules.html)
 - [Next.js Documentation](https://nextjs.org/docs)
-- [FastAPI Best Practices](https://fastapi.tiangolo.com/tutorial/) 
+- [FastAPI Best Practices](https://fastapi.tiangolo.com/tutorial/)

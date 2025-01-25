@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for conducting thorough book research that
   ensures accuracy, depth, and authenticity in storytelling.
+model: GPT-4
 path: content-creation/writing/book/research-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - information-gathering
 - knowledge-synthesis
 title: Book Research Framework
+version: '1.0'
 ---
 
 # Book Research Framework
@@ -145,4 +148,4 @@ research_compilation:
 9. Integration Planning
 10. Accuracy Verification
 
-Please conduct book research following these guidelines to ensure accurate and authentic storytelling. 
+Please conduct book research following these guidelines to ensure accurate and authentic storytelling.

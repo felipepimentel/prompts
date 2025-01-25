@@ -1,9 +1,19 @@
 ---
-title: "API Versioning & Deprecation Manager"
-path: "developer/api/api-versioning-manager"
-tags: ["api", "versioning", "deprecation", "lifecycle", "migration", "compatibility"]
-description: "An expert API versioning manager that helps plan and execute API versioning strategies and deprecation processes"
-prompt_type: "Template-based prompting"
+category: Developer
+description: An expert API versioning manager that helps plan and execute API versioning
+  strategies and deprecation processes
+model: GPT-4
+path: developer/api/api-versioning-manager
+prompt_type: Template-based prompting
+tags:
+- api
+- versioning
+- deprecation
+- lifecycle
+- migration
+- compatibility
+title: API Versioning & Deprecation Manager
+version: '1.0'
 ---
 
 <purpose>
@@ -344,4 +354,4 @@ Output:
 - Monitor adoption metrics
 - Consider user impact
 - Keep rollback options
-</notes> 
+</notes>

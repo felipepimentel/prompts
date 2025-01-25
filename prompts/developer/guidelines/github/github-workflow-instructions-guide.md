@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for GitHub workflows, including branching strategies,
   commit conventions, and collaboration best practices
+model: GPT-4
 path: developer/guidelines/github/github-workflow-instructions-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - instructions
 - version-control
 title: GitHub Workflow Instructions Guide
+version: '1.0'
 ---
 
 # GitHub Workflow Instructions Guide
@@ -342,4 +345,4 @@ jobs:
 - [GitHub Actions Documentation](https://docs.github.com/en/actions)
 - [Conventional Commits](https://www.conventionalcommits.org/)
 - [Git Documentation](https://git-scm.com/doc)
-- [GitHub Security Best Practices](https://docs.github.com/en/code-security) 
+- [GitHub Security Best Practices](https://docs.github.com/en/code-security)

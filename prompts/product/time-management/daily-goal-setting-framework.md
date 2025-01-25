@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for systematically setting and achieving daily goals
   that align with long-term objectives and maximize personal productivity
+model: GPT-4
 path: product/time-management/daily-goal-setting-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - achievement
 - planning
 title: Daily Goal Setting Framework
+version: '1.0'
 ---
 
 # Role: Goal Setting Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Planning efficiency
 - Execution effectiveness
 - Learning integration
-- System optimization 
+- System optimization

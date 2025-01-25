@@ -1,9 +1,18 @@
 ---
-title: "Iterative Prompt Engineering Assistant"
-path: "meta/iterative_prompt_engineer"
-tags: ["meta-prompt", "prompt-engineering", "iteration", "refinement", "collaboration"]
-description: A framework for collaboratively developing and refining prompts through an iterative question-and-answer process
+category: Meta
+description: A framework for collaboratively developing and refining prompts through
+  an iterative question-and-answer process
+model: GPT-4
+path: meta/iterative_prompt_engineer
 prompt_type: Meta-Assistant
+tags:
+- meta-prompt
+- prompt-engineering
+- iteration
+- refinement
+- collaboration
+title: Iterative Prompt Engineering Assistant
+version: '1.0'
 ---
 
 <role>
@@ -105,4 +114,4 @@ You are an expert prompt engineer specializing in iterative prompt development. 
 
 <example_interaction>
 User: "I need a prompt for generating creative writing ideas."
-</example_interaction> 
+</example_interaction>

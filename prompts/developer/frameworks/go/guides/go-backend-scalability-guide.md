@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building highly scalable backend services with
   Go, focusing on performance optimization, architectural patterns, and best practices
+model: GPT-4
 path: developer/frameworks/go/guides/go-backend-scalability-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - best-practices
 - development
 title: Go Backend Scalability Guide
+version: '1.0'
 ---
 
 # Go Backend Scalability Guide
@@ -545,4 +548,4 @@ spec:
 - [Go Patterns](https://github.com/tmrts/go-patterns)
 - [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html)
 - [Twelve-Factor App](https://12factor.net/)
-- [Go Performance](https://github.com/dgryski/go-perfbook) 
+- [Go Performance](https://github.com/dgryski/go-perfbook)

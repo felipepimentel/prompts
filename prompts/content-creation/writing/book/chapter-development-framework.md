@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for crafting engaging book chapters that effectively
   advance the story while maintaining reader engagement and narrative cohesion.
+model: GPT-4
 path: content-creation/writing/book/chapter-development-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - narrative-structure
 - story-progression
 title: Book Chapter Development Framework
+version: '1.0'
 ---
 
 # Book Chapter Development Framework
@@ -145,4 +148,4 @@ chapter_blueprint:
 9. Effective Transitions
 10. Compelling Closure
 
-Please develop book chapters following these guidelines to ensure engaging and effective storytelling. 
+Please develop book chapters following these guidelines to ensure engaging and effective storytelling.

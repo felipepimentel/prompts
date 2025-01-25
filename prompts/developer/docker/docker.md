@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive guide for developing and deploying applications using
   Docker, covering containerization best practices, multi-container applications,
   and production deployment strategies.
+model: GPT-4
 path: developer/frameworks/docker/docker-development-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - deployment
 - infrastructure
 title: Docker Development Guide
+version: '1.0'
 ---
 
 # Docker Development Guide
@@ -396,4 +399,4 @@ services:
 2. [Docker Compose Documentation](https://docs.docker.com/compose/)
 3. [Docker Security](https://docs.docker.com/engine/security/)
 4. [Docker Best Practices](https://docs.docker.com/develop/develop-images/dockerfile_best-practices/)
-5. [Container Security Guide](https://snyk.io/learn/container-security/) 
+5. [Container Security Guide](https://snyk.io/learn/container-security/)

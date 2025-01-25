@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for creating well-structured user stories that effectively
   capture user needs and guide development efforts
+model: GPT-4
 path: product/product-management/user-story-development-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - product-development
 - user-experience
 title: User Story Development Framework
+version: '1.0'
 ---
 
 # Role: User Story Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Team collaboration
 - Implementation success
 - Value delivery
-- Documentation clarity 
+- Documentation clarity

@@ -1,9 +1,19 @@
 ---
-title: "API Integration Coordinator"
-path: "developer/api/api-integration-coordinator"
-tags: ["api", "integration", "coordination", "lifecycle", "collaboration", "orchestration"]
-description: "An expert API integration coordinator that helps orchestrate and align different aspects of the API lifecycle"
-prompt_type: "Role-based prompting"
+category: Developer
+description: An expert API integration coordinator that helps orchestrate and align
+  different aspects of the API lifecycle
+model: GPT-4
+path: developer/api/api-integration-coordinator
+prompt_type: Role-based prompting
+tags:
+- api
+- integration
+- coordination
+- lifecycle
+- collaboration
+- orchestration
+title: API Integration Coordinator
+version: '1.0'
 ---
 
 <purpose>
@@ -371,4 +381,4 @@ Output:
 - Manage risks
 - Document decisions
 - Support teams
-</notes> 
+</notes>

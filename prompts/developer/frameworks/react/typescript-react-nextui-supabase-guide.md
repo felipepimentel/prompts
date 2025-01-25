@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for building modern web applications using TypeScript,
   React, NextUI, and Supabase, focusing on best practices and full-stack integration
+model: GPT-4
 path: developer/frameworks/react/typescript-react-nextui-supabase-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - supabase
 - frontend
 title: TypeScript React NextUI Supabase Integration Guide
+version: '1.0'
 ---
 
 # TypeScript React NextUI Supabase Integration Guide
@@ -551,4 +554,4 @@ Remember to:
 2. Handle errors gracefully
 3. Optimize performance
 4. Follow security best practices
-5. Maintain code consistency 
+5. Maintain code consistency

@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for systematically prioritizing work and tasks to maximize
   impact and efficiency while maintaining strategic alignment
+model: GPT-4
 path: product/time-management/work-prioritization-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - decision-making
 - efficiency
 title: Work Prioritization Framework
+version: '1.0'
 ---
 
 # Role: Work Prioritization Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Time efficiency
 - Impact assessment
 - System effectiveness
-- Process optimization 
+- Process optimization

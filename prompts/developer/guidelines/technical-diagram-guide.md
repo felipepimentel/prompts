@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for creating clear and effective technical diagrams,
   focusing on best practices, tools, and common patterns
+model: GPT-4
 path: developer/guidelines/technical-diagram-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - visualization
 - planning
 title: Technical Diagram Guide
+version: '1.0'
 ---
 
 # Technical Diagram Guide
@@ -283,4 +286,4 @@ Remember to:
 2. Focus on clarity
 3. Use consistent notation
 4. Include necessary context
-5. Update documentation 
+5. Update documentation

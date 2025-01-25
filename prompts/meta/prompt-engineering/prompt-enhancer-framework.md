@@ -1,6 +1,8 @@
 ---
+category: Meta
 description: Advanced prompt for systematically enhancing and optimizing prompts to
   improve AI interaction effectiveness and output quality
+model: GPT-4
 path: prompt/prompt-enhancer-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - communication
 - effectiveness
 title: Prompt Enhancement Framework
+version: '1.0'
 ---
 
 # Role: Prompt Engineering Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - System performance
 - User experience
 - Documentation
-- Version management 
+- Version management

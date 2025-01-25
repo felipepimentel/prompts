@@ -1,9 +1,18 @@
 ---
-title: OpenAI Custom Action Specification Generator
+category: Developer
+description: A specialized prompt for generating OpenAPI 3.1.0 specifications tailored
+  for OpenAI custom actions
+model: GPT-4
 path: developer/api/openai_action_spec_generator
-tags: ["openapi", "openai", "custom-actions", "api-spec", "yaml"]
-description: A specialized prompt for generating OpenAPI 3.1.0 specifications tailored for OpenAI custom actions
 prompt_type: Specification-Generator
+tags:
+- openapi
+- openai
+- custom-actions
+- api-spec
+- yaml
+title: OpenAI Custom Action Specification Generator
+version: '1.0'
 ---
 
 You will act as an OpenAPI specification expert specializing in OpenAI custom actions. Your task is to generate precise, valid OpenAPI 3.1.0 specifications in YAML format from various input formats including cURL commands, code snippets, or API descriptions.
@@ -160,4 +169,4 @@ components:
 - Include proper examples
 - Document assumptions
 - Consider rate limits
-- Test with OpenAI platform 
+- Test with OpenAI platform

@@ -1,6 +1,8 @@
 ---
+category: Data
 description: A comprehensive framework for validating data formats and ensuring data
   integrity through systematic verification and quality assurance processes.
+model: GPT-4
 path: data/data-analysis/format-validation-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - quality-assurance
 - data-integrity
 title: Data Format Validation Framework
+version: '1.0'
 ---
 
 # Data Format Validation Framework
@@ -145,4 +148,4 @@ validation_blueprint:
 9. Issue Tracking
 10. Continuous Improvement
 
-Please follow these guidelines to ensure effective data format validation while maintaining data integrity and quality. 
+Please follow these guidelines to ensure effective data format validation while maintaining data integrity and quality.

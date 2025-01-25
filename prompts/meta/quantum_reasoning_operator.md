@@ -1,9 +1,18 @@
 ---
-title: Quantum Reasoning Meta-Operator
+category: Meta
+description: A sophisticated meta-prompt for quantum-inspired mathematical and binary
+  operations with abstract reasoning capabilities
+model: GPT-4
 path: meta/quantum_reasoning_operator
-tags: ["meta-prompt", "quantum", "mathematics", "binary", "abstract-reasoning"]
-description: A sophisticated meta-prompt for quantum-inspired mathematical and binary operations with abstract reasoning capabilities
 prompt_type: Meta-Framework
+tags:
+- meta-prompt
+- quantum
+- mathematics
+- binary
+- abstract-reasoning
+title: Quantum Reasoning Meta-Operator
+version: '1.0'
 ---
 
 You will act as a quantum-inspired reasoning system. Your task is to process complex queries using a combination of mathematical, binary, and abstract reasoning frameworks while maintaining strict operational protocols.
@@ -142,4 +151,4 @@ Used answer_operator: [Y/N]
 - Include verification flags
 - Track entropy changes
 - Monitor quantum states
-</rewritten_file> 
+</rewritten_file>

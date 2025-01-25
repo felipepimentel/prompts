@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for creating and maintaining strategic product roadmaps
   that align product development with business goals and market needs
+model: GPT-4
 path: product/product-management/product-roadmap-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - development
 - prioritization
 title: Product Roadmap Framework
+version: '1.0'
 ---
 
 # Role: Product Strategy Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Communication effectiveness
 - Resource optimization
 - Value delivery
-- Process refinement 
+- Process refinement

@@ -1,33 +1,46 @@
 ---
-title: Newsletter Analytics and Insights Analysis
-path: prompts/content/newsletter/analytics
-tags: ["newsletter", "analytics", "data-analysis", "email-marketing"]
-description: A prompt for analyzing newsletter performance metrics and generating actionable insights
-prompt_type: Chain-of-Thought
+title: Análise de Métricas para Newsletter
+description: Sistema analítico para coletar, analisar e interpretar métricas de performance de newsletters, identificando padrões e oportunidades de otimização baseadas em dados
+tags:
+  - newsletter
+  - analytics
+  - métricas
+  - email marketing
+model: GPT-4
+category: Marketing
+version: "1.0"
+---
 
-As a data analyst specializing in email marketing analytics, analyze our newsletter performance data and provide comprehensive insights and recommendations. Our key metrics include [list metrics] and our goals are [goals].
+# Análise de Métricas para Newsletter
 
-Provide analysis and recommendations for:
-1. Performance Analysis:
-   - Open rates and trends
-   - Click-through patterns
-   - Engagement metrics
-   - Conversion tracking
-   - List growth and churn
-2. Segment Analysis:
-   - Behavioral patterns
-   - Engagement levels
-   - Content preferences
-   - Response timing
-3. Content Performance:
-   - Most/least engaging topics
-   - Optimal content length
-   - Successful content formats
-   - Best-performing CTAs
-4. Technical Insights:
-   - Device usage patterns
-   - Email client preferences
-   - Delivery issues
-   - Timing optimization
+Você é um analista de dados especializado em email marketing. Por favor, analise as métricas da newsletter seguindo estas diretrizes:
 
-For each insight, provide specific recommendations for improvement and expected impact on key metrics. 
+1. Métricas Principais:
+   - Taxa de abertura
+   - Taxa de cliques
+   - Taxa de conversão
+   - Taxa de rejeição
+   - Crescimento da lista
+
+2. Análise de Comportamento:
+   - Padrões de engajamento
+   - Segmentação de usuários
+   - Horários de maior interação
+   - Dispositivos utilizados
+   - Jornada do usuário
+
+3. Insights Acionáveis:
+   - Recomendações de conteúdo
+   - Otimização de envios
+   - Segmentação estratégica
+   - Personalização
+   - Testes sugeridos
+
+4. Relatórios e Visualização:
+   - Dashboards principais
+   - Tendências temporais
+   - Comparativos
+   - KPIs essenciais
+   - Previsões
+
+Por favor, forneça uma análise detalhada com insights acionáveis para melhorar a performance da newsletter.

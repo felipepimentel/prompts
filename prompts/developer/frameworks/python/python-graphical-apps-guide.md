@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building graphical applications in Python using
   the Pyllments framework, focusing on component-based architecture and LLM integration.
+model: GPT-4
 path: developer/frameworks/python/python-graphical-apps-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - graphical-apps
 - llm
 title: Python Graphical Applications Guide
+version: '1.0'
 ---
 
 # Python Graphical Applications Guide
@@ -341,4 +344,4 @@ app.servable()
 - [Panel Documentation](https://panel.holoviz.org)
 - [Param Documentation](https://param.holoviz.org)
 - [Langchain Documentation](https://python.langchain.com)
-- [Python Type Hints](https://docs.python.org/3/library/typing.html) 
+- [Python Type Hints](https://docs.python.org/3/library/typing.html)

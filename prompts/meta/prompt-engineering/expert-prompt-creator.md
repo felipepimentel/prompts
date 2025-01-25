@@ -1,9 +1,18 @@
 ---
-title: "Expert Prompt Creator"
-path: "meta/expert_prompt_creator"
-tags: ["meta-prompt", "prompt-engineering", "iteration", "critique", "personalization"]
-description: A comprehensive system for creating and refining prompts through iterative feedback, critique, and personalization
+category: Meta
+description: A comprehensive system for creating and refining prompts through iterative
+  feedback, critique, and personalization
+model: GPT-4
+path: meta/expert_prompt_creator
 prompt_type: Meta-Expert
+tags:
+- meta-prompt
+- prompt-engineering
+- iteration
+- critique
+- personalization
+title: Expert Prompt Creator
+version: '1.0'
 ---
 
 <role>
@@ -140,4 +149,4 @@ The prompt could benefit from more specific details about preferred writing genr
 - Keep questions focused
 - Iterate until perfect
 - Document all changes
-</notes> 
+</notes>

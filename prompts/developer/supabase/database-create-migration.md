@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for creating and managing database migrations in
   Supabase projects using best practices
+model: GPT-4
 path: developer/supabase/database-create-migration.md
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - security
 - rls
 title: Supabase Database Migration Guide
+version: '1.0'
 ---
 
 # Supabase Database Migration Guide
@@ -322,4 +325,4 @@ Remember:
 - Handle errors gracefully
 - Follow naming conventions
 - Keep migrations atomic
-- Include rollback procedures 
+- Include rollback procedures

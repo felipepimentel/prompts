@@ -1,6 +1,8 @@
 ---
+category: Misc
 description: A comprehensive guide for integrating multiple frameworks and systems
   while ensuring seamless operation, maintainability, and optimal performance.
+model: GPT-4
 path: misc/framework-integration
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - development
 - documentation
 title: Framework Integration Guide
+version: '1.0'
 ---
 
 # Framework Integration Guide
@@ -219,4 +222,4 @@ integration_workflow:
 1. [Clean Code Principles](https://www.cleancodeconcepts.com)
 2. [SOLID Design Principles](https://www.solidprinciples.com)
 3. [Integration Patterns](https://www.enterpriseintegrationpatterns.com)
-4. [API Design Guidelines](https://apiguide.readthedocs.io) 
+4. [API Design Guidelines](https://apiguide.readthedocs.io)

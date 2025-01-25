@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for crafting compelling video scenes that effectively
   combine visual elements, character interactions, and narrative progression.
+model: GPT-4
 path: content-creation/video/scene-development-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - visual-storytelling
 - narrative-structure
 title: Scene Development Framework
+version: '1.0'
 ---
 
 # Scene Development Framework
@@ -145,4 +148,4 @@ scene_blueprint:
 9. Scene Economy
 10. Impactful Ending
 
-Please develop scenes following these guidelines to ensure compelling and effective visual storytelling. 
+Please develop scenes following these guidelines to ensure compelling and effective visual storytelling.

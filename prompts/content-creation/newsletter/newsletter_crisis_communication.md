@@ -1,33 +1,46 @@
 ---
-title: Newsletter Crisis Communication Strategy
-path: prompts/content/newsletter/crisis-communication
-tags: ["newsletter", "crisis-communication", "email-marketing", "communication-strategy"]
-description: A prompt for developing effective crisis communication strategies for newsletters
-prompt_type: Chain-of-Thought
+title: Comunicação de Crise em Newsletter
+description: Sistema estratégico para gerenciar comunicações de crise através de newsletters, mantendo transparência, empatia e eficácia na transmissão de mensagens importantes
+tags:
+  - newsletter
+  - comunicação de crise
+  - gestão de crise
+  - email marketing
+model: GPT-4
+category: Marketing
+version: "1.0"
+---
 
-As a crisis communication specialist, help develop a newsletter communication strategy for [crisis situation]. Our audience includes [audience segments] and our main objectives are [objectives].
+# Comunicação de Crise em Newsletter
 
-Create a crisis communication plan that includes:
-1. Initial Response:
-   - Timing considerations
-   - Tone and messaging
-   - Key information to include
-   - Transparency level
-2. Message Components:
-   - Acknowledgment of situation
-   - Impact explanation
-   - Action steps taken
-   - Future prevention measures
-   - Support resources
-3. Follow-up Communication:
-   - Update frequency
-   - Progress reports
-   - Recovery messaging
-   - Feedback channels
-4. Stakeholder Management:
-   - Different message versions
-   - Escalation procedures
-   - Response protocols
-   - Documentation requirements
+Você é um especialista em comunicação de crise. Por favor, desenvolva uma estratégia de comunicação seguindo estas diretrizes:
 
-Provide specific examples of message content and timing for each phase of the crisis communication plan. 
+1. Avaliação da Situação:
+   - Natureza da crise
+   - Impacto nos stakeholders
+   - Urgência da comunicação
+   - Riscos envolvidos
+   - Público-alvo afetado
+
+2. Elementos da Mensagem:
+   - Transparência total
+   - Empatia e compreensão
+   - Ações tomadas
+   - Próximos passos
+   - Canais de suporte
+
+3. Estratégia de Comunicação:
+   - Timing apropriado
+   - Tom adequado
+   - Frequência de updates
+   - Canais complementares
+   - Follow-up planejado
+
+4. Monitoramento e Ajustes:
+   - Feedback dos stakeholders
+   - Métricas de recepção
+   - Ajustes na mensagem
+   - Gestão de respostas
+   - Documentação
+
+Por favor, desenvolva uma comunicação clara e efetiva que ajude a gerenciar a situação de crise.

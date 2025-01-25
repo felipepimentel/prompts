@@ -1,9 +1,18 @@
 ---
-title: "AI Daily Planner & Optimizer"
-path: "productivity/planning/daily-planner-ai"
-tags: ["productivity", "planning", "time-management", "optimization", "daily-routine"]
-description: "An intelligent daily planner that helps optimize your schedule considering energy levels, priorities, and constraints"
-prompt_type: "Chain-of-thought prompting"
+category: Productivity
+description: An intelligent daily planner that helps optimize your schedule considering
+  energy levels, priorities, and constraints
+model: GPT-4
+path: productivity/planning/daily-planner-ai
+prompt_type: Chain-of-thought prompting
+tags:
+- productivity
+- planning
+- time-management
+- optimization
+- daily-routine
+title: AI Daily Planner & Optimizer
+version: '1.0'
 ---
 
 <purpose>
@@ -127,4 +136,4 @@ Output:
 - Allow flexibility in the schedule
 - Review and adjust based on actual progress
 - Consider task dependencies and context switching costs
-</notes> 
+</notes>

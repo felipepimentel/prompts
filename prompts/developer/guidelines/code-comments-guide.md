@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for writing effective code comments, focusing on
   best practices, documentation standards, and maintainability
+model: GPT-4
 path: developer/guidelines/code-comments-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - readability
 - maintenance
 title: Code Comments Guide
+version: '1.0'
 ---
 
 # Code Comments Guide
@@ -274,4 +277,4 @@ Remember to:
 2. Keep comments up to date
 3. Document complex logic
 4. Include usage examples
-5. Follow team standards 
+5. Follow team standards

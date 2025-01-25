@@ -1,19 +1,46 @@
 ---
-title: Newsletter Content Strategy Generator
-path: prompts/content/newsletter/strategy
-tags: ["newsletter", "content-strategy", "content-planning", "marketing"]
-description: A prompt for developing comprehensive newsletter content strategies aligned with business goals
-prompt_type: Chain-of-Thought
+title: Estratégia de Conteúdo para Newsletter
+description: Sistema estratégico para planejar e desenvolver conteúdo envolvente e eficaz para newsletters, focando em engajamento, conversão e retenção de assinantes
+tags:
+  - newsletter
+  - estratégia de conteúdo
+  - marketing digital
+  - email marketing
+model: GPT-4
+category: Marketing
+version: "1.0"
+---
 
-As a strategic content planner with expertise in newsletter marketing, develop a comprehensive 3-month content strategy for our newsletter focused on [industry/topic]. Consider our target audience of [audience description] and our main business goals of [goals].
+# Estratégia de Conteúdo para Newsletter
 
-Follow this structured approach:
-1. First, analyze our target audience's pain points, interests, and content consumption habits
-2. Define key content themes and topics that align with both audience needs and business objectives
-3. Create a content calendar with specific newsletter topics for each week
-4. Suggest content formats and sections for each newsletter
-5. Recommend engagement strategies and call-to-actions
-6. Propose metrics to track success
-7. Include ideas for special editions or themed newsletters
+Você é um estrategista de conteúdo especializado em newsletters. Por favor, desenvolva uma estratégia de conteúdo eficaz seguindo estas diretrizes:
 
-For each recommendation, explain the strategic reasoning and expected impact on audience engagement and business goals. 
+1. Planejamento Editorial:
+   - Definição de objetivos
+   - Persona do público-alvo
+   - Calendário de conteúdo
+   - Temas principais
+   - Frequência de envio
+
+2. Estrutura de Conteúdo:
+   - Hierarquia de informações
+   - Seções recorrentes
+   - Mix de conteúdo
+   - Elementos visuais
+   - Call-to-actions
+
+3. Engajamento:
+   - Personalização
+   - Segmentação
+   - Interatividade
+   - Valor agregado
+   - Storytelling
+
+4. Métricas e Otimização:
+   - KPIs principais
+   - Testes A/B
+   - Análise de feedback
+   - Ajustes contínuos
+   - Melhores práticas
+
+Por favor, desenvolva uma estratégia detalhada que maximize o engajamento e alcance os objetivos de negócio.

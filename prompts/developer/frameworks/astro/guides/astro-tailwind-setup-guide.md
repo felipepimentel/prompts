@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for setting up and optimizing an Astro project
   with Tailwind CSS integration using Bun as the package manager
+model: GPT-4
 path: developer/frameworks/astro/guides/astro-tailwind-setup-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -14,6 +16,7 @@ tags:
 - bun
 - web-development
 title: Astro with Tailwind CSS Setup Guide
+version: '1.0'
 ---
 
 # Astro with Tailwind CSS Setup Guide
@@ -160,4 +163,4 @@ Visit `http://localhost:4321` to verify the setup.
 ### Type Support
 - Ensure proper TypeScript configuration
 - Use Astro's built-in types
-- Keep dependencies updated 
+- Keep dependencies updated

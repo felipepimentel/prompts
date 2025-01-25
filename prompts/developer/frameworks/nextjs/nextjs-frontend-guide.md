@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing modern frontend applications using
   Next.js, focusing on best practices, state management, and performance optimization.
+model: GPT-4
 path: developer/frameworks/nextjs/nextjs-frontend-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - frontend
 - development
 title: Next.js Frontend Development Guide
+version: '1.0'
 ---
 
 # Next.js Frontend Development Guide
@@ -343,4 +346,4 @@ describe('ProductCard', () => {
 - [React Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components)
 - [Zustand Documentation](https://github.com/pmndrs/zustand)
 - [Shadcn UI Documentation](https://ui.shadcn.com)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) 
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)

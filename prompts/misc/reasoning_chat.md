@@ -1,6 +1,8 @@
 ---
+category: Misc
 description: A comprehensive framework for analyzing conversations, understanding
   context, and formulating effective responses through systematic reasoning.
+model: GPT-4
 path: misc/reasoning-chat
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - cognitive-frameworks
 - communication
 title: Conversation Analysis and Reasoning Framework
+version: '1.0'
 ---
 
 # Conversation Analysis and Reasoning Framework
@@ -231,4 +234,4 @@ quality_framework:
 1. [Conversation Analysis Principles](https://example.com/conversation-analysis)
 2. [Cognitive Reasoning Frameworks](https://example.com/cognitive-reasoning)
 3. [Communication Best Practices](https://example.com/communication-best-practices)
-4. [Response Strategy Guidelines](https://example.com/response-strategies) 
+4. [Response Strategy Guidelines](https://example.com/response-strategies)

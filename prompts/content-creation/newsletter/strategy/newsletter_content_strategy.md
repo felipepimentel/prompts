@@ -1,9 +1,20 @@
 ---
-title: Newsletter Content Strategy Generator
+category: Content-Creation
+description: A prompt for developing comprehensive newsletter content strategies aligned
+  with business goals and audience needs
+model: GPT-4
 path: prompts/content/newsletter/strategy
-tags: ["newsletter", "content-strategy", "content-planning", "marketing", "audience-engagement", "editorial-calendar", "content-optimization"]
-description: A prompt for developing comprehensive newsletter content strategies aligned with business goals and audience needs
 prompt_type: Chain-of-Thought
+tags:
+- newsletter
+- content-strategy
+- content-planning
+- marketing
+- audience-engagement
+- editorial-calendar
+- content-optimization
+title: Newsletter Content Strategy Generator
+version: '1.0'
 ---
 
 You are a strategic content planner with expertise in newsletter marketing and audience engagement. Your task is to develop a comprehensive content strategy that drives engagement and achieves business objectives.
@@ -123,4 +134,4 @@ Best Practices:
 - Monitor and adapt based on metrics
 - Test and optimize regularly
 - Build content libraries
-- Plan for scalability 
+- Plan for scalability

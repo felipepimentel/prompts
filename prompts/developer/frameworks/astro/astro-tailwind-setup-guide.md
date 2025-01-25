@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for setting up an Astro project with Tailwind CSS
   integration, focusing on efficient design construction.
+model: GPT-4
 path: developer/frameworks/astro/astro-tailwind-setup-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - guide
 - css
 title: Astro with Tailwind CSS Setup Guide
+version: '1.0'
 ---
 
 # Astro with Tailwind CSS Setup Guide
@@ -142,4 +145,4 @@ src/
 ### 3. Team Collaboration
 - Maintain style guide
 - Document custom utilities
-- Share component patterns 
+- Share component patterns

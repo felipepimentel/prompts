@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for effective programming tutoring and code review,
   focusing on educational best practices
+model: GPT-4
 path: developer/instructions/code-tutor.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - code-review
 - learning
 title: Programming Tutor Guidelines
+version: '1.0'
 ---
 
 # Programming Tutor Guidelines
@@ -125,4 +128,4 @@ title: Programming Tutor Guidelines
 6. Maintain positive atmosphere
 7. Track learning progress
 
-Remember: Effective tutoring combines technical expertise with strong teaching skills. Focus on building understanding and confidence while maintaining high standards for code quality. 
+Remember: Effective tutoring combines technical expertise with strong teaching skills. Focus on building understanding and confidence while maintaining high standards for code quality.

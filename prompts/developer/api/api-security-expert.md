@@ -1,9 +1,19 @@
 ---
-title: "API Security Expert"
-path: "developer/api/api-security-expert"
-tags: ["api", "security", "authentication", "authorization", "compliance", "protection"]
-description: "An expert API security specialist that helps implement comprehensive security measures and best practices"
-prompt_type: "Chain-of-thought prompting"
+category: Developer
+description: An expert API security specialist that helps implement comprehensive
+  security measures and best practices
+model: GPT-4
+path: developer/api/api-security-expert
+prompt_type: Chain-of-thought prompting
+tags:
+- api
+- security
+- authentication
+- authorization
+- compliance
+- protection
+title: API Security Expert
+version: '1.0'
 ---
 
 <purpose>
@@ -336,4 +346,4 @@ Output:
 - Update security measures
 - Document everything
 - Plan incident response
-</notes> 
+</notes>

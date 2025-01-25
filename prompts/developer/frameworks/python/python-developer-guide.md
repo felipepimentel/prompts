@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for Python developers, covering development environment
   setup, tools, workflows, and productivity tips
+model: GPT-4
 path: developer/frameworks/python/python-developer-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - productivity
 - workflow
 title: Python Developer Guide
+version: '1.0'
 ---
 
 # Python Developer Guide
@@ -377,4 +380,4 @@ Remember to:
 2. Stay updated with Python features
 3. Use appropriate tools for each task
 4. Follow security best practices
-5. Maintain good documentation 
+5. Maintain good documentation

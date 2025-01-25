@@ -1,7 +1,9 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for gathering, analyzing, and implementing
   feedback to improve content quality and effectiveness while maintaining alignment
   with objectives.
+model: GPT-4
 path: content-creation/writing/feedback-framework
 prompt_type: Role-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - content-improvement
 - quality-assurance
 title: Content Feedback Framework
+version: '1.0'
 ---
 
 # Content Feedback Framework
@@ -146,4 +149,4 @@ feedback_blueprint:
 9. Impact Assessment
 10. Process Refinement
 
-Please follow these guidelines to ensure effective feedback collection, analysis, and implementation for content improvement. 
+Please follow these guidelines to ensure effective feedback collection, analysis, and implementation for content improvement.

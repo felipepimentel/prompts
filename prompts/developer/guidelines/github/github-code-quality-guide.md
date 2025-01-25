@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for maintaining high code quality in GitHub repositories,
   including workflows, automation, and best practices
+model: GPT-4
 path: developer/guidelines/github/github-code-quality-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - development
 - workflow
 title: GitHub Code Quality Guidelines
+version: '1.0'
 ---
 
 # GitHub Code Quality Guidelines
@@ -468,4 +471,4 @@ jobs:
 - [GitHub Advanced Security](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security)
 - [ESLint Documentation](https://eslint.org/docs/user-guide)
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
-- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci) 
+- [Lighthouse CI](https://github.com/GoogleChrome/lighthouse-ci)

@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing memorable and effective taglines that
   capture brand essence and resonate with target audiences
+model: GPT-4
 path: product/product-management/tagline-creation-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - communication
 - copywriting
 title: Tagline Creation Framework
+version: '1.0'
 ---
 
 # Role: Brand Messaging Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Brand alignment
 - Market effectiveness
 - Cultural relevance
-- Competitive differentiation 
+- Competitive differentiation

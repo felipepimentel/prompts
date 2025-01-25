@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing Next.js 14 applications with TypeScript,
   Tailwind CSS, and SEO optimization, following modern best practices.
+model: GPT-4
 path: developer/frameworks/nextjs/nextjs-14-setup-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - best-practices
 - app-router
 title: Next.js 14 Development Guide
+version: '1.0'
 ---
 
 # Next.js 14 Development Guide
@@ -329,4 +332,4 @@ export async function POST(request: Request) {
 - [Next.js Documentation](https://nextjs.org/docs)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [React Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components) 
+- [React Server Components](https://nextjs.org/docs/app/building-your-application/rendering/server-components)

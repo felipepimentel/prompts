@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for creating clear and effective technical diagrams,
   covering various types of diagrams, tools, and best practices for technical documentation.
+model: GPT-4
 path: developer/guidelines/technical-diagram-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - visualization
 - communication
 title: Technical Diagram Creation Guide
+version: '1.0'
 ---
 
 # Technical Diagram Creation Guide
@@ -303,4 +306,4 @@ paths:
 2. [PlantUML Guide](https://plantuml.com/guide)
 3. [C4 Model](https://c4model.com/)
 4. [AWS Architecture Icons](https://aws.amazon.com/architecture/icons/)
-5. [Google Cloud Icons](https://cloud.google.com/icons) 
+5. [Google Cloud Icons](https://cloud.google.com/icons)

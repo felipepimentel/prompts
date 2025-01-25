@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for building modern web applications using Next.js
   14 App Router with Supabase, focusing on best practices and performance
+model: GPT-4
 path: developer/supabase/supabase-2.md
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - tailwind
 - development
 title: Next.js and Supabase Integration Guide
+version: '1.0'
 ---
 
 # Next.js and Supabase Integration Guide
@@ -443,4 +446,4 @@ Remember:
 - Follow React Server Components patterns
 - Implement proper error handling
 - Use proper loading states
-- Follow security best practices 
+- Follow security best practices

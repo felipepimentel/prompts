@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building modern web applications using HTMX,
   focusing on best practices, progressive enhancement, and server-side integration.
+model: GPT-4
 path: developer/frameworks/htmx/htmx-development-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - frontend
 - best-practices
 title: HTMX Development Guide
+version: '1.0'
 ---
 
 # HTMX Development Guide
@@ -219,4 +222,4 @@ function handleError(event) {
 - [HTMX Examples](https://htmx.org/examples/)
 - [HTMX Extensions](https://htmx.org/extensions/)
 - [HTMX Server-Side Integration](https://htmx.org/server-side/)
-- [HTMX Discord Community](https://htmx.org/discord) 
+- [HTMX Discord Community](https://htmx.org/discord)

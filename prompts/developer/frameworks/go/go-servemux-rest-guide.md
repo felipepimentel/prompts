@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building REST APIs using Go's standard library
   and ServeMux, focusing on best practices, security, and performance optimization.
+model: GPT-4
 path: developer/frameworks/go/go-servemux-rest-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - backend
 - best-practices
 title: Go ServeMux REST API Guide
+version: '1.0'
 ---
 
 # Go ServeMux REST API Guide
@@ -399,4 +402,4 @@ func TestHandleGetUser(t *testing.T) {
 - [Go Documentation](https://golang.org/doc/)
 - [net/http Package](https://pkg.go.dev/net/http)
 - [ServeMux Documentation](https://pkg.go.dev/net/http#ServeMux)
-- [REST API Best Practices](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design) 
+- [REST API Best Practices](https://docs.microsoft.com/en-us/azure/architecture/best-practices/api-design)

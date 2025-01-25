@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for generating engaging discussion topics that
   promote critical thinking, knowledge application, and meaningful student interaction.
+model: GPT-4
 path: content-creation/course/discussion-topics-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - student-engagement
 - collaborative-learning
 title: Discussion Topics Generator Framework
+version: '1.0'
 ---
 
 # Discussion Topics Generator Framework
@@ -145,4 +148,4 @@ discussion_plan:
 9. Meaningful Feedback
 10. Learning Integration
 
-Please generate discussion topics following these guidelines to ensure engaging and effective learning conversations. 
+Please generate discussion topics following these guidelines to ensure engaging and effective learning conversations.

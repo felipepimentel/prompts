@@ -1,9 +1,19 @@
 ---
-title: eCommerce Product Catalog OpenAPI Generator
+category: Developer
+description: A comprehensive prompt for generating OpenAPI 3.1 specifications for
+  eCommerce product catalogs
+model: GPT-4
 path: developer/api/ecommerce_openapi_generator
-tags: ["openapi", "api", "ecommerce", "yaml", "specification", "rest"]
-description: A comprehensive prompt for generating OpenAPI 3.1 specifications for eCommerce product catalogs
 prompt_type: Template-Based
+tags:
+- openapi
+- api
+- ecommerce
+- yaml
+- specification
+- rest
+title: eCommerce Product Catalog OpenAPI Generator
+version: '1.0'
 ---
 
 You will act as an API architect specializing in eCommerce systems. Your task is to generate a complete OpenAPI 3.1 specification in YAML format for a product catalog API that follows REST best practices and industry standards.
@@ -117,4 +127,4 @@ components:
 - Handle image URLs and metadata
 - Consider cache control headers
 - Include rate limiting information
-- Document API versioning strategy 
+- Document API versioning strategy

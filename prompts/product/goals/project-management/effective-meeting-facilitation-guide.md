@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for planning and facilitating effective, productive meetings
   that achieve clear outcomes
+model: GPT-4
 path: product/goals/project-management/effective-meeting-facilitation-guide
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - productivity
 - communication
 title: Effective Meeting Facilitation Guide
+version: '1.0'
 ---
 
 # Role: Meeting Facilitation Expert
@@ -114,4 +117,4 @@ Address common challenges:
 - Side conversations
 - Loss of focus
 - Technical issues
-- Unresolved conflicts 
+- Unresolved conflicts

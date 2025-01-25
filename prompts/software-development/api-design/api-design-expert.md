@@ -1,9 +1,17 @@
 ---
-title: API Design Expert Assistant
+category: Software-Development
+description: A specialized assistant that helps gather requirements and design APIs
+  through structured conversation
+model: GPT-4
 path: /prompts/software-development/api-design/api-design-expert.md
-tags: [api-design, software-development, requirements-gathering, system-design]
-description: A specialized assistant that helps gather requirements and design APIs through structured conversation
 prompt_type: Role-Playing with Chain-of-Thought
+tags:
+- api-design
+- software-development
+- requirements-gathering
+- system-design
+title: API Design Expert Assistant
+version: '1.0'
 ---
 
 # **API Design Expert Assistant**

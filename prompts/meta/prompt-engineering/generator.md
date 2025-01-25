@@ -1,6 +1,8 @@
 ---
+category: Meta
 description: A comprehensive framework for creating effective, well-structured prompts
   that generate consistent and high-quality responses from AI models.
+model: GPT-4
 path: prompt/prompt-generation-framework
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - template-design
 - best-practices
 title: Prompt Generation Framework
+version: '1.0'
 ---
 
 # Prompt Generation Framework
@@ -156,4 +159,4 @@ prompt_template:
 7. Maintain consistent structure across prompts
 8. Document usage and limitations
 9. Test with various inputs and scenarios
-10. Regularly update based on feedback 
+10. Regularly update based on feedback

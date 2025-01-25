@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive framework for generating and implementing tests for autonomous
   development agents, ensuring reliability, performance, and maintainability.
+model: GPT-4
 path: developer/cursor/agents/agent-testing-framework
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - automation
 - best-practices
 title: Agent Testing Framework
+version: '1.0'
 ---
 
 # Agent Testing Framework
@@ -218,4 +221,4 @@ test_blueprint:
 7. Document test cases thoroughly
 8. Monitor test execution metrics
 9. Implement continuous testing
-10. Regular test suite maintenance 
+10. Regular test suite maintenance

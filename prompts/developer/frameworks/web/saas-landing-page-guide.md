@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing high-converting SaaS landing pages
   with modern web technologies, focusing on user experience and conversion optimization
+model: GPT-4
 path: developer/frameworks/web/saas-landing-page-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - conversion
 - seo
 title: SaaS Landing Page Development Guide
+version: '1.0'
 ---
 
 # SaaS Landing Page Development Guide
@@ -270,4 +273,4 @@ The landing page should:
 - Ensure accessibility
 - Track analytics
 - Test thoroughly
-- Update regularly 
+- Update regularly

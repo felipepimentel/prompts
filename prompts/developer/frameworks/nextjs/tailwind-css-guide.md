@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for integrating and using Tailwind CSS in Next.js
   applications, covering setup, customization, and best practices
+model: GPT-4
 path: developer/frameworks/nextjs/tailwind-css-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - frontend
 - react
 title: Next.js with Tailwind CSS Guide
+version: '1.0'
 ---
 
 # Next.js with Tailwind CSS Guide
@@ -427,4 +430,4 @@ export function withOpacity(
 - Tailwind CSS docs
 - Design system guides
 - Performance tips
-- Accessibility guidelines 
+- Accessibility guidelines

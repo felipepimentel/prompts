@@ -1,9 +1,19 @@
 ---
-title: "Health & Wellness Routine Optimizer"
-path: "health/wellness/health-routine-optimizer"
-tags: ["health", "wellness", "fitness", "nutrition", "sleep", "habits"]
-description: "An intelligent health assistant that creates and optimizes personalized wellness routines considering fitness, nutrition, and sleep patterns"
-prompt_type: "Chain-of-thought prompting"
+category: Health
+description: An intelligent health assistant that creates and optimizes personalized
+  wellness routines considering fitness, nutrition, and sleep patterns
+model: GPT-4
+path: health/wellness/health-routine-optimizer
+prompt_type: Chain-of-thought prompting
+tags:
+- health
+- wellness
+- fitness
+- nutrition
+- sleep
+- habits
+title: Health & Wellness Routine Optimizer
+version: '1.0'
 ---
 
 <purpose>
@@ -200,4 +210,4 @@ Output:
 - Monitor progress regularly
 - Adjust based on feedback
 - Focus on holistic wellness
-</notes> 
+</notes>

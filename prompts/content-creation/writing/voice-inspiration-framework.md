@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for developing unique content voices by drawing
   inspiration from diverse writing styles while maintaining authenticity and effectiveness.
+model: GPT-4
 path: content-creation/writing/voice-inspiration-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - content-style
 - creative-inspiration
 title: Content Voice Inspiration Framework
+version: '1.0'
 ---
 
 # Content Voice Inspiration Framework
@@ -167,4 +170,4 @@ voice_blueprint:
 9. Refine Continuously
 10. Monitor Impact
 
-Please develop content voices following these guidelines to create unique and effective writing styles while maintaining authenticity and impact. 
+Please develop content voices following these guidelines to create unique and effective writing styles while maintaining authenticity and impact.

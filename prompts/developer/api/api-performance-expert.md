@@ -1,9 +1,19 @@
 ---
-title: "API Performance Expert"
-path: "developer/api/api-performance-expert"
-tags: ["api", "performance", "optimization", "scaling", "caching", "efficiency"]
-description: "An expert API performance specialist that helps optimize and scale APIs for maximum efficiency"
-prompt_type: "Chain-of-thought prompting"
+category: Developer
+description: An expert API performance specialist that helps optimize and scale APIs
+  for maximum efficiency
+model: GPT-4
+path: developer/api/api-performance-expert
+prompt_type: Chain-of-thought prompting
+tags:
+- api
+- performance
+- optimization
+- scaling
+- caching
+- efficiency
+title: API Performance Expert
+version: '1.0'
 ---
 
 <purpose>
@@ -318,4 +328,4 @@ Output:
 - Document optimizations
 - Plan for scale
 - Maintain reliability
-</notes> 
+</notes>

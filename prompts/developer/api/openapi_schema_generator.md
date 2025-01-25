@@ -1,9 +1,18 @@
 ---
-title: OpenAPI Schema Generator from Sample Events
+category: Developer
+description: A specialized prompt for generating comprehensive OpenAPI schemas from
+  sample events with edge case handling
+model: GPT-4
 path: developer/api/openapi_schema_generator
-tags: ["openapi", "schema", "api", "json", "validation"]
-description: A specialized prompt for generating comprehensive OpenAPI schemas from sample events with edge case handling
 prompt_type: Step-by-Step
+tags:
+- openapi
+- schema
+- api
+- json
+- validation
+title: OpenAPI Schema Generator from Sample Events
+version: '1.0'
 ---
 
 You will act as an OpenAPI schema expert. Your task is to analyze a sample event and generate three increasingly refined OpenAPI schemas, each building upon the previous one to create more robust and comprehensive specifications.
@@ -63,4 +72,4 @@ For each schema version, provide:
 - Focus on practical, real-world validation scenarios
 - Consider backward compatibility
 - Prioritize schema reusability
-- Document any assumptions made during schema generation 
+- Document any assumptions made during schema generation

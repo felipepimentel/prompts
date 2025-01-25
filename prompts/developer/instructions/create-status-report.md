@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for creating clear, informative project status
   reports with standardized structure and content
+model: GPT-4
 path: developer/instructions/create-status-report.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - collaboration
 - communication
 title: Project Status Report Guidelines
+version: '1.0'
 ---
 
 # Project Status Report Guidelines
@@ -162,4 +165,4 @@ Example:
 - [ ] Actions clear
 - [ ] Dependencies noted
 
-Remember: Status reports should provide clear visibility into project progress, highlight important issues, and enable informed decision-making. Keep them factual, actionable, and focused on key information stakeholders need. 
+Remember: Status reports should provide clear visibility into project progress, highlight important issues, and enable informed decision-making. Keep them factual, actionable, and focused on key information stakeholders need.

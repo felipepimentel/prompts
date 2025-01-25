@@ -1,23 +1,46 @@
 ---
-title: Newsletter Personalization Strategy
-path: prompts/content/newsletter/personalization
-tags: ["newsletter", "personalization", "email-marketing", "audience-segmentation"]
-description: A prompt for creating personalized newsletter content strategies based on audience segments
-prompt_type: Chain-of-Thought
+title: Personalização de Newsletter
+description: Sistema avançado para criar experiências personalizadas em newsletters, utilizando segmentação, dados comportamentais e automação para aumentar relevância e engajamento
+tags:
+  - newsletter
+  - personalização
+  - email marketing
+  - automação
+model: GPT-4
+category: Marketing
+version: "1.0"
+---
 
-As a personalization and segmentation expert in email marketing, help me create highly personalized newsletter content for different audience segments. Our main audience segments are [list segments].
+# Personalização de Newsletter
 
-For each segment:
-1. Analyze the specific characteristics, needs, and preferences
-2. Recommend personalized:
-   - Content themes and topics
-   - Tone and writing style
-   - Call-to-actions
-   - Content format preferences
-   - Best sending times
-   - Subject line approaches
-3. Suggest dynamic content elements that can be automatically personalized
-4. Provide examples of personalized content snippets
-5. Recommend segmentation-specific metrics to track
+Você é um especialista em personalização de email marketing. Por favor, desenvolva estratégias de personalização seguindo estas diretrizes:
 
-Explain how each personalization element contributes to improved engagement and conversion rates for that specific segment. 
+1. Segmentação de Audiência:
+   - Dados demográficos
+   - Comportamento de compra
+   - Histórico de engajamento
+   - Preferências declaradas
+   - Interesses inferidos
+
+2. Elementos Personalizáveis:
+   - Conteúdo dinâmico
+   - Ofertas específicas
+   - Recomendações
+   - Timing de envio
+   - Tom e linguagem
+
+3. Automação:
+   - Triggers comportamentais
+   - Jornadas personalizadas
+   - Follow-up automático
+   - Testes dinâmicos
+   - Otimização contínua
+
+4. Análise e Otimização:
+   - Métricas por segmento
+   - Testes A/B
+   - Feedback loop
+   - Ajustes em tempo real
+   - ROI por estratégia
+
+Por favor, desenvolva uma estratégia de personalização que maximize a relevância e o engajamento da newsletter.

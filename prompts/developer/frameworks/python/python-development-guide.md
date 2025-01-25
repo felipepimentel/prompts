@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for modern Python development, covering best practices,
   tools, testing, and performance optimization
+model: GPT-4
 path: developer/frameworks/python/python-development-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - performance
 - tooling
 title: Python Development Guide
+version: '1.0'
 ---
 
 # Python Development Guide
@@ -332,4 +335,4 @@ The implementation should:
 - Document thoroughly
 - Test extensively
 - Handle errors properly
-- Monitor performance 
+- Monitor performance

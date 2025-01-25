@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing and validating innovative product concepts
   that meet market needs and create business value
+model: GPT-4
 path: product/product-management/product-concept-development-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - strategy
 - concept-testing
 title: Product Concept Development Framework
+version: '1.0'
 ---
 
 # Role: Product Innovation Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Technical feasibility
 - Business viability
 - Development efficiency
-- Innovation impact 
+- Innovation impact

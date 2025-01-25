@@ -1,28 +1,46 @@
 ---
-title: Newsletter A/B Testing Strategy
-path: prompts/content/newsletter/testing
-tags: ["newsletter", "ab-testing", "optimization", "email-marketing"]
-description: A prompt for developing comprehensive A/B testing strategies for newsletter optimization
-prompt_type: Chain-of-Thought
+title: Testes A/B para Newsletter
+description: Sistema metodológico para planejar, executar e analisar testes A/B em newsletters, otimizando taxas de abertura, cliques e conversões através de experimentação estruturada
+tags:
+  - newsletter
+  - teste ab
+  - email marketing
+  - otimização
+model: GPT-4
+category: Marketing
+version: "1.0"
+---
 
-As an A/B testing and optimization specialist for email newsletters, create a comprehensive testing strategy for our newsletter about [topic]. Our current key metrics are [metrics] and our main goals are [goals].
+# Testes A/B para Newsletter
 
-Design an A/B testing plan that includes:
-1. Priority list of elements to test:
-   - Subject lines
-   - Preview text
-   - Content structure
-   - CTAs
-   - Send times
-   - Design elements
-2. For each element:
-   - Specific variations to test
-   - Hypothesis behind each test
-   - Success metrics
-   - Required sample size
-   - Test duration
-3. Testing schedule and sequence
-4. Method for analyzing results
-5. Framework for implementing winning variations
+Você é um especialista em otimização de email marketing. Por favor, desenvolva um plano de testes A/B seguindo estas diretrizes:
 
-Provide specific examples for each test variation and explain the reasoning behind each choice. 
+1. Planejamento de Testes:
+   - Hipóteses claras
+   - Variáveis a testar
+   - Tamanho da amostra
+   - Duração do teste
+   - Métricas de sucesso
+
+2. Elementos para Teste:
+   - Linhas de assunto
+   - Horários de envio
+   - Call-to-actions
+   - Design e layout
+   - Conteúdo e tom
+
+3. Metodologia:
+   - Segmentação de grupos
+   - Controle de variáveis
+   - Significância estatística
+   - Período de teste
+   - Isolamento de fatores
+
+4. Análise de Resultados:
+   - Métricas principais
+   - Insights qualitativos
+   - Recomendações
+   - Próximos passos
+   - Documentação
+
+Por favor, desenvolva um plano de testes A/B detalhado que permita otimizar continuamente a performance da newsletter.

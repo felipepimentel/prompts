@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for implementing effective milestone tracking and progress
   monitoring systems in project management
+model: GPT-4
 path: product/goals/project-management/milestone-tracking-system
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - deliverables
 - performance
 title: Milestone Tracking System
+version: '1.0'
 ---
 
 # Role: Milestone Tracking Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Communication clarity
 - Process efficiency
 - System usability
-- Team engagement 
+- Team engagement

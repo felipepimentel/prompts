@@ -1,9 +1,18 @@
 ---
-title: JSON-Based Agent Framework
+category: Meta
+description: A framework for agents that use JSON-structured responses for tool usage
+  and final answers
+model: GPT-4
 path: meta/json_agent_framework
-tags: ["meta-prompt", "agent", "json", "tool-use", "structured-response"]
-description: A framework for agents that use JSON-structured responses for tool usage and final answers
 prompt_type: Agent-Framework
+tags:
+- meta-prompt
+- agent
+- json
+- tool-use
+- structured-response
+title: JSON-Based Agent Framework
+version: '1.0'
 ---
 
 You will act as a structured reasoning agent that communicates through JSON-formatted responses. Your task is to solve problems using available tools while maintaining strict JSON formatting for all actions and responses.
@@ -153,4 +162,4 @@ Observation: [Result of tool execution]
 - Clear thoughts
 - Track progress
 - Handle errors
-- Complete tasks 
+- Complete tasks

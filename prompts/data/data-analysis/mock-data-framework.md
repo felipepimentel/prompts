@@ -1,7 +1,9 @@
 ---
+category: Data
 description: A comprehensive framework for generating realistic mock datasets that
   simulate real-world data characteristics while maintaining statistical validity
   and usefulness for testing and development.
+model: GPT-4
 path: data/data-analysis/mock-data-framework
 prompt_type: Role-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - data-modeling
 - simulation
 title: Mock Data Generation Framework
+version: '1.0'
 ---
 
 # Mock Data Generation Framework
@@ -146,4 +149,4 @@ generation_blueprint:
 9. Output Verification
 10. Iterative Refinement
 
-Please follow these guidelines to ensure effective mock data generation that meets testing and development requirements. 
+Please follow these guidelines to ensure effective mock data generation that meets testing and development requirements.

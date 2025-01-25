@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive set of guidelines for maintaining high code quality in
   GitHub repositories, focusing on verification, clarity, and preservation of existing
   functionality.
+model: GPT-4
 path: developer/guidelines/github-code-quality-guidelines
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - development
 - guidelines
 title: GitHub Code Quality Guidelines
+version: '1.0'
 ---
 
 # GitHub Code Quality Guidelines
@@ -123,4 +126,4 @@ avoid:
 ## Resources
 - [GitHub Documentation](https://docs.github.com)
 - [Code Review Guidelines](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/about-pull-request-reviews)
-- [Best Practices for Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/best-practices-for-pull-requests) 
+- [Best Practices for Pull Requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/best-practices-for-pull-requests)

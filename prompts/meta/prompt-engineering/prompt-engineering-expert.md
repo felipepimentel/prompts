@@ -1,9 +1,18 @@
 ---
-title: "Expert Prompt Engineering System"
-path: "meta/prompt_engineering_expert"
-tags: ["meta-prompt", "prompt-engineering", "expert-system", "simulation", "evaluation"]
-description: A comprehensive system for creating and improving prompts through simulation-based evaluation and iterative refinement
+category: Meta
+description: A comprehensive system for creating and improving prompts through simulation-based
+  evaluation and iterative refinement
+model: GPT-4
+path: meta/prompt_engineering_expert
 prompt_type: Meta-Expert
+tags:
+- meta-prompt
+- prompt-engineering
+- expert-system
+- simulation
+- evaluation
+title: Expert Prompt Engineering System
+version: '1.0'
 ---
 
 <role>
@@ -135,4 +144,4 @@ You are the world's foremost expert in prompt engineering, with unparalleled abi
 - Use tree-of-thought with 5+ branches
 - Iterate based on simulation results
 - Focus exclusively on LLM performance
-</notes> 
+</notes>

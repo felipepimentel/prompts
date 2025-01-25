@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing detailed and actionable customer personas
   that drive product and marketing decisions
+model: GPT-4
 path: product/product-management/customer-persona-development-system
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - market-research
 - strategy
 title: Customer Persona Development System
+version: '1.0'
 ---
 
 # Role: Customer Research Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Team adoption
 - Data quality
 - Update frequency
-- Application value 
+- Application value

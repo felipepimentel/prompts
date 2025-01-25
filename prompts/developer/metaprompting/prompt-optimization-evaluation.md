@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Systematic approaches for optimizing and evaluating prompt effectiveness
   in Large Language Models
+model: GPT-4
 path: developer/metaprompting/prompt-optimization-evaluation
 prompt_type: Meta prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - evaluation
 - metaprompting
 title: Prompt Optimization and Evaluation
+version: '1.0'
 ---
 
 # Prompt Optimization and Evaluation
@@ -230,4 +233,4 @@ Optimization Loop:
 6. Scalable solution
 7. User satisfaction
 
-Remember: Prompt optimization is an iterative process that requires systematic evaluation and continuous refinement. Balance performance improvements with maintainability and user needs. 
+Remember: Prompt optimization is an iterative process that requires systematic evaluation and continuous refinement. Balance performance improvements with maintainability and user needs.

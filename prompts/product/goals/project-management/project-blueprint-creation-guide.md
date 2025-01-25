@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for creating comprehensive project blueprints that serve
   as strategic roadmaps for project execution
+model: GPT-4
 path: product/goals/project-management/project-blueprint-creation-guide
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - documentation
 - planning
 title: Project Blueprint Creation Guide
+version: '1.0'
 ---
 
 # Role: Project Blueprint Architect
@@ -117,4 +120,4 @@ Establish processes for:
 - Version control
 - Update procedures
 - Feedback incorporation
-- Continuous improvement 
+- Continuous improvement

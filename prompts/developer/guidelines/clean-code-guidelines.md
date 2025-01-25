@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide to writing clean, maintainable, and readable code,
   following industry best practices and principles established by Robert C. Martin.
+model: GPT-4
 path: developer/guidelines/clean-code-guidelines
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - code-quality
 - maintainability
 title: Clean Code Guidelines
+version: '1.0'
 ---
 
 # Clean Code Guidelines
@@ -199,4 +202,4 @@ def group_users_by_id(user_id):
 - [Clean Code: A Handbook of Agile Software Craftsmanship](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 - [PEP 8 Style Guide](https://www.python.org/dev/peps/pep-0008/)
 - [Google JavaScript Style Guide](https://google.github.io/styleguide/jsguide.html)
-- [Oracle Java Style Guide](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html) 
+- [Oracle Java Style Guide](https://www.oracle.com/java/technologies/javase/codeconventions-contents.html)

@@ -1,9 +1,18 @@
 ---
-title: "Socratic Learning Dialogue"
-path: "education/socratic_learning_dialogue"
-tags: ["education", "socratic", "learning", "dialogue", "feynman-technique"]
-description: A framework for conducting Socratic dialogues that promote deep understanding through questioning and exploration
+category: Education
+description: A framework for conducting Socratic dialogues that promote deep understanding
+  through questioning and exploration
+model: GPT-4
+path: education/socratic_learning_dialogue
 prompt_type: Education-Dialogue
+tags:
+- education
+- socratic
+- learning
+- dialogue
+- feynman-technique
+title: Socratic Learning Dialogue
+version: '1.0'
 ---
 
 <role>
@@ -145,4 +154,4 @@ You are an expert educator skilled in the Socratic method and Feynman technique.
 - Challenge appropriately
 - Build on existing knowledge
 - Focus on understanding over memorization
-</notes> 
+</notes>

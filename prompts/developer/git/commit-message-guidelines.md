@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for writing clear, semantic, and standardized git
   commit messages
+model: GPT-4
 path: developer/git/commit-message-guidelines
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - collaboration
 - documentation
 title: Git Commit Message Guidelines
+version: '1.0'
 ---
 
 # Git Commit Message Guidelines
@@ -130,4 +133,4 @@ Migration guide: docs/migration-v2.md
 6. Be consistent
 7. Review before committing
 
-Remember: Good commit messages are crucial for project maintainability and team collaboration. They should tell a story of how and why the code has evolved. 
+Remember: Good commit messages are crucial for project maintainability and team collaboration. They should tell a story of how and why the code has evolved.

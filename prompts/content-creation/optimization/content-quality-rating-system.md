@@ -1,9 +1,23 @@
 ---
-title: Advanced Content Quality Rating and Optimization System
+category: Content-Creation
+description: A sophisticated system for systematically evaluating and improving content
+  quality through data-driven rating frameworks and iterative optimization cycles
+model: GPT-4
 path: prompts/content-creation/optimization/content-quality-rating-system.md
-tags: ["optimization", "rating-system", "content-improvement", "quality-assessment", "iterative-improvement", "feedback-loop", "evaluation", "metrics", "quality-control", "data-driven"]
-description: A sophisticated system for systematically evaluating and improving content quality through data-driven rating frameworks and iterative optimization cycles
 prompt_type: Evaluation Framework
+tags:
+- optimization
+- rating-system
+- content-improvement
+- quality-assessment
+- iterative-improvement
+- feedback-loop
+- evaluation
+- metrics
+- quality-control
+- data-driven
+title: Advanced Content Quality Rating and Optimization System
+version: '1.0'
 ---
 
 You are an expert content optimization specialist with deep expertise in quality metrics and systematic improvement processes. Your mission is to help content creators achieve excellence through data-driven rating systems and structured enhancement cycles.

@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for creating well-structured book outlines
   that effectively organize plot, character development, and thematic elements.
+model: GPT-4
 path: content-creation/writing/book/outline-generation-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - story-structure
 - narrative-planning
 title: Book Outline Generation Framework
+version: '1.0'
 ---
 
 # Book Outline Generation Framework
@@ -146,4 +149,4 @@ outline_blueprint:
 9. Scene Organization
 10. Arc Management
 
-Please develop book outlines following these guidelines to ensure effective story organization and development. 
+Please develop book outlines following these guidelines to ensure effective story organization and development.

@@ -1,7 +1,9 @@
 ---
+category: Data
 description: A comprehensive framework for segmenting data into meaningful groups
   while maintaining statistical significance and practical utility for analysis and
   decision-making.
+model: GPT-4
 path: data/data-analysis/segmentation-framework
 prompt_type: Role-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - pattern-recognition
 - data-organization
 title: Data Segmentation Framework
+version: '1.0'
 ---
 
 # Data Segmentation Framework
@@ -146,4 +149,4 @@ segmentation_blueprint:
 9. Implementation Support
 10. Performance Monitoring
 
-Please follow these guidelines to ensure effective data segmentation that provides actionable insights while maintaining statistical validity. 
+Please follow these guidelines to ensure effective data segmentation that provides actionable insights while maintaining statistical validity.

@@ -1,9 +1,17 @@
 ---
-title: Concise Context-Based Question Answering
+category: Qa
+description: A specialized prompt for generating concise, accurate answers based on
+  provided context
+model: GPT-4
 path: qa/concise_context_qa
-tags: ["qa", "context", "concise", "information-retrieval"]
-description: A specialized prompt for generating concise, accurate answers based on provided context
 prompt_type: Question-Answering
+tags:
+- qa
+- context
+- concise
+- information-retrieval
+title: Concise Context-Based Question Answering
+version: '1.0'
 ---
 
 You will act as a precise question-answering expert. Your task is to analyze provided context and questions to generate concise, accurate answers while maintaining strict length constraints and factual accuracy.
@@ -110,4 +118,4 @@ Context: {context}
 - Admit uncertainty
 - No speculation
 - Focus on question
-- Use context only 
+- Use context only

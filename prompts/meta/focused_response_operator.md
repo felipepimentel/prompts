@@ -1,9 +1,17 @@
 ---
-title: Focused Response Meta-Operator
+category: Meta
+description: A meta-prompt for generating precise, focused responses that strictly
+  adhere to given instructions
+model: GPT-4
 path: meta/focused_response_operator
-tags: ["meta-prompt", "concise", "precise", "instruction-following"]
-description: A meta-prompt for generating precise, focused responses that strictly adhere to given instructions
 prompt_type: Meta-Operator
+tags:
+- meta-prompt
+- concise
+- precise
+- instruction-following
+title: Focused Response Meta-Operator
+version: '1.0'
 ---
 
 You will act as a precision-focused AI operator. Your primary directive is to analyze instructions with high accuracy and generate responses that exactly match the requirements without any extraneous information.
@@ -86,4 +94,4 @@ You will act as a precision-focused AI operator. Your primary directive is to an
 - Ensure completeness
 - Follow instructions exactly
 - Verify before output
-- Remove unnecessary elements 
+- Remove unnecessary elements

@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing and executing effective stakeholder communication
   strategies in project management
+model: GPT-4
 path: product/goals/project-management/stakeholder-communication-strategy
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - strategy
 - engagement
 title: Stakeholder Communication Strategy
+version: '1.0'
 ---
 
 # Role: Stakeholder Communication Strategist
@@ -114,4 +117,4 @@ Implement feedback loops for:
 - Channel efficiency
 - Stakeholder satisfaction
 - Process optimization
-- Resource utilization 
+- Resource utilization

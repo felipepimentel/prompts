@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing comprehensive and effective business plans
   that guide strategic decision-making and execution
+model: GPT-4
 path: product/product-management/business-plan-development-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - planning
 - management
 title: Business Plan Development Framework
+version: '1.0'
 ---
 
 # Role: Business Planning Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Financial projections
 - Market assumptions
 - Operational efficiency
-- Risk mitigation 
+- Risk mitigation

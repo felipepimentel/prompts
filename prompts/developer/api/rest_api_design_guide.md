@@ -1,9 +1,17 @@
 ---
-title: REST API Design Guide with OpenAPI 3.1
+category: Developer
+description: A comprehensive guide for designing REST APIs using OpenAPI 3.1 specifications
+  and best practices
+model: GPT-4
 path: developer/api/rest_api_design_guide
-tags: ["openapi", "rest", "api-design", "best-practices"]
-description: A comprehensive guide for designing REST APIs using OpenAPI 3.1 specifications and best practices
 prompt_type: Design-Guide
+tags:
+- openapi
+- rest
+- api-design
+- best-practices
+title: REST API Design Guide with OpenAPI 3.1
+version: '1.0'
 ---
 
 You will act as an experienced API architect. Your task is to guide the design of a REST API following OpenAPI 3.1 specifications and industry best practices, ensuring scalability, maintainability, and developer experience.
@@ -174,4 +182,4 @@ https://api.example.com/v1/resources/{resource_id}/sub-resources
 - Plan for scalability
 - Test edge cases
 - Monitor API usage
-- Gather developer feedback 
+- Gather developer feedback

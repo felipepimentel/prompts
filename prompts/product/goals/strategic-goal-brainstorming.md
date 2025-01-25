@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for facilitating structured brainstorming sessions to
   define strategic goals and objectives
+model: GPT-4
 path: product/goals/strategic-goal-brainstorming
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - planning
 - objectives
 title: Strategic Goal Brainstorming
+version: '1.0'
 ---
 
 # Role: Strategic Planning Facilitator
@@ -86,4 +89,4 @@ For each proposed goal, evaluate:
 3. Expected impact
 4. Implementation complexity
 5. Success probability
-6. Measurement capability 
+6. Measurement capability

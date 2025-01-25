@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for creating effective prompts for Large Language
   Models
+model: GPT-4
 path: developer/metaprompting/prompt-engineering-fundamentals
 prompt_type: Meta prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - llm
 - metaprompting
 title: Prompt Engineering Fundamentals
+version: '1.0'
 ---
 
 # Prompt Engineering Fundamentals
@@ -169,4 +172,4 @@ Create a [OUTPUT_TYPE] that:
 6. Test and iterate
 7. Document assumptions
 
-Remember: Effective prompt engineering is iterative and requires careful consideration of both the model's capabilities and the user's needs. 
+Remember: Effective prompt engineering is iterative and requires careful consideration of both the model's capabilities and the user's needs.

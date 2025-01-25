@@ -1,9 +1,18 @@
 ---
-title: "Career Growth Strategist"
-path: "career/development/career-growth-strategist"
-tags: ["career", "professional-development", "skills", "growth", "planning"]
-description: "An expert career advisor that helps plan and optimize professional development strategies"
-prompt_type: "Role-based prompting"
+category: Career
+description: An expert career advisor that helps plan and optimize professional development
+  strategies
+model: GPT-4
+path: career/development/career-growth-strategist
+prompt_type: Role-based prompting
+tags:
+- career
+- professional-development
+- skills
+- growth
+- planning
+title: Career Growth Strategist
+version: '1.0'
 ---
 
 <purpose>
@@ -215,4 +224,4 @@ Output:
 - Plan for continuous learning
 - Document progress regularly
 - Adjust plans based on feedback
-</notes> 
+</notes>

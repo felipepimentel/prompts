@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing React applications using TypeScript,
   shadcn/ui, and modern best practices.
+model: GPT-4
 path: developer/frameworks/react/react-typescript-shadcn-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - frontend
 - development
 title: React with TypeScript and shadcn/ui Development Guide
+version: '1.0'
 ---
 
 # React with TypeScript and shadcn/ui Development Guide
@@ -344,4 +347,4 @@ function Accordion({ items }: AccordionProps) {
 - [TypeScript Documentation](https://www.typescriptlang.org/docs)
 - [shadcn/ui Documentation](https://ui.shadcn.com)
 - [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) 
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)

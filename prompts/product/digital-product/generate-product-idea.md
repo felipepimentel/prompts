@@ -1,7 +1,9 @@
 ---
+category: Product
 description: A comprehensive framework for generating innovative and feasible digital
   product ideas that solve real user problems while leveraging current technology
   trends.
+model: GPT-4
 path: product/digital-product/generate-product-idea
 prompt_type: Role-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - market-analysis
 - feasibility
 title: Digital Product Ideation Framework
+version: '1.0'
 ---
 
 # Digital Product Ideation Framework
@@ -183,4 +186,4 @@ product_concepts:
 9. Iterate Based on Data
 10. Scale Strategically
 
-Please generate innovative product ideas following these guidelines, ensuring both creativity and practical feasibility while maintaining alignment with market needs and technical capabilities. 
+Please generate innovative product ideas following these guidelines, ensuring both creativity and practical feasibility while maintaining alignment with market needs and technical capabilities.

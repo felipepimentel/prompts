@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for establishing and maintaining effective team coordination
   and task management systems
+model: GPT-4
 path: product/goals/project-management/team-coordination-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - project-management
 - productivity
 title: Team Coordination Framework
+version: '1.0'
 ---
 
 # Role: Team Coordination Specialist
@@ -114,4 +117,4 @@ Implement systems for:
 - Skill development
 - Tool enhancement
 - Workflow refinement
-- Performance improvement 
+- Performance improvement

@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for systematically identifying, fixing, and documenting
   software bugs
+model: GPT-4
 path: developer/instructions/bug-fix-outline.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - best-practices
 - code-quality
 title: Systematic Bug Fix Process Guide
+version: '1.0'
 ---
 
 # Systematic Bug Fix Process
@@ -84,4 +87,4 @@ title: Systematic Bug Fix Process Guide
 - Monitor for similar issues
 - Share knowledge with team members
 
-Remember: Quality bug fixes require patience, thoroughness, and systematic approach. Always validate your assumptions and test thoroughly before deployment. 
+Remember: Quality bug fixes require patience, thoroughness, and systematic approach. Always validate your assumptions and test thoroughly before deployment.

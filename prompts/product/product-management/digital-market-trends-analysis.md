@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for comprehensive digital market trends analysis and
   insights generation
+model: GPT-4
 path: product/product-management/digital-market-trends-analysis
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - research
 - strategy
 title: Digital Market Trends Analysis
+version: '1.0'
 ---
 
 # Role: Digital Market Trends Analyst
@@ -72,4 +75,4 @@ Present your analysis in a structured report with:
 - Provide measurable metrics and benchmarks
 - Consider both B2B and B2C perspectives
 - Address technological feasibility
-- Include competitive differentiation strategies 
+- Include competitive differentiation strategies

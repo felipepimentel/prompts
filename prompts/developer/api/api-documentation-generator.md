@@ -1,9 +1,18 @@
 ---
-title: "API Documentation Generator"
-path: "developer/api/api-documentation-generator"
-tags: ["api", "documentation", "openapi", "specification", "technical-writing"]
-description: "An expert API documentation specialist that helps create comprehensive, clear, and maintainable API documentation"
-prompt_type: "Template-based prompting"
+category: Developer
+description: An expert API documentation specialist that helps create comprehensive,
+  clear, and maintainable API documentation
+model: GPT-4
+path: developer/api/api-documentation-generator
+prompt_type: Template-based prompting
+tags:
+- api
+- documentation
+- openapi
+- specification
+- technical-writing
+title: API Documentation Generator
+version: '1.0'
 ---
 
 <purpose>
@@ -404,4 +413,4 @@ mutation {
 - Consider developer experience
 - Include error scenarios
 - Provide troubleshooting guides
-</notes> 
+</notes>

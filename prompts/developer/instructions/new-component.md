@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for creating well-structured, maintainable, and
   reusable components across different frameworks
+model: GPT-4
 path: developer/instructions/new-component.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - architecture
 - design-patterns
 title: Component Development Guidelines
+version: '1.0'
 ---
 
 # Component Development Guidelines
@@ -233,4 +236,4 @@ Primary.args = {
 6. Ensure accessibility
 7. Maintain consistency
 
-Remember: Component development requires careful attention to architecture, reusability, and maintainability. Always consider the component's role in the larger application context. 
+Remember: Component development requires careful attention to architecture, reusability, and maintainability. Always consider the component's role in the larger application context.

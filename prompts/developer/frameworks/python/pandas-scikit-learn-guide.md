@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive guide for data analysis and machine learning using Pandas
   and scikit-learn, focusing on best practices, performance optimization, and visualization
   techniques.
+model: GPT-4
 path: developer/frameworks/python/pandas-scikit-learn-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - visualization
 - machine-learning
 title: Data Analysis with Pandas and scikit-learn Guide
+version: '1.0'
 ---
 
 # Data Analysis with Pandas and scikit-learn Guide
@@ -311,4 +314,4 @@ class ModelTrainer:
 - [Pandas Documentation](https://pandas.pydata.org/docs/)
 - [scikit-learn Documentation](https://scikit-learn.org/stable/documentation.html)
 - [Seaborn Documentation](https://seaborn.pydata.org/)
-- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/) 
+- [Python Data Science Handbook](https://jakevdp.github.io/PythonDataScienceHandbook/)

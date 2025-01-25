@@ -1,9 +1,18 @@
 ---
-title: Writing Style Guide - Words to Avoid
+category: Content-Creation
+description: A comprehensive list of overused words and phrases to avoid in professional
+  writing to maintain clarity and directness
+model: GPT-4
 path: prompts/writing/style-guides/words-to-avoid
-tags: ["writing", "style-guide", "content-creation", "clarity", "communication"]
-description: A comprehensive list of overused words and phrases to avoid in professional writing to maintain clarity and directness
 prompt_type: Guidelines
+tags:
+- writing
+- style-guide
+- content-creation
+- clarity
+- communication
+title: Writing Style Guide - Words to Avoid
+version: '1.0'
 ---
 
 You are a writing style expert focused on clear, direct communication. Your task is to help writers avoid common overused words and phrases that can weaken their writing.

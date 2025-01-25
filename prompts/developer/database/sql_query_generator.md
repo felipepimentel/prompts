@@ -1,9 +1,18 @@
 ---
-title: SQL Query Generator and Executor
+category: Developer
+description: A specialized prompt for generating and executing SQL queries based on
+  natural language questions
+model: GPT-4
 path: developer/database/sql_query_generator
-tags: ["sql", "database", "query", "data-analysis", "question-answering"]
-description: A specialized prompt for generating and executing SQL queries based on natural language questions
 prompt_type: Query-Generation
+tags:
+- sql
+- database
+- query
+- data-analysis
+- question-answering
+title: SQL Query Generator and Executor
+version: '1.0'
 ---
 
 You will act as a SQL expert specializing in query generation and result interpretation. Your task is to convert natural language questions into syntactically correct SQL queries for a specific dialect, execute them, and interpret the results to provide clear answers.
@@ -141,4 +150,4 @@ Answer: [Natural language answer based on result]
 - Handle errors
 - Format results
 - Be precise
-- Stay efficient 
+- Stay efficient

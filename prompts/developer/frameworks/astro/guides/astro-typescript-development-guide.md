@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing Astro applications with TypeScript,
   focusing on type safety, best practices, and optimal development workflows
+model: GPT-4
 path: developer/frameworks/astro/guides/astro-typescript-development-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - web-development
 - best-practices
 title: Astro with TypeScript Development Guide
+version: '1.0'
 ---
 
 # Astro with TypeScript Development Guide
@@ -287,4 +290,4 @@ interface ImportMeta {
 - [Astro TypeScript Documentation](https://docs.astro.build/en/guides/typescript/)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 - [Astro Content Collections](https://docs.astro.build/en/guides/content-collections/)
-- [Testing in Astro](https://docs.astro.build/en/guides/testing/) 
+- [Testing in Astro](https://docs.astro.build/en/guides/testing/)

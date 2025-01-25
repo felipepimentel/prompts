@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for setting up and configuring a modern backend
   development environment
+model: GPT-4
 path: developer/instructions/setup-backend.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - infrastructure
 - best-practices
 title: Backend Development Environment Setup Guide
+version: '1.0'
 ---
 
 # Backend Development Environment Setup
@@ -272,4 +275,4 @@ jobs:
 6. Secure sensitive information
 7. Maintain consistency across environments
 
-Remember: A well-configured development environment is crucial for productive backend development. Keep documentation updated and automate setup processes where possible. 
+Remember: A well-configured development environment is crucial for productive backend development. Keep documentation updated and automate setup processes where possible.

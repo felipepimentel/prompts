@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing and implementing effective innovation
   ideation systems that generate breakthrough solutions and ideas
+model: GPT-4
 path: product/product-management/innovation-ideation-system
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - problem-solving
 - strategy
 title: Innovation Ideation System
+version: '1.0'
 ---
 
 # Role: Innovation Strategy Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Implementation success
 - Team creativity
 - Innovation impact
-- Learning capture 
+- Learning capture

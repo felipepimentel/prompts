@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building web applications using HTMX with Go,
   focusing on server-side rendering and hypermedia-driven architecture
+model: GPT-4
 path: developer/frameworks/htmx/htmx-go-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - server-side
 - hypermedia
 title: HTMX with Go Development Guide
+version: '1.0'
 ---
 
 # HTMX with Go Development Guide
@@ -151,4 +154,4 @@ The implementation should:
 - Use standard library when possible
 - Implement proper logging
 - Consider security implications
-- Follow RESTful principles when appropriate 
+- Follow RESTful principles when appropriate

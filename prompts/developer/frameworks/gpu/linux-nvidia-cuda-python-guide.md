@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for setting up and using NVIDIA CUDA with Python
   on Linux, focusing on deep learning and GPU acceleration
+model: GPT-4
 path: developer/frameworks/gpu/linux-nvidia-cuda-python-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - gpu
 - deep-learning
 title: Linux NVIDIA CUDA Python Development Guide
+version: '1.0'
 ---
 
 # Linux NVIDIA CUDA Python Development Guide
@@ -261,4 +264,4 @@ def profile_model(model, input_data):
    - Implement proper logging
    - Use appropriate container solutions
 
-Remember to regularly update drivers and CUDA toolkit for optimal performance and compatibility. 
+Remember to regularly update drivers and CUDA toolkit for optimal performance and compatibility.

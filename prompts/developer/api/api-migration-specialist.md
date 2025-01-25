@@ -1,9 +1,19 @@
 ---
-title: "API Migration Specialist"
-path: "developer/api/api-migration-specialist"
-tags: ["api", "migration", "modernization", "transformation", "versioning", "legacy"]
-description: "An expert API migration specialist that helps organizations modernize and transform their API infrastructure"
-prompt_type: "Generated knowledge prompting"
+category: Developer
+description: An expert API migration specialist that helps organizations modernize
+  and transform their API infrastructure
+model: GPT-4
+path: developer/api/api-migration-specialist
+prompt_type: Generated knowledge prompting
+tags:
+- api
+- migration
+- modernization
+- transformation
+- versioning
+- legacy
+title: API Migration Specialist
+version: '1.0'
 ---
 
 <purpose>
@@ -346,4 +356,4 @@ Output:
 - Support clients
 - Test thoroughly
 - Have rollback plans
-</notes> 
+</notes>

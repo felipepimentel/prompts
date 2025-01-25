@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for creating clear and effective Git commits, focusing
   on best practices, conventions, and workflow optimization
+model: GPT-4
 path: developer/guidelines/git-commit-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - workflow
 - collaboration
 title: Git Commit Guide
+version: '1.0'
 ---
 
 # Git Commit Guide
@@ -237,4 +240,4 @@ Remember to:
 2. Make atomic commits
 3. Follow team conventions
 4. Include necessary context
-5. Keep history clean 
+5. Keep history clean

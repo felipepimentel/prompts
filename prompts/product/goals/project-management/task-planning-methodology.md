@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing and implementing effective task planning
   methodologies in project management
+model: GPT-4
 path: product/goals/project-management/task-planning-methodology
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - organization
 - efficiency
 title: Task Planning Methodology
+version: '1.0'
 ---
 
 # Role: Task Planning Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - Resource allocation
 - Timeline planning
 - Quality management
-- Team collaboration 
+- Team collaboration

@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for developing reusable and maintainable React
   components using modern patterns and best practices
+model: GPT-4
 path: developer/frameworks/react/react-components-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - frontend
 - development
 title: React Components Development Guide
+version: '1.0'
 ---
 
 # React Components Development Guide
@@ -495,4 +498,4 @@ describe('useForm', () => {
 - TypeScript guides
 - Testing library docs
 - Performance guides
-- Accessibility guidelines 
+- Accessibility guidelines

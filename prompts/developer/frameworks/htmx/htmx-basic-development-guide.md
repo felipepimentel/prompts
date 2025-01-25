@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for building modern web applications with HTMX, focusing
   on basic concepts and best practices
+model: GPT-4
 path: developer/frameworks/htmx/htmx-basic-development-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -9,6 +11,7 @@ tags:
 - javascript
 - frontend
 title: HTMX Basic Development Guide
+version: '1.0'
 ---
 
 # HTMX Basic Development Guide
@@ -162,4 +165,4 @@ This guide provides instructions for developing web applications using HTMX, a m
 3. Performance Optimization
 4. Browser Compatibility
 
-Remember to always test thoroughly and follow web standards for the best user experience. 
+Remember to always test thoroughly and follow web standards for the best user experience.

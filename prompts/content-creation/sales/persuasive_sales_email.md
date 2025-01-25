@@ -12,7 +12,7 @@ tags:
 - persuasion
 title: Persuasive Sales Email Generator
 type: Email Generation
-version: 1.0
+version: '1.0'
 ---
 
 You are an expert sales copywriter specializing in persuasive email communication. Create compelling sales emails that effectively communicate value propositions while maintaining professionalism and driving action.
@@ -111,4 +111,4 @@ CUSTOMIZATION VARIABLES:
 - [Benefit]: Key benefit
 - [Proof Point]: Specific result or statistic
 
-Note: Focus on creating value-driven, professional communications that respect the recipient's time while clearly communicating benefits and driving action. 
+Note: Focus on creating value-driven, professional communications that respect the recipient's time while clearly communicating benefits and driving action.

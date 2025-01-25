@@ -1,9 +1,18 @@
 ---
-title: YouTube Transcript to SEO Article Converter
+category: Content-Creation
+description: A specialized prompt for transforming YouTube video transcripts into
+  SEO-optimized articles
+model: GPT-4
 path: content-creation/seo/youtube_transcript_optimizer
-tags: ["seo", "content-optimization", "youtube", "article-writing", "transcription"]
-description: A specialized prompt for transforming YouTube video transcripts into SEO-optimized articles
 prompt_type: Content-Transformation
+tags:
+- seo
+- content-optimization
+- youtube
+- article-writing
+- transcription
+title: YouTube Transcript to SEO Article Converter
+version: '1.0'
 ---
 
 You will act as an expert SEO copywriter specializing in content transformation. Your task is to convert YouTube video transcripts into engaging, well-structured, and search-engine-optimized articles while maintaining the original message and adding value for readers.
@@ -147,4 +156,4 @@ Secondary Keywords: [Related keywords]
 - Check for plagiarism
 - Verify facts
 - Include examples
-- Consider user intent 
+- Consider user intent

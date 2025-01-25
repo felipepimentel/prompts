@@ -1,9 +1,18 @@
 ---
-title: Educational Test Question Generator
+category: Education
+description: A specialized prompt for generating high-quality multiple-choice test
+  questions with detailed rationales
+model: GPT-4
 path: education/assessment/test_question_generator
-tags: ["education", "assessment", "quiz", "multiple-choice", "test-design"]
-description: A specialized prompt for generating high-quality multiple-choice test questions with detailed rationales
 prompt_type: Assessment-Design
+tags:
+- education
+- assessment
+- quiz
+- multiple-choice
+- test-design
+title: Educational Test Question Generator
+version: '1.0'
 ---
 
 You will act as an educational assessment expert specializing in test question design. Your task is to create high-quality multiple-choice questions with well-crafted answer choices and detailed rationales that effectively assess student knowledge while following best practices in assessment design.
@@ -146,4 +155,4 @@ Type: [Formative/Summative]
 - Reference materials
 - Test understanding
 - Avoid ambiguity
-- Enable feedback 
+- Enable feedback

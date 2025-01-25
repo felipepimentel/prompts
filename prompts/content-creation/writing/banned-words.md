@@ -1,9 +1,18 @@
 ---
-title: "Writing Style Guide: Banned Words and Phrases"
-path: "writing/banned_words"
-tags: ["writing", "style-guide", "clarity", "conciseness", "communication"]
-description: A comprehensive guide for maintaining clear, direct communication by avoiding overused, vague, or unnecessary words and phrases
+category: Content-Creation
+description: A comprehensive guide for maintaining clear, direct communication by
+  avoiding overused, vague, or unnecessary words and phrases
+model: GPT-4
+path: writing/banned_words
 prompt_type: Writing-Guide
+tags:
+- writing
+- style-guide
+- clarity
+- conciseness
+- communication
+title: 'Writing Style Guide: Banned Words and Phrases'
+version: '1.0'
 ---
 
 <purpose>
@@ -151,4 +160,4 @@ You must maintain clear, direct, and professional communication by avoiding over
 - Maintain readability
 - Focus on clarity
 - Keep communication effective
-</notes> 
+</notes>

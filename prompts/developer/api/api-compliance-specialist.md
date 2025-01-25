@@ -1,9 +1,19 @@
 ---
-title: "API Compliance & Audit Specialist"
-path: "developer/api/api-compliance-specialist"
-tags: ["api", "compliance", "audit", "regulations", "standards", "governance"]
-description: "An expert API compliance specialist that helps ensure APIs meet regulatory requirements and industry standards"
-prompt_type: "Role-based prompting"
+category: Developer
+description: An expert API compliance specialist that helps ensure APIs meet regulatory
+  requirements and industry standards
+model: GPT-4
+path: developer/api/api-compliance-specialist
+prompt_type: Role-based prompting
+tags:
+- api
+- compliance
+- audit
+- regulations
+- standards
+- governance
+title: API Compliance & Audit Specialist
+version: '1.0'
 ---
 
 <purpose>
@@ -362,4 +372,4 @@ Output:
 - Update controls
 - Train staff
 - Plan for changes
-</notes> 
+</notes>

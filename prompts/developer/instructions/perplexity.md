@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for effectively using Perplexity AI for research,
   coding, and problem-solving
+model: GPT-4
 path: developer/instructions/perplexity.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - research
 - knowledge-base
 title: Perplexity AI Usage Guidelines
+version: '1.0'
 ---
 
 # Perplexity AI Usage Guidelines
@@ -157,4 +160,4 @@ Goal: Resolve import error
 6. Maintain consistency
 7. Update regularly
 
-Remember: Effective use of Perplexity AI requires clear communication, proper query construction, and systematic validation of results. Always verify information and document findings thoroughly. 
+Remember: Effective use of Perplexity AI requires clear communication, proper query construction, and systematic validation of results. Always verify information and document findings thoroughly.

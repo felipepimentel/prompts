@@ -1,7 +1,9 @@
 ---
+category: Product
 description: A comprehensive framework for analyzing potential target audiences for
   digital products, providing actionable insights for product development and marketing
   strategies.
+model: GPT-4
 path: product/digital-product/audience-analysis
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - market-opportunity
 - customer-insights
 title: Digital Product Audience Analysis Framework
+version: '1.0'
 ---
 
 # Digital Product Audience Analysis Framework
@@ -257,4 +260,4 @@ implementation_strategy:
 1. [Market Research Methodologies](https://example.com/market-research)
 2. [User Behavior Analysis](https://example.com/user-behavior)
 3. [Digital Product Analytics](https://example.com/product-analytics)
-4. [Audience Segmentation Strategies](https://example.com/segmentation) 
+4. [Audience Segmentation Strategies](https://example.com/segmentation)

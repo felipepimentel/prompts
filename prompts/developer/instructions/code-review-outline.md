@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A detailed guide for conducting effective code reviews, focusing on quality,
   collaboration, and knowledge sharing
+model: GPT-4
 path: developer/instructions/code-review-outline.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - quality-assurance
 - collaboration
 title: Comprehensive Code Review Guidelines
+version: '1.0'
 ---
 
 # Comprehensive Code Review Process
@@ -130,4 +133,4 @@ title: Comprehensive Code Review Guidelines
 6. Learn from each review
 7. Document decisions made
 
-Remember: Code reviews are opportunities for learning and improvement. Focus on collaboration and knowledge sharing while maintaining high quality standards. 
+Remember: Code reviews are opportunities for learning and improvement. Focus on collaboration and knowledge sharing while maintaining high quality standards.

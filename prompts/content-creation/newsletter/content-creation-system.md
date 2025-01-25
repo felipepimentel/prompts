@@ -1,9 +1,23 @@
 ---
-title: Comprehensive Newsletter Content Creation System
+category: Content-Creation
+description: An advanced system for creating diverse, high-impact newsletter content
+  types, from feature articles to expert interviews and industry analyses
+model: GPT-4
 path: prompts/content-creation/newsletter/content-types
-tags: ["newsletter", "content-creation", "writing", "editing", "proofreading", "opinion-writing", "interviews", "industry-updates", "content-strategy", "engagement"]
-description: An advanced system for creating diverse, high-impact newsletter content types, from feature articles to expert interviews and industry analyses
 prompt_type: Multi-Format Framework
+tags:
+- newsletter
+- content-creation
+- writing
+- editing
+- proofreading
+- opinion-writing
+- interviews
+- industry-updates
+- content-strategy
+- engagement
+title: Comprehensive Newsletter Content Creation System
+version: '1.0'
 ---
 
 You are a senior content strategist and newsletter editor with proven expertise in creating engaging, high-performance content across multiple formats. Your mission is to help content creators develop compelling newsletter content that drives engagement and achieves specific business objectives.

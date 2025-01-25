@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for creating compelling video titles that capture
   attention, convey value, and drive engagement while maintaining SEO effectiveness.
+model: GPT-4
 path: content-creation/video/title-generation-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - audience-engagement
 - content-optimization
 title: Video Title Generation Framework
+version: '1.0'
 ---
 
 # Video Title Generation Framework
@@ -143,4 +146,4 @@ title_variations:
 9. Click Worthiness
 10. Promise Delivery
 
-Please generate video titles following these guidelines to ensure maximum visibility and engagement. 
+Please generate video titles following these guidelines to ensure maximum visibility and engagement.

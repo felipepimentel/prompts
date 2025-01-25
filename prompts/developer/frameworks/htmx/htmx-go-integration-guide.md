@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: Comprehensive guide for integrating HTMX with Go backends, focusing on
   best practices and common patterns
+model: GPT-4
 path: developer/frameworks/htmx/htmx-go-integration-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - backend
 - integration
 title: HTMX and Go Integration Guide
+version: '1.0'
 ---
 
 # HTMX and Go Integration Guide
@@ -258,4 +261,4 @@ func TestHTMXHandler(t *testing.T) {
 4. Error Tracking
 5. Performance Metrics
 
-Remember to always follow Go best practices and security guidelines when implementing these patterns. 
+Remember to always follow Go best practices and security guidelines when implementing these patterns.

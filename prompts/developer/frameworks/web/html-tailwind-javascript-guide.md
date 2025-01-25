@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for modern web development using HTML, Tailwind
   CSS, and vanilla JavaScript, focusing on best practices, readability, and performance.
+model: GPT-4
 path: developer/frameworks/web/html-tailwind-javascript-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - web-development
 - best-practices
 title: HTML, Tailwind CSS, and JavaScript Development Guide
+version: '1.0'
 ---
 
 # HTML, Tailwind CSS, and JavaScript Development Guide
@@ -246,4 +249,4 @@ async function fetchUserData(userId) {
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [MDN Web Docs - JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [Web.dev - Performance](https://web.dev/learn/performance)
-- [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/) 
+- [ARIA Authoring Practices Guide](https://www.w3.org/WAI/ARIA/apg/)

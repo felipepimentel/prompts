@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive guide for maintaining high code quality across different
   programming languages and frameworks, focusing on best practices, conventions, and
   standards
+model: GPT-4
 path: developer/guidelines/code-guidelines
 prompt_type: Instruction-based prompting
 tags:
@@ -13,6 +15,7 @@ tags:
 - conventions
 - documentation
 title: Universal Code Quality Guidelines
+version: '1.0'
 ---
 
 # Universal Code Quality Guidelines
@@ -370,4 +373,4 @@ release/*      # Release preparation
 - [Clean Code by Robert C. Martin](https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 - [Python PEP 8](https://www.python.org/dev/peps/pep-0008/)
-- [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments) 
+- [Go Code Review Comments](https://github.com/golang/go/wiki/CodeReviewComments)

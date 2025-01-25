@@ -1,7 +1,9 @@
 ---
+category: Product
 description: A comprehensive framework for analyzing market trends and evaluating
   product feasibility in the digital product space, providing actionable insights
   for strategic decision-making.
+model: GPT-4
 path: product/digital-product/market-trends
 prompt_type: Role-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - competitive-analysis
 - industry-insights
 title: Digital Product Market Trends Analysis Framework
+version: '1.0'
 ---
 
 # Digital Product Market Trends Analysis Framework
@@ -189,4 +192,4 @@ market_analysis:
 9. Monitor Progress
 10. Update Analysis
 
-Please conduct market trends analysis following these guidelines, ensuring comprehensive coverage of market dynamics, competitive landscape, and feasibility factors while providing actionable recommendations for product development and market entry strategies. 
+Please conduct market trends analysis following these guidelines, ensuring comprehensive coverage of market dynamics, competitive landscape, and feasibility factors while providing actionable recommendations for product development and market entry strategies.

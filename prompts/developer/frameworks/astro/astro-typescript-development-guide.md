@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive development guide for building Astro applications with
   TypeScript, including coding standards, commit conventions, and best practices.
+model: GPT-4
 path: developer/frameworks/astro/astro-typescript-development-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - best-practices
 - guidelines
 title: Astro with TypeScript Development Guide
+version: '1.0'
 ---
 
 # Astro with TypeScript Development Guide
@@ -168,4 +171,4 @@ git commit -m 'docs: update component usage examples'
 - [Astro Documentation](https://docs.astro.build)
 - [TypeScript Handbook](https://www.typescriptlang.org/docs)
 - [TailwindCSS Documentation](https://tailwindcss.com/docs)
-- [Conventional Commits](https://www.conventionalcommits.org) 
+- [Conventional Commits](https://www.conventionalcommits.org)

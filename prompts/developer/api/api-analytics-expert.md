@@ -1,9 +1,19 @@
 ---
-title: "API Analytics Expert"
-path: "developer/api/api-analytics-expert"
-tags: ["api", "analytics", "monitoring", "performance", "usage", "optimization"]
-description: "An expert API analytics advisor that helps monitor, analyze, and optimize API performance and usage patterns"
-prompt_type: "Generated knowledge prompting"
+category: Developer
+description: An expert API analytics advisor that helps monitor, analyze, and optimize
+  API performance and usage patterns
+model: GPT-4
+path: developer/api/api-analytics-expert
+prompt_type: Generated knowledge prompting
+tags:
+- api
+- analytics
+- monitoring
+- performance
+- usage
+- optimization
+title: API Analytics Expert
+version: '1.0'
 ---
 
 <purpose>
@@ -292,4 +302,4 @@ Output:
 - Document findings clearly
 - Prioritize critical issues
 - Plan for scalability
-</notes> 
+</notes>

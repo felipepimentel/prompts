@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for organizing and managing Python projects, covering
   project structure, development tools, testing strategies, and deployment workflows
+model: GPT-4
 path: developer/frameworks/python/python-projects-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - tools
 - best-practices
 title: Python Projects Guide
+version: '1.0'
 ---
 
 # Python Projects Guide
@@ -430,4 +433,4 @@ jobs:
 - Testing documentation
 - Type hints guide
 - Development tools
-- Best practices 
+- Best practices

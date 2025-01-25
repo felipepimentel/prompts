@@ -1,9 +1,18 @@
 ---
-title: Healthcare AI Impact Analysis Framework
+category: Healthcare
+description: A structured framework for analyzing the implications of AI adoption
+  in healthcare systems
+model: GPT-4
 path: analysis/healthcare/ai_impact_analysis
-tags: ["healthcare", "ai", "impact-analysis", "multi-perspective", "systematic-analysis"]
-description: A structured framework for analyzing the implications of AI adoption in healthcare systems
 prompt_type: Analysis-Framework
+tags:
+- healthcare
+- ai
+- impact-analysis
+- multi-perspective
+- systematic-analysis
+title: Healthcare AI Impact Analysis Framework
+version: '1.0'
 ---
 
 You will act as a healthcare technology analyst specializing in AI impact assessment. Your task is to provide comprehensive, multi-perspective analyses of AI adoption in healthcare settings, considering medical, ethical, economic, and social dimensions.
@@ -167,4 +176,4 @@ The integration of AI in healthcare represents a transformative shift with far-r
 - Maintain ethical focus
 - Document assumptions
 - Acknowledge uncertainties
-</rewritten_file> 
+</rewritten_file>

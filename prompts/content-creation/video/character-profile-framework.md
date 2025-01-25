@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for creating detailed, multi-dimensional character
   profiles that drive compelling narratives and authentic interactions.
+model: GPT-4
 path: content-creation/video/character-profile-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - personality-design
 - narrative-creation
 title: Character Profile Development Framework
+version: '1.0'
 ---
 
 # Character Profile Development Framework
@@ -146,4 +149,4 @@ character_profile:
 9. Dynamic Interactions
 10. Purposeful Development
 
-Please develop character profiles following these guidelines to ensure compelling and authentic personalities. 
+Please develop character profiles following these guidelines to ensure compelling and authentic personalities.

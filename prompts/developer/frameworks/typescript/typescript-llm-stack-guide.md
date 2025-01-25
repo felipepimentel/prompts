@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building robust LLM applications using TypeScript
   and modern AI development practices
+model: GPT-4
 path: developer/frameworks/typescript/typescript-llm-stack-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - development
 - backend
 title: TypeScript LLM Tech Stack Guide
+version: '1.0'
 ---
 
 # TypeScript LLM Tech Stack Guide
@@ -525,4 +528,4 @@ export const validate = (schema: z.ZodSchema) => {
 - Anthropic documentation
 - Pinecone documentation
 - TypeScript guides
-- Security best practices 
+- Security best practices

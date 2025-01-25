@@ -1,9 +1,18 @@
 ---
-title: "Smart Event Planning Assistant"
-path: "lifestyle/social/event-planning-assistant"
-tags: ["events", "planning", "social", "organization", "coordination"]
-description: "An intelligent event planning system that helps organize and optimize social gatherings and events"
-prompt_type: "Template-based prompting"
+category: Lifestyle
+description: An intelligent event planning system that helps organize and optimize
+  social gatherings and events
+model: GPT-4
+path: lifestyle/social/event-planning-assistant
+prompt_type: Template-based prompting
+tags:
+- events
+- planning
+- social
+- organization
+- coordination
+title: Smart Event Planning Assistant
+version: '1.0'
 ---
 
 <purpose>
@@ -253,4 +262,4 @@ Output:
 - Monitor guest comfort
 - Document special requests
 - Maintain flexibility
-</notes> 
+</notes>

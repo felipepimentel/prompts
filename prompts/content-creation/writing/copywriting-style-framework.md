@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for crafting engaging, conversational content
   that effectively communicates messages while maintaining reader engagement and authenticity.
+model: GPT-4
 path: content-creation/writing/copywriting-style-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - content-optimization
 - audience-engagement
 title: Copywriting Style Framework
+version: '1.0'
 ---
 
 # Copywriting Style Framework
@@ -145,4 +148,4 @@ content_blueprint:
 9. Use effective formatting
 10. Write like composing music
 
-Please develop content following these guidelines to ensure engaging and effective communication. 
+Please develop content following these guidelines to ensure engaging and effective communication.

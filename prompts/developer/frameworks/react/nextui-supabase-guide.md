@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for building modern web applications using TypeScript,
   React, NextUI components, and Supabase backend services
+model: GPT-4
 path: developer/frameworks/react/nextui-supabase-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - supabase
 - frontend
 title: NextUI and Supabase Integration Guide
+version: '1.0'
 ---
 
 # NextUI and Supabase Integration Guide
@@ -647,4 +650,4 @@ export function useChat(roomId: string) {
 - Supabase guides
 - TypeScript handbook
 - React best practices
-- Security guidelines 
+- Security guidelines

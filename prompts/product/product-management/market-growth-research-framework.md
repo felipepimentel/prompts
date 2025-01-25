@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for identifying, analyzing, and evaluating market growth
   opportunities to inform strategic business decisions
+model: GPT-4
 path: product/product-management/market-growth-research-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - market-expansion
 - strategic-planning
 title: Market Growth Research Framework
+version: '1.0'
 ---
 
 # Role: Market Growth Analyst
@@ -114,4 +117,4 @@ Implement feedback for:
 - Recommendation value
 - Implementation success
 - Strategy effectiveness
-- Process efficiency 
+- Process efficiency

@@ -1,6 +1,8 @@
 ---
+category: Misc
 description: A comprehensive framework for analyzing requirements, selecting appropriate
   tools, and orchestrating their execution for optimal goal achievement
+model: GPT-4
 path: /misc/choose_tool
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - automation
 - efficiency
 title: Tool Selection and Orchestration Framework
+version: '1.0'
 ---
 
 # Tool Selection and Orchestration Framework
@@ -192,4 +195,4 @@ interface ExecutionStrategy {
 - Maintain documentation
 
 ## Conclusion
-This framework provides a structured approach to tool selection and orchestration, ensuring efficient goal achievement through proper analysis, selection, and execution strategies. Regular review and optimization of the process ensure continuous improvement and adaptation to changing requirements. 
+This framework provides a structured approach to tool selection and orchestration, ensuring efficient goal achievement through proper analysis, selection, and execution strategies. Regular review and optimization of the process ensure continuous improvement and adaptation to changing requirements.

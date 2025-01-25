@@ -1,6 +1,8 @@
 ---
+category: Developer
 description: A comprehensive guide for maintaining high code quality standards in
   JavaScript and TypeScript projects, covering best practices, patterns, and tools
+model: GPT-4
 path: developer/guidelines/javascript-typescript-code-quality-guide.md
 prompt_type: Instruction-based prompting
 tags:
@@ -12,6 +14,7 @@ tags:
 - testing
 - performance
 title: JavaScript and TypeScript Code Quality Guide
+version: '1.0'
 ---
 
 # JavaScript and TypeScript Code Quality Guide
@@ -195,4 +198,4 @@ The implementation should:
 - Implement proper error handling
 - Consider performance implications
 - Follow security best practices
-- Maintain comprehensive tests 
+- Maintain comprehensive tests

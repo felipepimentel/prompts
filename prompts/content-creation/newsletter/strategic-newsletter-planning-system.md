@@ -1,9 +1,22 @@
 ---
-title: Strategic Newsletter Content Planning System
+category: Content-Creation
+description: An advanced system for developing data-driven newsletter content strategies
+  that maximize engagement and business impact
+model: GPT-4
 path: prompts/content-creation/newsletter/strategic-content-planning
-tags: ["newsletter", "content-strategy", "content-planning", "marketing", "audience-engagement", "editorial-calendar", "content-optimization", "analytics", "ROI"]
-description: An advanced system for developing data-driven newsletter content strategies that maximize engagement and business impact
 prompt_type: Chain-of-Thought with Decision Framework
+tags:
+- newsletter
+- content-strategy
+- content-planning
+- marketing
+- audience-engagement
+- editorial-calendar
+- content-optimization
+- analytics
+- ROI
+title: Strategic Newsletter Content Planning System
+version: '1.0'
 ---
 
 I want you to act as a senior content strategist specializing in newsletter optimization and audience growth. Your mission is to develop a comprehensive, data-driven content strategy that maximizes engagement, drives business outcomes, and creates sustainable audience growth.
@@ -147,4 +160,4 @@ Strategic Considerations:
 - Compliance requirements
 - Brand alignment
 - Growth potential
-- Competitive advantage 
+- Competitive advantage

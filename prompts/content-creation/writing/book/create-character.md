@@ -1,6 +1,8 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for creating rich, multi-dimensional book characters
   that drive compelling narratives and resonate with readers.
+model: GPT-4
 path: content-creation/writing/book/character-creation-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - creative-writing
 - storytelling
 title: Book Character Creation Framework
+version: '1.0'
 ---
 
 # Book Character Creation Framework
@@ -146,4 +149,4 @@ character_profile:
 9. Active Agency
 10. Thematic Relevance
 
-Please develop book characters following these guidelines to ensure compelling and authentic storytelling. 
+Please develop book characters following these guidelines to ensure compelling and authentic storytelling.

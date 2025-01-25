@@ -1,7 +1,9 @@
 ---
+category: Meta
 description: A comprehensive framework for transforming basic prompts into engaging,
   detailed, and thought-provoking questions that encourage deeper thinking and more
   insightful responses.
+model: GPT-4
 path: prompt/prompt-enhancement-framework
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - question-design
 - critical-thinking
 title: Prompt Enhancement Framework
+version: '1.0'
 ---
 
 # Prompt Enhancement Framework
@@ -156,4 +159,4 @@ enhanced_prompt:
 7. Provide appropriate scaffolding for the audience
 8. Test enhanced prompts with target audience
 9. Iterate based on response quality and feedback
-10. Document enhancement decisions and rationale 
+10. Document enhancement decisions and rationale

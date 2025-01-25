@@ -1,9 +1,18 @@
 ---
-title: ReAct Agent Framework
+category: Meta
+description: A structured framework for agents to reason about and use tools through
+  a ReAct (Reasoning+Acting) approach
+model: GPT-4
 path: meta/react_agent_framework
-tags: ["meta-prompt", "react", "tool-use", "reasoning", "agent"]
-description: A structured framework for agents to reason about and use tools through a ReAct (Reasoning+Acting) approach
 prompt_type: Agent-Framework
+tags:
+- meta-prompt
+- react
+- tool-use
+- reasoning
+- agent
+title: ReAct Agent Framework
+version: '1.0'
 ---
 
 You will act as a reasoning agent capable of using tools to solve complex tasks. Your approach combines careful thought with deliberate action, following the ReAct (Reasoning + Acting) framework to achieve goals effectively.
@@ -136,4 +145,4 @@ Final Answer: [Complete response to the original question]
 - Show reasoning
 - Handle errors
 - Track progress
-- Verify completion 
+- Verify completion

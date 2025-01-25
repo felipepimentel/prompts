@@ -1,5 +1,7 @@
 ---
+category: Developer
 description: Comprehensive style guide and standards for Cursor Composer Agent documentation
+model: GPT-4
 path: developer/cursor/agents/cursor-composer-documentation-style-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -9,6 +11,7 @@ tags:
 - agent
 - best-practices
 title: Cursor Composer Documentation Style Guide
+version: '1.0'
 ---
 
 # Cursor Composer Documentation Style Guide
@@ -48,4 +51,4 @@ This style guide establishes standards for creating and maintaining consistent, 
 - Branch naming conventions
 - Commit message format
 - Review process
-- Documentation versioning 
+- Documentation versioning

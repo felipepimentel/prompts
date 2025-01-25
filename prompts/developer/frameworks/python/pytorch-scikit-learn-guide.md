@@ -1,7 +1,9 @@
 ---
+category: Developer
 description: A comprehensive guide for developing machine learning applications using
   PyTorch and scikit-learn, covering model development, training pipelines, and deployment
   strategies
+model: GPT-4
 path: developer/frameworks/python/pytorch-scikit-learn-guide
 prompt_type: Instruction-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - machine-learning
 - deep-learning
 title: PyTorch and Scikit-learn Development Guide
+version: '1.0'
 ---
 
 # PyTorch and Scikit-learn Development Guide
@@ -512,4 +515,4 @@ def save_sklearn_model(
 - Scikit-learn guides
 - ML best practices
 - Deployment strategies
-- Performance optimization 
+- Performance optimization

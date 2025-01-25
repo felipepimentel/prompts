@@ -1,6 +1,8 @@
 ---
+category: Product
 description: Advanced prompt for developing and implementing effective goal structuring
   frameworks that ensure clear organization and achievement of objectives
+model: GPT-4
 path: product/goals/goal-structuring-framework
 prompt_type: Role-based prompting
 tags:
@@ -10,6 +12,7 @@ tags:
 - objectives
 - organization
 title: Goal Structuring Framework
+version: '1.0'
 ---
 
 # Role: Goal Structuring Specialist
@@ -114,4 +117,4 @@ Implement feedback for:
 - System clarity
 - Process efficiency
 - Goal alignment
-- Tracking accuracy 
+- Tracking accuracy

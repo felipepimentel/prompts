@@ -1,7 +1,9 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for creating clear, well-structured FAQ sections
   that effectively address user questions and concerns while maintaining clarity and
   accessibility.
+model: GPT-4
 path: content-creation/writing/faq-development-framework
 prompt_type: Role-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - user-support
 - information-architecture
 title: FAQ Development Framework
+version: '1.0'
 ---
 
 # FAQ Development Framework
@@ -146,4 +149,4 @@ faq_blueprint:
 9. Cross-Reference Related Items
 10. Gather User Feedback
 
-Please develop FAQ sections following these guidelines to ensure effective user support and information accessibility. 
+Please develop FAQ sections following these guidelines to ensure effective user support and information accessibility.

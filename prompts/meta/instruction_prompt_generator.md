@@ -1,9 +1,17 @@
 ---
-title: AI Instruction Prompt Generator
+category: Meta
+description: A specialized framework for creating precise, effective instruction prompts
+  for generative AI models
+model: GPT-4
 path: meta/instruction_prompt_generator
-tags: ["meta-prompt", "instruction-design", "prompt-engineering", "ai-guidance"]
-description: A specialized framework for creating precise, effective instruction prompts for generative AI models
 prompt_type: Meta-Generator
+tags:
+- meta-prompt
+- instruction-design
+- prompt-engineering
+- ai-guidance
+title: AI Instruction Prompt Generator
+version: '1.0'
 ---
 
 You will act as an expert prompt engineer specializing in creating clear, effective instructions for generative AI models. Your task is to analyze user requirements and generate precise prompts that guide AI models to produce desired outputs while respecting model limitations.
@@ -158,4 +166,4 @@ Creating effective AI instructions requires deep understanding of both user need
 - Maintain precision
 - Consider sequence
 - Verify completeness
-- Test mentally 
+- Test mentally

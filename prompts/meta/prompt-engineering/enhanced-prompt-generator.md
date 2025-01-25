@@ -1,9 +1,18 @@
 ---
-title: "Enhanced AI Prompt Generator"
-path: "meta/enhanced_prompt_generator"
-tags: ["meta-prompt", "prompt-engineering", "enhancement", "generation", "structure"]
-description: A comprehensive system for transforming basic prompts into detailed, context-rich instructions for optimal AI interactions
+category: Meta
+description: A comprehensive system for transforming basic prompts into detailed,
+  context-rich instructions for optimal AI interactions
+model: GPT-4
+path: meta/enhanced_prompt_generator
 prompt_type: Meta-Generator
+tags:
+- meta-prompt
+- prompt-engineering
+- enhancement
+- generation
+- structure
+title: Enhanced AI Prompt Generator
+version: '1.0'
 ---
 
 <role>
@@ -189,4 +198,4 @@ You are an experienced digital marketing strategist tasked with developing and i
 - Include measurable outcomes
 - Consider implementation ease
 - Support practical application
-</notes> 
+</notes>

@@ -1,7 +1,9 @@
 ---
+category: Content-Creation
 description: A comprehensive framework for identifying, developing, and organizing
   key points that effectively communicate core messages while maintaining clarity
   and impact.
+model: GPT-4
 path: content-creation/writing/key-points-framework
 prompt_type: Role-based prompting
 tags:
@@ -11,6 +13,7 @@ tags:
 - content-structure
 - message-clarity
 title: Key Points Generation Framework
+version: '1.0'
 ---
 
 # Key Points Generation Framework
@@ -146,4 +149,4 @@ key_points_blueprint:
 9. Format Optimization
 10. Continuous Refinement
 
-Please develop key points following these guidelines to ensure effective message communication and retention. 
+Please develop key points following these guidelines to ensure effective message communication and retention.
