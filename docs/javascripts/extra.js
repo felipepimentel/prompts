@@ -1,11 +1,23 @@
 document.addEventListener('DOMContentLoaded', async function() {
     try {
+        // Determinar o caminho base
+        const basePath = window.location.pathname.includes('/prompts/') ? '/prompts' : '';
+        
         // Carregar dados da galeria
-        const response = await fetch('/assets/data/gallery.json');
+        const response = await fetch(`${basePath}/assets/data/gallery.json`);
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
         const galleryData = await response.json();
+        console.log('Gallery data loaded:', galleryData);
         
         // Adicionar filtros dinamicamente
         const filterContainer = document.getElementById('categoryFilters');
+        if (!filterContainer) {
+            console.error('Filter container not found');
+            return;
+        }
+
         galleryData.categories.forEach(category => {
             const button = document.createElement('button');
             button.className = 'filter-btn';
@@ -16,6 +28,10 @@ document.addEventListener('DOMContentLoaded', async function() {
 
         // Renderizar cards
         const gallery = document.querySelector('.prompt-gallery');
+        if (!gallery) {
+            console.error('Gallery container not found');
+            return;
+        }
         
         function createCard(prompt) {
             return `
@@ -74,25 +90,34 @@ document.addEventListener('DOMContentLoaded', async function() {
 
         // Configurar busca
         const searchInput = document.querySelector('.prompt-search');
-        searchInput.addEventListener('input', (e) => {
-            const searchTerm = e.target.value.toLowerCase();
-            const filteredPrompts = galleryData.prompts.filter(prompt => {
-                const activeFilter = document.querySelector('.filter-btn.active').getAttribute('data-filter');
-                const matchesCategory = activeFilter === 'all' || prompt.category.toLowerCase() === activeFilter;
+        if (searchInput) {
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const filteredPrompts = galleryData.prompts.filter(prompt => {
+                    const activeFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter');
+                    const matchesCategory = !activeFilter || activeFilter === 'all' || prompt.category.toLowerCase() === activeFilter;
+                    
+                    return matchesCategory && (
+                        prompt.title.toLowerCase().includes(searchTerm) ||
+                        prompt.description.toLowerCase().includes(searchTerm) ||
+                        prompt.tags.some(tag => tag.toLowerCase().includes(searchTerm)) ||
+                        prompt.content.toLowerCase().includes(searchTerm)
+                    );
+                });
                 
-                return matchesCategory && (
-                    prompt.title.toLowerCase().includes(searchTerm) ||
-                    prompt.description.toLowerCase().includes(searchTerm) ||
-                    prompt.tags.some(tag => tag.toLowerCase().includes(searchTerm)) ||
-                    prompt.content.toLowerCase().includes(searchTerm)
-                );
+                renderCards(filteredPrompts);
             });
-            
-            renderCards(filteredPrompts);
-        });
+        }
 
     } catch (error) {
         console.error('Erro ao carregar dados da galeria:', error);
+        document.querySelector('.prompt-gallery').innerHTML = `
+            <div class="error-message">
+                Erro ao carregar os prompts. Por favor, tente novamente mais tarde.
+                <br>
+                Detalhes: ${error.message}
+            </div>
+        `;
     }
 });
 
