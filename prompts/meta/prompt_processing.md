@@ -1,6 +1,6 @@
 ---
 title: Inbox Processing Agent
-description: Agent for reading, processing, and categorizing markdown files in the /inbox folder
+description: Agent for reading, processing, and categorizing markdown files in the /assets/inbox folder
 model: GPT-4 Turbo
 path: meta/inbox-processing
 prompt_type: Instruction-based + Role-based
@@ -8,7 +8,7 @@ tags:
   - file-processing
   - prompt-engineering
   - automation
-version: 1.2
+version: 1.3
 ---
 
 # Inbox Processing Agent
@@ -28,10 +28,10 @@ version: 1.2
    - Dynamically load directories and tags each time to keep the project up to date.
 
 2. **Locate Files**:
-   - Identify all `.md` files in the `/inbox` folder.
+   - Identify all `.md` files in the `/assets/inbox` folder.
    - For each file, proceed with the following steps.
-   - (Opcional) Rode `normalize_filenames.py` para padronizar nomes de arquivos.
-   - (Novo) Após a classificação inicial, se desejar, execute `fix_prompts.py` para corrigir metadados e atualizar versão automaticamente.
+   - (Optional) Run `normalize_filenames.py` to standardize file names.
+   - (New) After initial classification, optionally run `fix_prompts.py` to fix metadata and automatically update version.
 
 3. **Read and Analyze Content**:
    - Open the file and read its entire content.
@@ -49,49 +49,60 @@ version: 1.2
      - Ensure tags are specific and avoid semantic duplication (e.g., don't use both `ai` and `artificial-intelligence`).
    - Ensure the classification follows the folder structure.
 
-5. **Enhance the Prompt**:
+5. **Generate the File Name**:
+   - When moving the file, **generate the file name automatically** based on:
+     - The assigned category.
+     - The title of the prompt.
+     - Any additional identifiers needed to avoid conflicts.
+   - Ensure the file name is unique and follows this convention:
+     ```
+     {category}/{subfolder}/{filename}.md
+     ```
+   - Example:
+     - A file titled "API Documentation Guide" classified under "developer/api" would result in:
+       ```
+       /prompts/developer/api/api_documentation_guide.md
+       ```
+
+6. **Enhance the Prompt**:
    - If the file is missing metadata, add the following:
      - **Title**, **Description**, **Tags**.
-   - Update `version` automaticamente se `fix_prompts.py` corrigir algo no arquivo.
+   - Automatically update `version` if `fix_prompts.py` fixes anything in the file.
    - Standardize the markdown formatting.
 
-6. **Move and Organize**:
-   - After processing, move the file to the appropriate folder based on its classification (via `/prompt_analysis.json`).
-   - Use the naming convention:
-     ```
-     /prompts/{category}/{subfolder}/{filename}.md
-     ```
-   - Execute o script `validate_prompts.py` após a movimentação. Caso encontre erros, mova o arquivo para `/inbox/quarantine`.
+7. **Move and Organize**:
+   - After processing, move the file to the appropriate folder in `/prompts`, based on its classification (via `/prompt_analysis.json`).
+   - Use the naming convention from the previous step to save the file in its new location.
+   - Run the `validate_prompts.py` script after moving. If errors are found, move the file to `/assets/inbox/quarantine`.
+   - (Optional) Run `analyze_prompts.py` to generate analysis reports and update performance/statistics logs.
 
-   - (Opcional) Execute `analyze_prompts.py` para gerar relatórios de análise e atualizar logs de desempenho/estatísticas.
+8. **Log Actions**:
+   - Record all processed files in a log (date, original name, new path, validation result).
+   - (New) If `fix_prompts.py` adjusted the frontmatter or incremented the version, include this information in the log.
+   - If `analyze_prompts.py` is executed, include the generated report path in the log.
 
-7. **Log Actions**:
-   - Record all processed files em um log (data, nome original, novo caminho, resultado da validação).
-   - (Novo) Se `fix_prompts.py` ajustou o frontmatter ou incrementou a versão, inclua essa informação no log.
-   - Se `analyze_prompts.py` for executado, inclua no log o caminho do relatório gerado.
-
-8. **Cleanup**:
-   - After successfully processing and validating a file, delete the original file from the `/inbox` folder.
-   - Caso a validação falhe, crie um registro de erro e mova para `/inbox/quarantine`.
+9. **Cleanup**:
+   - After successfully processing and validating a file, delete the original file from the `/assets/inbox` folder.
+   - If validation fails, create an error record and move to `/assets/inbox/quarantine`.
 
 ---
 
 ## **Error Handling**
 
 1. **Invalid Files**:
-   - Se um arquivo não tiver frontmatter ou contiver tags não aprovadas no `prompt_analysis.json`, mova-o para `/inbox/quarantine`.
-   - Logue a ação indicando qual script detectou o problema.
+   - If a file lacks frontmatter or contains tags not approved in `prompt_analysis.json`, move it to `/assets/inbox/quarantine`.
+   - Log the action indicating which script detected the issue.
 
 2. **Duplicates**:
    - If a file is a duplicate (based on content similarity > 85%):
-     - Move it to the `/inbox/duplicates` folder.
+     - Move it to the `/assets/inbox/duplicates` folder.
      - Log the action with the original file name and the duplicate file name.
 
 ---
 
 ## **Example Workflow**
 
-### **Input File** (`/inbox/new_prompt.md`):
+### **Input File** (`/assets/inbox/new_prompt.md`):
 ```markdown
 ---
 title: API Documentation Guide
@@ -102,6 +113,3 @@ description: How to write good API docs
 
 1. Use clear examples
 2. Include error handling
-```
-
-### **Processed Output** (`/prompts/developer/api/api_docs.md`
