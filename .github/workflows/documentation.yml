@@ -38,11 +38,26 @@ jobs:
           pip install -r docs/requirements.txt
           pip install python-frontmatter
       
+      - name: Debug workspace
+        run: |
+          echo "Current directory structure:"
+          ls -la
+          echo "\nPrompts directory:"
+          ls -la prompts/
+          echo "\nScripts directory:"
+          ls -la scripts/
+      
       - name: Create assets directory
         run: mkdir -p docs/assets/data
       
       - name: Generate gallery
-        run: python scripts/generate_gallery.py
+        run: |
+          echo "Running gallery generation..."
+          python scripts/generate_gallery.py
+          echo "\nGenerated files in docs/assets/data:"
+          ls -la docs/assets/data/
+          echo "\nContent of gallery.json:"
+          cat docs/assets/data/gallery.json
       
       - name: Build site
         run: mkdocs build --verbose

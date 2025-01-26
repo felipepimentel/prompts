@@ -17,22 +17,46 @@ def find_prompt_files():
     if not prompts_dir.exists():
         print(f"Error: Directory {prompts_dir} does not exist")
         sys.exit(1)
+    
+    print(f"Searching in {prompts_dir.absolute()}")
     files = glob.glob(str(prompts_dir / '**/*.md'), recursive=True)
     print(f"Found {len(files)} prompt files")
+    for file in files:
+        print(f"Found file: {file}")
     return files
 
 def process_prompt_file(file_path):
     """Extract metadata and content from a prompt file."""
     try:
-        print(f"Processing file: {file_path}")
+        print(f"\nProcessing file: {file_path}")
         with open(file_path, 'r', encoding='utf-8') as f:
-            post = frontmatter.load(f)
+            content = f.read()
+            print(f"File content length: {len(content)} bytes")
+            if not content.strip():
+                print(f"Warning: Empty file {file_path}")
+                return None
+            
+            if not content.startswith('---'):
+                print(f"Warning: File {file_path} does not have frontmatter")
+                return None
+                
+            post = frontmatter.loads(content)
+            if not post.metadata:
+                print(f"Warning: No metadata found in {file_path}")
+                return None
         
         # Get file modification time for the date
         mtime = os.path.getmtime(file_path)
         date = datetime.fromtimestamp(mtime).strftime('%d/%m/%Y')
         
-        return {
+        # Validate required fields
+        required_fields = ['title', 'description', 'category', 'model']
+        missing_fields = [field for field in required_fields if not post.get(field)]
+        if missing_fields:
+            print(f"Warning: Missing required fields in {file_path}: {missing_fields}")
+            return None
+        
+        prompt_data = {
             'title': str(post.get('title', 'Untitled')),
             'description': str(post.get('description', '')),
             'tags': post.get('tags', []),
@@ -43,20 +67,41 @@ def process_prompt_file(file_path):
             'date': date,
             'content': post.content.strip()
         }
+        
+        print(f"Successfully processed {file_path}")
+        return prompt_data
+        
     except Exception as e:
         print(f"Error processing file {file_path}: {str(e)}", file=sys.stderr)
         return None
 
 def generate_gallery_data():
     """Generate JSON data for the gallery."""
-    print("Starting gallery data generation...")
+    print("\nStarting gallery data generation...")
     prompt_files = find_prompt_files()
-    prompts = [process_prompt_file(f) for f in prompt_files]
-    prompts = [p for p in prompts if p]  # Remove None values
+    
+    if not prompt_files:
+        print("No prompt files found!")
+        return
+    
+    prompts = []
+    for file in prompt_files:
+        result = process_prompt_file(file)
+        if result:
+            prompts.append(result)
+    
+    print(f"\nSuccessfully processed {len(prompts)} out of {len(prompt_files)} files")
+    
+    if not prompts:
+        print("Warning: No valid prompts found!")
+        return
     
     # Collect unique categories and models
     categories = sorted(set(p['category'] for p in prompts))
     models = sorted(set(p['model'] for p in prompts))
+    
+    print(f"\nFound categories: {categories}")
+    print(f"Found models: {models}")
     
     gallery_data = {
         'categories': categories,
@@ -71,33 +116,8 @@ def generate_gallery_data():
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(gallery_data, f, ensure_ascii=False, indent=2)
     
-    print(f"Successfully generated gallery data with {len(prompts)} prompts")
-    
-    # Generate a sample prompt for local development
-    sample_prompt = {
-        'title': 'Análise de Código',
-        'description': 'Prompt para análise detalhada de código fonte com foco em boas práticas, segurança e performance.',
-        'tags': ['programação', 'código', 'análise'],
-        'model': 'GPT-4',
-        'category': 'Técnico',
-        'type': 'Analysis',
-        'version': '0.7',
-        'date': '31/12/2023',
-        'content': 'Por favor, analise este código fonte considerando os seguintes aspectos:\n\n1. Boas práticas de programação\n- Princípios SOLID\n- Clean Code'
-    }
-    
-    # Save sample data for local development
-    sample_data = {
-        'categories': ['Geral', 'Criativo', 'Técnico', 'Acadêmico', 'Negócios', 'Marketing'],
-        'models': ['GPT-3.5', 'GPT-4', 'Claude', 'Llama', 'Gemini'],
-        'prompts': [sample_prompt]
-    }
-    
-    sample_file = Path('docs/assets/data/sample.json')
-    with open(sample_file, 'w', encoding='utf-8') as f:
-        json.dump(sample_data, f, ensure_ascii=False, indent=2)
-    
-    print("Generated sample data for local development")
+    print(f"\nSuccessfully generated gallery data with {len(prompts)} prompts")
+    print(f"Output file: {output_file.absolute()}")
 
 def main():
     """Main function to generate the gallery data."""
