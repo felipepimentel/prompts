@@ -26,4 +26,3 @@ docs/site/   # MkDocs build directory
 # Outros
 .aider*
 .aider.chat.history
-inbox/

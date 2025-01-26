@@ -1,0 +1,36 @@
+# Benchmark Configuration
+
+# Models to test against
+models:
+  - gpt-4
+  - gpt-3.5-turbo
+  - claude-2
+
+# Test cases for consistency checking
+test_cases:
+  - input: "What is 2+2?"
+    expected_output: "4"
+    tolerance: 0.9
+  - input: "Translate 'Hello' to Spanish"
+    expected_output: "Hola"
+    tolerance: 0.8
+
+# Evaluation criteria
+evaluation_criteria:
+  response_length:
+    min: 50
+    max: 1000
+  max_tokens: 500
+  temperature: 0.7
+  
+  # Scoring weights
+  weights:
+    structure: 0.3
+    clarity: 0.3
+    model_performance: 0.4
+
+# Performance thresholds
+thresholds:
+  min_success_rate: 0.8
+  max_error_rate: 0.2
+  max_execution_time: 5.0  # seconds 
