@@ -1,0 +1,196 @@
+---
+description: "Rules and workflow for processing and organizing prompt files from inbox to the main catalog"
+globs: ["assets/inbox/*", "assets/templates/prompt.md", "prompt_analysis.json"]
+---
+## Overview
+This document outlines the rules and workflow for processing prompt files from the `assets/inbox` directory and integrating them into the main prompt catalog structure within the `prompts/` directory.
+
+## Directory Structure
+```
+.
+├── assets/
+│   ├── inbox/           # Temporary storage for new prompts
+│   └── templates/       # Template files
+├── prompts/            # Main prompt catalog directory
+│   ├── academic/
+│   ├── art/
+│   ├── career/
+│   └── ...             # Other categories as defined in prompt_analysis.json
+├── scripts/            # Validation and processing scripts
+└── prompt_analysis.json
+```
+
+## Pre-Processing Requirements
+- Ensure access to required files:
+  - Template file: `assets/templates/prompt.md`
+  - Analysis file: `prompt_analysis.json`
+  - Validation scripts in `./scripts/`
+- Verify write permissions on target directories:
+  - Read access to `assets/inbox`
+  - Write access to `prompts/` and subdirectories
+- Check for any ongoing processing to avoid conflicts
+- Ensure `prompts/` directory exists and has proper permissions
+
+## Processing Workflow
+
+### 1. Inbox Monitoring
+- Monitor the `assets/inbox` directory for new prompt files
+- Process each file individually
+- Files in inbox can have any temporary name
+- Track processing status to avoid duplicate processing
+
+### 2. Content Analysis
+For each file in `assets/inbox`:
+
+1. **Content Understanding**
+   - Read and analyze the prompt content
+   - Identify the main purpose and objectives
+   - Extract key concepts and use cases
+   - Identify target audience and use context
+   - Document any dependencies or prerequisites
+
+2. **Prompt Engineering Enhancement**
+   - Apply prompt engineering best practices
+   - Enhance clarity and effectiveness
+   - Add necessary context and examples
+   - Ensure proper formatting and structure
+   - Optimize for:
+     - Clarity and specificity
+     - Completeness of instructions
+     - Error handling and edge cases
+     - Consistency in terminology
+     - Appropriate tone and style
+
+3. **Template Compliance**
+   - Validate against `assets/templates/prompt.md` template
+   - Ensure all required sections are present:
+     - title
+     - path
+     - tags
+     - description
+     - prompt_type
+     - purpose
+     - context
+     - instructions
+     - variables
+     - examples
+     - notes
+   - Add missing sections as needed
+   - Format according to template structure
+   - Verify YAML frontmatter format
+
+### 3. Categorization & Placement
+1. **Directory Structure Analysis**
+   - Reference `prompt_analysis.json` for valid:
+     - Directories (all relative to `prompts/`)
+     - Tags
+     - Prompt types
+     - Models
+   - Analyze similar existing prompts for consistency
+   - Ensure target category exists within `prompts/` directory
+
+2. **Path Determination**
+   - Identify most appropriate category from available directories
+   - All paths must be under `prompts/` directory
+   - Consider content theme and purpose
+   - Ensure proper nesting in directory structure
+   - Avoid category redundancy
+   - Document reasoning for chosen category
+   - Final path should be: `prompts/[category]/[subcategory]/[filename].md`
+
+3. **File Naming**
+   - Generate appropriate file name based on content
+   - Use kebab-case format
+   - Ensure name reflects prompt purpose
+   - Append `.md` extension
+   - Check for naming conflicts
+   - Follow pattern: `[descriptive-name]-[optional-qualifier].md`
+
+### 4. File Operations
+1. **Backup**
+   - Create temporary backup of original file in `assets/inbox/.backup/`
+   - Store backup with timestamp
+   - Maintain backup until process completion
+
+2. **File Movement**
+   - Move file to determined destination path under `prompts/`
+   - Create target directory if it doesn't exist
+   - Ensure proper permissions (644 for files, 755 for directories)
+   - Verify successful transfer
+   - Update any relevant indexes or references
+
+3. **Cleanup**
+   - Remove original file from `assets/inbox`
+   - Verify removal
+   - Clean up temporary files and backups
+   - Update processing status
+
+### 5. Validation
+- Execute validation script from `./scripts/`
+- Address any validation errors
+- Ensure all requirements are met
+- Verify:
+  - File structure
+  - YAML frontmatter
+  - Required sections
+  - Links and references
+  - File permissions
+
+## Quality Checklist
+- [ ] Content is clear and well-structured
+- [ ] All template sections are present and properly formatted
+- [ ] Tags are appropriate and exist in `prompt_analysis.json`
+- [ ] Prompt type is valid and appropriate
+- [ ] Directory placement is logical and consistent
+- [ ] File name is descriptive and follows conventions
+- [ ] No files remain in `assets/inbox`
+- [ ] Validation script passes
+- [ ] Backups are properly managed
+- [ ] All sections have meaningful content
+- [ ] Examples are clear and relevant
+- [ ] Variables are well-documented
+- [ ] Error cases are addressed
+
+## Error Handling
+- If validation fails, review and fix issues
+- If directory structure is unclear, review similar prompts
+- If template sections are missing data, add appropriate placeholders
+- Document any exceptional cases or issues
+- Common error scenarios:
+  - Invalid YAML frontmatter
+  - Missing required sections
+  - Invalid tags or prompt types
+  - File permission issues
+  - Naming conflicts
+  - Validation script failures
+
+## Monitoring and Reporting
+- Track processing statistics
+- Document any recurring issues
+- Monitor directory sizes and file counts
+- Report processing errors
+- Maintain processing logs
+
+## Best Practices
+- Always maintain backup of original file until process is complete
+- Follow prompt engineering best practices
+- Ensure consistency with existing prompts
+- Keep directory structure clean and organized
+- Document decisions and reasoning
+- Use clear and consistent terminology
+- Test prompts before final placement
+- Review similar existing prompts for consistency
+
+## Version Control
+- Track changes to processed files
+- Maintain history of file movements
+- Document major content changes
+- Keep backup of original versions
+- Use meaningful commit messages
+
+## Security Considerations
+- Verify file permissions
+- Sanitize file names and content
+- Check for sensitive information
+- Maintain access controls
+- Protect backup files
